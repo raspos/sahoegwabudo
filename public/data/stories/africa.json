@@ -378,7 +378,7 @@
   "id": "civ-cocoa",
   "country": "CIV",
   "title": "카카오 콩을 가장 많이 기르는 나라는?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "코트디부아르는 FAO 통계로 {{ag:CIV:Cocoa beans}}입니다.",
    "캐슈너트도 {{ag:CIV:Cashew nuts, in shell}}입니다.",
@@ -819,7 +819,7 @@
   "id": "egy-artichoke",
   "country": "EGY",
   "title": "사막의 나라 이집트는 어떤 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "이집트의 주요 농산물 목록 첫머리는 사탕수수, 사탕무, 밀입니다. 모두 나일강 물로 키웁니다.",
    "FAO 통계로 이집트는 {{ag:EGY:Artichokes}}입니다.",
@@ -1232,7 +1232,7 @@
   "id": "gin-fonio",
   "country": "GIN",
   "title": "기니 들판은 어떤 곡물로 세계 1위일까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "기니는 FAO 통계로 {{ag:GIN:Fonio}}입니다.",
    "가지도 {{ag:GIN:Eggplants (aubergines)}}입니다.",
@@ -1463,7 +1463,7 @@
   "id": "ken-camel",
   "country": "KEN",
   "title": "케냐는 어떤 젖을 세계에서 가장 많이 짤까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 케냐는 {{ag:KEN:Raw milk of camel}}입니다. 낙타고기도 {{ag:KEN:Meat of camels, fresh or chilled}}입니다.",
    "찻잎은 {{ag:KEN:Tea leaves}}입니다.",
@@ -1752,7 +1752,7 @@
   "id": "mar-snails",
   "country": "MAR",
   "title": "모로코 들판은 어떤 것으로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 모로코는 {{ag:MAR:Peppermint, spearmint}}입니다.",
    "식용 달팽이도 {{ag:MAR:Snails, fresh, chilled, frozen, dried, salted or in brine, except sea snails}}입니다.",
@@ -2245,7 +2245,7 @@
   "id": "ner-millet",
   "country": "NER",
   "title": "니제르 들판은 어떤 곡물과 콩을 기를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "니제르의 주요 농산물 목록은 기장, 동부콩, 수수로 시작합니다.",
    "FAO 통계로 니제르는 {{ag:NER:Millet}}, {{ag:NER:Cow peas, dry}}입니다.",
@@ -2307,7 +2307,7 @@
   "id": "nga-yams",
   "country": "NGA",
   "title": "나이지리아 들판은 몇 가지 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 나이지리아는 {{ag:NGA:Yams}}, {{ag:NGA:Taro}}입니다.",
    "콜라너트는 {{ag:NGA:Kola nuts}}, 시어너트는 {{ag:NGA:Karite nuts (sheanuts)}}입니다.",
@@ -2562,7 +2562,7 @@
   "id": "som-camel",
   "country": "SOM",
   "title": "낙타 젖을 가장 많이 짜는 나라 가운데 하나는?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "소말리아의 주요 농산물 목록 첫머리는 낙타 젖입니다.",
    "FAO 통계로 소말리아는 {{ag:SOM:Raw milk of camel}}, {{ag:SOM:Meat of camels, fresh or chilled}}입니다.",
@@ -3107,7 +3107,7 @@
   "id": "uga-plantain",
   "country": "UGA",
   "title": "요리용 바나나를 가장 많이 기르는 나라는?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "Factbook은 우간다를 '호수와 강이 많은 기름지고 물 넉넉한 나라'로 소개합니다.",
    "FAO 통계로 우간다는 {{ag:UGA:Plantains and cooking bananas}}입니다.",

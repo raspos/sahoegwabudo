@@ -22,7 +22,7 @@ n: GBR | 1882년 이집트 정부를 장악한 나라
 - 투자를 지킨다는 명분으로 영국이 1882년 이집트 정부를 장악했고, 이집트는 1922년 부분 독립, 1952년 완전한 주권을 얻었습니다. 영국군은 1956년 운하 지대에서 물러났습니다.
 - 이집트는 아프리카와 동반구의 나머지를 잇는 유일한 육지 다리인 시나이반도도 쥐고 있습니다. 관광 수입은 수출의 {{v:EGY:tourism_exports}}를 차지합니다.
 
-@ egy-artichoke EGY economy
+@ egy-artichoke EGY resources
 ? 사막의 나라 이집트는 어떤 작물로 세계 1위를 할까?
 s: agri industries
 i: agri_va
@@ -148,7 +148,7 @@ n: UGA | 빅토리아 호수를 함께 나눠 가진 이웃
 - 케냐산은 아프리카에서 두 번째로 높은 산이고, 빙하가 있습니다.
 - 케냐 고원은 아프리카에서 손꼽히는 농업 지대입니다. 나라 전체 인구밀도는 {{vr:KEN:density}}입니다.
 
-@ ken-camel KEN economy
+@ ken-camel KEN resources
 ? 케냐는 어떤 젖을 세계에서 가장 많이 짤까?
 s: agri econ
 i: agri_va tourism_exports
@@ -179,7 +179,7 @@ n: PNG | 바다 건너 북쪽의 이웃 나라
 - 쾨펜 기후로는 {{cl:AUS}}가 가장 넓습니다.
 - 동쪽의 그레이트디바이딩산맥은 동부의 모든 강이 동서남북으로 갈라져 흐르는 분수령입니다.
 
-@ aus-wool AUS economy
+@ aus-wool AUS resources
 ? 오스트레일리아는 무엇을 캐고 무엇을 길러 팔까?
 s: resources econ agri
 i: resource_rents exports_gdp

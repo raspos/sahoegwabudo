@@ -199,7 +199,7 @@ n: THA | 살윈강을 함께 나눠 쓰는 동쪽 이웃
 - 사람들은 해안과 이라와디강 가까이에 모여 살고, 북쪽 끝은 사람이 드뭅니다.
 - 동쪽으로는 메콩강과 살윈강도 지나갑니다. 두 강 모두 중국에서 시작합니다.
 
-@ mmr-sesame MMR economy
+@ mmr-sesame MMR resources
 ? 미얀마 들판은 어떤 작물로 세계 순위에 오를까?
 s: agri econ
 i: agri_va

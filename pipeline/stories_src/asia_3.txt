@@ -53,7 +53,7 @@ n: IDN | 남쪽의 또 다른 섬나라
 - 필리핀은 태풍이 지나는 길목에 있어 해마다 여러 번 열대 폭풍을 맞습니다.
 - 탈산(311m)은 국제 학회가 꼽은 '10년 화산'입니다.
 
-@ phl-abaca PHL economy
+@ phl-abaca PHL resources
 ? '마닐라삼'은 어떤 작물일까?
 s: agri industries econ capital_note
 i: manufacturing
@@ -197,7 +197,7 @@ n: GRC | 에게해를 사이에 둔 서쪽 이웃
 - 가장 빽빽한 곳은 북서쪽 보스포루스 주변으로, 인구의 20%가 이스탄불에 삽니다.
 - 마르마라해에서 반 호수까지 북쪽을 따라 큰 지진이 잦습니다.
 
-@ tur-hazelnut TUR economy
+@ tur-hazelnut TUR resources
 ? 튀르키예 들판은 몇 가지 작물로 세계 1위를 할까?
 s: agri econ background
 i: agri_va

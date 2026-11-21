@@ -11,7 +11,7 @@ n: CAN | 북아메리카에서 미국보다 넓은 유일한 나라
 - 가운데는 넓은 평원, 서쪽은 높은 산맥, 동쪽은 구릉과 낮은 산지입니다. 그레이트플레인스가 국토의 {{lf:USA:Great Plains}}를 차지합니다.
 - 재해도 다양합니다. 서해안과 알래스카는 지진과 화산, 중서부와 남동부는 토네이도, 대서양과 멕시코만 연안은 허리케인을 걱정합니다.
 
-@ usa-almonds USA economy
+@ usa-almonds USA resources
 ? 미국 들판은 어떤 작물로 세계 1위를 할까?
 s: agri resources
 i: arable
@@ -54,7 +54,7 @@ n: FRA | 캐나다 프랑스어의 뿌리가 된 나라
 - 중국어(4.2%), 스페인어(3.2%), 펀자브어(2.6%), 아랍어(2.4%), 타갈로그어(2.3%)를 쓰는 사람도 많습니다.
 - 스스로를 원주민(퍼스트 네이션)이라고 밝힌 사람은 1.7%, 메티스는 1.5%입니다.
 
-@ can-oats CAN economy
+@ can-oats CAN resources
 ? 캐나다 밭은 무엇으로 세계 1위를 할까?
 s: agri industries
 i: agri_va exports_gdp
@@ -75,7 +75,7 @@ n: BLZ | 유카탄반도를 함께 나눠 가진 이웃
 - 멕시코는 태평양을 두른 '불의 고리' 위에 있습니다. 이 띠에는 세계 화산의 약 75%, 지진의 최대 90%가 몰려 있습니다.
 - 가장 활발한 화산은 콜리마산(3,850m)입니다.
 
-@ mex-avocado MEX economy
+@ mex-avocado MEX resources
 ? 아보카도를 가장 많이 기르는 나라는 어디일까?
 s: agri climate
 i: agri_va
@@ -118,7 +118,7 @@ n: CHL | 브라질과 국경이 닿지 않는 두 나라 가운데 하나
 - 아마존 분지가 국토의 {{lf:BRA:Amazon Basin}}를 차지합니다.
 - 서쪽 가운데에는 세계 최대의 열대 습지 판타나우가 펼쳐져 있고, 아르헨티나와는 세계 최대의 폭포 지대인 이구아수 폭포를 나눠 가집니다.
 
-@ bra-coffee BRA economy
+@ bra-coffee BRA resources
 ? 브라질 들판은 몇 가지 작물로 세계 1위를 할까?
 s: agri
 i: agri_va arable

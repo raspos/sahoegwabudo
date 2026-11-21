@@ -72,7 +72,7 @@ n: TUR | 5백 년 가까이 불가리아를 다스린 제국의 나라
 - 1878년 북부가 자치를 얻었고, 1908년 9월 22일 오스만 제국에서 완전히 독립했습니다.
 - 수도 소피아라는 이름은 이 도시의 '성 소피아 성당'에서 왔습니다.
 
-@ bgr-sunflower BGR economy
+@ bgr-sunflower BGR resources
 ? 불가리아 들판에서는 무엇이 자랄까?
 s: agri terrain rivers
 i: agri_va arable
@@ -113,7 +113,7 @@ n: UKR | 드니프로강이 흘러가는 남쪽 이웃
 - 가장 높은 곳인 자르진스카야산도 346m밖에 되지 않습니다.
 - 드니프로강은 러시아에서 시작해 벨라루스를 지나 우크라이나에서 흑해로 나갑니다.
 
-@ blr-flax BLR economy
+@ blr-flax BLR resources
 ? 벨라루스 들판은 어떤 작물로 세계 순위에 오를까?
 s: agri industries background
 i: agri_va
@@ -189,7 +189,7 @@ n: DEU | 덴마크 상품을 가장 많이 사 가는 남쪽 이웃
 - 한때 바이킹의 본거지이자 북유럽의 강국이었던 덴마크는, 965년 무렵 하랄 1세 아래 하나로 묶여 기독교를 받아들였습니다.
 - 1인당 GDP는 {{vr:DNK:gdp_pc}}입니다.
 
-@ esp-olive ESP economy
+@ esp-olive ESP resources
 ? 올리브를 가장 많이 기르는 나라는?
 s: agri climate
 i: agri_va

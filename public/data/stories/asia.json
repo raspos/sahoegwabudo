@@ -267,7 +267,7 @@
   "id": "bgd-jute",
   "country": "BGD",
   "title": "방글라데시는 어떤 섬유 작물로 세계 1위일까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "방글라데시는 FAO 통계로 {{ag:BGD:Jute, raw or retted}}입니다. 황마는 마대 자루와 밧줄을 만드는 섬유입니다.",
    "쌀도 {{ag:BGD:Rice}}입니다.",
@@ -658,7 +658,7 @@
   "id": "idn-spice",
   "country": "IDN",
   "title": "정향과 코코넛, 인도네시아 들판은 세계에서 몇 등일까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "16세기에 포르투갈이 일부 섬을 차지했고, 17세기 초부터는 네덜란드가 섬들을 식민지로 삼았습니다.",
    "지금 인도네시아 들판은 여러 작물로 세계 1위입니다. {{ag:IDN:Cloves (whole stems), raw}}, {{ag:IDN:Coconuts, in shell}}입니다.",
@@ -690,7 +690,7 @@
   "id": "ind-buffalo",
   "country": "IND",
   "title": "인도는 어떤 젖을 세계에서 가장 많이 짤까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "Factbook의 인도 주요 농산물 목록에는 우유와 따로 '물소 젖'이 올라 있습니다.",
    "FAO 통계로 인도는 {{ag:IND:Raw milk of buffalo}}입니다. 물소고기도 {{ag:IND:Meat of buffalo, fresh or chilled}}입니다.",
@@ -836,7 +836,7 @@
   "id": "irn-pistachio",
   "country": "IRN",
   "title": "이란 들판은 어떤 견과로 세계 순위에 오를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "이란은 가장자리를 험한 산이 두르고, 가운데에 사막과 산이 섞인 높은 분지가 있는 나라입니다.",
    "사람들은 자그로스산맥과 엘부르즈산맥을 따라 북쪽·북서쪽·서쪽에 모여 삽니다.",
@@ -1307,7 +1307,7 @@
   "id": "kor-persimmon",
   "country": "KOR",
   "title": "반도체의 나라 한국, 논밭에서는 무엇으로 세계 순위에 오를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "한국 산업 목록의 첫머리는 전자·통신·자동차·조선입니다. 하지만 논밭에도 세계 순위표가 있습니다.",
    "FAO 통계로 보면 한국은 {{ag:KOR:Persimmons}}입니다. 가을 시골 마당의 감나무가 세계 지도에 이름을 올린 셈입니다.",
@@ -1664,7 +1664,7 @@
   "id": "mmr-sesame",
   "country": "MMR",
   "title": "미얀마 들판은 어떤 작물로 세계 순위에 오를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "Factbook은 미얀마 경제에서 '농업이 가장 안정적인 분야'라고 적습니다. 농림어업은 경제의 {{vr:MMR:agri_va}}를 차지합니다.",
    "FAO 통계로 미얀마는 {{ag:MMR:Sesame seed}}입니다.",
@@ -1925,7 +1925,7 @@
   "id": "phl-abaca",
   "country": "PHL",
   "title": "'마닐라삼'은 어떤 작물일까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 필리핀은 {{ag:PHL:Abaca, manila hemp, raw}}입니다. 아바카는 '마닐라삼'으로도 불리는 튼튼한 섬유입니다.",
    "파인애플은 {{ag:PHL:Pineapples}}, 코코넛은 {{ag:PHL:Coconuts, in shell}}입니다.",
@@ -2778,7 +2778,7 @@
   "id": "tur-hazelnut",
   "country": "TUR",
   "title": "튀르키예 들판은 몇 가지 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 튀르키예는 {{ag:TUR:Hazelnuts, in shell}}입니다.",
    "무화과는 {{ag:TUR:Figs}}, 살구는 {{ag:TUR:Apricots}}입니다.",

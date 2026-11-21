@@ -11,7 +11,7 @@ n: JPN | 바다 건너, 섬이 훨씬 더 많은 이웃 섬나라
 - 가장 높은 섬 산은 제주의 한라산(1,950m)입니다. 수백 년 동안 분화하지 않았지만, 역사 속에서 활동한 화산으로 분류됩니다.
 - 사람들은 산을 피해 낮은 땅에 모여 삽니다. 서울과 인천항을 둘러싼 경기도가 가장 빽빽하고, 나라 전체 인구밀도는 {{vr:KOR:density}}입니다.
 
-@ kor-persimmon KOR economy
+@ kor-persimmon KOR resources
 ? 반도체의 나라 한국, 논밭에서는 무엇으로 세계 순위에 오를까?
 s: agri industries
 i: agri_va manufacturing
@@ -116,7 +116,7 @@ n: NPL | 인도로 흘러드는 강이 시작되는 히말라야의 나라
 - 큰 강도 바깥에서 들어옵니다. 브라마푸트라강과 인더스강은 중국에서 시작해 인도를 지나 흐릅니다.
 - 갠지스강은 인도에서 시작해 방글라데시에서 바다로 나갑니다.
 
-@ ind-buffalo IND economy
+@ ind-buffalo IND resources
 ? 인도는 어떤 젖을 세계에서 가장 많이 짤까?
 s: agri
 i: agri_va
@@ -170,7 +170,7 @@ n: MYS | 같은 말레이어 뿌리를 가진 이웃
 - 민족 구성도 다양합니다. 자바인 40.1%, 순다인 15.5%를 비롯해 300개가 넘는 민족이 삽니다.
 - Factbook은 인도네시아를 세계에서 무슬림이 가장 많은 나라, 세 번째로 인구가 많은 민주주의 국가로 소개합니다.
 
-@ idn-spice IDN economy
+@ idn-spice IDN resources
 ? 정향과 코코넛, 인도네시아 들판은 세계에서 몇 등일까?
 s: agri background
 i: agri_va exports_gdp

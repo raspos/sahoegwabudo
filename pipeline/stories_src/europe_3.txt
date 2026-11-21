@@ -52,7 +52,7 @@ n: DEU | 같은 북유럽 평원의 서쪽 이웃
 - 가장 긴 강인 비스와강은 시작도 끝도 폴란드 안에 있습니다.
 - 국토 면적은 {{vr:POL:area}}입니다.
 
-@ pol-triticale POL economy
+@ pol-triticale POL resources
 ? 폴란드 들판은 어떤 곡물로 세계 1위를 할까?
 s: agri background industries
 i: agri_va
@@ -115,7 +115,7 @@ n: KAZ | 시간대를 하나로 합친 남쪽 이웃
 - 그렇게 넓어도 땅 상당 부분은 너무 춥거나 메말라 농사에 알맞지 않습니다. 시베리아 대부분은 영구 동토가 개발을 가로막습니다.
 - 사람들은 서쪽 5분의 1, 발트해에서 카스피해까지의 땅에 몰려 삽니다. 인구밀도는 {{vr:RUS:density}}입니다.
 
-@ rus-buckwheat RUS economy
+@ rus-buckwheat RUS resources
 ? 러시아 들판은 몇 가지 작물로 세계 1위를 할까?
 s: agri resources
 i: arable
@@ -167,7 +167,7 @@ n: HUN | 세르비아 북쪽 평야와 이어진 이웃
 - 도나우강이 북쪽 평야를 가로질러 흐릅니다.
 - 세르비아는 바다가 없지만, 서유럽에서 튀르키예와 근동으로 가는 큰 육로 하나를 쥐고 있습니다.
 
-@ srb-raspberry SRB economy
+@ srb-raspberry SRB resources
 ? 세르비아 들판은 어떤 열매로 세계 순위에 오를까?
 s: agri background independence
 i: agri_va

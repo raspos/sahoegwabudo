@@ -93,7 +93,7 @@
   "id": "aus-wool",
   "country": "AUS",
   "title": "오스트레일리아는 무엇을 캐고 무엇을 길러 팔까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "천연자원 목록은 알루미나, 석탄, 철광석, 구리, 리튬으로 시작합니다. 상품 수출 1위는 {{ex:AUS}}입니다.",
    "가장 큰 손님은 {{p1:AUS}}입니다. Factbook도 오스트레일리아를 '동아시아에 원자재를 파는 나라'로 소개합니다.",
@@ -119,6 +119,284 @@
   "next": {
    "country": "CHN",
    "why": "오스트레일리아 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "fji-islands",
+  "country": "FJI",
+  "title": "피지에는 섬이 몇 개나 있을까?",
+  "category": "geo",
+  "panels": [
+   "피지는 332개의 섬과 500개가 넘는 작은 섬으로 이루어져 있고, 그 가운데 약 110개 섬에 사람이 삽니다.",
+   "섬들은 대부분 화산에서 생겨난 산입니다. 가장 높은 토마니비산은 1,323m입니다.",
+   "인구의 약 70%가 비티레부섬에 살고, 절반쯤이 도시에 삽니다.",
+   "수도 수바는 피지 말로 '작은 언덕'이라는 뜻입니다."
+  ],
+  "related": [
+   "TON",
+   "VUT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Fiji: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fj.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TON",
+   "why": "피지와 오래 교역한 동쪽의 섬나라"
+  }
+ },
+ {
+  "id": "fji-languages",
+  "country": "FJI",
+  "title": "피지의 공용어는 몇 개일까?",
+  "category": "culture",
+  "panels": [
+   "피지의 공용어는 영어, 이타우케이어(피지어), 피지 힌디어 세 가지입니다.",
+   "주민은 대부분 멜라네시아계에 폴리네시아계가 섞인 이타우케이가 56.8%, 인도계 피지인이 37.5%입니다.",
+   "그래서 종교도 개신교(45%)와 힌두교(27.9%), 가톨릭, 이슬람이 함께 있습니다.",
+   "기원전 1000년 무렵 오스트로네시아 사람들이 처음 정착했고, 피지는 1970년 10월 10일 영국에서 독립했습니다."
+  ],
+  "related": [
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Fiji: People – Languages, People – Ethnic groups, Introduction – Background, People – Religions",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fj.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "인도계 피지인의 뿌리가 된 나라"
+  }
+ },
+ {
+  "id": "fsm-607",
+  "country": "FSM",
+  "title": "미크로네시아 연방은 몇 개의 섬으로 이루어져 있을까?",
+  "category": "geo",
+  "panels": [
+   "미크로네시아 연방은 네 개의 큰 섬 무리, 모두 607개의 섬으로 이루어져 있습니다.",
+   "높은 산이 있는 섬부터 낮은 산호 환초까지 다양하고, 폰페이·코스라에·추크에는 화산 바위가 드러나 있습니다.",
+   "일 년 내내 비가 많고, 태풍 지대의 남쪽 가장자리에 있습니다.",
+   "공용어인 영어 말고도 추크어, 코스라에어, 폰페이어, 야프어 등 여러 말이 쓰입니다."
+  ],
+  "related": [
+   "KIR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Micronesia: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KIR",
+   "why": "남동쪽의 넓은 섬나라"
+  }
+ },
+ {
+  "id": "fsm-nanmadol",
+  "country": "FSM",
+  "title": "폰페이섬의 인공 섬 도시 난마돌은 언제 만들어졌을까?",
+  "category": "history",
+  "panels": [
+   "미크로네시아 연방은 추크·코스라에·폰페이·야프 네 주로 이루어져 있고, 주마다 고유한 역사와 문화가 있습니다.",
+   "폰페이섬의 난마돌 인공 섬들은 800년대에 짓기 시작했고, 주요 건축물은 1200년 무렵 세워졌습니다.",
+   "전성기의 난마돌은 폰페이 사람 약 2만 5천 명을 하나로 묶었습니다.",
+   "미크로네시아 연방은 1986년 11월 3일 미국이 관리하던 유엔 신탁통치에서 독립했습니다."
+  ],
+  "related": [
+   "PLW",
+   "MHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Micronesia: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/fm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MHL",
+   "why": "함께 미국 관리 신탁통치령이었던 동쪽 이웃"
+  }
+ },
+ {
+  "id": "kir-hemispheres",
+  "country": "KIR",
+  "title": "네 반구에 모두 걸친 유일한 나라는?",
+  "category": "curious",
+  "panels": [
+   "키리바시는 북반구·남반구·동반구·서반구 네 반구에 모두 걸친 세계 유일의 나라입니다.",
+   "세 군도가 인도만 한 넓이의 바다에 흩어져 있어, 시간대도 세 개입니다.",
+   "33개 섬 가운데 21개에 사람이 삽니다. 동쪽 라인 제도와 가운데 피닉스 제도는 사람이 드뭅니다.",
+   "바나바섬은 나우루, 프랑스령 폴리네시아의 마카테아와 함께 태평양의 세 큰 인산염 섬 가운데 하나입니다."
+  ],
+  "related": [
+   "TUV",
+   "NRU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kiribati: Geography – note, Government – Capital, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/kr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NRU",
+   "why": "또 하나의 인산염 섬나라"
+  }
+ },
+ {
+  "id": "kir-sea",
+  "country": "KIR",
+  "title": "키리바시 섬들은 왜 해수면 상승에 약할까?",
+  "category": "geo",
+  "panels": [
+   "키리바시의 섬들은 대부분 넓은 산호초에 둘러싸인 낮은 산호 환초입니다.",
+   "Factbook은 일부 섬이 너무 낮아 해수면 변화에 민감하다고 적습니다.",
+   "천연자원 목록은 인산염(1979년 생산 중단), 코코넛(코프라), 물고기입니다.",
+   "기원전 3000년 무렵 오스트로네시아 항해자들이 길버트 제도에 처음 왔지만, 200년 무렵 미크로네시아 사람들이 와서야 널리 정착했습니다."
+  ],
+  "related": [
+   "TUV",
+   "MHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kiribati: Geography – Terrain, Geography – Natural hazards, Geography – Natural resources, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/kr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TUV",
+   "why": "같은 낮은 산호섬의 남쪽 이웃"
+  }
+ },
+ {
+  "id": "mhl-lagoon",
+  "country": "MHL",
+  "title": "세계에서 가장 큰 석호는 어디에 있을까?",
+  "category": "geo",
+  "panels": [
+   "마셜 제도의 콰절린 환초는 세계에서 가장 큰 석호를 둘러싸고 있습니다.",
+   "콰절린의 에바이는 수도 마주로 다음으로 큰 정착지이자, 태평양에서 가장 인구가 빽빽한 곳 가운데 하나입니다.",
+   "섬들은 낮은 산호 석회암과 모래섬입니다. 인구의 3분의 2 넘게가 마주로와 에바이에 삽니다.",
+   "마주로라는 이름은 석호로 들어가는 두 큰 물길을 가리켜 '두 개의 입구' 또는 '두 눈'이라는 뜻입니다."
+  ],
+  "related": [
+   "FSM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Marshall Islands: Geography – note, Geography – Terrain, People – Population distribution, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/rm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FSM",
+   "why": "서쪽의 이웃 섬나라"
+  }
+ },
+ {
+  "id": "mhl-stickcharts",
+  "country": "MHL",
+  "title": "마셜 제도 사람들은 어떻게 바다의 지도를 그렸을까?",
+  "category": "history",
+  "panels": [
+   "마셜 제도에는 기원전 1천 년대에 사람이 왔고, 여러 환초에 차츰 마을을 이루었습니다.",
+   "초기 주민들은 뛰어난 항해자였고, 막대를 엮은 '막대 해도'로 섬들의 위치를 나타내며 환초 사이를 오갔습니다.",
+   "사회는 해 뜨는 쪽 라타크 열도와 해 지는 쪽 랄리크 열도의 두 최고 족장 아래 조직되었습니다.",
+   "마셜 제도는 1986년 10월 21일 미국이 관리하던 유엔 신탁통치에서 독립했습니다. 주요 농산물 목록에는 코코넛 하나가 적혀 있습니다."
+  ],
+  "related": [
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Marshall Islands: Introduction – Background, Government – Independence, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/rm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "마셜 제도를 신탁통치한 나라"
+  }
+ },
+ {
+  "id": "nru-phosphate",
+  "country": "NRU",
+  "title": "인산염을 다 캐낸 나우루에는 무슨 일이 생겼을까?",
+  "category": "economy",
+  "panels": [
+   "나우루의 천연자원은 인산염과 물고기 두 가지입니다.",
+   "Factbook은 인산염이 바닥나면서 섬 안쪽이 사람이 살 수 없는 땅이 되었다고 적습니다.",
+   "지금은 어업권을 팔고, 외국의 지원에 크게 기댑니다.",
+   "바다 물살이 섬에 닿기 어렵게 해 나우루는 비교적 고립된 채 발전했고, 그래서 나우루어는 태평양의 다른 말과 뚜렷이 닮지 않았습니다. 나우루어를 쓰는 사람이 93%입니다."
+  ],
+  "related": [
+   "AUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Nauru: Economy – Economic overview, Geography – Natural resources, Introduction – Background, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AUS",
+   "why": "나우루와 관계가 깊은 남쪽의 큰 나라"
+  }
+ },
+ {
+  "id": "nru-smallest",
+  "country": "NRU",
+  "title": "세계에서 가장 작은 섬나라는?",
+  "category": "geo",
+  "panels": [
+   "나우루는 바티칸·모나코 다음으로 작은 나라입니다. Factbook은 나우루를 태평양에서 가장 작은 나라, 유럽 밖에서 가장 작은 나라, 세계에서 가장 작은 섬나라이자 가장 작은 독립 공화국으로 꼽습니다.",
+   "적도에서 남쪽으로 53km밖에 떨어져 있지 않습니다. 국토 면적은 {{vr:NRU:area}}입니다.",
+   "모래 해변 뒤로 기름진 고리 모양의 땅이 있고, 가운데는 솟아오른 산호초 위의 인산염 고원입니다.",
+   "나우루에는 공식 수도가 없습니다. 정부 사무실은 야렌 지구에 있습니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "KIR",
+   "TUV"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Nauru: Geography – note, Geography – Terrain, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TUV",
+   "why": "네 번째로 작은 이웃 섬나라"
   }
  },
  {
@@ -238,6 +516,396 @@
   "next": {
    "country": "AUS",
    "why": "태즈먼해 건너 서쪽 이웃"
+  }
+ },
+ {
+  "id": "plw-matrilineal",
+  "country": "PLW",
+  "title": "팔라우에서는 누가 족장을 골랐을까?",
+  "category": "culture",
+  "panels": [
+   "기원전 1000년 무렵 동남아시아에서 사람들이 팔라우에 왔고, 지위 높은 여성들이 족장을 고르는 고도로 조직된 모계 사회를 이루었습니다.",
+   "수도 응게룰무드는 팔라우 말로 '발효한 에인절피시의 자리'라는 뜻입니다.",
+   "공용어는 팔라우어(65.2%)와 영어(19.1%)이고, 필리핀어를 쓰는 사람도 9.9%입니다.",
+   "팔라우는 1994년 10월 1일 미국이 관리하던 유엔 신탁통치에서 독립했습니다."
+  ],
+  "related": [
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Palau: Introduction – Background, Government – Capital, People – Languages, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ps.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "팔라우를 신탁통치한 나라"
+  }
+ },
+ {
+  "id": "plw-rockislands",
+  "country": "PLW",
+  "title": "팔라우의 '록 아일랜드'는 어디에 있을까?",
+  "category": "geo",
+  "panels": [
+   "팔라우는 캐롤라인 제도의 가장 서쪽 군도로, 여섯 섬 무리에 300개가 넘는 섬이 있습니다. 세계적으로 유명한 록 아일랜드도 여기 있습니다.",
+   "가장 큰 바벨다오브섬은 높고 산이 많고, 나머지는 대개 큰 보초에 둘러싸인 낮은 산호섬입니다.",
+   "사람들은 대부분 바벨다오브섬 남쪽 끝에 삽니다.",
+   "가장 높은 곳은 게르첼추스산(242m)입니다."
+  ],
+  "related": [
+   "FSM",
+   "PHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Palau: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ps.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PHL",
+   "why": "바다 건너 서쪽의 큰 섬나라"
+  }
+ },
+ {
+  "id": "png-highlands",
+  "country": "PNG",
+  "title": "뉴기니섬은 어떻게 나뉘어 있을까?",
+  "category": "geo",
+  "panels": [
+   "파푸아뉴기니는 뉴기니섬의 동쪽 절반을 차지하고, 서쪽 절반은 인도네시아 땅입니다.",
+   "동서로 뻗은 고지대가 섬을 여러 생태 지역으로 나눕니다. 뉴기니 고지가 국토의 {{lf:PNG:New Guinea Highlands}}를 차지하고, 남서쪽 해안에는 세계에서 손꼽히는 큰 늪이 있습니다.",
+   "울라운산(2,334m)은 국제 학회가 꼽은 '10년 화산'입니다.",
+   "상품 수출 1위는 {{ex:PNG}}이고, 가장 큰 손님은 {{p1:PNG}}입니다."
+  ],
+  "related": [
+   "IDN",
+   "AUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Papua New Guinea: Geography – note, Geography – Terrain, Geography – Natural hazards, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/pp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AUS",
+   "why": "파푸아뉴기니를 신탁통치한 남쪽의 나라"
+  }
+ },
+ {
+  "id": "png-languages",
+  "country": "PNG",
+  "title": "세계 언어의 12%가 쓰이는 나라는?",
+  "category": "culture",
+  "panels": [
+   "파푸아뉴기니에서는 살아 있는 토착어가 839개쯤 쓰입니다. Factbook은 이것이 세계 언어의 약 12%라고 적습니다.",
+   "5만~6만 년 전 처음 사람이 들어왔고, 산과 정글, 많은 강 골짜기의 험한 지형이 여러 집단을 서로 고립시켜 민족과 언어가 다양해졌습니다.",
+   "기원전 500년 무렵 오스트로네시아 항해자들이 해안에 정착했습니다.",
+   "공용어는 톡피신, 영어, 히리모투 세 가지입니다."
+  ],
+  "related": [
+   "IDN",
+   "SLB"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Papua New Guinea: People – Languages, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/pp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IDN",
+   "why": "뉴기니섬 서쪽 절반의 나라"
+  }
+ },
+ {
+  "id": "slb-languages",
+  "country": "SLB",
+  "title": "솔로몬 제도에서 영어를 쓰는 사람은 얼마나 될까?",
+  "category": "culture",
+  "panels": [
+   "솔로몬 제도의 공용어는 영어이지만, 실제로 쓰는 사람은 인구의 1~2%뿐입니다.",
+   "대부분 지역에서 멜라네시아 피진어가 공통어로 쓰이고, 토착어가 120개 있습니다.",
+   "약 3만 년 전 파푸아에서 첫 정착민이 왔고, 약 6천 년 전 오스트로네시아 사람들이 와서 서로 섞였습니다.",
+   "수도 호니아라라는 이름은 현지 말 '나고 니 아라', 곧 '동풍의 곳'에서 왔습니다."
+  ],
+  "related": [
+   "PNG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Solomon Islands: People – Languages, Introduction – Background, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/bp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PNG",
+   "why": "3만 년 전 첫 정착민이 건너온 서쪽 이웃"
+  }
+ },
+ {
+  "id": "slb-tegano",
+  "country": "SLB",
+  "title": "태평양 섬에서 가장 큰 호수는?",
+  "category": "geo",
+  "panels": [
+   "솔로몬 제도 남쪽 끝의 레넬섬은 세계에서 손꼽히게 큰 솟아오른 산호 환초입니다.",
+   "한때 환초의 석호였던 테가노 호수는 태평양 섬에서 가장 큰 호수입니다.",
+   "솔로몬 제도는 대부분 험한 산이고, 낮은 산호 환초가 조금 있습니다.",
+   "지진과 화산이 잦습니다. 사보산(485m)이 분화하면 가까운 과달카날섬의 수도 호니아라에 영향을 줄 수 있습니다."
+  ],
+  "related": [
+   "PNG",
+   "VUT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Solomon Islands: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/bp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VUT",
+   "why": "남동쪽의 화산섬 이웃"
+  }
+ },
+ {
+  "id": "ton-empire",
+  "country": "TON",
+  "title": "통가 왕의 영향력은 어디까지 미쳤을까?",
+  "category": "history",
+  "panels": [
+   "통가에는 기원전 1000년 무렵 처음 사람이 왔습니다.",
+   "950년 무렵 통가 왕 '투이 통가' 아래 정치가 중앙집권화되었고, 1200년에는 그 영향력이 폴리네시아 전체와 멜라네시아·미크로네시아까지 뻗었습니다.",
+   "1300년대부터 내전과 사모아에 대한 패배로 통가 제국이 기울었습니다.",
+   "통가는 1970년 6월 4일 영국 보호령에서 독립했습니다."
+  ],
+  "related": [
+   "FJI",
+   "WSM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Tonga: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "WSM",
+   "why": "통가와 다툰 북쪽의 섬나라"
+  }
+ },
+ {
+  "id": "ton-islands",
+  "country": "TON",
+  "title": "통가의 171개 섬 가운데 사람이 사는 섬은?",
+  "category": "geo",
+  "panels": [
+   "통가에는 섬이 171개 있지만, 사람이 사는 섬은 45개뿐입니다. 인구의 3분의 2 넘게가 통가타푸섬에 삽니다.",
+   "서쪽 섬들은 모두 화산에서 생겨났고, 동쪽 섬들은 산호 석회암과 모래로 이루어져 있습니다.",
+   "니우아포우섬의 화산 활동은 주민을 대피시킨 적이 있습니다.",
+   "가장 큰 손님은 {{p1:TON}}입니다."
+  ],
+  "related": [
+   "NZL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Tonga: People – Population distribution, Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NZL",
+   "why": "통가 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "tuv-domain",
+  "country": "TUV",
+  "title": "투발루는 어떤 독특한 수입이 있을까?",
+  "category": "economy",
+  "panels": [
+   "투발루의 천연자원은 물고기와 코코넛(코프라) 두 가지이고, 산업 목록에는 어업 하나가 적혀 있습니다.",
+   "Factbook은 투발루 경제의 수입원으로 '도메인 이름 사용료'를 꼽습니다.",
+   "통화는 오스트레일리아 달러에 묶여 있고, 국제 원조에 크게 기댑니다.",
+   "1천 년대에 사모아나 통가에서 온 항해자들이 처음 투발루에 정착했습니다."
+  ],
+  "related": [
+   "WSM",
+   "TON"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Tuvalu: Economy – Economic overview, Geography – Natural resources, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tv.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "WSM",
+   "why": "투발루에 처음 사람을 보낸 섬나라 가운데 하나"
+  }
+ },
+ {
+  "id": "tuv-remote",
+  "country": "TUV",
+  "title": "지구에서 가장 작고 외딴 나라 가운데 하나는?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 투발루를 '지구에서 가장 작고 외딴 나라 가운데 하나'로 꼽습니다. 국토 면적은 {{vr:TUV:area}}입니다.",
+   "산호 환초 9개 가운데 6개는 석호가 바다로 열려 있고, 2개는 석호가 막혀 있으며, 니울라키타에는 석호가 없습니다.",
+   "섬들이 낮고 좁아 해수면 변화에 민감합니다.",
+   "인구의 절반 넘게가 수도가 있는 푸나푸티 환초에 삽니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "KIR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Tuvalu: Geography – note, Geography – Terrain, Geography – Natural hazards, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/tv.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KIR",
+   "why": "투발루 북쪽의 산호섬 나라"
+  }
+ },
+ {
+  "id": "vut-condominium",
+  "country": "VUT",
+  "title": "영국과 프랑스가 함께 다스린 나라는?",
+  "category": "history",
+  "panels": [
+   "기원전 2000년 무렵 솔로몬 제도에서 오스트로네시아어를 쓰는 사람들이 처음 정착했습니다.",
+   "1600년 무렵 멜라네시아의 족장 로이 마타가 여러 섬을 하나로 묶었고, 1606년 포르투갈 탐험가가 처음 이 섬들을 보았습니다.",
+   "바누아투는 1980년 7월 30일 프랑스와 영국에서 독립했습니다. 그래서 영어와 프랑스어가 모두 공용어입니다.",
+   "하지만 실제로는 100개가 넘는 토착어를 쓰는 사람이 82.6%이고, 크리올어인 비슬라마어가 14.5%입니다."
+  ],
+  "related": [
+   "FRA",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Vanuatu: Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nh.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "영국과 함께 바누아투를 다스린 나라"
+  }
+ },
+ {
+  "id": "vut-yasur",
+  "country": "VUT",
+  "title": "몇 세기 동안 쉬지 않고 활동해 온 화산은?",
+  "category": "geo",
+  "panels": [
+   "바누아투의 야수르산(361m)은 세계에서 가장 활발한 화산 가운데 하나로, 최근 몇 세기 동안 쉬지 않고 활동해 왔습니다.",
+   "바누아투는 큰 섬 4개와 작은 섬 80개가 Y자 모양으로 늘어선 나라이고, 여러 섬에 바닷속 화산을 포함한 활화산이 있습니다.",
+   "섬들은 대부분 화산에서 생겨난 산이고, 해안 평야는 좁습니다.",
+   "1~4월에는 열대 사이클론이 찾아옵니다."
+  ],
+  "related": [
+   "SLB",
+   "FJI"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Vanuatu: Geography – Natural hazards, Geography – note, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nh.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FJI",
+   "why": "동쪽의 섬나라"
+  }
+ },
+ {
+  "id": "wsm-matai",
+  "country": "WSM",
+  "title": "사모아 의회의 의석은 누가 차지할까?",
+  "category": "culture",
+  "panels": [
+   "기원전 1000년 무렵 오스트로네시아 사람들이 사모아에 왔고, 피지와 통가 귀족들과 교역하고 혼인했습니다.",
+   "칭호와 귀족을 정하는 '파아마타이' 제도가 지금도 사모아 정치를 지배합니다. 의회 의석은 두 자리를 빼고 모두 가문의 우두머리인 '마타이'에게 돌아갑니다.",
+   "사모아어를 쓰는 사람이 91.1%입니다.",
+   "인구의 약 4분의 3이 우폴루섬에 삽니다."
+  ],
+  "related": [
+   "FJI",
+   "TON"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Samoa: Introduction – Background, People – Languages, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ws.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TON",
+   "why": "사모아와 교역하고 혼인했던 남쪽 섬나라"
+  }
+ },
+ {
+  "id": "wsm-polynesia",
+  "country": "WSM",
+  "title": "폴리네시아 한가운데에 있는 나라는?",
+  "category": "geo",
+  "panels": [
+   "사모아는 폴리네시아의 거의 한가운데에 자리합니다.",
+   "큰 섬 사바이와 우폴루, 그리고 작은 섬들로 이루어져 있고, 좁은 해안 평야 뒤로 험한 화산 산지가 솟아 있습니다.",
+   "사바이섬(1,858m)은 역사 속에서 활동한 화산입니다.",
+   "사모아는 1962년 1월 1일 뉴질랜드가 관리하던 유엔 신탁통치에서 독립했습니다."
+  ],
+  "related": [
+   "NZL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Samoa: Geography – note, Geography – Terrain, Geography – Natural hazards, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/ws.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NZL",
+   "why": "사모아를 신탁통치한 나라"
   }
  }
 ]

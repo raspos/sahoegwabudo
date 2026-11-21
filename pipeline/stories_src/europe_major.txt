@@ -43,7 +43,7 @@ n: POL | 동독과 국경을 맞댔던 동쪽 이웃
 - 소련이 약해지고 냉전이 끝나면서 1990년 두 독일은 다시 하나가 되었습니다. 그 뒤 독일은 동쪽의 생산성과 임금을 서쪽 수준으로 끌어올리는 데 큰돈을 썼습니다.
 - 지금 독일은 유럽에서 경제가 가장 크고, 인구는 러시아 다음입니다. 인구는 {{vr:DEU:population}}입니다.
 
-@ deu-hops DEU economy
+@ deu-hops DEU resources
 ? 맥주의 나라 독일, 들판에서는 무엇으로 세계 1위를 할까?
 s: agri resources
 i: arable agri_va
@@ -87,7 +87,7 @@ n: SUR | 프랑스령 기아나와 국경을 맞댄 이웃 나라
 - 남아메리카의 기아나 고지가 프랑스 국토의 {{lf:FRA:Guiana Shield}}를 차지합니다.
 - 카리브해 마르티니크섬의 펠레산은 1902년 큰 분화로 도시 하나를 무너뜨린, 소앤틸리스 제도에서 가장 활발한 화산입니다.
 
-@ fra-flax FRA economy
+@ fra-flax FRA resources
 ? 프랑스 들판은 어떤 작물로 세계 1위를 할까?
 s: agri industries
 i: arable agri_va
@@ -173,7 +173,7 @@ n: VAT | 로마 한가운데 있는 가장 작은 나라
 - 1920년대 무솔리니의 파시스트 독재가 들어섰고, 나치 독일과 손잡았다가 제2차 세계대전에서 졌습니다. 1946년 군주제 대신 민주 공화국이 들어섰습니다.
 - 수도 로마라는 이름은 전설 속 건국자 가운데 하나인 로물루스에서 왔다고 전해집니다.
 
-@ ita-grapes ITA economy
+@ ita-grapes ITA resources
 ? 이탈리아 들판은 무엇으로 세계 2위를 할까?
 s: agri climate
 i: agri_va

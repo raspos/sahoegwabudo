@@ -125,7 +125,7 @@ n: FRA | 1889년 방기에 군사 기지를 세운 나라
 - 1960년 8월 13일 프랑스에서 독립했습니다.
 - 공용어는 프랑스어이고, 상고어가 공통어이자 국어입니다.
 
-@ civ-cocoa CIV economy
+@ civ-cocoa CIV resources
 ? 카카오 콩을 가장 많이 기르는 나라는?
 s: agri resources econ
 i: agri_va

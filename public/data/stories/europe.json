@@ -264,7 +264,7 @@
   "id": "bgr-sunflower",
   "country": "BGR",
   "title": "불가리아 들판에서는 무엇이 자랄까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "불가리아는 대부분 산이고, 북쪽과 남동쪽에 낮은 땅이 있습니다. 발칸산맥이 국토의 {{lf:BGR:Balkan Mts.}}를 차지합니다.",
    "북쪽 국경을 도나우강이 흐릅니다.",
@@ -352,7 +352,7 @@
   "id": "blr-flax",
   "country": "BLR",
   "title": "벨라루스 들판은 어떤 작물로 세계 순위에 오를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "벨라루스는 1991년 소련에서 독립한 뒤, 옛 소련 나라 가운데 러시아와 가장 가까운 관계를 유지해 왔습니다.",
    "산업 목록에는 금속 절삭 공작기계, 트랙터, 트럭, 굴착기, 오토바이가 올라 있습니다.",
@@ -684,7 +684,7 @@
   "id": "deu-hops",
   "country": "DEU",
   "title": "맥주의 나라 독일, 들판에서는 무엇으로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "독일의 주요 농산물 목록 첫머리는 우유, 사탕무, 밀, 감자입니다.",
    "그런데 FAO 통계로 보면 독일은 {{ag:DEU:Hop cones}}입니다. 홉은 맥주에 쓴맛과 향을 내는 꽃입니다.",
@@ -840,7 +840,7 @@
   "id": "esp-olive",
   "country": "ESP",
   "title": "올리브를 가장 많이 기르는 나라는?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "스페인은 FAO 통계로 {{ag:ESP:Olives}}입니다.",
    "밤은 {{ag:ESP:Chestnuts, in shell}}, 복숭아는 {{ag:ESP:Peaches and nectarines}}입니다.",
@@ -1019,7 +1019,7 @@
   "id": "fra-flax",
   "country": "FRA",
   "title": "프랑스 들판은 어떤 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "프랑스의 주요 농산물 목록은 밀, 사탕무, 우유, 옥수수, 보리로 시작합니다.",
    "FAO 통계로 프랑스는 {{ag:FRA:Flax, raw or retted}}입니다. 아마는 리넨 천을 짜는 섬유 작물입니다.",
@@ -1298,7 +1298,7 @@
   "id": "grc-sheep",
   "country": "GRC",
   "title": "그리스 들판은 무엇으로 세계 2위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "그리스는 여름이 덥고 메마른 지중해성 기후입니다. 쾨펜 기후로는 {{cl:GRC}}가 가장 넓습니다.",
    "FAO 통계로 그리스는 {{ag:GRC:Raw milk of sheep}}입니다. 키위는 {{ag:GRC:Kiwi fruit}}입니다.",
@@ -1559,7 +1559,7 @@
   "id": "ita-grapes",
   "country": "ITA",
   "title": "이탈리아 들판은 무엇으로 세계 2위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "이탈리아는 대부분 지중해성 기후입니다. 여름은 덥고 마르며, 북쪽 끝만 알프스 기후입니다.",
    "이 기후가 길러 낸 작물들이 세계 순위표에 올라 있습니다. {{ag:ITA:Grapes}}, {{ag:ITA:Artichokes}}입니다.",
@@ -2407,7 +2407,7 @@
   "id": "pol-triticale",
   "country": "POL",
   "title": "폴란드 들판은 어떤 곡물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 폴란드는 {{ag:POL:Triticale}}입니다. 트리티케일은 밀과 호밀을 교배한 곡물입니다.",
    "호밀은 {{ag:POL:Rye}}, 까치밥나무 열매(커런트)는 {{ag:POL:Currants}}입니다.",
@@ -2552,7 +2552,7 @@
   "id": "rus-buckwheat",
   "country": "RUS",
   "title": "러시아 들판은 몇 가지 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "러시아의 주요 농산물 목록 첫머리는 밀입니다.",
    "FAO 통계로 러시아는 {{ag:RUS:Buckwheat}}, {{ag:RUS:Sunflower seed}}입니다.",
@@ -2700,7 +2700,7 @@
   "id": "srb-raspberry",
   "country": "SRB",
   "title": "세르비아 들판은 어떤 열매로 세계 순위에 오를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 세르비아는 {{ag:SRB:Raspberries}}입니다.",
    "자두는 {{ag:SRB:Plums and sloes}}, 신양벚은 {{ag:SRB:Sour cherries}}입니다.",

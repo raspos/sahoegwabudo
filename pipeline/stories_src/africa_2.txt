@@ -95,7 +95,7 @@ n: MLI | 니제르강이 흘러가는 북동쪽 이웃
 - 해안은 대체로 평평하고, 안쪽으로 갈수록 언덕과 산이 많아집니다.
 - 6~11월은 남서풍과 함께 비가 오고, 12~5월은 북동쪽에서 하르마탄이 부는 건기입니다.
 
-@ gin-fonio GIN economy
+@ gin-fonio GIN resources
 ? 기니 들판은 어떤 곡물로 세계 1위일까?
 s: agri resources capital_note
 i: agri_va resource_rents
@@ -240,7 +240,7 @@ n: ESP | 지브롤터 해협 건너편의 나라
 - 남쪽은 사막이고, 비가 드물며 차가운 바다 공기가 안개와 이슬을 만듭니다.
 - 대서양 앞바다는 특히 물고기가 많은 어장입니다.
 
-@ mar-snails MAR economy
+@ mar-snails MAR resources
 ? 모로코 들판은 어떤 것으로 세계 1위를 할까?
 s: agri industries econ
 i: manufacturing exports_gdp

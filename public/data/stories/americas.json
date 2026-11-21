@@ -378,7 +378,7 @@
   "id": "bra-coffee",
   "country": "BRA",
   "title": "브라질 들판은 몇 가지 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "브라질의 주요 농산물 목록은 사탕수수와 대두로 시작합니다.",
    "FAO 통계로 브라질은 {{ag:BRA:Sugar cane}}, {{ag:BRA:Soya beans}}입니다.",
@@ -585,7 +585,7 @@
   "id": "can-oats",
   "country": "CAN",
   "title": "캐나다 밭은 무엇으로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "캐나다의 주요 농산물 목록 첫머리는 밀과 유채입니다.",
    "FAO 통계로 캐나다는 {{ag:CAN:Rape or colza seed}}입니다. 유채씨로는 카놀라유를 짭니다.",
@@ -767,7 +767,7 @@
   "id": "col-avocado",
   "country": "COL",
   "title": "콜롬비아 들판은 무엇으로 세계 순위에 오를까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 콜롬비아는 {{ag:COL:Avocados}}, {{ag:COL:Coffee, green}}입니다.",
    "천연자원 목록에는 석유, 석탄, 금과 함께 에메랄드가 올라 있습니다.",
@@ -1116,7 +1116,7 @@
   "id": "grd-spice",
   "country": "GRD",
   "title": "그레나다의 주요 수출 작물은 무엇에서 무엇으로 바뀌었을까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "17세기 프랑스 사람들이 그레나다에 설탕 농장을 세웠고, 1762년 영국이 섬을 차지해 설탕 생산을 크게 늘렸습니다.",
    "19세기에는 카카오가 설탕을 앞질러 주요 수출 작물이 되었고, 20세기에는 육두구가 가장 큰 수출 작물이 되었습니다.",
@@ -1601,7 +1601,7 @@
   "id": "mex-avocado",
   "country": "MEX",
   "title": "아보카도를 가장 많이 기르는 나라는 어디일까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "멕시코의 기후는 열대에서 사막까지 다양합니다. 쾨펜 기후로 가장 넓은 것은 {{cl:MEX}}입니다.",
    "FAO 통계로 멕시코는 {{ag:MEX:Avocados}}입니다.",
@@ -1832,7 +1832,7 @@
   "id": "per-quinoa",
   "country": "PER",
   "title": "퀴노아를 가장 많이 기르는 나라는?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "FAO 통계로 페루는 {{ag:PER:Quinoa}}, {{ag:PER:Blueberries}}입니다.",
    "아스파라거스도 {{ag:PER:Asparagus}}입니다.",
@@ -2150,7 +2150,7 @@
   "id": "usa-almonds",
   "country": "USA",
   "title": "미국 들판은 어떤 작물로 세계 1위를 할까?",
-  "category": "economy",
+  "category": "resources",
   "panels": [
    "미국의 주요 농산물 목록 첫머리는 옥수수와 대두입니다.",
    "그런데 FAO 통계로 세계 1위에 오른 작물을 보면 조금 다릅니다. {{ag:USA:Almonds, in shell}}, {{ag:USA:Pistachios, in shell}}입니다.",

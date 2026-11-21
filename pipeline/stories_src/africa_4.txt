@@ -10,7 +10,7 @@ n: DJI | 바브엘만데브 해협 쪽의 북서쪽 이웃
 - 땅은 대체로 평평하거나 완만한 고원이고, 북쪽으로 가면 언덕이 나옵니다.
 - 기후는 주로 사막입니다. 12~2월에는 북동 계절풍, 5~10월에는 남서 계절풍이 붑니다.
 
-@ som-camel SOM economy
+@ som-camel SOM resources
 ? 낙타 젖을 가장 많이 짜는 나라 가운데 하나는?
 s: agri background capital_note
 r: KEN ETH
@@ -196,7 +196,7 @@ n: TZA | 빅토리아 호수를 함께 나눈 남쪽 이웃
 - 우간다는 1962년 10월 9일 영국에서 독립했습니다.
 - 수도 캄팔라라는 이름은 아프리카 영양 '임팔라'에서 왔다고 전해집니다.
 
-@ uga-plantain UGA economy
+@ uga-plantain UGA resources
 ? 요리용 바나나를 가장 많이 기르는 나라는?
 s: agri geo_note econ
 i: agri_va

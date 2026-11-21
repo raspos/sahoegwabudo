@@ -10,7 +10,7 @@ n: TUR | 에게해 건너편의 동쪽 이웃
 - 그리스는 에게해와 튀르키예 해협의 남쪽 길목을 내려다보는 자리에 있습니다.
 - 산토리니(367m)는 폭발 역사와 사람 사는 곳과의 가까움 때문에 국제 학회가 꼽은 '10년 화산'입니다.
 
-@ grc-sheep GRC economy
+@ grc-sheep GRC resources
 ? 그리스 들판은 무엇으로 세계 2위를 할까?
 s: agri industries climate
 i: tourism_exports agri_va

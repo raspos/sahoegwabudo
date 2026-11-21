@@ -94,7 +94,7 @@ n: IND | 갠지스강이 시작되는 서쪽 이웃
 - 땅이 낮고 평평해서 여름 계절풍 철이면 나라의 상당 부분이 물에 잠깁니다. 사이클론도 자주 찾아옵니다.
 - 그 땅에 많은 사람이 삽니다. 인구밀도는 {{vr:BGD:density}}입니다.
 
-@ bgd-jute BGD economy
+@ bgd-jute BGD resources
 ? 방글라데시는 어떤 섬유 작물로 세계 1위일까?
 s: agri industries econ
 i: manufacturing
@@ -200,7 +200,7 @@ n: AFG | 다리어(페르시아어)를 쓰는 동쪽 이웃
 - 1979년 군주제가 무너지고 이슬람 공화국이 되었습니다.
 - 수도 테헤란이라는 이름은 아마 '평평한' 또는 '낮은'이라는 뜻으로, 산기슭 아래 자리한 위치를 가리킨다고 합니다.
 
-@ irn-pistachio IRN economy
+@ irn-pistachio IRN resources
 ? 이란 들판은 어떤 견과로 세계 순위에 오를까?
 s: agri terrain pop_dist
 i: agri_va

@@ -134,7 +134,7 @@ n: NGA | 니제르 사람 대부분이 사는 남쪽 국경 너머
 - 사람들은 대부분 남쪽 끝, 나이지리아·베냉 국경을 따라 삽니다.
 - 국토 면적은 {{vr:NER:area}}입니다.
 
-@ ner-millet NER economy
+@ ner-millet NER resources
 ? 니제르 들판은 어떤 곡물과 콩을 기를까?
 s: agri resources econ
 i: agri_va
@@ -156,7 +156,7 @@ n: BEN | 요루바 사람들이 국경 양쪽에 사는 서쪽 이웃
 - 1991년 새로 지은 도시 아부자가 라고스를 대신해 수도가 되었습니다.
 - Factbook은 나이지리아를 '아프리카에서 인구가 가장 많은 나라'로 적습니다. 인구는 {{vr:NGA:population}}입니다.
 
-@ nga-yams NGA economy
+@ nga-yams NGA resources
 ? 나이지리아 들판은 몇 가지 작물로 세계 1위를 할까?
 s: agri econ languages
 i: agri_va

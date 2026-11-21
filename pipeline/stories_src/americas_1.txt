@@ -30,7 +30,7 @@ n: PAN | 콜롬비아와 땅으로 이어진 북쪽 이웃
 - 갈레라스 화산(4,276m)은 콜롬비아에서 가장 활발한 화산 가운데 하나로, 국제 학회가 꼽은 '10년 화산'입니다.
 - 사람들은 대부분 농사짓기 좋고 자원이 있는 북쪽과 서쪽에 삽니다.
 
-@ col-avocado COL economy
+@ col-avocado COL resources
 ? 콜롬비아 들판은 무엇으로 세계 순위에 오를까?
 s: agri resources econ
 i: agri_va
@@ -94,7 +94,7 @@ n: BRA | 아마존강이 바다로 나가는 나라
 - 페루는 서쪽 해안 평야(코스타), 가운데 높고 험한 안데스(시에라), 동쪽 아마존 분지의 정글(셀바)로 나뉩니다.
 - 볼리비아와 함께 배가 다닐 수 있는 가장 높은 호수, 티티카카 호수도 나눠 가집니다.
 
-@ per-quinoa PER economy
+@ per-quinoa PER resources
 ? 퀴노아를 가장 많이 기르는 나라는?
 s: agri background capital_note
 i: resource_rents
