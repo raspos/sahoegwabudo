@@ -120,6 +120,174 @@
   }
  },
  {
+  "id": "atg-harbors",
+  "country": "ATG",
+  "title": "앤티가섬의 해안은 왜 항구와 해변이 많을까?",
+  "category": "geo",
+  "panels": [
+   "앤티가섬은 해안선이 깊게 들쭉날쭉해서 천연 항구와 해변이 많습니다. 바부다섬 서쪽에도 큰 항구가 있습니다.",
+   "두 섬은 대부분 낮은 석회암·산호섬이고, 일부에 높은 화산 지대가 있습니다.",
+   "인구의 약 97%가 앤티가섬에 살고, 바부다섬 사람들은 거의 모두 코드링턴에 삽니다.",
+   "가장 높은 곳은 오바마산(402m)입니다."
+  ],
+  "related": [
+   "KNA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Antigua and Barbuda: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ac.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KNA",
+   "why": "같은 리워드 제도의 서쪽 이웃"
+  }
+ },
+ {
+  "id": "atg-tourism",
+  "country": "ATG",
+  "title": "천연자원 항목에 '쾌적한 기후'라고 적힌 나라는?",
+  "category": "economy",
+  "panels": [
+   "Factbook의 앤티가 바부다 천연자원 항목에는 '거의 없음; 쾌적한 기후가 관광을 키운다'고 적혀 있습니다.",
+   "경제는 관광과 건설이 이끌고, 물이 부족하고 허리케인에 약한 것이 걸림돌입니다.",
+   "1493년 콜럼버스가 두 번째 항해에서 이 섬에 닿았고, 1667년 영국 식민지가 되었습니다. 1981년 11월 1일 독립했습니다.",
+   "가장 큰 손님은 {{p1:ATG}}입니다."
+  ],
+  "related": [
+   "USA",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Antigua and Barbuda: Geography – Natural resources, Economy – Economic overview, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ac.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "앤티가 바부다 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "bhs-islands",
+  "country": "BHS",
+  "title": "바하마의 섬 가운데 사람이 사는 섬은 몇 개일까?",
+  "category": "geo",
+  "panels": [
+   "바하마는 미국과 쿠바 가까이 길게 이어진 섬들의 나라이고, 그 가운데 사람이 사는 섬은 30개입니다.",
+   "섬들은 길고 평평한 산호 지형에 낮고 둥근 언덕이 조금 있습니다. 가장 높은 곳도 63m입니다.",
+   "멕시코 만류의 따뜻한 바닷물이 기후를 누그러뜨립니다.",
+   "사람들은 대부분 도시에 살고, 3분의 2가 수도 나소가 있는 뉴프로비던스섬에 삽니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "CUB",
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bahamas: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bf.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CUB",
+   "why": "바하마 남쪽의 큰 섬나라"
+  }
+ },
+ {
+  "id": "bhs-pirates",
+  "country": "BHS",
+  "title": "바하마는 왜 해적이 들끓던 곳이었을까?",
+  "category": "history",
+  "panels": [
+   "1492년 콜럼버스가 신대륙에 처음 발을 디뎠을 때 바하마에는 루카얀 원주민이 살았습니다.",
+   "1647년 영국 사람들이 정착하기 시작했고, 1783년 영국 식민지가 되었습니다.",
+   "17~18세기에는 바닷길과 가까워 해적이 들끓었습니다.",
+   "1973년 7월 10일 독립한 뒤 관광, 국제 금융, 투자 관리로 번영했습니다. Factbook은 이 셋이 GDP의 최대 85%를 차지한다고 적습니다."
+  ],
+  "related": [
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bahamas: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bf.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GBR",
+   "why": "1647년 바하마에 정착한 나라"
+  }
+ },
+ {
+  "id": "blz-languages",
+  "country": "BLZ",
+  "title": "중앙아메리카에서 영어가 공용어인 나라는?",
+  "category": "culture",
+  "panels": [
+   "벨리즈의 공용어는 영어(62.9%)이지만, 스페인어를 쓰는 사람도 56.6%이고 크리올어도 44.6%입니다.",
+   "마야어(10.5%), 독일어(3.2%), 가리푸나어(2.9%)도 쓰입니다.",
+   "벨리즈는 중앙아메리카에서 북태평양에 해안이 없는 유일한 나라입니다. 유카탄반도가 국토의 {{lf:BLZ:Pen. De Yucatán}}에 걸쳐 있습니다.",
+   "메스티소 52.9%, 크리올 25.9%, 마야 11.3%이고, 메노나이트도 3.6%입니다."
+  ],
+  "related": [
+   "MEX"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Belize: People – Languages, Geography – note, People – Ethnic groups",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bh.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MEX",
+   "why": "유카탄반도를 함께 나눈 북쪽 이웃"
+  }
+ },
+ {
+  "id": "blz-maya",
+  "country": "BLZ",
+  "title": "벨리즈는 왜 독립이 늦어졌을까?",
+  "category": "history",
+  "panels": [
+   "벨리즈 땅에는 1천 년대 말까지 여러 마야 도시 국가가 있었습니다.",
+   "17~18세기 영국과 스페인이 이 땅을 두고 다퉜고, 1862년 영국령 온두라스가 되었습니다.",
+   "영국과 과테말라의 영토 다툼 때문에 독립이 늦어져, 1981년 9월 21일에야 독립했습니다. 과테말라는 1992년까지 벨리즈를 인정하지 않았습니다.",
+   "수도 벨모판은 '벨리즈'와 '모판' 두 강 이름을 합친 이름입니다."
+  ],
+  "related": [
+   "GTM",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Belize: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bh.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GTM",
+   "why": "벨리즈와 국경 다툼을 이어 온 이웃"
+  }
+ },
+ {
   "id": "bol-capitals",
   "country": "BOL",
   "title": "볼리비아라는 이름은 누구에게서 왔을까?",
@@ -294,6 +462,64 @@
   "next": {
    "country": "CHL",
    "why": "브라질과 국경이 닿지 않는 두 나라 가운데 하나"
+  }
+ },
+ {
+  "id": "brb-easternmost",
+  "country": "BRB",
+  "title": "카리브해에서 가장 동쪽에 있는 섬은?",
+  "category": "geo",
+  "panels": [
+   "바베이도스는 카리브해에서 가장 동쪽에 있는 섬입니다.",
+   "땅은 비교적 평평하고, 가운데 고지로 완만하게 올라갑니다. 가장 높은 힐라비산도 340m입니다.",
+   "Factbook은 바베이도스를 동카리브해에서 인구가 가장 빽빽한 나라로 꼽습니다. 인구밀도는 {{vr:BRB:density}}입니다.",
+   "허리케인은 드물고, 이따금 산사태가 납니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "VCT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Barbados: Geography – note, Geography – Terrain, People – Population distribution, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bb.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VCT",
+   "why": "서쪽 바다 건너 가까운 섬나라"
+  }
+ },
+ {
+  "id": "brb-sugar",
+  "country": "BRB",
+  "title": "사람이 살지 않던 바베이도스는 어떻게 설탕 섬이 되었을까?",
+  "category": "history",
+  "panels": [
+   "1627년 영국 사람들이 처음 정착했을 때 바베이도스에는 사람이 살지 않았습니다.",
+   "노예로 끌려온 아프리카 사람들이 설탕 농장에서 일했고, 바베이도스는 처음에 카리브해 설탕 산업을 이끌었습니다.",
+   "1720년 무렵 리워드 제도와 자메이카에 밀려났고, 노예제는 1834년 폐지되었습니다. 바베이도스는 1966년 11월 30일 독립했습니다.",
+   "수도 브리지타운은 1628년 칼라일만 옆에 놓인 다리 때문에 처음 '인디언 브리지'라 불렸습니다."
+  ],
+  "related": [
+   "GBR",
+   "JAM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Barbados: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/bb.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JAM",
+   "why": "18세기 설탕 산업에서 바베이도스를 앞지른 섬나라"
   }
  },
  {
@@ -714,6 +940,64 @@
   }
  },
  {
+  "id": "dma-caribs",
+  "country": "DMA",
+  "title": "유럽인이 가장 늦게 식민지로 삼은 카리브해 섬은?",
+  "category": "history",
+  "panels": [
+   "도미니카는 원주민 카리브족의 거센 저항 때문에 카리브해 섬 가운데 가장 늦게 유럽의 식민지가 되었습니다.",
+   "1763년 프랑스가 영국에 넘겼고, 1805년 영국 식민지가 되었습니다.",
+   "노예제는 1833년 끝났고, 1835년 아프리카계 남성 세 명이 처음으로 의회에 뽑혔습니다. 1978년 11월 3일 독립했습니다.",
+   "수도 로조는 프랑스어로 '갈대'라는 뜻입니다. 강가의 갈대를 따라 붙인 이름입니다."
+  ],
+  "related": [
+   "FRA",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Dominica: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/do.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "1763년 도미니카를 영국에 넘긴 나라"
+  }
+ },
+ {
+  "id": "dma-nature",
+  "country": "DMA",
+  "title": "'카리브해의 자연 섬'이라 불리는 나라는?",
+  "category": "geo",
+  "panels": [
+   "도미니카 연방은 무성하고 다양한 동식물과 넓은 자연공원 덕분에 '카리브해의 자연 섬'으로 불립니다. 숲은 국토의 {{vr:DMA:forest}}를 덮습니다.",
+   "소앤틸리스 제도에서 가장 산이 많은 섬이고, 화산 봉우리들 사이에는 세계에서 두 번째로 큰 열수 호수 '보일링 레이크'가 있습니다.",
+   "사바섬에서 그레나다까지 이어진 화산섬 사슬의 한가운데에 있습니다.",
+   "비가 많아 갑작스러운 홍수가 늘 위협입니다."
+  ],
+  "indicators": [
+   "forest"
+  ],
+  "related": [
+   "LCA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Dominica: Geography – note, Geography – Terrain, Geography – Climate, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/do.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "LCA",
+   "why": "남쪽의 화산섬 이웃"
+  }
+ },
+ {
   "id": "dom-columbus",
   "country": "DOM",
   "title": "콜럼버스가 처음 차지한 섬은 어떻게 두 나라가 되었을까?",
@@ -829,6 +1113,117 @@
   }
  },
  {
+  "id": "grd-spice",
+  "country": "GRD",
+  "title": "그레나다의 주요 수출 작물은 무엇에서 무엇으로 바뀌었을까?",
+  "category": "economy",
+  "panels": [
+   "17세기 프랑스 사람들이 그레나다에 설탕 농장을 세웠고, 1762년 영국이 섬을 차지해 설탕 생산을 크게 늘렸습니다.",
+   "19세기에는 카카오가 설탕을 앞질러 주요 수출 작물이 되었고, 20세기에는 육두구가 가장 큰 수출 작물이 되었습니다.",
+   "Factbook은 지금도 그레나다를 '큰 향신료 수출국'으로 소개합니다.",
+   "관광, 건설, 교통, 교육이 경제의 큰 부분입니다. 가장 큰 손님은 {{p1:GRD}}입니다."
+  ],
+  "related": [
+   "GTM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Grenada: Introduction – Background, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/gj.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GTM",
+   "why": "육두구·카다멈 생산 1위인 나라"
+  }
+ },
+ {
+  "id": "grd-volcano",
+  "country": "GRD",
+  "title": "그레나다 바다 밑에는 어떤 화산이 있을까?",
+  "category": "geo",
+  "panels": [
+   "그레나다는 화산에서 생겨난 섬으로, 가운데에 산이 있습니다. 가장 높은 세인트캐서린산은 840m입니다.",
+   "그레나다 북쪽 8km 바다 밑에는 활동하는 해저 화산 '킥엠제니'가 있습니다.",
+   "그레나다는 허리케인 지대의 가장자리에 있고, 허리케인 철은 6~11월입니다.",
+   "인구의 약 3분의 1이 수도 세인트조지스에 살고, 사람들은 해안을 따라 모여 삽니다. 그레나다는 1974년 2월 7일 독립했습니다."
+  ],
+  "related": [
+   "VCT",
+   "TTO"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Grenada: Geography – Terrain, Geography – Natural hazards, People – Population distribution, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/gj.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VCT",
+   "why": "화산섬 사슬의 북쪽 이웃"
+  }
+ },
+ {
+  "id": "gtm-maya",
+  "country": "GTM",
+  "title": "과테말라 사람들은 어떤 말을 쓸까?",
+  "category": "culture",
+  "panels": [
+   "과테말라 땅에서는 1천 년대에 마야 문명이 꽃피었습니다.",
+   "지금도 마야어를 쓰는 사람이 29.7%입니다. 케치어(8.3%), 키체어(7.8%), 맘어(4.4%), 카치켈어(3%) 등 여러 마야어가 있습니다.",
+   "주민은 메스티소(현지에서 '라디노') 56%, 마야인 41.7%입니다.",
+   "스페인 식민지로 거의 3세기를 보낸 뒤 1821년 9월 15일 독립했고, 1996년 36년 동안의 내전을 끝내는 평화 협정을 맺었습니다."
+  ],
+  "related": [
+   "MEX",
+   "BLZ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Guatemala: People – Languages, People – Ethnic groups, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/gt.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MEX",
+   "why": "마야 사람들이 사는 북쪽 이웃"
+  }
+ },
+ {
+  "id": "gtm-volcano",
+  "country": "GTM",
+  "title": "과테말라는 어떤 세 지역으로 나뉠까?",
+  "category": "geo",
+  "panels": [
+   "동서로 뻗은 두 산줄기가 과테말라를 산악 고지, 산 남쪽의 태평양 해안, 북쪽의 넓은 페텐 저지대로 나눕니다.",
+   "카리브해와 태평양 양쪽에 해안이 있지만, 서쪽 해안에는 천연 항구가 없습니다.",
+   "시에라마드레산맥의 산타마리아산(3,772m)은 국제 학회가 꼽은 '10년 화산'입니다.",
+   "FAO 통계로 과테말라는 {{ag:GTM:Nutmeg, mace, cardamoms, raw}}입니다."
+  ],
+  "related": [
+   "SLV",
+   "HND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Guatemala: Geography – Terrain, Geography – note, Geography – Natural hazards, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/gt.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SLV",
+   "why": "태평양 해안의 남쪽 이웃"
+  }
+ },
+ {
   "id": "guy-oil",
   "country": "GUY",
   "title": "가이아나 경제는 최근 무엇으로 바뀌었을까?",
@@ -887,6 +1282,118 @@
   "next": {
    "country": "SUR",
    "why": "가이아나보다 더 작은 동쪽 이웃"
+  }
+ },
+ {
+  "id": "hnd-coast",
+  "country": "HND",
+  "title": "온두라스의 해안은 어느 쪽이 더 길까?",
+  "category": "geo",
+  "panels": [
+   "온두라스는 태평양 해안이 짧고, 카리브해 해안은 깁니다. 동쪽의 모스키토 해안에는 사람이 거의 살지 않습니다.",
+   "안쪽은 대부분 산이고, 해안을 따라 좁은 평야가 있습니다.",
+   "지진은 잦지만 대개 약하고, 카리브해 연안은 허리케인과 홍수에 몹시 약합니다. 1998년 허리케인 미치로 약 5,600명이 목숨을 잃었습니다.",
+   "사람들은 대부분 산이 많은 서쪽 절반에 삽니다."
+  ],
+  "related": [
+   "NIC",
+   "GTM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Honduras: Geography – note, Geography – Terrain, Geography – Natural hazards, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ho.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NIC",
+   "why": "모스키토 해안을 함께 나눈 남쪽 이웃"
+  }
+ },
+ {
+  "id": "hnd-silver",
+  "country": "HND",
+  "title": "'은의 산'이라는 이름의 수도는?",
+  "category": "economy",
+  "panels": [
+   "수도 테구시갈파는 나우아틀어로 '은의 산'이라는 뜻입니다. 가까운 은광을 가리킨 이름으로 봅니다.",
+   "Factbook은 온두라스를 커피와 바나나 수출국으로 소개합니다. 상품 수출 1위는 {{ex:HND}}입니다.",
+   "FAO 통계로 온두라스는 {{ag:HND:Coffee, green}}입니다.",
+   "가장 큰 손님은 {{p1:HND}}입니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Honduras: Government – Capital, Economy – Economic overview, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ho.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "온두라스 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "hti-1804",
+  "country": "HTI",
+  "title": "아이티는 언제 독립했을까?",
+  "category": "history",
+  "panels": [
+   "1492년 콜럼버스가 처음 상륙했을 때 히스파니올라섬에 살던 타이노족은 25년 만에 스페인 정착민들에 의해 거의 사라졌습니다.",
+   "1697년 스페인은 섬의 서쪽 3분의 1을 프랑스에 넘겼고, 숲과 설탕 산업에 기댄 프랑스 식민지는 카리브해에서 가장 부유한 곳 가운데 하나가 되었습니다.",
+   "아이티는 1804년 1월 1일 프랑스에서 독립했습니다.",
+   "공용어는 프랑스어와 크리올어입니다."
+  ],
+  "related": [
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Haiti: Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ha.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "아이티를 식민지로 두었던 나라"
+  }
+ },
+ {
+  "id": "hti-mountains",
+  "country": "HTI",
+  "title": "카리브해에서 가장 산이 많은 나라는?",
+  "category": "geo",
+  "panels": [
+   "아이티는 히스파니올라섬의 서쪽 3분의 1을 차지하고, 카리브해에서 가장 산이 많은 나라입니다.",
+   "땅은 대부분 거칠고 산이 많습니다. 가장 높은 라셀산은 2,680m입니다.",
+   "동쪽의 산이 무역풍을 막는 곳은 반건조 기후입니다.",
+   "허리케인 지대 한가운데 있어 6~10월에 큰 폭풍을 맞고, 지진도 일어납니다."
+  ],
+  "related": [
+   "DOM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Haiti: Geography – note, Geography – Terrain, Geography – Climate, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/ha.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "DOM",
+   "why": "히스파니올라섬을 함께 나눈 동쪽 이웃"
   }
  },
  {
