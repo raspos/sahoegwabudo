@@ -1,1 +1,854 @@
-[]
+[
+ {
+  "id": "aut-icecave",
+  "country": "AUT",
+  "title": "세계에서 가장 긴 얼음 동굴은 어느 나라에 있을까?",
+  "category": "curious",
+  "panels": [
+   "오스트리아의 아이스리젠벨트는 길이 42km로, Factbook이 '세계에서 가장 크고 긴 얼음 동굴'로 꼽는 곳입니다.",
+   "나라의 서쪽과 남쪽은 대부분 알프스산맥입니다. 알프스가 국토의 {{lf:AUT:Alps}}를 차지합니다.",
+   "가파른 비탈과 척박한 흙, 낮은 기온 때문에 사람들은 동쪽의 낮은 땅에 모여 삽니다.",
+   "그 동쪽 땅을 흐르는 가장 큰 강은 도나우강입니다. 독일에서 시작해 열 나라를 지나 루마니아에서 흑해로 나갑니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "SVN",
+   "CHE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Austria: Geography – note, Geography – Terrain, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/au.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SVN",
+   "why": "알프스 남쪽, 동굴이 많은 이웃"
+  }
+ },
+ {
+  "id": "aut-neutral",
+  "country": "AUT",
+  "title": "오스트리아는 왜 '영세 중립'을 약속했을까?",
+  "category": "history",
+  "panels": [
+   "오스트리아는 한때 거대한 오스트리아-헝가리 제국의 중심이었지만, 제1차 세계대전에서 진 뒤 작은 공화국이 되었습니다.",
+   "1938년 나치 독일에 합병됐고, 1945년에는 연합국에 점령되었습니다. 전쟁이 끝나고도 10년 동안 나라의 지위가 정해지지 않았습니다.",
+   "1955년 국가조약으로 점령이 끝나고 독립이 인정되었습니다. 같은 해 소련군이 물러나는 조건으로 '영세 중립'을 헌법에 담았습니다.",
+   "1995년 EU에는 들어갔지만, 중립 의무 때문에 NATO에는 가입하지 않았습니다."
+  ],
+  "related": [
+   "DEU",
+   "CHE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Austria: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/au.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHE",
+   "why": "두 차례 세계대전에 끼지 않은 또 다른 중립국"
+  }
+ },
+ {
+  "id": "che-1291",
+  "country": "CHE",
+  "title": "스위스는 어떻게 생겨난 나라일까?",
+  "category": "history",
+  "panels": [
+   "스위스 연방은 1291년 8월 1일, 세 지역(칸톤)이 서로 지키자고 맺은 동맹에서 시작했습니다.",
+   "다른 지역들이 차례로 동맹에 들어왔고, 1499년 신성로마제국으로부터 독립을 얻었습니다.",
+   "1848년 헌법으로 연방 정부가 세워졌고, 1874년에는 국민이 법률안을 국민투표에 부칠 수 있게 고쳤습니다.",
+   "두 차례 세계대전에 끼지 않았고, 유엔에는 2002년에야 정식으로 가입했습니다."
+  ],
+  "related": [
+   "AUT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Switzerland: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/sz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AUT",
+   "why": "같은 알프스를 나눠 가진 동쪽의 중립국"
+  }
+ },
+ {
+  "id": "che-alps",
+  "country": "CHE",
+  "title": "스위스 사람들은 왜 북쪽과 서쪽에 모여 살까?",
+  "category": "geo",
+  "panels": [
+   "스위스는 남쪽의 알프스, 북서쪽의 쥐라산맥, 그 사이의 고원으로 이루어져 있습니다. 알프스가 국토의 {{lf:CHE:Alps}}를 차지합니다.",
+   "Factbook은 스위스 사람들이 사는 곳이 '높이에 따라' 나뉜다고 적습니다. 남쪽의 높은 알프스는 정착을 막습니다.",
+   "그래서 북쪽과 서쪽의 고원과 호숫가에 사람이 훨씬 많습니다.",
+   "라인강은 스위스에서 시작해 독일·프랑스를 거쳐 네덜란드에서 바다로 나갑니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "FRA",
+   "DEU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Switzerland: Geography – Terrain, Geography – note, People – Population distribution, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/sz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "DEU",
+   "why": "라인강이 흘러가는 북쪽 이웃"
+  }
+ },
+ {
+  "id": "che-languages",
+  "country": "CHE",
+  "title": "스위스 사람들은 어떤 말을 쓸까?",
+  "category": "culture",
+  "panels": [
+   "스위스의 공용어는 독일어, 프랑스어, 이탈리아어, 로만슈어 네 가지입니다.",
+   "2019년 조사로 독일어(스위스 독일어 포함)를 쓰는 사람이 62.1%, 프랑스어 22.8%, 이탈리아어 8%입니다.",
+   "로만슈어를 쓰는 사람은 0.5%뿐이지만 공용어입니다.",
+   "영어(5.7%), 포르투갈어(3.5%), 알바니아어(3.3%)를 쓰는 사람도 많습니다."
+  ],
+  "related": [
+   "DEU",
+   "FRA",
+   "ITA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Switzerland: People – Languages, People – Ethnic groups",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/sz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ITA",
+   "why": "스위스 남쪽, 이탈리아어를 쓰는 이웃"
+  }
+ },
+ {
+  "id": "che-watches",
+  "country": "CHE",
+  "title": "시계의 나라 스위스, 가장 많이 수출하는 것은 무엇일까?",
+  "category": "economy",
+  "panels": [
+   "스위스의 천연자원 목록은 아주 짧습니다. 수력, 목재, 소금이 전부입니다.",
+   "대신 Factbook 산업 목록에는 기계, 화학, 시계, 정밀기기, 은행, 보험, 의약품이 올라 있습니다.",
+   "상품 수출 1위는 {{ex:CHE}}입니다. 의약품이 그 뒤를 잇습니다.",
+   "1인당 GDP는 {{vr:CHE:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc",
+   "productivity"
+  ],
+  "related": [
+   "USA",
+   "DEU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Switzerland: Economy – Industries, Economy – Economic overview, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/sz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "스위스 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "deu-cars",
+  "country": "DEU",
+  "title": "독일은 무엇을 가장 많이 만들어 팔까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 독일 경제를 '수출이 이끄는 유럽연합의 중심 경제'라고 소개합니다. 자동차, 화학, 기계, 금융, 친환경 에너지가 핵심 산업입니다.",
+   "상품 수출 1위는 {{ex:DEU}}입니다.",
+   "독일 상품을 가장 많이 사 가는 나라는 {{p1:DEU}}입니다.",
+   "제조업은 경제의 {{vr:DEU:manufacturing}}를 차지하고, 상품·서비스 수출은 GDP의 {{vr:DEU:exports_gdp}}입니다."
+  ],
+  "indicators": [
+   "manufacturing",
+   "exports_gdp",
+   "productivity"
+  ],
+  "related": [
+   "USA",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Germany: Economy – Industries, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/gm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "독일 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "deu-hops",
+  "country": "DEU",
+  "title": "맥주의 나라 독일, 들판에서는 무엇으로 세계 1위를 할까?",
+  "category": "economy",
+  "panels": [
+   "독일의 주요 농산물 목록 첫머리는 우유, 사탕무, 밀, 감자입니다.",
+   "그런데 FAO 통계로 보면 독일은 {{ag:DEU:Hop cones}}입니다. 홉은 맥주에 쓴맛과 향을 내는 꽃입니다.",
+   "거친 빵의 재료인 호밀도 {{ag:DEU:Rye}}입니다.",
+   "국토의 {{vr:DEU:arable}}가 경작지입니다. 하지만 농림어업이 경제에서 차지하는 몫은 {{vr:DEU:agri_va}}에 그칩니다."
+  ],
+  "indicators": [
+   "arable",
+   "agri_va"
+  ],
+  "related": [
+   "CZE",
+   "POL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Germany: Economy – Agricultural products, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/gm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CZE",
+   "why": "홉 밭이 많은 동쪽 이웃"
+  }
+ },
+ {
+  "id": "deu-reunify",
+  "country": "DEU",
+  "title": "독일은 왜 40년 넘게 두 나라였을까?",
+  "category": "history",
+  "panels": [
+   "1945년 제2차 세계대전이 끝난 뒤 독일은 미국·영국·프랑스·소련 네 나라에 나뉘어 점령되었습니다.",
+   "냉전이 시작되자 1949년 서쪽의 독일연방공화국(서독)과 동쪽의 독일민주공화국(동독)이 따로 세워졌습니다. 서독은 NATO와 유럽공동체에, 동독은 소련이 이끄는 바르샤바 조약에 들어갔습니다.",
+   "소련이 약해지고 냉전이 끝나면서 1990년 두 독일은 다시 하나가 되었습니다. 그 뒤 독일은 동쪽의 생산성과 임금을 서쪽 수준으로 끌어올리는 데 큰돈을 썼습니다.",
+   "지금 독일은 유럽에서 경제가 가장 크고, 인구는 러시아 다음입니다. 인구는 {{vr:DEU:population}}입니다."
+  ],
+  "indicators": [
+   "population",
+   "gdp"
+  ],
+  "related": [
+   "POL",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Germany: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/gm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "POL",
+   "why": "동독과 국경을 맞댔던 동쪽 이웃"
+  }
+ },
+ {
+  "id": "deu-rivers-north",
+  "country": "DEU",
+  "title": "독일의 큰 강들은 왜 대부분 북쪽으로 흐를까?",
+  "category": "geo",
+  "panels": [
+   "독일의 땅은 북쪽이 낮고, 가운데는 구릉, 남쪽은 바이에른 알프스입니다. 북유럽 평원이 국토의 {{lf:DEU:Northern European Plain}}를 차지합니다.",
+   "그래서 라인강, 베저강, 오데르강, 엘베강 같은 큰 강은 대부분 북쪽 바다로 흘러갑니다.",
+   "예외가 도나우강입니다. 남서쪽 슈바르츠발트(검은 숲)에서 시작해 동쪽으로 흘러 흑해까지 갑니다.",
+   "독일에서 가장 높은 산들은 남쪽 끝 알프스 쪽에 몰려 있습니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "NLD",
+   "AUT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Germany: Geography – note, Geography – Terrain, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/gm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NLD",
+   "why": "라인강이 바다로 나가는 하구의 나라"
+  }
+ },
+ {
+  "id": "fra-flax",
+  "country": "FRA",
+  "title": "프랑스 들판은 어떤 작물로 세계 1위를 할까?",
+  "category": "economy",
+  "panels": [
+   "프랑스의 주요 농산물 목록은 밀, 사탕무, 우유, 옥수수, 보리로 시작합니다.",
+   "FAO 통계로 프랑스는 {{ag:FRA:Flax, raw or retted}}입니다. 아마는 리넨 천을 짜는 섬유 작물입니다.",
+   "오리고기도 {{ag:FRA:Meat of ducks, fresh or chilled}}입니다.",
+   "국토의 {{vr:FRA:arable}}가 경작지입니다."
+  ],
+  "indicators": [
+   "arable",
+   "agri_va"
+  ],
+  "related": [
+   "BEL",
+   "NLD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — France: Economy – Agricultural products, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/fr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BEL",
+   "why": "아마 밭이 이어지는 북쪽 이웃"
+  }
+ },
+ {
+  "id": "fra-overseas",
+  "country": "FRA",
+  "title": "프랑스 땅인데 왜 남아메리카에 열대 우림이 있을까?",
+  "category": "curious",
+  "panels": [
+   "21세기 초, 프랑스령 기아나·과들루프·마르티니크·마요트·레위니옹 다섯 곳이 프랑스의 정식 지역이 되었습니다.",
+   "그래서 프랑스 땅의 기후에는 유럽에 없는 열대 우림 기후도 들어 있습니다. 쾨펜 기후로 보면 가장 넓은 기후는 {{cl:FRA}}입니다.",
+   "남아메리카의 기아나 고지가 프랑스 국토의 {{lf:FRA:Guiana Shield}}를 차지합니다.",
+   "카리브해 마르티니크섬의 펠레산은 1902년 큰 분화로 도시 하나를 무너뜨린, 소앤틸리스 제도에서 가장 활발한 화산입니다."
+  ],
+  "indicators": [
+   "forest"
+  ],
+  "related": [
+   "SUR",
+   "BRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — France: Introduction – Background, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/fr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SUR",
+   "why": "프랑스령 기아나와 국경을 맞댄 이웃 나라"
+  }
+ },
+ {
+  "id": "fra-rivers-west",
+  "country": "FRA",
+  "title": "프랑스의 강은 왜 대부분 대서양 쪽으로 흐를까?",
+  "category": "geo",
+  "panels": [
+   "프랑스는 서유럽에서 가장 넓은 나라입니다. 국토 면적은 {{vr:FRA:area}}입니다.",
+   "북쪽과 서쪽은 평야와 완만한 언덕이고, 남쪽의 피레네산맥과 동쪽의 알프스산맥은 높은 산지입니다.",
+   "그래서 뫼즈·센·루아르·샤랑트·도르도뉴·가론 같은 큰 강은 북쪽이나 서쪽, 대서양으로 흘러갑니다.",
+   "남쪽 지중해로 흐르는 큰 강은 론강 하나뿐입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "ESP",
+   "DEU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — France: Geography – note, Geography – Terrain, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/fr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ESP",
+   "why": "피레네산맥 너머 남쪽 이웃"
+  }
+ },
+ {
+  "id": "fra-un-seat",
+  "country": "FRA",
+  "title": "프랑스는 왜 유엔 안보리 상임이사국일까?",
+  "category": "history",
+  "panels": [
+   "프랑스 역사에는 공식 독립일이 없습니다. Factbook은 486년 프랑크족 통일, 843년 서프랑크 왕국 성립, 1789년 7월 14일 왕정 타도를 중요한 날로 꼽습니다.",
+   "지금 프랑스는 유엔 안전보장이사회 상임이사국이자 NATO·G7·G20·EU 회원국입니다.",
+   "1966년 드골 대통령은 NATO 통합 군사 지휘 체계에서 빠졌지만, 2009년 다시 돌아갔습니다.",
+   "독일과의 화해와 협력은 1999년 유로 도입을 비롯한 유럽 경제 통합의 중심이 되었습니다."
+  ],
+  "indicators": [
+   "gdp"
+  ],
+  "related": [
+   "DEU",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — France: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/fr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "DEU",
+   "why": "유럽 통합을 함께 이끈 동쪽 이웃"
+  }
+ },
+ {
+  "id": "gbr-london",
+  "country": "GBR",
+  "title": "영국 사람들은 어디에 모여 살까?",
+  "category": "culture",
+  "panels": [
+   "영국 인구의 중심은 런던과 그 주변입니다.",
+   "그다음으로 큰 무리는 중부 잉글랜드의 맨체스터·리버풀 일대, 스코틀랜드 저지대의 에든버러·글래스고 사이, 그리고 남부 웨일스입니다.",
+   "도시에 사는 사람의 비율은 {{vr:GBR:urban}}입니다.",
+   "2011년 조사에서 기독교인은 59.5%, 종교가 없다는 사람은 25.7%였습니다."
+  ],
+  "indicators": [
+   "urban",
+   "population"
+  ],
+  "related": [
+   "IRL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — United Kingdom: People – Population distribution, People – Religions, People – Ethnic groups",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/uk.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IRL",
+   "why": "같은 섬을 북아일랜드와 나눠 쓰는 이웃"
+  }
+ },
+ {
+  "id": "gbr-sea",
+  "country": "GBR",
+  "title": "영국에서 바다가 가장 먼 곳은 바다에서 얼마나 떨어져 있을까?",
+  "category": "geo",
+  "panels": [
+   "영국의 해안선은 깊이 들쭉날쭉합니다. 그래서 나라 안 어디에서도 바닷물이 드나드는 곳까지 125km를 넘지 않습니다.",
+   "프랑스와는 35km밖에 떨어져 있지 않고, 영국 해협 밑을 지나는 해저 터널로 이어져 있습니다.",
+   "북대서양 해류가 남서풍을 타고 기후를 누그러뜨립니다. 쾨펜 기후로는 {{cl:GBR}}로 거의 한 가지입니다.",
+   "대신 흐린 날이 많아서, 일 년 가운데 절반이 넘는 날이 구름에 덮입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "FRA",
+   "IRL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — United Kingdom: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/uk.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "해저 터널로 이어진 35km 건너편 나라"
+  }
+ },
+ {
+  "id": "gbr-union",
+  "country": "GBR",
+  "title": "영국의 정식 이름은 왜 그렇게 길까?",
+  "category": "history",
+  "panels": [
+   "영국의 정식 이름은 '그레이트브리튼 북아일랜드 연합 왕국'입니다.",
+   "웨일스는 16세기부터 잉글랜드 왕국의 일부였고, 1707년 연합법으로 잉글랜드와 스코틀랜드가 합쳐졌습니다.",
+   "1800년 연합법으로 아일랜드섬도 들어왔지만, 20세기 전반 아일랜드 공화국이 연합에서 빠져나갔습니다. 북아일랜드만 남은 이유입니다.",
+   "20세기 초 전성기의 대영제국은 지구 땅의 4분의 1에 걸쳐 있었습니다."
+  ],
+  "related": [
+   "IRL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — United Kingdom: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/uk.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IRL",
+   "why": "20세기 전반에 연합 왕국에서 떨어져 나간 섬나라"
+  }
+ },
+ {
+  "id": "gbr-wool",
+  "country": "GBR",
+  "title": "금융의 나라 영국, 수출 2위 상품은 무엇일까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 영국 경제를 '세계 금융 중심지이자 서비스업이 압도적인 경제'라고 소개합니다. 서비스업은 경제의 {{vr:GBR:services_va}}를 차지합니다.",
+   "상품 수출 1위는 {{ex:GBR}}이고, 그다음이 금 같은 귀금속·보석입니다.",
+   "영국 상품을 가장 많이 사 가는 나라는 {{p1:GBR}}입니다.",
+   "들판에는 양이 많습니다. FAO 통계로 영국은 {{ag:GBR:Shorn wool, greasy, including fleece-washed shorn wool}}입니다."
+  ],
+  "indicators": [
+   "services_va",
+   "manufacturing"
+  ],
+  "related": [
+   "CHE",
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — United Kingdom: Economy – Economic overview, Economy – Industries, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/uk.json",
+    "accessed": "2026-11-21"
+   },
+   {
+    "label": "UN Comtrade Database (상품군별 수출, 2024)",
+    "url": "https://comtradeplus.un.org/",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHE",
+   "why": "귀금속을 가장 많이 수출하는 나라"
+  }
+ },
+ {
+  "id": "ita-grapes",
+  "country": "ITA",
+  "title": "이탈리아 들판은 무엇으로 세계 2위를 할까?",
+  "category": "economy",
+  "panels": [
+   "이탈리아는 대부분 지중해성 기후입니다. 여름은 덥고 마르며, 북쪽 끝만 알프스 기후입니다.",
+   "이 기후가 길러 낸 작물들이 세계 순위표에 올라 있습니다. {{ag:ITA:Grapes}}, {{ag:ITA:Artichokes}}입니다.",
+   "헤이즐넛은 {{ag:ITA:Hazelnuts, in shell}}, 올리브는 {{ag:ITA:Olives}}입니다.",
+   "키위도 {{ag:ITA:Kiwi fruit}}입니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "ESP",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Italy: Economy – Agricultural products, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/it.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ESP",
+   "why": "올리브와 포도를 함께 기르는 서쪽 지중해 나라"
+  }
+ },
+ {
+  "id": "ita-north-south",
+  "country": "ITA",
+  "title": "이탈리아 경제에는 왜 '남과 북' 이야기가 따라다닐까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 이탈리아가 안고 있는 문제로 느린 성장, 청년·여성 실업, 그리고 더 잘사는 북부와 남부 사이의 격차를 꼽습니다.",
+   "사람들은 해안, 포강 유역, 밀라노·로마·나폴리 같은 도시에 많이 모여 삽니다.",
+   "산업 목록에는 관광, 기계, 철강, 식품, 섬유, 자동차, 옷, 신발, 도자기가 올라 있습니다. 상품 수출 1위는 {{ex:ITA}}입니다.",
+   "제조업은 경제의 {{vr:ITA:manufacturing}}를 차지합니다."
+  ],
+  "indicators": [
+   "manufacturing",
+   "gdp_pc"
+  ],
+  "related": [
+   "DEU",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Italy: Introduction – Background, Economy – Economic overview, Economy – Industries, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/it.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "DEU",
+   "why": "이탈리아 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "ita-unify",
+  "country": "ITA",
+  "title": "이탈리아는 언제 한 나라가 되었을까?",
+  "category": "history",
+  "panels": [
+   "이탈리아반도는 오랫동안 여러 지역 국가로 나뉘어 있었습니다.",
+   "1861년 3월 17일, 반도의 나라들과 사르데냐·시칠리아가 비토리오 에마누엘레 2세 아래 하나로 합쳐졌습니다.",
+   "1920년대 무솔리니의 파시스트 독재가 들어섰고, 나치 독일과 손잡았다가 제2차 세계대전에서 졌습니다. 1946년 군주제 대신 민주 공화국이 들어섰습니다.",
+   "수도 로마라는 이름은 전설 속 건국자 가운데 하나인 로물루스에서 왔다고 전해집니다."
+  ],
+  "related": [
+   "VAT",
+   "SMR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Italy: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/it.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VAT",
+   "why": "로마 한가운데 있는 가장 작은 나라"
+  }
+ },
+ {
+  "id": "ita-volcano",
+  "country": "ITA",
+  "title": "유럽에서 가장 활발한 화산은 어디에 있을까?",
+  "category": "geo",
+  "panels": [
+   "이탈리아 땅은 대부분 험한 산입니다. 반도를 따라 뻗은 아펜니노산맥이 국토의 {{lf:ITA:Appennini}}를 차지합니다.",
+   "시칠리아섬의 에트나산(3,330m)은 유럽에서 가장 활발한 화산입니다. 산 옆구리에서 터지는 분화가 가까운 마을을 위협합니다.",
+   "에트나와 유명한 베수비오산은 모두 국제 학회가 꼽은 '10년 화산'입니다.",
+   "지진, 산사태, 홍수도 재해 목록에 오르고, 베네치아는 땅이 가라앉는 문제를 안고 있습니다."
+  ],
+  "related": [
+   "GRC"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Italy: Geography – Natural hazards, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/it.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GRC",
+   "why": "같은 지중해의 지진 많은 나라"
+  }
+ },
+ {
+  "id": "nld-1581",
+  "country": "NLD",
+  "title": "17세기 작은 네덜란드는 어떻게 바다의 강자가 되었을까?",
+  "category": "history",
+  "panels": [
+   "네덜란드 연합주는 1581년 7월 26일 스페인으로부터 독립을 선언했습니다.",
+   "17세기에는 바다를 누비는 무역 강국이 되어 세계 곳곳에 정착지와 식민지를 두었습니다.",
+   "18년 동안 프랑스의 지배를 받다가 1813년 다시 독립했고, 1830년에는 벨기에가 떨어져 나가 따로 왕국을 세웠습니다.",
+   "지금 네덜란드 왕국은 유럽의 네덜란드와 카리브해의 아루바·퀴라소·신트마르턴으로 이루어져 있습니다."
+  ],
+  "related": [
+   "ESP",
+   "BEL",
+   "IDN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Netherlands: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/nl.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IDN",
+   "why": "네덜란드가 식민지로 삼았던 섬나라"
+  }
+ },
+ {
+  "id": "nld-caribbean-peak",
+  "country": "NLD",
+  "title": "네덜란드에서 가장 높은 산은 왜 카리브해에 있을까?",
+  "category": "curious",
+  "panels": [
+   "유럽의 네덜란드는 국토의 약 4분의 1이 바다보다 낮고, 1m 넘는 땅이 절반 정도뿐입니다.",
+   "그런데 네덜란드에서 가장 높은 산은 카리브해의 사바섬에 있는 시너리산(887m)입니다.",
+   "2010년 네덜란드령 안틸레스가 해체되면서 보네르·신트외스타티위스·사바 세 섬이 네덜란드의 특별 자치단체가 되었기 때문입니다.",
+   "시너리산은 화산이고, 마지막으로 분화한 것은 1640년입니다."
+  ],
+  "related": [
+   "VEN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Netherlands: Geography – Natural hazards, Geography – note",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/nl.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VEN",
+   "why": "카리브해 네덜란드 섬들의 남쪽 이웃 나라"
+  }
+ },
+ {
+  "id": "nor-coast",
+  "country": "NOR",
+  "title": "노르웨이 앞바다에는 섬이 몇 개나 있을까?",
+  "category": "geo",
+  "panels": [
+   "노르웨이 땅의 약 3분의 2는 산입니다. 스칸디나비아산맥이 국토의 {{lf:NOR:Kjølen Mountains}}에 걸쳐 있습니다.",
+   "빙하가 깎아 낸 피오르가 해안을 깊게 파고들어, 노르웨이는 세계에서 가장 험하고 긴 해안선을 가진 나라 가운데 하나입니다.",
+   "들쭉날쭉한 해안 앞바다에는 섬이 약 5만 개나 흩어져 있습니다.",
+   "북쪽 끝은 북극 툰드라입니다. 쾨펜 기후로는 {{cl:NOR}}로 가장 넓습니다."
+  ],
+  "indicators": [
+   "area",
+   "forest"
+  ],
+  "related": [
+   "SWE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Norway: Geography – note, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/no.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SWE",
+   "why": "스칸디나비아반도를 나눠 가진 동쪽 이웃"
+  }
+ },
+ {
+  "id": "nor-fish",
+  "country": "NOR",
+  "title": "노르웨이 바다에서는 석유 말고 무엇을 거둘까?",
+  "category": "resources",
+  "panels": [
+   "노르웨이의 천연자원 목록은 석유, 천연가스로 시작해 철광석, 구리, 티타늄을 거쳐 물고기, 목재, 수력으로 이어집니다.",
+   "산업 목록에는 어업과 양식업이 따로 올라 있습니다.",
+   "사람들은 대부분 남쪽에, 특히 남서쪽 북해 연안과 남동쪽 스카게라크 해협 쪽에 삽니다. 북쪽 내륙은 지금도 사람이 드뭅니다.",
+   "도시에 사는 사람의 비율은 {{vr:NOR:urban}}입니다."
+  ],
+  "indicators": [
+   "urban"
+  ],
+  "related": [
+   "ISL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Norway: Geography – Natural resources, Economy – Industries, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/no.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ISL",
+   "why": "북대서양의 또 다른 어업 나라"
+  }
+ },
+ {
+  "id": "nor-oil-fund",
+  "country": "NOR",
+  "title": "노르웨이는 석유로 번 돈을 어디에 쓸까?",
+  "category": "economy",
+  "panels": [
+   "1960년대 말 노르웨이 앞바다에서 석유와 가스가 발견되면서 나라 살림이 크게 나아졌습니다.",
+   "지금 상품 수출 1위는 {{ex:NOR}}이고, 가장 큰 손님은 {{p1:NOR}}입니다.",
+   "Factbook은 석유로 모은 국부펀드가 넉넉한 복지 제도를 떠받친다고 적습니다.",
+   "노르웨이는 1972년과 1994년 두 번의 국민투표에서 EU 가입을 거부했습니다. 1인당 GDP는 {{vr:NOR:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc",
+   "resource_rents"
+  ],
+  "related": [
+   "GBR",
+   "SWE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Norway: Introduction – Background, Economy – Economic overview, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/no.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GBR",
+   "why": "노르웨이 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "nor-viking",
+  "country": "NOR",
+  "title": "바이킹의 나라는 언제 독립 국가가 되었을까?",
+  "category": "history",
+  "panels": [
+   "994년 올라프 트뤼그바손 왕이 기독교를 받아들이면서 두 세기 동안 이어진 바이킹의 유럽 습격이 잦아들었습니다.",
+   "1397년 노르웨이는 덴마크와의 연합에 들어가 4백 년 넘게 묶여 있었습니다.",
+   "1814년에는 스웨덴에 넘겨지는 것을 거부하고 새 헌법을 만들었지만, 결국 스웨덴 왕 아래 연합을 받아들였습니다.",
+   "1905년 국민투표로 마침내 독립했습니다. 제2차 세계대전 때는 중립을 선언했지만 나치 독일에 5년 동안 점령당했습니다."
+  ],
+  "related": [
+   "DNK",
+   "SWE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Norway: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/europe/no.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "DNK",
+   "why": "4백 년 넘게 노르웨이와 연합했던 나라"
+  }
+ }
+]
