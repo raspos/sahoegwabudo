@@ -120,6 +120,61 @@
   }
  },
  {
+  "id": "bol-capitals",
+  "country": "BOL",
+  "title": "볼리비아라는 이름은 누구에게서 왔을까?",
+  "category": "history",
+  "panels": [
+   "볼리비아라는 이름은 독립 투사 시몬 볼리바르에게서 왔습니다. 볼리비아는 1825년 스페인에서 독립했습니다.",
+   "행정 수도는 라파스, 헌법상 수도(입법·사법)는 수크레입니다.",
+   "공용어는 스페인어(68.1%)와 케추아어(17.2%), 아이마라어(10.5%), 과라니어 등 원주민 언어입니다.",
+   "들판에서는 {{ag:BOL:Quinoa}}입니다. 천연자원 목록 첫머리는 리튬입니다."
+  ],
+  "related": [
+   "VEN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bolivia: Introduction – Background, Government – Capital, People – Languages, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/bl.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VEN",
+   "why": "시몬 볼리바르가 태어난 나라"
+  }
+ },
+ {
+  "id": "bol-titicaca",
+  "country": "BOL",
+  "title": "배가 다닐 수 있는 가장 높은 호수는?",
+  "category": "geo",
+  "panels": [
+   "볼리비아는 페루와 함께 티티카카 호수를 나눠 가집니다. 해발 3,805m로, 배가 다닐 수 있는 호수 가운데 세계에서 가장 높습니다.",
+   "볼리비아의 땅은 험한 안데스산맥과 고원(알티플라노), 언덕, 아마존 분지의 낮은 평야로 이루어져 있습니다.",
+   "두 안데스 산줄기 사이의 높은 평원 알티플라노에 대부분의 사람이 삽니다.",
+   "아마존 분지가 국토의 {{lf:BOL:Amazon Basin}}에 걸쳐 있어, 높은 고원과 열대 저지대가 한 나라 안에 있습니다."
+  ],
+  "related": [
+   "PER",
+   "CHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bolivia: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/bl.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PER",
+   "why": "티티카카 호수를 함께 나눈 서쪽 이웃"
+  }
+ },
+ {
   "id": "bra-coast",
   "country": "BRA",
   "title": "넓은 브라질에서 사람들은 어디에 살까?",
@@ -483,6 +538,358 @@
   }
  },
  {
+  "id": "col-avocado",
+  "country": "COL",
+  "title": "콜롬비아 들판은 무엇으로 세계 순위에 오를까?",
+  "category": "economy",
+  "panels": [
+   "FAO 통계로 콜롬비아는 {{ag:COL:Avocados}}, {{ag:COL:Coffee, green}}입니다.",
+   "천연자원 목록에는 석유, 석탄, 금과 함께 에메랄드가 올라 있습니다.",
+   "상품 수출 1위는 {{ex:COL}}이고, 가장 큰 손님은 {{p1:COL}}입니다.",
+   "농림어업은 경제의 {{vr:COL:agri_va}}를 차지합니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "MEX",
+   "BRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Colombia: Economy – Agricultural products, Geography – Natural resources, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/co.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MEX",
+   "why": "아보카도 생산 1위인 나라"
+  }
+ },
+ {
+  "id": "col-twocoasts",
+  "country": "COL",
+  "title": "태평양과 카리브해 모두에 해안이 있는 남아메리카 나라는?",
+  "category": "geo",
+  "panels": [
+   "콜롬비아는 북태평양과 카리브해 두 바다에 모두 해안이 있는 유일한 남아메리카 나라입니다.",
+   "평평한 해안 저지대, 가운데 고원, 높은 안데스산맥, 동쪽의 넓은 평원 야노스로 이루어져 있습니다.",
+   "갈레라스 화산(4,276m)은 콜롬비아에서 가장 활발한 화산 가운데 하나로, 국제 학회가 꼽은 '10년 화산'입니다.",
+   "사람들은 대부분 농사짓기 좋고 자원이 있는 북쪽과 서쪽에 삽니다."
+  ],
+  "related": [
+   "PAN",
+   "VEN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Colombia: Geography – note, Geography – Terrain, Geography – Natural hazards, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/co.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PAN",
+   "why": "콜롬비아와 땅으로 이어진 북쪽 이웃"
+  }
+ },
+ {
+  "id": "cri-green",
+  "country": "CRI",
+  "title": "숲을 되살린 나라는?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 코스타리카를 '숲이 줄어드는 흐름을 되돌린 녹색 경제의 선두 나라'로 소개합니다. 숲은 국토의 {{vr:CRI:forest}}를 덮습니다.",
+   "천연자원 목록에는 수력 하나만 적혀 있습니다.",
+   "산업 목록 첫머리는 의료기기입니다. 상품 수출 1위도 {{ex:CRI}}입니다.",
+   "들판에서는 {{ag:CRI:Pineapples}}입니다."
+  ],
+  "indicators": [
+   "forest"
+  ],
+  "related": [
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Costa Rica: Economy – Economic overview, Economy – Industries, Economy – Agricultural products, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cs.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "코스타리카 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "cri-volcano",
+  "country": "CRI",
+  "title": "코스타리카에는 화산이 몇 개나 있을까?",
+  "category": "geo",
+  "panels": [
+   "코스타리카의 해안 평야 사이에는 험한 산이 있고, 그 산에는 화산 원뿔이 100개 넘게 있습니다. 그 가운데 몇은 큰 활화산입니다.",
+   "수도 산호세 가까이에 화산 네 개가 솟아 있고, 그 가운데 둘은 활화산입니다. 이라수산은 1963~1965년 크게 분화했습니다.",
+   "가장 활발한 아레날산(1,670m)은 1968년 분화로 타바콘 마을을 무너뜨렸습니다.",
+   "중앙아메리카 지협이 국토의 {{lf:CRI:Central America}}를 차지합니다."
+  ],
+  "related": [
+   "NIC",
+   "PAN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Costa Rica: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cs.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NIC",
+   "why": "화산이 많은 북쪽 이웃"
+  }
+ },
+ {
+  "id": "cub-largest",
+  "country": "CUB",
+  "title": "카리브해에서 가장 큰 나라는?",
+  "category": "geo",
+  "panels": [
+   "쿠바는 카리브해에서 가장 큰 나라이고, 대앤틸리스 제도의 가장 서쪽 섬입니다. 국토 면적은 {{vr:CUB:area}}입니다.",
+   "땅은 대부분 평평하거나 완만한 평야이고, 남동쪽에 험한 언덕과 산이 있습니다.",
+   "동쪽 해안은 8~11월 허리케인을 맞습니다. Factbook은 쿠바에 평균 2년에 한 번꼴로 허리케인이 온다고 적습니다.",
+   "11~4월은 건기, 5~10월은 우기입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "JAM",
+   "HTI"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Cuba: Geography – note, Geography – Terrain, Geography – Natural hazards, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cu.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JAM",
+   "why": "쿠바 남쪽 바다 건너 이웃"
+  }
+ },
+ {
+  "id": "cub-nickel",
+  "country": "CUB",
+  "title": "쿠바는 무엇을 팔아 살까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 쿠바 경제를 '아직 대부분 국가가 운영하는 계획경제'라고 소개하고, 담배 수출국으로도 적습니다.",
+   "상품 수출 1위는 {{ex:CUB}}입니다. 가장 큰 손님은 {{p1:CUB}}입니다.",
+   "Factbook은 쿠바와 베네수엘라 사이의 독특한 '석유와 의사를 맞바꾸는' 관계도 적습니다.",
+   "1492년 콜럼버스가 온 뒤 쿠바는 스페인 식민지가 되었고, 아바나는 멕시코와 페루에서 스페인으로 가는 보물 선단의 출발지였습니다."
+  ],
+  "related": [
+   "ESP",
+   "VEN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Cuba: Economy – Economic overview, Economy – Industries, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/cu.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ESP",
+   "why": "쿠바 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "dom-columbus",
+  "country": "DOM",
+  "title": "콜럼버스가 처음 차지한 섬은 어떻게 두 나라가 되었을까?",
+  "category": "history",
+  "panels": [
+   "유럽인이 오기 전 원주민 타이노족은 지금의 도미니카공화국과 아이티 땅을 다섯 족장국으로 나눠 살았습니다.",
+   "1492년 콜럼버스가 첫 항해에서 이 섬을 탐험하고 차지했고, 섬은 스페인이 카리브해와 아메리카 본토를 정복하는 발판이 되었습니다.",
+   "1697년 스페인은 섬 서쪽 3분의 1이 프랑스 땅이라고 인정했고, 그곳이 1804년 아이티가 되었습니다. 도미니카공화국은 1844년 2월 27일 아이티에서 독립했습니다.",
+   "FAO 통계로 도미니카공화국은 {{ag:DOM:Papayas}}, {{ag:DOM:Avocados}}입니다."
+  ],
+  "related": [
+   "HTI",
+   "ESP"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Dominican Republic: Introduction – Background, Government – Independence, Government – Capital, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/dr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ESP",
+   "why": "히스파니올라섬을 식민지로 삼은 나라"
+  }
+ },
+ {
+  "id": "dom-hispaniola",
+  "country": "DOM",
+  "title": "카리브해에서 가장 높은 산과 가장 낮은 곳이 한 나라에 있을까?",
+  "category": "geo",
+  "panels": [
+   "도미니카공화국은 히스파니올라섬의 동쪽 3분의 2를 차지하고, 서쪽 3분의 1은 아이티입니다. 쿠바 다음으로 앤틸리스 제도에서 큰 나라입니다.",
+   "카리브해에서 가장 높은 피코두아르테산(3,098m)이 이 나라에 있습니다.",
+   "카리브해에서 가장 낮은 곳이자 가장 큰 호수인 엔리키요 호수도 있습니다.",
+   "허리케인이 지나는 길 한가운데 있어 6~10월에 큰 폭풍을 맞습니다."
+  ],
+  "related": [
+   "HTI",
+   "CUB"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Dominican Republic: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-america-n-caribbean/dr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "HTI",
+   "why": "히스파니올라섬을 함께 나눈 서쪽 이웃"
+  }
+ },
+ {
+  "id": "ecu-banana",
+  "country": "ECU",
+  "title": "바나나를 많이 수출하는 나라는 무엇을 더 팔까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 에콰도르를 '바나나를 많이 수출하는 나라'이자 미국 달러를 쓰는 나라로 소개합니다.",
+   "FAO 통계로 에콰도르는 {{ag:ECU:Bananas}}, {{ag:ECU:Cocoa beans}}입니다.",
+   "마닐라삼(아바카)도 {{ag:ECU:Abaca, manila hemp, raw}}입니다.",
+   "상품 수출 1위는 {{ex:ECU}}이고, 가장 큰 손님은 {{p1:ECU}}입니다."
+  ],
+  "indicators": [
+   "exports_gdp"
+  ],
+  "related": [
+   "USA",
+   "COL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Ecuador: Economy – Economic overview, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/ec.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "에콰도르 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "ecu-cotopaxi",
+  "country": "ECU",
+  "title": "세계에서 가장 높은 활화산 가운데 하나는 어디에 있을까?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 에콰도르 안데스산맥의 코토팍시산을 '세계에서 가장 높은 활화산'으로 적습니다.",
+   "에콰도르는 해안 평야(코스타), 안데스 사이의 고원(시에라), 동쪽의 정글(오리엔테)로 나뉩니다.",
+   "갈라파고스 제도도 에콰도르 땅이어서, 나라에 시간대가 두 개 있습니다.",
+   "수도 키토는 이 지역에 살던 키투족의 이름을 땄습니다."
+  ],
+  "related": [
+   "COL",
+   "PER"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Ecuador: Geography – note, Geography – Terrain, Geography – Natural hazards, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/ec.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PER",
+   "why": "안데스를 함께 나눈 남쪽 이웃"
+  }
+ },
+ {
+  "id": "guy-oil",
+  "country": "GUY",
+  "title": "가이아나 경제는 최근 무엇으로 바뀌었을까?",
+  "category": "economy",
+  "panels": [
+   "가이아나는 17세기 네덜란드 식민지였다가 1815년 영국 땅이 되었고, 1966년 5월 26일 독립했습니다.",
+   "노예제가 폐지된 뒤 설탕 농장에서 일할 사람들이 인도에서 왔습니다. 지금 인도계가 39.8%로 가장 많습니다.",
+   "Factbook은 지금 가이아나를 '탄화수소가 이끄는 작은 수출 경제'로 소개합니다. 상품 수출 1위는 {{ex:GUY}}입니다.",
+   "1인당 GDP는 {{vr:GUY:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc"
+  ],
+  "related": [
+   "NLD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Guyana: Economy – Economic overview, Introduction – Background, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/gy.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NLD",
+   "why": "가이아나 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "guy-rainforest",
+  "country": "GUY",
+  "title": "남아메리카에서 세 번째로 작은 나라는?",
+  "category": "geo",
+  "panels": [
+   "가이아나는 수리남·우루과이 다음으로 남아메리카에서 작은 나라입니다.",
+   "Factbook은 가이아나에 남아메리카에서 가장 넓은, 손대지 않은 열대 우림 일부가 있다고 적습니다. 숲은 국토의 {{vr:GUY:forest}}를 덮습니다.",
+   "땅은 대부분 완만한 고지이고, 낮은 해안 평야와 남쪽의 사바나가 있습니다.",
+   "사람들은 북동쪽의 수도 조지타운과 그 주변에 몰려 삽니다."
+  ],
+  "indicators": [
+   "forest"
+  ],
+  "related": [
+   "SUR",
+   "VEN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Guyana: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/gy.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SUR",
+   "why": "가이아나보다 더 작은 동쪽 이웃"
+  }
+ },
+ {
   "id": "mex-ancient",
   "country": "MEX",
   "title": "스페인이 오기 전 멕시코에는 어떤 문명이 있었을까?",
@@ -602,6 +1009,240 @@
   }
  },
  {
+  "id": "per-amazon",
+  "country": "PER",
+  "title": "아마존강은 어디에서 시작할까?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 페루의 미스미산(5,316m) 외딴 비탈을 아마존강의 가장 먼 발원지로 적습니다.",
+   "아마존강은 페루에서 시작해 브라질에서 대서양으로 나갑니다.",
+   "페루는 서쪽 해안 평야(코스타), 가운데 높고 험한 안데스(시에라), 동쪽 아마존 분지의 정글(셀바)로 나뉩니다.",
+   "볼리비아와 함께 배가 다닐 수 있는 가장 높은 호수, 티티카카 호수도 나눠 가집니다."
+  ],
+  "related": [
+   "BRA",
+   "BOL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Peru: Geography – note, Geography – Terrain, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/pe.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BRA",
+   "why": "아마존강이 바다로 나가는 나라"
+  }
+ },
+ {
+  "id": "per-quinoa",
+  "country": "PER",
+  "title": "퀴노아를 가장 많이 기르는 나라는?",
+  "category": "economy",
+  "panels": [
+   "FAO 통계로 페루는 {{ag:PER:Quinoa}}, {{ag:PER:Blueberries}}입니다.",
+   "아스파라거스도 {{ag:PER:Asparagus}}입니다.",
+   "옛 페루는 잉카를 비롯한 안데스 문명의 중심이었습니다. 상품 수출 1위는 {{ex:PER}}입니다.",
+   "수도 리마라는 이름은 케추아어 '리마크'를 초기 스페인 사람들이 잘못 발음한 데서 왔습니다."
+  ],
+  "indicators": [
+   "resource_rents"
+  ],
+  "related": [
+   "BOL",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Peru: Economy – Agricultural products, Introduction – Background, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/pe.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "페루 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "pry-chaco",
+  "country": "PRY",
+  "title": "파라과이 국토의 60%를 차지하는 곳은?",
+  "category": "geo",
+  "panels": [
+   "파라과이 서쪽의 그란차코는 국토의 60%를 차지하는 반건조 저지대 평원입니다.",
+   "파라과이강 동쪽은 풀 덮인 평야와 숲 덮인 언덕이고, 사람들은 대부분 동쪽 절반에 삽니다.",
+   "Factbook은 파라과이를 '세계적인 수력 발전 강국'으로 소개합니다.",
+   "FAO 통계로 {{ag:PRY:Tung nuts}}입니다. 상품 수출 1위는 {{ex:PRY}}입니다."
+  ],
+  "related": [
+   "ARG",
+   "BRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Paraguay: People – Population distribution, Geography – Terrain, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/pa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BRA",
+   "why": "파라과이 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "pry-guarani",
+  "country": "PRY",
+  "title": "원주민 언어를 가장 많은 사람이 쓰는 남아메리카 나라는?",
+  "category": "culture",
+  "panels": [
+   "파라과이의 공용어는 스페인어와 과라니어입니다.",
+   "두 말을 함께 쓰는 사람이 46.3%이고, 과라니어만 쓰는 사람도 34%입니다. 스페인어만 쓰는 사람은 15.2%입니다.",
+   "스페인이 오기 전 이 땅에는 과라니어족에 속하는 원주민들이 살았습니다.",
+   "파라과이는 1811년 5월 14~15일 스페인에서 독립했습니다. 수도 아순시온은 스페인어로 '성모 승천'이라는 뜻입니다."
+  ],
+  "related": [
+   "BOL",
+   "ARG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Paraguay: People – Languages, Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/pa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BOL",
+   "why": "과라니어도 공용어인 서쪽 이웃"
+  }
+ },
+ {
+  "id": "sur-languages",
+  "country": "SUR",
+  "title": "네덜란드어를 공용어로 쓰는 남아메리카 나라는?",
+  "category": "culture",
+  "panels": [
+   "수리남은 1667년 네덜란드 식민지가 되었고, 1975년 11월 25일 독립했습니다. 그래서 공용어가 네덜란드어입니다.",
+   "1863년 아프리카 노예제가 폐지된 뒤 인도와 자와에서 일꾼들이 들어왔습니다.",
+   "그래서 지금 인도계(힌두스타니)가 27.4%로 가장 많고, 종교도 개신교·힌두교·가톨릭·이슬람으로 고르게 나뉩니다.",
+   "수도 파라마리보라는 이름은 과라니어 '파라(물·강)'와 '마리보(사는 사람)'에서 왔습니다."
+  ],
+  "related": [
+   "NLD",
+   "IND",
+   "IDN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Suriname: Introduction – Background, People – Languages, People – Ethnic groups, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/ns.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NLD",
+   "why": "1667년부터 수리남을 식민지로 둔 나라"
+  }
+ },
+ {
+  "id": "sur-smallest",
+  "country": "SUR",
+  "title": "남아메리카 대륙에서 가장 작은 독립국은?",
+  "category": "geo",
+  "panels": [
+   "수리남은 남아메리카 대륙에서 가장 작은 독립국입니다. 국토 면적은 {{vr:SUR:area}}입니다.",
+   "땅은 대부분 열대 우림이고, 동식물이 매우 다양합니다. 숲은 국토의 {{vr:SUR:forest}}를 덮습니다.",
+   "늪이 있는 좁은 해안 평야 뒤로 완만한 언덕이 이어집니다.",
+   "사람들은 대부분 북쪽 해안 띠에 살고, 나머지 땅은 사람이 드뭅니다."
+  ],
+  "indicators": [
+   "area",
+   "forest"
+  ],
+  "related": [
+   "GUY"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Suriname: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/ns.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GUY",
+   "why": "서쪽의 이웃"
+  }
+ },
+ {
+  "id": "ury-grassland",
+  "country": "URY",
+  "title": "우루과이 땅의 4분의 3은 무엇으로 덮여 있을까?",
+  "category": "geo",
+  "panels": [
+   "우루과이는 수리남 다음으로 남아메리카에서 작은 나라입니다.",
+   "낮은 땅의 4분의 3이 소와 양을 기르기 좋은 풀밭입니다.",
+   "산이 없어서 날씨를 막아 줄 장벽도 없습니다. 그래서 어디서나 날씨가 갑자기 바뀌기 쉽습니다.",
+   "아르헨티나 팜파스에서 불어오는 차갑고 거센 바람 '팜페로'가 철마다 붑니다."
+  ],
+  "related": [
+   "ARG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Uruguay: Geography – note, Geography – Terrain, Geography – Climate, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/uy.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ARG",
+   "why": "팜파스가 이어지는 서쪽 이웃"
+  }
+ },
+ {
+  "id": "ury-montevideo",
+  "country": "URY",
+  "title": "우루과이는 누구에게서 독립했을까?",
+  "category": "history",
+  "panels": [
+   "1726년 스페인이 군사 요새로 몬테비데오를 세웠고, 천연 항구 덕분에 곧 무역 중심지가 되었습니다.",
+   "처음에는 아르헨티나가 우루과이를 자기 땅이라 주장했지만, 1821년 브라질이 합병했습니다. 우루과이는 1825년 8월 25일 브라질로부터 독립을 선언했습니다.",
+   "인구의 약 80%가 도시에 살고, 거의 절반이 몬테비데오와 그 주변에 삽니다.",
+   "Factbook은 우루과이를 '남아메리카에서 중산층이 가장 큰 나라'로 소개합니다. 1인당 GDP는 {{vr:URY:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc",
+   "urban"
+  ],
+  "related": [
+   "BRA",
+   "ARG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Uruguay: Introduction – Background, Government – Independence, People – Population distribution, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/uy.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BRA",
+   "why": "1821년 우루과이를 합병한 북쪽 이웃"
+  }
+ },
+ {
   "id": "usa-almonds",
   "country": "USA",
   "title": "미국 들판은 어떤 작물로 세계 1위를 할까?",
@@ -661,6 +1302,62 @@
   "next": {
    "country": "CAN",
    "why": "북아메리카에서 미국보다 넓은 유일한 나라"
+  }
+ },
+ {
+  "id": "ven-grancolombia",
+  "country": "VEN",
+  "title": "그란콜롬비아가 무너진 뒤 생긴 세 나라는?",
+  "category": "history",
+  "panels": [
+   "베네수엘라는 1830년 그란콜롬비아가 무너지며 생긴 세 나라 가운데 하나입니다. 나머지는 에콰도르와 누에바그라나다(콜롬비아)입니다.",
+   "베네수엘라는 1811년 7월 5일 스페인에서 독립을 선언했습니다.",
+   "20세기 전반 대부분은 군사 지도자들이 다스리며 석유 산업을 키웠습니다.",
+   "수도 카라카스는 이곳에 처음 살던 카라카스족의 이름을 땄습니다. FAO 통계로 베네수엘라는 {{ag:VEN:Yautia}}입니다."
+  ],
+  "related": [
+   "COL",
+   "ECU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Venezuela: Introduction – Background, Government – Independence, Government – Capital, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/ve.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "COL",
+   "why": "그란콜롬비아에서 함께 갈라져 나온 이웃"
+  }
+ },
+ {
+  "id": "ven-tepui",
+  "country": "VEN",
+  "title": "테푸이는 어떤 산일까?",
+  "category": "geo",
+  "panels": [
+   "테푸이는 기아나 고지 서쪽에 솟은, 꼭대기가 탁자처럼 평평한 거대한 산입니다.",
+   "테푸이는 서로 떨어져 있어, 그 위에는 다른 곳에 없는 고유한 동식물이 삽니다.",
+   "베네수엘라는 북서쪽의 안데스산맥과 마라카이보 저지대, 가운데 평원(야노스), 남동쪽의 기아나 고지로 나뉩니다.",
+   "오리노코강은 시작과 끝이 모두 베네수엘라에 있습니다."
+  ],
+  "related": [
+   "GUY",
+   "BRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Venezuela: Geography – note, Geography – Terrain, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-america/ve.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GUY",
+   "why": "기아나 고지를 함께 나눈 동쪽 이웃"
   }
  }
 ]
