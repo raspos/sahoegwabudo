@@ -1,6 +1,7 @@
 import type { Campaign, Ctx, DecisionOption, GameState, Node } from './types';
 import { compareMission, discoverMission, economyMission, ev, rankMission, routeMission, sectorEvidence } from './missions';
 import { has, successes, travelCost } from './engine';
+import { AFRICA, MIDEAST, SAMERICA } from './campaigns2';
 
 const nm = (c: Ctx, id: string) => c.ds.country(id)?.name_ko ?? id;
 const tripHint = (c: Ctx, s: GameState, to: string) => {
@@ -259,5 +260,5 @@ export const ASIA: Campaign = {
   ],
 };
 
-export const CAMPAIGNS: Campaign[] = [EUROPE, ASIA];
+export const CAMPAIGNS: Campaign[] = [EUROPE, ASIA, AFRICA, SAMERICA, MIDEAST];
 export const campaignById = (id: string) => CAMPAIGNS.find((c) => c.id === id);

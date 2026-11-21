@@ -1,5 +1,6 @@
 import { MapChallenge } from '../games/MapChallenge';
 import { ExplorerPage } from '../explorer/ExplorerPage';
+import { CAMPAIGNS } from '../explorer/campaigns';
 import { RankBattle } from '../games/RankBattle';
 import { LESSONS, FIELD_ORDER } from '../content/lessons';
 import { useJournal } from '../store/journal';
@@ -24,7 +25,7 @@ function PlayHub() {
         <span className="ge-no">메인 게임</span>
         <h2>세계 탐험가</h2>
         <p>탐험 본부의 조사원이 되어 세계지도를 누비며 나라 경제의 비밀을 밝혀내세요. 한정된 자금과 일정, 고른 길에 따라 달라지는 임무와 결말.</p>
-        <p className="ge-best">{Object.keys(j.explorer.campaigns).length ? `캠페인 ${Object.keys(j.explorer.campaigns).length}개 탐험함` : '캠페인 2개 · 유럽 / 아시아'}</p>
+        <p className="ge-best">{Object.keys(j.explorer.campaigns).length ? `캠페인 ${Object.keys(j.explorer.campaigns).length}개 탐험함` : `캠페인 ${CAMPAIGNS.length}개 · ${CAMPAIGNS.map((c) => c.region).join(' / ')}`}</p>
       </a>
       <div className="games">
         <a className="game-entry" href="#/play/map">

@@ -163,7 +163,7 @@ describe('세계 탐험가: 구조 검증', () => {
       const bad = walkAll(camp, 9, 'bad').map((w) => w.ending);
       const good = walkAll(camp, 9, 'good').map((w) => w.ending);
       expect(bad.length).toBeGreaterThan(0);
-      expect(new Set(good).has(`${camp.id === 'europe-economy' ? 'eu' : 'as'}-best`)).toBe(true);
+      expect(new Set(good).has(`${camp.endings[0].id.split('-')[0]}-best`), camp.id).toBe(true);
       expect(bad.some((e) => !e.endsWith('-best'))).toBe(true);
     }
   });

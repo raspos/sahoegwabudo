@@ -15,8 +15,10 @@ import type { Answer, Campaign, Ctx, GameState, Puzzle, Resolution } from './typ
 import type { IndicatorId } from '../data/types';
 import { ViewCount } from '../components/ViewCount';
 import { Compass, ICON, Meter, MiniMap, campaignStations } from './ExGraphics';
+import { Confetti, Stamp, TravelAnim } from './ExAnim';
 
-const CAMP_COLOR = ['#b8462f', '#2f6f8f'];
+const CAMP_COLOR = ['#b8462f', '#2f6f8f', '#8a6d1f', '#3f7a4f', '#6b4e8a'];
+const campColor = (id: string) => CAMP_COLOR[Math.max(0, CAMPAIGNS.findIndex((c) => c.id === id)) % CAMP_COLOR.length];
 
 const KIND_KO: Record<string, string> = { discover: '국가 발견', economy: '경제 조사', route: '지리 탐험', compare: '국가 비교', rank: '순위 추리', decide: '탐험 결정', report: '보고서', event: '가상 사건' };
 
@@ -47,11 +49,11 @@ export function ExplorerPage({ campaignId }: { campaignId?: string }) {
             </ol>
           </div>
           <div className="hub-hero-map">
-            <MiniMap geo={geo} focus={CAMPAIGNS.flatMap(campaignStations)} ratio={1.7} pad={26} label="두 캠페인의 조사 지역"
+            <MiniMap geo={geo} focus={CAMPAIGNS.flatMap(campaignStations)} ratio={1.9} pad={22} fit="meet" label="캠페인별 조사 지역"
               marks={Object.fromEntries(CAMPAIGNS.flatMap((c, i) => campaignStations(c).map((k) => [k, `mm-c${i}`])))}
-              tracks={CAMPAIGNS.map((c, i) => ({ ids: campaignStations(c), color: CAMP_COLOR[i % 2], line: false }))} />
+              tracks={CAMPAIGNS.map((c, i) => ({ ids: campaignStations(c), color: CAMP_COLOR[i % CAMP_COLOR.length], line: false }))} />
             <Compass />
-            <ul className="hub-legend">{CAMPAIGNS.map((c, i) => <li key={c.id}><i style={{ background: CAMP_COLOR[i % 2] }} />{c.region} · {c.title}</li>)}</ul>
+            <ul className="hub-legend">{CAMPAIGNS.map((c, i) => <li key={c.id}><i style={{ background: CAMP_COLOR[i % CAMP_COLOR.length] }} />{c.region} · {c.title}</li>)}</ul>
           </div>
         </header>
         {saved && campaignById(saved.campaign) && (
@@ -62,7 +64,7 @@ export function ExplorerPage({ campaignId }: { campaignId?: string }) {
           {CAMPAIGNS.map((c, ci) => {
             const rec = j.explorer.campaigns[c.id];
             const st = campaignStations(c);
-            const color = CAMP_COLOR[ci % 2];
+            const color = CAMP_COLOR[ci % CAMP_COLOR.length];
             return (
               <article key={c.id} className="camp-card" style={{ ['--camp' as string]: color }}>
                 <div className="camp-map">
@@ -114,6 +116,16 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
   const [clues, setClues] = useState(0);
 
   const s = useMemo(() => enterMission(camp, ctx, state), [camp, ctx, state]);
+  // 나라를 옮기면 이동 장면을 보여 준다
+  const prevLoc = useRef(s.location);
+  const [travel, setTravel] = useState<{ from: string; to: string; cost: { funds: number; days: number } } | null>(null);
+  const closeTravel = useCallback(() => setTravel(null), []);
+  useEffect(() => {
+    if (prevLoc.current !== s.location) {
+      setTravel({ from: prevLoc.current, to: s.location, cost: { funds: s.funds - state.funds, days: s.days - state.days } });
+      prevLoc.current = s.location;
+    }
+  }, [s.location]); // eslint-disable-line react-hooks/exhaustive-deps
   // 이동 비용(s)은 화면에서만 반영하고, 플레이어가 행동할 때 함께 저장한다 (결정적이라 두 번 내지 않는다)
   const p: Puzzle = useMemo(() => puzzleFor(camp, ctx, s), [camp, ctx, s]);
   const node = currentNode(camp, s);
@@ -178,6 +190,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
 
   return (
     <div className={`explorer explorer--${tab}`}>
+      {travel && !result && <TravelAnim geo={geo} ds={ds} from={travel.from} to={travel.to} cost={travel.cost} onDone={closeTravel} />}
       <header className="ex-top">
         <strong className="ex-title">{camp.title}</strong>
         <Meter icon={ICON.funds} label="자금" value={s.funds} max={camp.startResources.funds} />
@@ -199,7 +212,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
         </section>
         <section className="ex-where" aria-label="지금까지의 탐험 경로">
           <MiniMap geo={geo} focus={[s.location, ...s.visited.slice(-3)]} current={s.location} pad={30} ratio={1.9}
-            marks={Object.fromEntries(s.visited.map((k) => [k, 'mm-visited']))} tracks={s.visited.length > 1 ? [{ ids: s.visited, color: CAMP_COLOR[camp.id === CAMPAIGNS[0].id ? 0 : 1], dashed: true }] : []}
+            marks={Object.fromEntries(s.visited.map((k) => [k, 'mm-visited']))} tracks={s.visited.length > 1 ? [{ ids: s.visited, color: campColor(camp.id), dashed: true }] : []}
             label={`지금 위치 ${ds.country(s.location)?.name_ko ?? ''}, 들른 나라 ${s.visited.length}곳`} />
           <p className="small"><b>{s.visited.length}</b>개국 방문 · 갈림길 선택 {s.path.length}번</p>
         </section>
@@ -235,6 +248,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
       <section className="ex-bottom" aria-live="polite">
         {result ? (
           <div className={`ex-result ${result.res ? `o-${result.res.outcome}` : ''}`}>
+            <Stamp outcome={result.res?.outcome} />
             <p className="ex-kind">{result.fiction ? <span className="fiction">가상 사건</span> : result.res ? { success: '임무 성공', partial: '절반의 성공', fail: '임무 실패' }[result.res.outcome] : '결정'}</p>
             <h3>{result.title}</h3>
             <p>{result.text ?? result.res?.message}</p>
@@ -453,10 +467,11 @@ function EndingView({ camp, ctx, s, text, onAgain, onHub }: { camp: Campaign; ct
   const score = Math.round(finalScore(s));
   return (
     <div className="ex-ending">
+      {s.ending?.endsWith('-best') && <Confetti />}
       <div className="ending-top">
         <div className="ending-map">
           <MiniMap geo={geo} focus={s.visited} pad={24} ratio={1.8} marks={Object.fromEntries(s.visited.map((k) => [k, 'mm-visited']))}
-            tracks={[{ ids: s.visited, color: CAMP_COLOR[camp.id === CAMPAIGNS[0].id ? 0 : 1], numbered: true }]} label={`이번 탐험 경로: ${s.visited.map((v) => ctx.ds.country(v)?.name_ko).join(' → ')}`} />
+            tracks={[{ ids: s.visited, color: campColor(camp.id), numbered: true }]} label={`이번 탐험 경로: ${s.visited.map((v) => ctx.ds.country(v)?.name_ko).join(' → ')}`} />
         </div>
         <div className="ending-text">
           <div className="score-ring" aria-label={`최종 점수 ${score}`}>

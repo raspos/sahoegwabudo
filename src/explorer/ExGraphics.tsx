@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import './graphics.css';
 import type { Geo } from '../map/geo';
 import type { Campaign } from './types';
+import { useDelta } from './ExAnim';
 
 /** 캠페인에서 조사원이 머무는 나라들(임무 장소). 발견 임무의 정답(target)은 넣지 않는다. */
 export function campaignStations(c: Campaign): string[] {
@@ -36,15 +37,15 @@ function boxOf(geo: Geo, ids: string[], pad: number, ratio: number): Box {
 export interface Track { ids: string[]; color: string; dashed?: boolean; numbered?: boolean; line?: boolean }
 
 /** 작은 지도: 지정한 나라들 주변만 잘라 보여 주고, 경로를 선과 번호로 잇는다 */
-export function MiniMap({ geo, focus, tracks = [], marks = {}, current, pad = 18, ratio = 1.6, className, label, children }: {
-  geo: Geo; focus: string[]; tracks?: Track[]; marks?: Record<string, string>; current?: string; pad?: number; ratio?: number;
+export function MiniMap({ geo, focus, tracks = [], marks = {}, current, pad = 18, ratio = 1.6, className, label, children, fit = 'slice' }: {
+  geo: Geo; focus: string[]; tracks?: Track[]; marks?: Record<string, string>; current?: string; pad?: number; ratio?: number; fit?: 'slice' | 'meet';
   className?: string; label: string; children?: ReactNode;
 }) {
   const [x, y, w, h] = boxOf(geo, focus, pad, ratio);
   const k = w / 300; // 선 굵기·글자 크기를 그림 크기에 맞춘다
   const pt = (id: string) => geo.byId.get(id)?.label;
   return (
-    <svg className={`minimap ${className ?? ''}`} viewBox={`${x} ${y} ${w} ${h}`} role="img" aria-label={label} preserveAspectRatio="xMidYMid slice">
+    <svg className={`minimap ${className ?? ''}`} viewBox={`${x} ${y} ${w} ${h}`} role="img" aria-label={label} preserveAspectRatio={`xMidYMid ${fit}`}>
       <rect x={x} y={y} width={w} height={h} className="mm-sea" />
       {geo.shapes.map((s) => {
         const [[a, b], [c, d]] = s.bounds;
@@ -80,8 +81,10 @@ export function MiniMap({ geo, focus, tracks = [], marks = {}, current, pad = 18
 /** 자원 막대 (자금·일정). 처음 값 대비 남은 몫 */
 export function Meter({ icon, label, value, max, unit = '' }: { icon: ReactNode; label: string; value: number; max: number; unit?: string }) {
   const r = Math.max(0, Math.min(1, value / (max || 1)));
+  const d = useDelta(value);
   return (
-    <span className={`meter ${r < 0.25 ? 'low' : ''}`} title={`${label} (가상) ${value}${unit} / 처음 ${max}${unit}`}>
+    <span key={d?.key} className={`meter ${r < 0.25 ? 'low' : ''} ${d ? 'bump' : ''}`} title={`${label} (가상) ${value}${unit} / 처음 ${max}${unit}`}>
+      {d && <span className={`delta ${d.n > 0 ? 'plus' : 'minus'}`} aria-hidden>{d.n > 0 ? '+' : ''}{d.n}</span>}
       <span className="meter-ico" aria-hidden>{icon}</span>
       <span className="meter-lab">{label}</span>
       <span className="meter-bar"><i style={{ width: `${r * 100}%` }} /></span>

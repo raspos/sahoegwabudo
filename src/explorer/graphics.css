@@ -21,10 +21,10 @@
 .hub-how span { font-size: 26px; color: var(--accent-ink); line-height: 1; }
 .hub-how b { font-size: 14.5px; }
 .hub-how small { color: var(--muted); font-size: 12.5px; }
-.hub-hero-map { position: relative; border: 1px solid var(--ink); min-height: 250px; overflow: hidden; }
-.hub-hero-map .minimap { position: absolute; inset: 0; }
+.hub-hero-map { position: relative; border: 1px solid var(--ink); overflow: hidden; background: #dfe9e8; align-self: start; }
+.hub-hero-map .minimap { aspect-ratio: 1.9; height: auto; }
 .hub-hero-map .compass { position: absolute; right: 10px; top: 10px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .2)); }
-.hub-legend { position: absolute; left: 8px; bottom: 8px; list-style: none; margin: 0; padding: 6px 10px; background: rgba(255, 250, 240, .92); border: 1px solid var(--rule-strong); font-size: 12.5px; display: grid; gap: 2px; }
+.hub-legend { list-style: none; margin: 0; padding: 6px 10px; background: var(--paper); border-top: 1px solid var(--rule-strong); font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 2px 14px; }
 .hub-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
 .camp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 18px; margin-bottom: 16px; }
 .camp-card { border: 1px solid var(--ink); border-top: 5px solid var(--camp); background: var(--paper); display: grid; grid-template-rows: 180px auto; }
@@ -82,7 +82,6 @@
 .stamp em { position: absolute; top: -6px; left: -2px; font-style: normal; font-size: 11px; background: #8a3e2a; color: #fffaf0; border-radius: 50%; width: 18px; height: 18px; display: grid; place-items: center; }
 @media (max-width: 1000px) {
   .hub-hero { grid-template-columns: 1fr; }
-  .hub-hero-map { min-height: 200px; }
   .hub-how { grid-template-columns: 1fr; }
   .hub-how li { grid-template-columns: auto 1fr; column-gap: 10px; }
   .hub-how li span { grid-row: span 2; align-self: center; }
@@ -99,3 +98,7 @@
   .hub-hero h1 { font-size: 32px; }
   .hub-hero-map .compass { width: 60px; height: 60px; }
 }
+
+.mm-land.mm-c2 { fill: #e6d29a; stroke: #6d5414; }
+.mm-land.mm-c3 { fill: #b9d4b0; stroke: #2f5c3a; }
+.mm-land.mm-c4 { fill: #cdbde0; stroke: #4e3a68; }
