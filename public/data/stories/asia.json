@@ -1,1 +1,961 @@
-[]
+[
+ {
+  "id": "chn-one-timezone",
+  "country": "CHN",
+  "title": "그렇게 넓은 중국은 왜 시간대가 하나뿐일까?",
+  "category": "curious",
+  "panels": [
+   "중국은 러시아·캐나다·미국 다음으로 넓은 나라이고, 아시아 안에 온전히 들어 있는 나라 가운데 가장 큽니다. 국토 면적은 {{vr:CHN:area}}입니다.",
+   "그런데 나라 전체가 베이징 기준 시각 하나(UTC+8)만 씁니다. 넓이로 따지면 시간대가 하나뿐인 나라 가운데 가장 큽니다.",
+   "1949년 이전에는 시간대가 다섯 개로 나뉘어 있었습니다.",
+   "서쪽의 산과 사막은 사람이 드물고, 인구 대부분은 동쪽 절반에 삽니다. 시계는 사람들이 모여 사는 동쪽에 맞춰져 있는 셈입니다."
+  ],
+  "indicators": [
+   "area",
+   "population"
+  ],
+  "related": [
+   "RUS",
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — China: Government – Capital, Geography – note, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ch.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MNG",
+   "why": "중국 북쪽 국경 너머, 사람 드문 초원의 나라"
+  }
+ },
+ {
+  "id": "idn-islands",
+  "country": "IDN",
+  "title": "섬으로만 이루어진 나라 가운데 가장 큰 나라는 어디일까?",
+  "category": "geo",
+  "panels": [
+   "인도네시아의 섬은 13,466개이고, 그중 사람이 계속 사는 섬은 922개입니다.",
+   "Factbook은 인도네시아를 '섬으로만 이루어진 나라 가운데 세계에서 가장 큰 나라'라고 적습니다. 국토 면적은 {{vr:IDN:area}}입니다.",
+   "나라는 적도에 걸쳐 있고, 인도양과 태평양을 잇는 큰 바닷길 위에 자리합니다.",
+   "섬이 동서로 길게 이어져 시간대도 세 개입니다."
+  ],
+  "indicators": [
+   "area",
+   "population"
+  ],
+  "related": [
+   "PHL",
+   "MYS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Indonesia: Geography – note, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/id.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PHL",
+   "why": "북쪽 바다의 또 다른 섬나라"
+  }
+ },
+ {
+  "id": "idn-java",
+  "country": "IDN",
+  "title": "인도네시아 사람들은 왜 화산이 많은 자바섬에 모여 살까?",
+  "category": "geo",
+  "panels": [
+   "인도네시아는 세계에서 화산이 가장 많은 나라입니다. 역사 속에서 활동한 화산만 75개가 넘습니다.",
+   "가장 활발한 므라피산(2,968m)은 폭발 역사와 사람이 사는 곳과의 가까움 때문에 국제 학회가 꼽은 '10년 화산'입니다.",
+   "그런데 인구는 자바섬에 몰려 있습니다. Factbook은 자바를 지구에서 가장 인구가 빽빽한 곳 가운데 하나로 꼽습니다.",
+   "천연자원 목록에는 '비옥한 흙'도 올라 있습니다. 나라 전체 인구밀도는 {{vr:IDN:density}}입니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "JPN",
+   "PHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Indonesia: Geography – Natural hazards, People – Population distribution, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/id.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JPN",
+   "why": "같은 '불의 고리' 위에 있는 북쪽 섬나라"
+  }
+ },
+ {
+  "id": "idn-languages",
+  "country": "IDN",
+  "title": "인도네시아에서는 몇 개의 언어가 쓰일까?",
+  "category": "culture",
+  "panels": [
+   "인도네시아에서 쓰이는 언어는 700개가 넘습니다.",
+   "공용어인 인도네시아어(바하사 인도네시아)는 말레이어를 바탕으로 다듬은 말입니다. 지역 언어 가운데에는 자바어를 쓰는 사람이 가장 많습니다.",
+   "민족 구성도 다양합니다. 자바인 40.1%, 순다인 15.5%를 비롯해 300개가 넘는 민족이 삽니다.",
+   "Factbook은 인도네시아를 세계에서 무슬림이 가장 많은 나라, 세 번째로 인구가 많은 민주주의 국가로 소개합니다."
+  ],
+  "indicators": [
+   "population"
+  ],
+  "related": [
+   "MYS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Indonesia: People – Languages, People – Ethnic groups, People – Religions",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/id.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MYS",
+   "why": "같은 말레이어 뿌리를 가진 이웃"
+  }
+ },
+ {
+  "id": "idn-spice",
+  "country": "IDN",
+  "title": "정향과 코코넛, 인도네시아 들판은 세계에서 몇 등일까?",
+  "category": "economy",
+  "panels": [
+   "16세기에 포르투갈이 일부 섬을 차지했고, 17세기 초부터는 네덜란드가 섬들을 식민지로 삼았습니다.",
+   "지금 인도네시아 들판은 여러 작물로 세계 1위입니다. {{ag:IDN:Cloves (whole stems), raw}}, {{ag:IDN:Coconuts, in shell}}입니다.",
+   "고무나무도 많습니다. {{ag:IDN:Natural rubber in primary forms}}입니다.",
+   "그래도 수출 1위 상품은 농산물이 아니라 {{ex:IDN}}입니다."
+  ],
+  "indicators": [
+   "agri_va",
+   "exports_gdp"
+  ],
+  "related": [
+   "MYS",
+   "NLD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Indonesia: Economy – Agricultural products, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/id.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NLD",
+   "why": "17세기부터 이 섬들을 식민지로 삼은 나라"
+  }
+ },
+ {
+  "id": "ind-buffalo",
+  "country": "IND",
+  "title": "인도는 어떤 젖을 세계에서 가장 많이 짤까?",
+  "category": "economy",
+  "panels": [
+   "Factbook의 인도 주요 농산물 목록에는 우유와 따로 '물소 젖'이 올라 있습니다.",
+   "FAO 통계로 인도는 {{ag:IND:Raw milk of buffalo}}입니다. 물소고기도 {{ag:IND:Meat of buffalo, fresh or chilled}}입니다.",
+   "콩 요리 재료도 세계 1위급입니다. {{ag:IND:Chick peas, dry}}, {{ag:IND:Pigeon peas, dry}}입니다.",
+   "커민·고수 같은 향신료 씨앗은 {{ag:IND:Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw}}입니다. 농림어업은 경제의 {{vr:IND:agri_va}}를 차지합니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "PAK",
+   "BGD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — India: Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/in.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PAK",
+   "why": "같은 강 유역을 나눠 쓰는 서쪽 이웃"
+  }
+ },
+ {
+  "id": "ind-indus",
+  "country": "IND",
+  "title": "인도의 역사는 어디까지 거슬러 올라갈까?",
+  "category": "history",
+  "panels": [
+   "세계에서 가장 오래된 문명 가운데 하나인 인더스 문명은 기원전 3천~2천 년대에 인도 서북부까지 퍼져 있었습니다.",
+   "기원전 4~3세기 마우리아 제국은 아소카 왕 때 남아시아 대부분을 하나로 묶었고, 4~6세기 굽타 왕조 때는 과학과 예술이 꽃피었습니다.",
+   "16세기에 무굴 왕조가 들어서 3세기 넘게 인도 넓은 지역을 다스렸고, 19세기에는 영국이 인도를 지배했습니다.",
+   "간디와 네루가 이끈 비폭력 저항 끝에 인도는 1947년 8월 15일 독립했습니다."
+  ],
+  "related": [
+   "PAK",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — India: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/in.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PAK",
+   "why": "인더스 문명이 꽃핀 강이 흐르는 나라"
+  }
+ },
+ {
+  "id": "ind-languages",
+  "country": "IND",
+  "title": "인도 사람들은 몇 가지 언어로 말할까?",
+  "category": "culture",
+  "panels": [
+   "인도에서 힌디어를 쓰는 사람은 43.6%로, 절반이 되지 않습니다.",
+   "벵골어 8%, 마라티어 6.9%, 텔루구어 6.7%, 타밀어 5.7%, 구자라트어 4.6%… 1%가 넘는 언어만 열 개가 넘습니다.",
+   "영어는 보조 공용어로 함께 쓰입니다.",
+   "이 많은 말을 쓰는 사람을 모두 합하면 {{vr:IND:population}}입니다."
+  ],
+  "indicators": [
+   "population"
+  ],
+  "related": [
+   "BGD",
+   "PAK"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — India: People – Languages, People – Ethnic groups",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/in.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BGD",
+   "why": "벵골어를 쓰는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "ind-monsoon",
+  "country": "IND",
+  "title": "인도에서는 왜 한 나라 안에서 가뭄과 홍수를 함께 걱정할까?",
+  "category": "geo",
+  "panels": [
+   "인도 남쪽은 열대 계절풍 기후, 북쪽은 온대 기후입니다. 쾨펜 기후로 나누면 {{cl:IND}}로 가장 넓습니다.",
+   "재해 목록에는 가뭄과 홍수가 나란히 올라 있습니다. 계절풍 비가 몰려오면 넓은 지역이 물에 잠기고, 비가 모자라는 해에는 가뭄이 듭니다.",
+   "큰 강도 바깥에서 들어옵니다. 브라마푸트라강과 인더스강은 중국에서 시작해 인도를 지나 흐릅니다.",
+   "갠지스강은 인도에서 시작해 방글라데시에서 바다로 나갑니다."
+  ],
+  "related": [
+   "BGD",
+   "NPL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — India: Geography – Climate, Geography – Natural hazards, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/in.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NPL",
+   "why": "인도로 흘러드는 강이 시작되는 히말라야의 나라"
+  }
+ },
+ {
+  "id": "jpn-edo-tokyo",
+  "country": "JPN",
+  "title": "도쿄는 왜 '동쪽의 수도'라는 이름을 갖게 되었을까?",
+  "category": "history",
+  "panels": [
+   "1603년, 수십 년의 내전 끝에 도쿠가와 막부가 들어서며 일본은 긴 안정기에 들어갔습니다. 막부가 자리 잡은 도시는 '강어귀'라는 뜻의 에도였습니다.",
+   "두 세기 넘게 바깥 세계와 거의 문을 닫은 채 일본 고유의 문화가 꽃을 피웠습니다.",
+   "1854년 미국과 가나가와 조약을 맺어 항구를 연 뒤 일본은 빠르게 근대화했습니다. 1868년 에도의 이름은 서쪽의 옛 수도 교토와 견주어 '동쪽의 수도', 도쿄로 바뀌었습니다.",
+   "지금은 일본 인구의 3분의 1이 도쿄 주변 간토 평야에 모여 삽니다."
+  ],
+  "related": [
+   "USA",
+   "KOR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Japan: Introduction – Background, Government – Capital, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ja.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "1854년, 일본의 항구를 연 조약의 상대국"
+  }
+ },
+ {
+  "id": "jpn-islands-resources",
+  "country": "JPN",
+  "title": "광물이 거의 없는 섬나라는 무엇을 캐고 기를까?",
+  "category": "resources",
+  "panels": [
+   "Factbook이 적은 일본의 천연자원은 단 두 가지입니다. '거의 없는 광물, 그리고 물고기.'",
+   "일본은 둘레 100m가 넘는 섬만 1만 4천여 개를 공식으로 세는 나라입니다. 그중 사람이 사는 섬은 약 260개이고, 땅 대부분이 험한 산입니다.",
+   "좁은 평지에서 섬세한 농사가 이어집니다. FAO 통계로 일본은 {{ag:JPN:Mushrooms and truffles}}, {{ag:JPN:Buckwheat}}입니다.",
+   "원료를 사 와서 만든 물건을 파는 길을 택했습니다. 상품 수출 1위는 {{ex:JPN}}입니다. 숲은 국토의 {{vr:JPN:forest}}를 덮고 있습니다."
+  ],
+  "indicators": [
+   "forest",
+   "exports_gdp"
+  ],
+  "related": [
+   "KOR",
+   "NZL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Japan: Geography – Natural resources, Geography – Terrain, Geography – note",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ja.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NZL",
+   "why": "남반구의 또 다른 산 많은 섬나라"
+  }
+ },
+ {
+  "id": "kor-islands",
+  "country": "KOR",
+  "title": "한국 바다에는 섬이 몇 개나 떠 있을까?",
+  "category": "geo",
+  "panels": [
+   "한반도 남쪽의 대한민국은 땅 대부분이 언덕과 산입니다. 넓은 평야는 서해안과 남해안 쪽에 펼쳐져 있습니다.",
+   "그 서쪽과 남쪽 바다에는 약 3,000개의 섬이 흩어져 있습니다. 대부분은 작고, 사람이 살지 않는 섬입니다.",
+   "가장 높은 섬 산은 제주의 한라산(1,950m)입니다. 수백 년 동안 분화하지 않았지만, 역사 속에서 활동한 화산으로 분류됩니다.",
+   "사람들은 산을 피해 낮은 땅에 모여 삽니다. 서울과 인천항을 둘러싼 경기도가 가장 빽빽하고, 나라 전체 인구밀도는 {{vr:KOR:density}}입니다."
+  ],
+  "indicators": [
+   "density",
+   "area"
+  ],
+  "related": [
+   "JPN",
+   "PHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — South Korea: Geography – note, Geography – Terrain, Geography – Natural hazards, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ks.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JPN",
+   "why": "바다 건너, 섬이 훨씬 더 많은 이웃 섬나라"
+  }
+ },
+ {
+  "id": "kor-persimmon",
+  "country": "KOR",
+  "title": "반도체의 나라 한국, 논밭에서는 무엇으로 세계 순위에 오를까?",
+  "category": "economy",
+  "panels": [
+   "한국 산업 목록의 첫머리는 전자·통신·자동차·조선입니다. 하지만 논밭에도 세계 순위표가 있습니다.",
+   "FAO 통계로 보면 한국은 {{ag:KOR:Persimmons}}입니다. 가을 시골 마당의 감나무가 세계 지도에 이름을 올린 셈입니다.",
+   "김치 재료도 빠지지 않습니다. {{ag:KOR:Cabbages}}, 파는 {{ag:KOR:Onions and shallots, green}}입니다.",
+   "그래도 경제 전체에서 농림어업이 차지하는 몫은 {{vr:KOR:agri_va}}에 그칩니다. 반대로 제조업 비중은 {{vr:KOR:manufacturing}}입니다."
+  ],
+  "indicators": [
+   "agri_va",
+   "manufacturing"
+  ],
+  "related": [
+   "CHN",
+   "JPN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — South Korea: Economy – Agricultural products, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/ks.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "한국과 같은 채소를 훨씬 더 많이 기르는 이웃"
+  }
+ },
+ {
+  "id": "prk-clock",
+  "country": "PRK",
+  "title": "평양과 서울의 시계는 언제 다시 같은 시각을 가리키게 되었을까?",
+  "category": "curious",
+  "panels": [
+   "평양이라는 이름은 '평평한 땅'이라는 뜻입니다.",
+   "남과 북은 같은 날, 1945년 8월 15일에 일본으로부터 독립했습니다.",
+   "북한은 한동안 남한과 다른 표준시를 썼습니다. 그러다 2018년 5월 5일 남한과 같은 UTC+9로 표준시를 되돌렸습니다.",
+   "그날부터 평양과 서울의 시계는 다시 같은 시각을 가리킵니다."
+  ],
+  "related": [
+   "KOR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — North Korea: Government – Capital, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/kn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KOR",
+   "why": "같은 날 해방을 맞은 남쪽의 이웃"
+  }
+ },
+ {
+  "id": "prk-minerals",
+  "country": "PRK",
+  "title": "북한의 산에는 무엇이 묻혀 있을까?",
+  "category": "resources",
+  "panels": [
+   "Factbook이 꼽은 북한의 자원 목록은 깁니다. 석탄, 철광석, 석회석, 마그네사이트, 흑연, 구리, 아연, 납, 귀금속, 그리고 수력.",
+   "산업 목록에도 광업과 금속 제련이 큰 자리를 차지합니다.",
+   "남한의 자원 목록은 석탄, 텅스텐, 흑연, 몰리브덴, 납 정도입니다. 같은 반도라도 Factbook 목록은 북쪽이 훨씬 깁니다.",
+   "들판의 기록도 있습니다. FAO 통계로 북한은 {{ag:PRK:Meat of rabbits and hares, fresh or chilled}}, {{ag:PRK:Chestnuts, in shell}}입니다."
+  ],
+  "related": [
+   "KOR",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — North Korea: Geography – Natural resources, Economy – Industries, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/kn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KOR",
+   "why": "같은 반도 남쪽의 자원 목록과 견줘 보기"
+  }
+ },
+ {
+  "id": "prk-numbers",
+  "country": "PRK",
+  "title": "북한 경제는 왜 숫자로 보기 어려울까?",
+  "category": "economy",
+  "panels": [
+   "북한은 지금도 국가가 생산과 분배를 계획하는, 몇 남지 않은 중앙계획경제 국가입니다.",
+   "코로나19, 흉작, 국제 제재, 스스로 문을 닫는 정책이 겹치며 성장과 무역이 줄었고, 무역은 중국에 크게 기대고 있습니다.",
+   "Factbook조차 북한 경제 자료는 믿을 수 있는지가 문제라고 적습니다. 사회과부도의 GDP 순위에 북한이 빠진 까닭도 World Bank가 수치를 내지 않기 때문입니다.",
+   "그래도 볼 수 있는 숫자가 있습니다. 기대수명은 {{vr:PRK:life_exp}}, 도시에 사는 사람의 비율은 {{vr:PRK:urban}}입니다."
+  ],
+  "indicators": [
+   "life_exp",
+   "urban"
+  ],
+  "related": [
+   "CHN",
+   "KOR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — North Korea: Economy – Economic overview, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/kn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "북한 무역이 크게 기대는 이웃"
+  }
+ },
+ {
+  "id": "prk-paektu",
+  "country": "PRK",
+  "title": "백두산은 왜 지금도 지켜봐야 하는 산일까?",
+  "category": "geo",
+  "panels": [
+   "북한과 중국의 국경에 높이 2,744m의 백두산이 솟아 있습니다. 중국에서는 창바이산이라 부릅니다.",
+   "Factbook은 이 산을 역사 속에서 활동한 화산으로 분류합니다.",
+   "북한 땅은 대부분 언덕과 산이고, 깊고 좁은 골짜기가 산줄기를 가릅니다. 넓은 평야는 서쪽 해안에 있고, 동쪽 해안 평야는 띄엄띄엄 이어집니다.",
+   "겨울은 길고 혹독합니다. 늦봄에는 가뭄이 들고 뒤이어 큰 홍수가 오는 일이 잦습니다."
+  ],
+  "related": [
+   "CHN",
+   "KOR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — North Korea: Geography – Natural hazards, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/kn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KOR",
+   "why": "같은 반도 남쪽의 화산섬 제주"
+  }
+ },
+ {
+  "id": "sau-dates",
+  "country": "SAU",
+  "title": "사막의 나라는 어떤 농산물로 세계 1위를 할까?",
+  "category": "resources",
+  "panels": [
+   "비가 거의 오지 않는 나라지만, 사우디아라비아 들판에도 세계 1위 작물이 있습니다.",
+   "FAO 통계로 사우디아라비아는 {{ag:SAU:Dates}}입니다.",
+   "낙타도 빼놓을 수 없습니다. {{ag:SAU:Meat of camels, fresh or chilled}}, {{ag:SAU:Raw milk of camel}}입니다.",
+   "그래도 농림어업이 경제에서 차지하는 몫은 {{vr:SAU:agri_va}}에 그칩니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "EGY",
+   "IRQ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Saudi Arabia: Economy – Agricultural products, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/sa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "EGY",
+   "why": "대추야자를 많이 기르는 홍해 건너 나라"
+  }
+ },
+ {
+  "id": "sau-holy-cities",
+  "country": "SAU",
+  "title": "사우디 국왕의 공식 칭호는 왜 '두 성원의 수호자'일까?",
+  "category": "history",
+  "panels": [
+   "사우디아라비아는 이슬람교가 태어난 곳이고, 이슬람의 가장 성스러운 두 사원이 메카와 메디나에 있습니다.",
+   "그래서 국왕의 공식 칭호가 '두 성원의 수호자'입니다.",
+   "지금의 나라는 이븐 사우드가 30년에 걸쳐 아라비아반도 대부분을 하나로 묶은 뒤, 1932년 9월 23일에 세웠습니다.",
+   "2015년 지방선거에서 여성이 처음으로 투표하고 출마할 수 있게 됐고, 이후 여성 운전 금지도 풀렸습니다."
+  ],
+  "related": [
+   "JOR",
+   "YEM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Saudi Arabia: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/sa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JOR",
+   "why": "사우디와 국경을 맞댄 북쪽 이웃"
+  }
+ },
+ {
+  "id": "sau-no-river",
+  "country": "SAU",
+  "title": "강이 하나도 없는 나라 가운데 가장 큰 나라는?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 사우디아라비아를 '강이 없는 나라 가운데 세계에서 가장 큰 나라'라고 적습니다. 국토 면적은 {{vr:SAU:area}}입니다.",
+   "땅은 대부분 모래사막이고, 쾨펜 기후로는 {{cl:SAU}}입니다.",
+   "거대한 룹알할리 사막이 국토의 {{lf:SAU:Rub’ Al Khali}}를 덮고 있습니다.",
+   "수도 리야드라는 이름은 아랍어로 '정원들'이라는 뜻입니다. 작은 오아시스를 둘러싸고 세워진 도시이기 때문입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "YEM",
+   "OMN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Saudi Arabia: Geography – note, Geography – Terrain, Geography – Climate, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/sa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "OMN",
+   "why": "같은 반도 동쪽, 아라비아해에 닿은 이웃"
+  }
+ },
+ {
+  "id": "sau-oil",
+  "country": "SAU",
+  "title": "수출의 4분의 3이 석유인 나라는 석유 다음을 어떻게 준비할까?",
+  "category": "economy",
+  "panels": [
+   "1930년대 석유가 발견된 뒤, 대부분 유목·반유목 생활을 하던 사람들이 한곳에 정착하기 시작했습니다.",
+   "지금 상품 수출 1위는 {{ex:SAU}}입니다. Factbook은 사우디아라비아가 2020년 기준 세계 확인 석유 매장량의 약 17%를 가졌다고 적습니다.",
+   "2016년 정부는 경제 다각화를 내건 '비전 2030'을 발표했습니다. 국부펀드와 외국인 투자로 새 산업을 키우겠다는 계획입니다.",
+   "천연자원에서 얻는 몫은 GDP의 {{v:SAU:resource_rents}}입니다."
+  ],
+  "indicators": [
+   "resource_rents",
+   "gdp_pc"
+  ],
+  "related": [
+   "ARE",
+   "QAT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Saudi Arabia: Introduction – Background, Economy – Economic overview, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/sa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ARE",
+   "why": "석유 밖의 산업을 키워 온 이웃"
+  }
+ },
+ {
+  "id": "sgp-languages",
+  "country": "SGP",
+  "title": "싱가포르는 왜 공용어가 네 개일까?",
+  "category": "culture",
+  "panels": [
+   "싱가포르의 공용어는 영어, 중국어(표준어), 말레이어, 타밀어 네 가지입니다.",
+   "주민은 중국계 74.2%, 말레이계 13.7%, 인도계 8.9%로 구성돼 있습니다.",
+   "2020년 조사로 영어를 쓰는 사람이 48.3%로 가장 많고, 중국어 표준어가 29.9%로 뒤를 잇습니다.",
+   "종교도 불교, 기독교, 이슬람교, 도교, 힌두교가 섞여 있고, 종교가 없는 사람도 20%입니다."
+  ],
+  "related": [
+   "MYS",
+   "IND",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Singapore: People – Languages, People – Ethnic groups, People – Religions",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/sn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MYS",
+   "why": "말레이어를 함께 쓰는 이웃"
+  }
+ },
+ {
+  "id": "sgp-lion",
+  "country": "SGP",
+  "title": "'사자의 도시'는 언제 나라가 되었을까?",
+  "category": "history",
+  "panels": [
+   "싱가포르라는 이름은 산스크리트어 '심하(사자)'와 '푸라(도시)'에서 왔습니다. 말레이 전설에 따르면 7세기 한 인도 왕자가 처음 본 동물을 사자로 착각했다고 합니다. 싱가포르에는 사자가 살지 않습니다.",
+   "14세기에는 테마섹이라는 말레이 항구가 있었지만 17세기에 불탄 뒤 잊혔습니다.",
+   "1819년 영국이 같은 자리에 무역 식민지를 세웠고, 1963년 말레이시아 연방에 들어갔다가 2년 뒤 떨어져 나와 1965년 8월 9일 독립했습니다.",
+   "지금 1인당 GDP는 {{vr:SGP:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc"
+  ],
+  "related": [
+   "MYS",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Singapore: Introduction – Background, Government – Capital, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/sn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MYS",
+   "why": "싱가포르가 2년 동안 함께했던 연방"
+  }
+ },
+ {
+  "id": "sgp-reclaim",
+  "country": "SGP",
+  "title": "싱가포르 지도는 왜 옛 지도와 모양이 다를까?",
+  "category": "geo",
+  "panels": [
+   "싱가포르는 약 60개의 섬으로 이루어져 있고, 가장 큰 섬이 풀라우 우종입니다.",
+   "바다를 메워 땅을 넓히면서 예전에 있던 섬 여러 개가 사라졌고, 새 섬도 생겼습니다.",
+   "가장 높은 곳인 부킷 티마도 176m에 불과한, 낮고 완만한 땅입니다.",
+   "지금 국토 면적은 {{vr:SGP:area}}, 인구밀도는 {{vr:SGP:density}}입니다."
+  ],
+  "indicators": [
+   "area",
+   "density"
+  ],
+  "related": [
+   "MYS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Singapore: Geography – note, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/sn.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MYS",
+   "why": "다리 하나로 이어진 북쪽 이웃"
+  }
+ },
+ {
+  "id": "tha-bangkok-name",
+  "country": "THA",
+  "title": "방콕의 진짜 이름은 얼마나 길까?",
+  "category": "curious",
+  "panels": [
+   "방콕이라는 이름은 태국어 '방(지역)'과 '꼭(올리브 나무)'에서 왔습니다.",
+   "하지만 이 도시의 정식 의례 이름은 세계에서 가장 긴 지명으로 기록돼 있습니다. '천사의 도시, 위대한 불멸의 도시, 아홉 보석의 도시…'로 길게 이어집니다.",
+   "그런데 이 도시는 지금 조금씩 가라앉고 있습니다. 지하수를 많이 뽑아 쓰면서 땅이 내려앉는 것이 Factbook이 꼽은 태국의 자연 재해입니다."
+  ],
+  "related": [
+   "MMR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Thailand: Government – Capital, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/th.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "LAO",
+   "why": "메콩강 건너 방콕과 마주한 이웃"
+  }
+ },
+ {
+  "id": "tha-isthmus",
+  "country": "THA",
+  "title": "아시아 대륙에서 싱가포르까지 땅으로 가려면 어느 나라를 지나야 할까?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 태국을 '아시아에서 말레이시아·싱가포르로 가는 유일한 육로를 쥔 나라'라고 적습니다.",
+   "태국의 땅은 가운데 평야, 동쪽의 코랏 고원, 그리고 나머지 산지로 나뉩니다. 코랏 분지는 국토의 {{lf:THA:Khorat Plat.}}를 차지합니다.",
+   "남쪽으로 길게 뻗은 말레이반도 부분은 국토의 {{lf:THA:Malay Peninsula}}입니다.",
+   "이 좁은 반도 쪽은 일 년 내내 덥고 습합니다. 나머지 땅은 계절풍에 따라 비 오는 철과 건조한 철이 갈립니다."
+  ],
+  "related": [
+   "MYS",
+   "SGP"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Thailand: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/th.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SGP",
+   "why": "말레이반도 끝, 길의 마지막 나라"
+  }
+ },
+ {
+  "id": "tha-never-colonized",
+  "country": "THA",
+  "title": "동남아시아에서 식민지가 된 적 없는 나라는 어디일까?",
+  "category": "history",
+  "panels": [
+   "13세기 중반, 크메르 제국에서 독립한 수코타이 왕국과 북쪽의 란나 왕국이 생겨났습니다.",
+   "14~18세기 아유타야 왕국이 뒤를 이었고, 이 나라는 '시암'으로 알려졌습니다.",
+   "19세기 서양의 압력으로 불리한 무역 조약을 맺었고, 영국과 프랑스에 캄보디아·라오스·말레이 쪽 땅을 내주었습니다.",
+   "그래도 Factbook은 태국을 '식민지가 된 적 없는 나라'로 적습니다. 전통적인 건국 연도는 1238년입니다."
+  ],
+  "related": [
+   "MMR",
+   "KHM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Thailand: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/th.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MMR",
+   "why": "18세기 태국과 여러 번 싸운 서쪽 이웃"
+  }
+ },
+ {
+  "id": "tha-rubber",
+  "country": "THA",
+  "title": "천연고무 1위 나라는 무엇을 더 많이 수출할까?",
+  "category": "economy",
+  "panels": [
+   "태국은 {{ag:THA:Natural rubber in primary forms}}입니다. 카사바도 {{ag:THA:Cassava, fresh}}입니다.",
+   "하지만 Factbook은 태국을 전자제품·식품·자동차 부품 수출국으로 먼저 소개합니다.",
+   "실제로 상품 수출 1위는 {{ex:THA}}입니다.",
+   "제조업이 경제에서 차지하는 비중은 {{vr:THA:manufacturing}}입니다."
+  ],
+  "indicators": [
+   "manufacturing",
+   "exports_gdp"
+  ],
+  "related": [
+   "MYS",
+   "IDN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Thailand: Economy – Agricultural products, Economy – Industries, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/th.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MYS",
+   "why": "고무와 전자제품을 함께 파는 남쪽 이웃"
+  }
+ },
+ {
+  "id": "vnm-cave",
+  "country": "VNM",
+  "title": "세계에서 가장 큰 동굴 안에는 무엇이 있을까?",
+  "category": "curious",
+  "panels": [
+   "베트남 퐁냐깨방 국립공원의 선둥 동굴은 단면이 가장 큰 동굴이자, 부피로도 알려진 가장 큰 동굴 통로입니다.",
+   "부피는 3,850만 m³에 이릅니다.",
+   "동굴이 너무 커서 안에 정글과 지하 강이 있고, 날씨까지 따로 생깁니다. 동굴 안에서 구름이 만들어져 입구로 뿜어져 나옵니다.",
+   "이웃 동굴과도 이어져 있다고 알려졌지만, 아직 공식으로 인정되지는 않았습니다."
+  ],
+  "related": [
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Vietnam: Geography – note",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/vm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "세계에서 가장 큰 동굴 방이 있는 북쪽 이웃"
+  }
+ },
+ {
+  "id": "vnm-doimoi",
+  "country": "VNM",
+  "title": "후추 1위 나라는 어떻게 휴대전화 수출국이 되었을까?",
+  "category": "economy",
+  "panels": [
+   "1975년 전쟁이 끝난 뒤 베트남 경제는 10년 넘게 거의 자라지 못했습니다.",
+   "1986년 '도이머이(쇄신)' 정책을 시작하면서 농업과 공업 생산, 수출, 외국인 투자가 빠르게 늘었습니다.",
+   "들판은 여전히 강합니다. 베트남은 {{ag:VNM:Pepper (Piper spp.), raw}}, {{ag:VNM:Coffee, green}}입니다.",
+   "그런데 지금 상품 수출 1위는 {{ex:VNM}}입니다. Factbook 산업 목록에도 휴대전화가 올라 있습니다."
+  ],
+  "indicators": [
+   "manufacturing",
+   "exports_gdp"
+  ],
+  "related": [
+   "CHN",
+   "KOR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Vietnam: Introduction – Background, Economy – Economic overview, Economy – Industries, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/vm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KHM",
+   "why": "베트남 공단과 이어진 서쪽의 옷 공장 나라"
+  }
+ },
+ {
+  "id": "vnm-hanoi",
+  "country": "VNM",
+  "title": "'강 안쪽'이라는 이름의 도시는 언제부터 수도였을까?",
+  "category": "history",
+  "panels": [
+   "하노이는 베트남 말로 '강 안쪽'이라는 뜻입니다. 강이 굽어 감싸는 자리에 있기 때문입니다.",
+   "10세기 무렵까지 홍강 유역은 중국 한나라 이후의 황제들이 다스렸습니다.",
+   "11세기 리 왕조가 첫 독립 국가 다이비엣을 세우고 탕롱(지금의 하노이)에 도읍했습니다. 13세기에는 쩐흥다오가 몽골군을 물리쳤습니다.",
+   "1802년 나라 이름이 베트남으로 바뀌었고, 프랑스 식민 지배를 거쳐 1945년 9월 2일 독립을 선언했습니다."
+  ],
+  "related": [
+   "CHN",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Vietnam: Introduction – Background, Government – Capital, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/vm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "19세기 베트남을 식민지로 만든 나라"
+  }
+ },
+ {
+  "id": "vnm-narrow",
+  "country": "VNM",
+  "title": "가장 좁은 곳의 폭이 50km인 나라는 어떤 모양일까?",
+  "category": "geo",
+  "panels": [
+   "베트남은 남북으로 1,650km나 뻗어 있지만, 가장 좁은 곳은 폭이 50km밖에 되지 않습니다.",
+   "북쪽과 남쪽에는 넓고 낮은 삼각주가 있습니다. 북쪽은 홍강, 남쪽은 메콩강이 만든 땅입니다.",
+   "사람들도 두 삼각주와 바닷가에 몰려 삽니다. 나라 전체 인구밀도는 {{vr:VNM:density}}입니다.",
+   "메콩강은 중국에서 시작해 미얀마·라오스·태국·캄보디아를 거쳐 베트남에서 바다로 나갑니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "LAO",
+   "KHM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Vietnam: Geography – note, Geography – Terrain, People – Population distribution, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/vm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "LAO",
+   "why": "베트남의 좁은 허리 서쪽에 붙은 내륙국"
+  }
+ }
+]
