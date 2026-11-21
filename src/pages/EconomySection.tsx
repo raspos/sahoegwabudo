@@ -63,6 +63,7 @@ export function EconomySection({ ds, c, ex, compact }: { ds: Dataset; c: Country
   const s = useMemo(() => sectorShares(ds, c.id), [ds, c.id]);
   const trade = ex?.trade?.countries[c.id];
   const agri = ex?.agri?.countries[c.id];
+  const spec = ex?.specialties?.countries[c.id];
   const nom = ds.refValue(c.id, 'gdp_pc'), ppp = ds.refValue(c.id, 'gdp_pc_ppp');
   const nomR = ds.rankOf(c.id, 'gdp_pc'), pppR = ds.rankOf(c.id, 'gdp_pc_ppp');
   const exp = ds.latest(c.id, 'exports_gdp'), prod = ds.rankOf(c.id, 'productivity');
@@ -185,9 +186,36 @@ export function EconomySection({ ds, c, ex, compact }: { ds: Dataset; c: Country
         </section>
         <section>
           <h4>C. 역사·문화적으로 알려진 특산물</h4>
+          {spec?.unesco.length ? (
+            <>
+              <p className="spec-sub">유네스코 인류무형문화유산</p>
+              <ul>{spec.unesco.map((u) => (
+                <li key={u.id}>
+                  <a href={u.url} target="_blank" rel="noreferrer" lang="en">{u.name_en}</a>
+                  <small> {u.kind === 'food' ? '음식·음료' : '공예'} · {u.year}년{u.list === 'USL' ? ' · 긴급보호' : ''}{u.shared_with.length ? ` · ${u.shared_with.length}개 나라와 공동 등재` : ''}</small>
+                </li>
+              ))}</ul>
+            </>
+          ) : null}
+          {spec?.gi.length ? (
+            <>
+              <p className="spec-sub">EU 지리적 표시 등록 명칭 <small>(모두 {spec.gi_total}개 중)</small></p>
+              <ul>{spec.gi.map((g) => (
+                <li key={g.file}><span lang="und">{g.name}</span> <small>{g.category_ko} · {g.type} · {g.year}년 · {g.file}</small></li>
+              ))}</ul>
+            </>
+          ) : null}
           {prof?.specialties.length ? (
             <ul>{prof.specialties.map((f) => <li key={f.text}>{f.text} <small>(<a href={f.url} target="_blank" rel="noreferrer">{f.source}</a>)</small></li>)}</ul>
-          ) : <p className="muted">출처를 확인한 특산물 정보가 아직 없습니다.</p>}
+          ) : null}
+          {!spec?.unesco.length && !spec?.gi.length && !prof?.specialties.length && <p className="muted">유네스코 인류무형문화유산이나 EU 지리적 표시에 등록된 특산물이 없습니다.</p>}
+          {(spec?.unesco.length || spec?.gi.length) ? (
+            <p className="src">
+              {spec?.unesco.length ? 'UNESCO Intangible Cultural Heritage' : ''}
+              {spec?.unesco.length && spec?.gi.length ? ' · ' : ''}
+              {spec?.gi.length ? <><a href={ex?.specialties?.meta.gi_register_url} target="_blank" rel="noreferrer">EU 지리적 표시 등록부(eAmbrosia)</a>에서 등록 번호로 찾을 수 있음</> : ''}
+            </p>
+          ) : null}
         </section>
       </div>
     </div>

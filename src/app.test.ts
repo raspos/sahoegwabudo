@@ -288,6 +288,21 @@ describe('PHASE 2: 경제·자연환경 자료', () => {
       for (const p of panels) expect(p.text, s.id).not.toMatch(/undefined|NaN|null|\?%/);
     }
   });
+  it('특산물(C): 공식 등록부 항목만, 모든 항목에 주소나 등록 번호, 100개국 이상', () => {
+    const sp = load('specialties.json');
+    const cs = Object.entries<any>(sp.countries);
+    expect(cs.filter(([, v]) => v.unesco.length || v.gi.length).length).toBeGreaterThanOrEqual(100);
+    for (const [cid, v] of cs) {
+      expect(ds.country(cid), cid).toBeDefined();
+      for (const u of v.unesco) { expect(u.url).toMatch(/^https:\/\/ich\.unesco\.org\/en\/(RL|USL)\/\d{5}$/); expect(['food', 'craft']).toContain(u.kind); }
+      for (const g of v.gi) { expect(g.file).toMatch(/^(PDO|PGI|GI|PGI-|PDO-)?/); expect(g.file).toBeTruthy(); expect(g.category_ko).toBeTruthy(); }
+      expect(v.gi.length).toBeLessThanOrEqual(6);
+      expect(v.gi_total).toBeGreaterThanOrEqual(v.gi.length);
+    }
+    expect(sp.countries.KOR.unesco.map((u: any) => u.id)).toContain('00881');
+    expect(sp.countries.AUT.gi.length).toBeGreaterThan(0);
+    expect(JSON.stringify(sp.countries.AUT)).not.toMatch(/Lipizzan/);
+  });
   it('오스트리아 수출 이야기의 상품군 순서가 원자료와 일치한다', () => {
     const story = ECON_STORIES.find((s) => s.id === 'aut-exports')!;
     const text = story.panels(ds, ex as never)[0].text;

@@ -33,6 +33,8 @@ jobs:
         run: |
           mkdir -p data/raw/fao
           curl -sL -m 900 -o data/raw/fao/qcl.zip "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip"             && python -I pipeline/agri.py || echo "::warning::FAOSTAT 갱신 실패 - 기존 agri.json 유지"
+      - name: EU 지리적 표시 등록부 (실패해도 계속, UNESCO 목록은 data/reference 파일 사용)
+        run: python -I pipeline/specialties.py --refresh || echo "::warning::특산물 갱신 실패 - 기존 specialties.json 유지"
       # 기후·지형(nature.json)은 바뀌지 않는 자료라 여기서 다시 만들지 않는다 (pipeline/nature.py 를 손으로 실행)
       - name: 추가 자료 요약을 PR 본문에 덧붙임
         run: |

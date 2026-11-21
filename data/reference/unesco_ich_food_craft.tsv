@@ -1,0 +1,161 @@
+# UNESCO 인류무형문화유산 대표목록(RL)·긴급보호목록(USL) 가운데 음식·음료(food)·공예품(craft) 종목
+# 출처: UNESCO Intangible Cultural Heritage, https://ich.unesco.org/dive/data/graph_en.json (생성일 2026-02-23), 2026-11-21 브라우저에서 추출
+# 방법: 종목 개념 태그(Food preparation, Beverages, Handicrafts 등) + 종목 이름에 음식·음료·공예품 낱말이 있는 것만, 오탐 15개 제외(번호 목록은 pipeline/specialties.py)
+# 열: 번호|등재연도|목록|종류|국가(;로 구분, UNESCO 표기)|종목 이름(UNESCO 영어 공식 명칭)
+# 종목 주소: https://ich.unesco.org/en/{목록}/{번호}
+01496|2019|RL|craft|Kyrgyzstan|Ak-kalpak craftsmanship, traditional knowledge and skills in making and wearing Kyrgyz men’s headwear
+01564|2023|RL|craft|Philippines|Aklan piña handloom weaving
+02223|2025|RL|craft|United Arab Emirates|Al Sadu, traditional weaving skills in the United Arab Emirates
+01712|2022|RL|craft|United Arab Emirates|Al Talli, traditional embroidery skills in the United Arab Emirates
+01849|2022|RL|food|Jordan|Al-Mansaf in Jordan, a festive banquet and its social and cultural meanings
+02000|2023|RL|food|Lebanon|Al-Man’ouché, an emblematic culinary practice in Lebanon
+00693|2012|USL|craft|Kyrgyzstan|Ala-kiyiz and Shyrdak, art of Kyrgyz traditional felt carpets
+00870|2013|RL|food|Georgia|Ancient Georgian traditional Qvevri wine-making method
+02294|2025|RL|craft|Türkiye|Antep İşi, drawn thread embroidery of Gaziantep
+02111|2024|RL|food|United Arab Emirates;Oman;Qatar;Saudi Arabia;Jordan|Arabic coffee, a symbol of generosity
+00955|2014|RL|food|Morocco|Argan, practices and know-how concerning the argan tree
+00434|2010|RL|craft|Armenia|Armenian cross-stones art. Symbolism and craftsmanship of Khachkars
+00722|2017|RL|food|Italy|Art of Neapolitan ‘Pizzaiuolo’
+01541|2020|RL|craft|Malawi;Zimbabwe|Art of crafting and playing Mbira/Sansi, the finger-plucking traditional musical instrument in Malawi and Zimbabwe
+01574|2022|USL|craft|Viet Nam|Art of pottery-making of Chăm people
+01883|2022|RL|food|France|Artisanal know-how and culture of baguette bread
+01272|2017|RL|craft|Panama|Artisanal processes and plant fibers techniques for talcos, crinejas and pintas weaving of the pinta’o hat
+01462|2019|RL|craft|Mexico;Spain|Artisanal talavera of Puebla and Tlaxcala (Mexico) and ceramics of Talavera de la Reina and El Puente del Arzobispo (Spain) making process
+01951|2023|RL|craft|Iraq;Algeria;Egypt;Mauritania;Morocco;State of Palestine;Saudi Arabia;Sudan;Tunisia;Yemen|Arts, skills and practices associated with engraving on metals (gold, silver and copper)
+01959|2024|RL|food|Spain|Asturian cider culture
+00139|2008|RL|craft|Uganda|Barkcloth making in Uganda
+02230|2025|RL|craft|Poland|Basketry traditions
+01857|2022|RL|food|Slovenia|Beekeeping in Slovenia, a way of life
+01062|2016|RL|food|Belgium|Beer culture in Belgium
+01199|2016|USL|craft|Portugal|Bisalhães black pottery manufacturing process
+01378|2018|RL|craft|Slovenia|Bobbin lacemaking in Slovenia
+02113|2024|RL|food|Malaysia|Breakfast culture in Malaysia: dining experience in a multi-ethnic society
+01748|2021|RL|food|Senegal|Ceebu Jën, a culinary art of Senegal
+01989|2023|RL|craft|Uzbekistan|Ceramic arts in Uzbekistan
+00388|2011|RL|food|Türkiye|Ceremonial Keşkek tradition
+01397|2018|RL|craft|Tajikistan|Chakan, embroidery art in the Republic of Tajikistan
+00219|2009|RL|craft|China|Chinese paper-cut
+02288|2025|RL|food|Cyprus|Commandaria wine
+02081|2024|RL|food|Estonia|Cooking and eating Mulgi puder, traditional mashed potato with barley in the Mulgimaa region, Estonia
+00675|2015|RL|craft|Azerbaijan|Copper craftsmanship of Lahij
+01737|2025|USL|craft|Viet Nam|Craft of making Đông Hồ Folk woodblock printings
+00438|2010|RL|craft|France|Craftsmanship of Alençon needle lace-making
+02132|2024|RL|craft|Syrian Arab Republic|Craftsmanship of Aleppo Ghar soap
+00610|2012|RL|craft|Romania|Craftsmanship of Horezu ceramics
+01560|2020|RL|craft|Switzerland;France|Craftsmanship of mechanical watchmaking and art mechanics
+02130|2024|RL|craft|Ghana|Craftsmanship of traditional woven textile Kente
+02115|2024|RL|craft|Cambodia|Cultural practices and expressions linked to Krama, a traditional woven textile in Cambodia
+02089|2024|RL|food|Saudi Arabia|Cultural practices related to Taif roses
+02336|2025|RL|food|Tajikistan|Culture of Sumanak/Sumalak cooking
+01852|2022|USL|food|Ukraine|Culture of Ukrainian borscht cooking
+01685|2022|RL|food|Azerbaijan;Türkiye|Culture of Çay (tea), a symbol of identity, hospitality and social interaction
+02096|2024|RL|craft|Democratic People’s Republic of Korea|Custom of Korean costume: traditional knowledge, skills and social practices in the Democratic People's Republic of Korea
+01902|2022|RL|food|United Arab Emirates;Bahrain;Egypt;Iraq;Jordan;Kuwait;Mauritania;Morocco;Oman;State of Palestine;Qatar;Saudi Arabia;Sudan;Tunisia;Yemen|Date palm, knowledge, skills, traditions and practices
+01188|2017|RL|food|Azerbaijan|Dolma making and sharing tradition, a marker of cultural identity
+00753|2012|USL|craft|Botswana|Earthenware pottery-making skills in Botswana’s Kgatleng District
+01181|2016|RL|food|Azerbaijan;Iran (Islamic Republic of);Kazakhstan;Kyrgyzstan;Türkiye|Flatbread making and sharing culture: Lavash, Katyrma, Jupka, Yufka
+00633|2012|RL|craft|Hungary|Folk art of the Matyó, embroidery of a traditional community
+00437|2010|RL|food|France|Gastronomic meal of the French
+00356|2010|RL|food|Croatia|Gingerbread craft from Northern Croatia
+01559|2020|RL|craft|Czechia|Handmade production of Christmas tree decorations from blown glass beads
+01605|2020|USL|craft|Egypt|Handmade weaving in Upper Egypt (Sa'eed)
+01744|2023|RL|food|United Arab Emirates;Oman;Saudi Arabia|Harees dish: know-how, skills and practices
+01710|2022|RL|food|Tunisia|Harissa, knowledge, skills and culinary and social practices
+01568|2020|RL|food|Singapore|Hawker culture in Singapore, community dining and culinary practices in a multicultural urban context
+01580|2020|RL|food|Malta|Il-Ftira, culinary art and culture of flattened sourdough bread in Malta
+02093|2025|RL|food|Italy|Italian cooking, between sustainability and biocultural diversity
+01853|2021|RL|food|Haiti|Joumou soup
+00881|2013|RL|food|Republic of Korea|Kimjang, making and sharing kimchi in the Republic of Korea
+02318|2025|RL|food|Sri Lanka|Kithul Madeema/Kithul Kapeema, an ancient indigenous technology for tapping Kithul in Sri Lanka
+00993|2014|RL|food|Greece|Know-how of cultivating mastic on the island of Chios
+01863|2022|RL|food|Saudi Arabia|Knowledge and practices related to cultivating Khawlani coffee beans
+01724|2022|RL|food|Cuba|Knowledge of the light rum masters
+01975|2024|RL|food|Republic of Korea|Knowledge, beliefs and practices related to jang making in the Republic of Korea
+01961|2023|RL|craft|Czechia;Finland;France;Germany;Hungary;Spain|Knowledge, craft and skills of handmade glass production
+01602|2020|RL|food|Algeria;Mauritania;Morocco;Tunisia|Knowledge, know-how and practices pertaining to the production and consumption of couscous
+01288|2017|RL|craft|Bosnia and Herzegovina|Konjic woodcarving
+02278|2025|RL|food|Egypt|Koshary, daily life dish and practices associated with it
+00401|2010|RL|food|Belgium|Krakelingen and Tonnekensbrand, end-of-winter bread and fire feast at Geraardsbergen
+00245|2009|RL|craft|Croatia|Lacemaking in Croatia
+00985|2014|RL|food|Armenia|Lavash, the preparation, meaning and appearance of traditional bread as an expression of culture in Armenia
+00255|2009|RL|craft|Cyprus|Lefkara laces or Lefkaritika
+00884|2013|RL|food|Cyprus;Croatia;Spain;Greece;Italy;Morocco;Portugal|Mediterranean diet
+00642|2012|RL|food|Türkiye|Mesir Macunu festival
+01511|2020|RL|food|Azerbaijan|Nar Bayrami, traditional pomegranate festivity and culture
+02088|2025|USL|craft|Belarus|Negliubka textile tradition of Vetka District Gomel Region
+01292|2017|RL|food|Malawi|Nsima, culinary tradition of Malawi
+01277|2017|RL|craft|Germany|Organ craftsmanship and music
+01191|2016|RL|food|Tajikistan|Oshi Palav, a traditional meal and its social and cultural contexts in Tajikistan
+01089|2015|RL|food|Namibia|Oshituthi shomagongo, marula fruit festival
+01166|2016|RL|food|Uzbekistan|Palov culture and tradition
+01406|2018|RL|craft|Tunisia|Pottery skills of the women of Sejnane
+01557|2021|RL|craft|Peru|Pottery-related values, knowledge, lore and practices of the Awajún people
+01369|2019|RL|food|Syrian Arab Republic|Practices and craftsmanship associated with the Damascene rose in Al-Mrah
+01952|2023|RL|food|Peru|Practices and meanings associated with the preparation and consumption of ceviche, an expression of Peruvian traditional cuisine
+01603|2020|RL|food|Paraguay|Practices and traditional knowledge of Terere in the culture of Pohã Ñana, Guaraní ancestral drink in Paraguay
+01695|2022|RL|food|Democratic People’s Republic of Korea|Pyongyang Raengmyon custom
+01847|2022|USL|craft|Chile|Quinchamalí and Santa Cruz de Cuca pottery
+00668|2012|RL|craft|Algeria|Rites and craftsmanship associated with the wedding costume tradition of Tlemcen
+00197|2009|RL|craft|China|Sericulture and silk craftsmanship of China
+01890|2022|RL|craft|Afghanistan;Azerbaijan;Iran (Islamic Republic of);Türkiye;Tajikistan;Turkmenistan;Uzbekistan|Sericulture and traditional production of silk for weaving
+02086|2024|RL|food|Côte d'Ivoire|Skills related to Attiéké production in Côte d’Ivoire
+01882|2022|RL|food|Serbia|Social practices and knowledge related to the preparation and use of the traditional plum spirit – šljivovica
+01987|2023|RL|craft|Lithuania|Sodai straw garden making in Lithuania
+01889|2022|RL|craft|Belarus|Straw weaving in Belarus, art, craft and skills
+02109|2024|RL|food|Sweden;Norway|Summer farming at fäbod and seter: knowledge, traditions and practices related to the grazing of outlying lands and artisan food production
+01688|2021|USL|craft|Timor-Leste|Tais, traditional textile
+02120|2024|RL|food|Azerbaijan|Tandir craftsmanship and bread baking in Azerbaijan
+00166|2008|RL|craft|Peru|Taquile and its textile art
+01722|2021|RL|craft|State of Palestine|The art of embroidery in Palestine, practices, skills, knowledge and rituals
+01591|2020|RL|craft|Italy;France|The art of glass beads
+01861|2022|RL|craft|Romania;Republic of Moldova|The art of the traditional blouse with embroidery on the shoulder (altiţă) — an element of cultural identity in Romania and the Republic of Moldova
+02316|2025|USL|food|Philippines|The practice of making Asin Tibuok, the artisanal sea salt of the Boholano of Bohol Island, Philippines
+00965|2014|RL|craft|Bulgaria|The tradition of carpet-making in Chiprovtsi
+02139|2024|RL|craft|Algeria|The women’s ceremonial costume in the Eastern region of Algeria: knowledge and skills associated with the making and adornment of the Gandoura, the Melehfa, the Caftan, the Quat and the Lhef
+01103|2015|RL|craft|Greece|Tinian marble craftsmanship
+01879|2024|RL|food|Thailand|Tomyum Kung
+01456|2019|RL|craft|Ukraine|Tradition of Kosiv painted ceramics
+02112|2024|RL|craft|State of Palestine|Tradition of Nabulsi soap making in Palestine
+01063|2015|RL|food|Democratic People’s Republic of Korea|Tradition of kimchi-making in the Democratic People's Republic of Korea
+02153|2024|RL|craft|China|Traditional Li textile techniques: spinning, dyeing, weaving and embroidering
+00400|2010|RL|food|Mexico|Traditional Mexican cuisine - ancestral, ongoing community culture, the Michoacán paradigm
+02322|2025|RL|craft|Bangladesh|Traditional Saree weaving art of Tangail
+01956|2023|USL|craft|Syrian Arab Republic|Traditional Syrian glassblowing
+00669|2014|RL|craft|Azerbaijan|Traditional art and symbolism of Kelaghayi, making and wearing women’s silk headscarves
+00389|2010|RL|craft|Azerbaijan|Traditional art of Azerbaijani carpet weaving in the Republic of Azerbaijan
+00879|2013|RL|craft|Bangladesh|Traditional art of Jamdani weaving
+01112|2017|RL|craft|Bangladesh|Traditional art of Shital Pati weaving of Sylhet
+00845|2014|RL|craft|India|Traditional brass and copper craft of utensil making among the Thatheras of Jandiala Guru, Punjab, India
+02084|2024|RL|craft|Norway|Traditional costumes in Norway, craftsmanship and social practice
+01973|2023|RL|craft|Lao People's Democratic Republic|Traditional craft of Naga motif weaving in Lao communities
+00872|2013|RL|craft|Mongolia|Traditional craftsmanship of the Mongol Ger and its associated customs
+01058|2016|RL|craft|Türkiye|Traditional craftsmanship of Çini-making
+00201|2009|RL|craft|China|Traditional handicrafts of making Xuan paper
+02123|2025|RL|food|Kyrgyzstan|Traditional knowledge and cultural contexts of making Maksym, a traditional Kyrgyz beverage
+02118|2024|RL|food|Cuba;Dominican Republic;Haiti;Honduras;Venezuela (Bolivarian Republic of)|Traditional knowledge and practices for the making and consumption of cassava bread
+02284|2025|RL|craft|Kazakhstan;Kyrgyzstan;Uzbekistan|Traditional knowledge and skills in making Kyrgyz, Kazakh and Karakalpak yurts (Turkic nomadic dwellings)
+01977|2024|RL|food|Japan|Traditional knowledge and skills of sake-making with koji mold in Japan
+01983|2023|USL|food|Türkiye|Traditional knowledge, methods and practices concerning olive cultivation
+00382|2010|RL|craft|Iran (Islamic Republic of)|Traditional skills of carpet weaving in Fars
+00383|2010|RL|craft|Iran (Islamic Republic of)|Traditional skills of carpet weaving in Kashan
+01949|2023|RL|craft|Côte d'Ivoire|Traditional skills of loincloth weaving in Côte d’Ivoire
+01884|2022|RL|food|China|Traditional tea processing techniques and associated social practices in China
+01172|2019|RL|food|Mongolia|Traditional technique of making Airag in Khokhuur and its associated customs
+01486|2019|RL|craft|Turkmenistan|Traditional turkmen carpet making art in Turkmenistan
+00719|2012|RL|craft|Italy|Traditional violin craftsmanship in Cremona
+01167|2016|RL|craft|Romania;Republic of Moldova|Traditional wall-carpet craftsmanship in Romania and the Republic of Moldova
+02102|2024|RL|food|Brazil|Traditional ways of making Artisan Minas Cheese in Minas Gerais
+02158|2025|RL|craft|Saudi Arabia;Kuwait;Qatar|Traditional weaving of Al Sadu
+00729|2012|RL|craft|Ecuador|Traditional weaving of the Ecuadorian toquilla straw hat
+01573|2020|RL|food|Poland;Belarus|Tree beekeeping culture
+01395|2021|RL|food|Italy|Truffle hunting and extraction in Italy, traditional knowledge and practice
+00645|2013|RL|food|Türkiye|Turkish coffee culture and tradition
+01954|2024|RL|craft|Belarus|Vytsinanka, traditional art of paper cutting in Belarus
+02291|2025|RL|craft|Japan|Washi, craftsmanship of traditional Japanese hand-made paper
+00869|2013|RL|food|Japan|Washoku, traditional dietary cultures of the Japanese, notably for the celebration of New Year
+00453|2011|RL|craft|Republic of Korea|Weaving of Mosi (fine ramie) in the Hansan region
+01880|2022|USL|craft|Albania|Xhubleta, skills, craftsmanship and forms of usage
+00406|2010|RL|craft|Japan|Yuki-tsumugi, silk fabric production technique
+01466|2020|RL|craft|Serbia|Zlakusa pottery making, hand-wheel pottery making in the village of Zlakusa
+00990|2014|RL|craft|Bosnia and Herzegovina|Zmijanje embroidery
+02159|2025|USL|craft|Paraguay|Ñai'ũpo art, ancestral ceramic craftsmanship

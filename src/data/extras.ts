@@ -15,10 +15,16 @@ export interface NatureCountry {
   rivers: { name: string; km_in_country: number }[];
   peaks: { name_ko: string | null; name_en: string; elevation_m: number }[];
 }
+export interface SpecialtyCountry {
+  unesco: { id: string; name_en: string; year: number; list: 'RL' | 'USL'; kind: 'food' | 'craft'; url: string; shared_with: string[] }[];
+  gi: { name: string; category_ko: string; type: string; year: number; file: string }[];
+  gi_total: number;
+}
 export interface Extras {
   trade: { meta: { retrieved_at: string; by_year: Record<string, number> }; countries: Record<string, TradeCountry> } | null;
   agri: { meta: { year: number; accessed: string }; countries: Record<string, AgriCountry> } | null;
   nature: { meta: { approx_countries: string[] }; countries: Record<string, NatureCountry> } | null;
+  specialties: { meta: { gi_register_url: string; retrieved_at: string }; countries: Record<string, SpecialtyCountry> } | null;
 }
 
 let cache: Promise<Extras> | null = null;
@@ -26,7 +32,7 @@ let cache: Promise<Extras> | null = null;
 export function loadExtras(base = import.meta.env.BASE_URL): Promise<Extras> {
   if (!cache) {
     const get = (p: string) => fetch(`${base}data/${p}`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
-    cache = Promise.all([get('trade.json'), get('agri.json'), get('nature.json')]).then(([trade, agri, nature]) => ({ trade, agri, nature }));
+    cache = Promise.all([get('trade.json'), get('agri.json'), get('nature.json'), get('specialties.json')]).then(([trade, agri, nature, specialties]) => ({ trade, agri, nature, specialties }));
   }
   return cache;
 }
