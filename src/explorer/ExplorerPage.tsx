@@ -9,7 +9,8 @@ import { useExtras } from '../data/extras';
 import { fmtValue } from '../data/format';
 import { journal, useJournal } from '../store/journal';
 import { CAMPAIGNS, campaignById } from './campaigns';
-import { answer, currentEvent, currentNode, enterMission, finalScore, newGame, puzzleFor, successes } from './engine';
+import { answer, closeArrival, currentEvent, currentNode, enterMission, finalScore, newGame, puzzleFor, successes } from './engine';
+import { arrivalScene, type Scene } from './scenes';
 import type { Answer, Campaign, Ctx, GameState, Puzzle, Resolution } from './types';
 import type { IndicatorId } from '../data/types';
 
@@ -21,9 +22,10 @@ export function ExplorerPage({ campaignId }: { campaignId?: string }) {
   const j = useJournal();
   const saved = j.explorer.save as GameState | null;
   const [state, setState] = useState<GameState | null>(() => (saved && (!campaignId || saved.campaign === campaignId) ? saved : null));
+  const ctxMemo = useMemo<Ctx | null>(() => (ex ? { ds, ex } : null), [ds, ex]);
 
-  if (!ex) return <div className="page"><p className="loading">탐험 장비를 꾸리는 중…</p></div>;
-  const ctx: Ctx = { ds, ex };
+  if (!ex || !ctxMemo) return <div className="page"><p className="loading">탐험 장비를 꾸리는 중…</p></div>;
+  const ctx = ctxMemo;
   const camp = state ? campaignById(state.campaign) : undefined;
 
   if (!state || !camp) {
@@ -73,7 +75,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
   const [clues, setClues] = useState(0);
 
   const s = useMemo(() => enterMission(camp, ctx, state), [camp, ctx, state]);
-  useEffect(() => { if (s !== state) setState(s); }, [s, state, setState]);
+  // 이동 비용(s)은 화면에서만 반영하고, 플레이어가 행동할 때 함께 저장한다 (결정적이라 두 번 내지 않는다)
   const p: Puzzle = useMemo(() => puzzleFor(camp, ctx, s), [camp, ctx, s]);
   const node = currentNode(camp, s);
   const evnt = currentEvent(s);
@@ -126,13 +128,14 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
     if (p.kind === 'discover' && guesses.includes(sh.id)) return sh.id === p.target ? 'pick-right' : 'pick-wrong';
     if (p.kind === 'route') { if (sh.id === p.goal) return 'route-goal'; if (route.includes(sh.id)) return 'route-on'; }
     if (optCountries.has(sh.id)) return 'opt-country';
-    if (sh.id === s.location) return 'here';
+    if (sh.id === s.location && p.kind !== 'discover') return 'here';
     return undefined;
   }, [p, guesses, route, optCountries, s.location]); // eslint-disable-line react-hooks/exhaustive-deps
   const labelFor = useCallback((sh: MapShape) => (secret || !sh.props.listed ? undefined : ds.country(sh.id)?.name_ko), [secret, ds]);
   const tooltip = useCallback((sh: MapShape) => (secret ? null : <div className="tip"><strong>{ds.country(sh.id)?.name_ko ?? sh.props.ne_name_ko}</strong></div>), [secret, ds]);
 
   const ending = s.node === 'ending' ? camp.endings.find((e) => e.id === s.ending) : undefined;
+  const arrival = useMemo(() => (typeof s.flags.arrival === 'string' ? arrivalScene(ctx, s.flags.arrival, s.seed + s.visited.length) : undefined), [ctx, s.flags.arrival, s.seed, s.visited.length]);
 
   return (
     <div className={`explorer explorer--${tab}`}>
@@ -193,6 +196,8 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             {result.res && (result.res.cost.funds !== 0 || result.res.cost.days !== 0) && <p className="muted small">자금 {result.res.cost.funds >= 0 ? '+' : ''}{result.res.cost.funds}, 일정 {result.res.cost.days >= 0 ? '+' : ''}{result.res.cost.days}일</p>}
             <button type="button" className="btn" autoFocus onClick={() => setResult(null)}>계속</button>
           </div>
+        ) : typeof s.flags.arrival === 'string' && arrival ? (
+          <ArrivalView scene={arrival} onDone={(notes) => setState(closeArrival(s, notes, arrival.title))} />
         ) : ending ? (
           <EndingView camp={camp} ctx={ctx} s={s} text={ending.text(s, ctx)} onAgain={() => setState(newGame(camp))} onHub={() => setState(null)} />
         ) : (
@@ -200,6 +205,30 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             goMap={() => setTab('map')} onFocus={(id) => { setFocus(id); mapRef.current?.zoomToCountry(id); }} />
         )}
       </section>
+    </div>
+  );
+}
+
+function ArrivalView({ scene, onDone }: { scene: Scene; onDone: (notes: Scene['notes']) => void }) {
+  const [picked, setPicked] = useState<string[]>([]);
+  return (
+    <div className="ex-arrival">
+      <p className="ex-kind">현지 이야기</p>
+      <h3>{scene.title}</h3>
+      {scene.lines.map((l, i) => (
+        <p key={i} className={l.fiction ? 'scene-fiction' : 'scene-fact'}>
+          {l.text}{l.fiction ? <span className="fiction">가상 장면</span> : l.source ? <small> ({l.source})</small> : null}
+        </p>
+      ))}
+      {scene.notes.length > 0 && (
+        <div className="scene-notes">
+          <p className="small"><b>수첩에 적어 둘까요?</b> 적은 내용은 조사 자료가 되어 보고서에 쓸 수 있습니다. 질문과 관련 있는지는 직접 판단하세요.</p>
+          {scene.notes.map((n) => (
+            <label key={n.id} className="small"><input type="checkbox" checked={picked.includes(n.id)} onChange={() => setPicked(picked.includes(n.id) ? picked.filter((x) => x !== n.id) : [...picked, n.id])} /> {n.text} <small>({n.source})</small></label>
+          ))}
+        </div>
+      )}
+      <p className="pz-actions"><button type="button" className="btn" autoFocus onClick={() => onDone(scene.notes.filter((n) => picked.includes(n.id)))}>조사를 시작한다</button></p>
     </div>
   );
 }

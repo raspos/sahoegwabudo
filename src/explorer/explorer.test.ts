@@ -6,6 +6,7 @@ import type { Extras } from '../data/extras';
 import { answer, enterMission, newGame, puzzleFor, currentNode } from './engine';
 import { CAMPAIGNS } from './campaigns';
 import { EVENTS } from './events';
+import { arrivalScene } from './scenes';
 import type { Answer, Campaign, Ctx, GameState, Puzzle } from './types';
 import { seeded } from '../games/questions';
 
@@ -113,6 +114,35 @@ describe('세계 탐험가: 구조 검증', () => {
       expect(nexts.size).toBeGreaterThanOrEqual(3);
     });
   }
+  it('정답 노출 없음: 발견 임무의 출발 위치·선택지 이름이 찾을 나라와 다르다', () => {
+    for (const camp of CAMPAIGNS) {
+      for (const n of Object.values(camp.nodes)) {
+        if (n.type !== 'mission') continue;
+        const p = n.build(ctx, seeded(1), newGame(camp, 1));
+        if (p.kind !== 'discover') continue;
+        expect(n.country, n.id).not.toBe(p.target);
+        const tname = ds.country(p.target)!.name_ko;
+        for (const d of Object.values(camp.nodes)) if (d.type === 'decide') {
+          for (const o of d.options(newGame(camp, 1), ctx)) if (o.next === n.id) expect(o.label + o.detail, `${n.id} 선택지`).not.toContain(tname);
+        }
+      }
+    }
+  });
+  it('도착 장면: 195개국 모두 만들어지고, 빈 값이 없으며, 가상 문장에는 숫자가 없다', () => {
+    let rich = 0;
+    for (const co of ds.countries) {
+      const sc = arrivalScene(ctx, co.id, 1)!;
+      expect(sc.lines.length, co.id).toBeGreaterThanOrEqual(2);
+      if (sc.lines.length >= 4) rich++;
+      for (const l of sc.lines) {
+        expect(l.text, co.id).not.toMatch(/undefined|NaN|null/);
+        if (l.fiction) expect(l.text, co.id).not.toMatch(/\d/);
+        else expect(l.source, co.id).toBeTruthy();
+      }
+      for (const n of sc.notes) expect(n.source).toBeTruthy();
+    }
+    expect(rich).toBeGreaterThan(150);
+  });
   it('사건 20개 이상, 모두 선택지가 있고 통계 수치를 지어내지 않는다(숫자는 게임 자원뿐)', () => {
     expect(EVENTS.length).toBeGreaterThanOrEqual(20);
     expect(new Set(EVENTS.map((e) => e.id)).size).toBe(EVENTS.length);

@@ -99,8 +99,9 @@ export function enterMission(camp: Campaign, c: Ctx, s: GameState): GameState {
   const n = currentNode(camp, s);
   if (!n || n.type !== 'mission' || s.flags[`entered:${n.id}`]) return s;
   const cost = travelCost(c, s, n.country);
-  const moved = applyCost({ ...s, location: n.country, visited: s.visited.includes(n.country) ? s.visited : [...s.visited, n.country],
-    flags: { ...s.flags, [`entered:${n.id}`]: true, halfTravel: cost.funds !== 0 ? false : s.flags.halfTravel } }, cost);
+  const firstVisit = !s.visited.includes(n.country);
+  const moved = applyCost({ ...s, location: n.country, visited: firstVisit ? [...s.visited, n.country] : s.visited,
+    flags: { ...s.flags, [`entered:${n.id}`]: true, halfTravel: cost.funds !== 0 ? false : s.flags.halfTravel, arrival: firstVisit ? n.country : false } }, cost);
   return cost.funds || cost.days
     ? { ...moved, log: [...moved.log, { node: n.id, title: `${c.ds.country(n.country)?.name_ko ?? n.country}(으)로 이동`, text: `탐험 자금 ${-cost.funds}, 일정 ${-cost.days}일을 썼습니다.` }] }
     : moved;
@@ -141,6 +142,12 @@ export function answer(camp: Campaign, c: Ctx, s: GameState, a: Answer): { state
     return { state: st };
   }
   return { state: s };
+}
+
+/** 도착 장면을 다 읽고 고른 수첩 메모를 조사 자료로 더한다 */
+export function closeArrival(s: GameState, notes: Evidence[], title: string): GameState {
+  return { ...s, evidence: addEvidence(s.evidence, notes), flags: { ...s.flags, arrival: false },
+    log: [...s.log, { node: 'arrival', title, text: notes.length ? `수첩에 ${notes.length}개를 적었습니다.` : '풍경을 눈에 담고 조사를 시작했습니다.' }] };
 }
 
 export function reportScore(camp: Campaign, picked: Evidence[]): number {

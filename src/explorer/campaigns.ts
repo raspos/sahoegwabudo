@@ -24,8 +24,8 @@ const EU_POOL = ['AUT', 'DEU', 'CHE', 'NLD', 'BEL', 'ITA', 'FRA', 'CZE', 'SVN', 
 
 const euNodes: Node[] = [
   discoverMission({
-    id: 'eu-find', title: '메모 속의 나라', country: 'AUT', target: 'AUT', next: () => 'eu-exports',
-    brief: () => '본부가 남긴 메모에는 "알프스 한가운데, 바다 없는 부유한 나라"라고만 적혀 있습니다. 단서를 모아 지도에서 그 나라를 찾으세요. 단서를 더 볼수록 탐험 자금이 듭니다.',
+    id: 'eu-find', title: '메모 속의 나라', country: 'DEU', target: 'AUT', next: () => 'eu-exports',
+    brief: () => '프랑크푸르트의 유럽 사무소. 본부가 남긴 메모에는 "알프스 한가운데, 바다 없는 부유한 나라"라고만 적혀 있습니다. 단서를 모아 지도에서 그 나라를 찾으세요. 단서를 더 볼수록 탐험 자금이 듭니다.',
     evidence: (c) => {
       const n = c.ex.nature?.countries.AUT;
       const alps = n?.landforms.find((l) => l.name_en.toLowerCase() === 'alps');
@@ -111,12 +111,12 @@ const euNodes: Node[] = [
     brief: (s) => `남은 자금 ${s.funds}, 일정 ${s.days}일. 지금 보고서를 쓰면 남은 자원이 점수에 더해지고, 더 조사하면 자료가 늘어납니다.`,
     options: (s, c) => [
       opt({ id: 'report-now', label: '빈으로 돌아가 보고서를 쓴다', next: 'eu-report', detail: '남은 자원을 아낍니다.' }, s),
-      opt({ id: 'czech', label: '체코의 공장 지대를 더 조사한다', country: 'CZE', next: 'eu-cze', available: s.days > 4, lockedReason: '일정이 부족합니다',
-        detail: `${tripHint(c, s, 'CZE')}. 오스트리아의 이웃 공장 나라를 찾아 산업 구조 자료를 얻습니다.` }, s),
+      opt({ id: 'czech', label: '오스트리아의 이웃 공장 나라를 찾아 나선다', next: 'eu-cze', available: s.days > 4, lockedReason: '일정이 부족합니다',
+        detail: `${tripHint(c, s, 'AUT')}. 빈에서 단서를 모아 그 나라를 찾고 산업 구조 자료를 얻습니다.` }, s),
     ],
   },
   discoverMission({
-    id: 'eu-cze', title: '이웃 공장 나라', country: 'CZE', target: 'CZE', next: () => 'eu-report',
+    id: 'eu-cze', title: '이웃 공장 나라', country: 'AUT', target: 'CZE', next: () => 'eu-report',
     brief: () => '오스트리아 북쪽에 맞닿은, 자동차를 많이 수출하는 나라를 지도에서 찾으세요.',
     evidence: (c) => [sectorEvidence(c.ds, 'CZE', ['industry']), sectorEvidence(c.ds, 'AUT', ['industry'])],
   }),
@@ -139,7 +139,7 @@ const branchName: Record<string, string> = { DEU: '독일', CHE: '스위스', NL
 export const EUROPE: Campaign = {
   id: EU, title: '세계 경제의 비밀', region: '유럽', question: '오스트리아는 어떻게 높은 소득 수준을 유지할까?',
   intro: '탐험 본부의 새 조사원이 된 당신. 첫 임무는 알프스의 작은 나라가 어떻게 부유해졌는지 밝히는 것입니다.',
-  start: 'eu-find', startLocation: 'AUT', startResources: { funds: 80, days: 30 },
+  start: 'eu-find', startLocation: 'DEU', startResources: { funds: 80, days: 30 },
   nodes: Object.fromEntries(euNodes.map((n) => [n.id, n])),
   relevance: { productivity: 3, income: 2, industry: 2, trade: 2, partners: 1, openness: 1, tourism: 1, geo: 0, route: 0, distractor: -1 },
   pickEnding: endingsFor('eu'),
@@ -198,9 +198,9 @@ const asNodes: Node[] = [
   }),
   // ── 베트남 갈래 ──
   discoverMission({
-    id: 'as-vn-find', title: 'S자 해안의 공장', country: 'VNM', target: 'VNM', next: () => 'as-vn-route',
-    brief: () => '한국 기업들이 공장을 많이 세운, 길쭉한 S자 해안의 나라를 지도에서 찾으세요.',
-    evidence: (c) => [sectorEvidence(c.ds, 'VNM', ['manufacturing']), ev(c.ds, 'VNM', 'exports_gdp', ['trade'])],
+    id: 'as-vn-find', title: '옷을 파는 이웃 나라', country: 'VNM', target: 'KHM', next: () => 'as-vn-route',
+    brief: () => '하노이의 공단에서, 옷을 가장 많이 수출하는 이웃 나라가 있다는 이야기를 들었습니다. 단서를 모아 지도에서 찾으세요.',
+    evidence: (c) => [sectorEvidence(c.ds, 'KHM', ['manufacturing']), sectorEvidence(c.ds, 'VNM', ['manufacturing']), ev(c.ds, 'VNM', 'exports_gdp', ['trade'])],
   }),
   routeMission({
     id: 'as-vn-route', title: '메콩을 건너', country: 'VNM', start: 'VNM', goal: 'MYS', next: () => 'as-final-choice',
@@ -212,9 +212,9 @@ const asNodes: Node[] = [
   }),
   // ── 싱가포르 갈래 ──
   discoverMission({
-    id: 'as-sg-find', title: '해협 끝의 작은 섬', country: 'SGP', target: 'SGP', next: () => 'as-sg-route',
-    brief: () => '말레이반도 끝, 바닷길이 모이는 작은 섬나라를 찾으세요. 작은 나라는 지도 위 동그라미로 표시됩니다.',
-    evidence: (c) => [ev(c.ds, 'SGP', 'exports_gdp', ['trade']), sectorEvidence(c.ds, 'SGP', ['manufacturing'])],
+    id: 'as-sg-find', title: '해협 건너편의 공장', country: 'SGP', target: 'MYS', next: () => 'as-sg-route',
+    brief: () => '싱가포르 항구에서, 해협 건너편에 전기·전자 제품을 많이 수출하는 나라가 있다는 이야기를 들었습니다. 지도에서 찾으세요.',
+    evidence: (c) => [ev(c.ds, 'SGP', 'exports_gdp', ['trade']), sectorEvidence(c.ds, 'MYS', ['manufacturing']), sectorEvidence(c.ds, 'SGP', ['manufacturing'])],
   }),
   routeMission({
     id: 'as-sg-route', title: '반도를 따라 북쪽으로', country: 'MYS', start: 'MYS', goal: 'KHM', next: () => 'as-final-choice',
@@ -227,7 +227,7 @@ const asNodes: Node[] = [
     options: (s, c) => [
       opt({ id: 'report-now', label: '서울로 돌아가 보고서를 쓴다', next: 'as-report', detail: '남은 자원을 아낍니다.' }, s),
       opt({ id: 'open-rank', label: '아시아 수출 비율 순위를 조사한다', next: 'as-open-rank', available: s.days > 3, lockedReason: '일정이 부족합니다', detail: '지금 있는 곳에서 자료를 모읍니다.' }, s),
-      opt({ id: 'bgd', label: '방글라데시의 옷 공장을 찾아간다', country: 'BGD', next: 'as-bgd', available: s.days > 5, lockedReason: '일정이 부족합니다', detail: `${tripHint(c, s, 'BGD')}.` }, s),
+      opt({ id: 'bgd', label: '큰 강 하구의 옷 공장 나라를 찾아 나선다', next: 'as-bgd', available: s.days > 5, lockedReason: '일정이 부족합니다', detail: `${tripHint(c, s, 'IND')}. 인도에서 단서를 모아 찾습니다.` }, s),
     ],
   },
   rankMission({
@@ -236,7 +236,7 @@ const asNodes: Node[] = [
     brief: () => '다섯 나라를 GDP 대비 수출 비율이 높은 순서로 놓으세요.',
   }),
   discoverMission({
-    id: 'as-bgd', title: '갠지스 하구의 옷 공장', country: 'BGD', target: 'BGD', next: () => 'as-report',
+    id: 'as-bgd', title: '큰 강 하구의 옷 공장', country: 'IND', target: 'BGD', next: () => 'as-report',
     brief: () => '큰 강 하구에 자리한, 옷을 많이 수출하는 나라를 지도에서 찾으세요.',
     evidence: (c) => [sectorEvidence(c.ds, 'BGD', ['manufacturing']), ev(c.ds, 'BGD', 'population', ['distractor'])],
   }),
