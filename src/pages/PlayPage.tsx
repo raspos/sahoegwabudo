@@ -1,4 +1,5 @@
 import { MapChallenge } from '../games/MapChallenge';
+import { ExplorerPage } from '../explorer/ExplorerPage';
 import { RankBattle } from '../games/RankBattle';
 import { LESSONS, FIELD_ORDER } from '../content/lessons';
 import { useJournal } from '../store/journal';
@@ -7,6 +8,7 @@ import { LEVELS } from '../games/questions';
 export function PlayPage({ game }: { game?: string }) {
   if (game === 'map') return <MapChallenge />;
   if (game === 'battle') return <RankBattle />;
+  if (game === 'explorer') return <ExplorerPage />;
   return <PlayHub />;
 }
 
@@ -18,6 +20,12 @@ function PlayHub() {
         <h1>도전하기</h1>
         <p className="lede">지도와 숫자로 익힌 것을 확인해 보세요. 한 판은 10문제입니다.</p>
       </header>
+      <a className="explorer-banner" href="#/play/explorer">
+        <span className="ge-no">메인 게임</span>
+        <h2>세계 탐험가</h2>
+        <p>탐험 본부의 조사원이 되어 세계지도를 누비며 나라 경제의 비밀을 밝혀내세요. 한정된 자금과 일정, 고른 길에 따라 달라지는 임무와 결말.</p>
+        <p className="ge-best">{Object.keys(j.explorer.campaigns).length ? `캠페인 ${Object.keys(j.explorer.campaigns).length}개 탐험함` : '캠페인 2개 · 유럽 / 아시아'}</p>
+      </a>
       <div className="games">
         <a className="game-entry" href="#/play/map">
           <span className="ge-no">GAME 01</span>

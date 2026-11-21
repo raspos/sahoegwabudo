@@ -8,6 +8,7 @@ import { Flag } from '../components/common';
 import { LESSONS } from '../content/lessons';
 import { ALL_STORIES as STORIES } from '../content/stories';
 import { LEVELS } from '../games/questions';
+import { CAMPAIGNS } from '../explorer/campaigns';
 
 export function JournalPage() {
   const { ds, geo } = useData();
@@ -87,6 +88,20 @@ export function JournalPage() {
             ))}
             <div><dt>세계 랭킹 배틀</dt><dd>{j.games.battle ? `${j.games.battle.best}점 (${j.games.battle.plays}판)` : '–'}</dd></div>
           </dl>
+        </section>
+
+        <section>
+          <h2>세계 탐험가</h2>
+          {Object.keys(j.explorer.campaigns).length || j.explorer.save ? (
+            <dl className="records">
+              {CAMPAIGNS.map((c) => { const r = j.explorer.campaigns[c.id]; return (
+                <div key={c.id}><dt>{c.title}</dt><dd>{r ? `최고 ${r.best}점 · 결말 ${r.endings.length}/${c.endings.length} · 임무 ${r.missionsDone.length}개 · 마지막 경로 ${r.lastPath.join('→') || '—'}` : '–'}</dd></div>
+              ); })}
+              {j.explorer.save ? <div><dt>진행 중</dt><dd>{CAMPAIGNS.find((c) => c.id === (j.explorer.save as { campaign: string }).campaign)?.title} · 자금 {(j.explorer.save as { funds: number }).funds} · {(j.explorer.save as { days: number }).days}일</dd></div> : null}
+              <div><dt>게임에서 찾아낸 나라</dt><dd>{j.explorer.discovered.map((id) => ds.country(id)?.name_ko).join(', ') || '–'}</dd></div>
+              <div><dt>확보한 조사 자료</dt><dd>{j.explorer.evidence.length}개</dd></div>
+            </dl>
+          ) : <p className="muted">아직 탐험을 떠나지 않았습니다. <a href="#/play/explorer">세계 탐험가</a></p>}
         </section>
 
         <section>

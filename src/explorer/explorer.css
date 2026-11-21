@@ -1,0 +1,77 @@
+/* ── 세계 탐험가 ───────────────────────────── */
+.explorer-banner { display: block; text-decoration: none; color: var(--ink); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 18px 4px; margin-bottom: 18px; }
+.explorer-banner:hover { background: var(--paper-2); }
+.explorer-banner h2 { font-size: 32px; font-weight: 900; margin: 4px 0; }
+.explorer-banner p { margin: 0 0 6px; color: var(--ink-2); max-width: 44em; }
+.campaign-entry { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.explorer-continue { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: var(--paper-2); padding: 8px 12px; border-left: 3px solid var(--accent); }
+.app:has(.explorer) main { height: calc(100dvh - var(--head-h)); overflow: hidden; }
+.explorer { display: grid; height: 100%; grid-template-columns: 300px 1fr 280px; grid-template-rows: auto 1fr auto; grid-template-areas: 'top top top' 'left map right' 'left bottom right'; }
+.ex-top { grid-area: top; display: flex; align-items: center; gap: 6px 18px; flex-wrap: wrap; padding: 8px 16px; border-bottom: 1px solid var(--ink); font-variant-numeric: tabular-nums; }
+.ex-title { font-family: var(--serif); font-size: 17px; }
+.ex-res b { font-family: var(--serif); font-size: 17px; margin-left: 3px; }
+.ex-quit { margin-left: auto; }
+.ex-tabs { display: none; gap: 4px; }
+.ex-left { grid-area: left; overflow-y: auto; border-right: 1px solid var(--rule-strong); padding: 12px 14px; }
+.ex-right { grid-area: right; overflow-y: auto; border-left: 1px solid var(--rule-strong); padding: 12px 14px; }
+.ex-map { grid-area: map; position: relative; min-height: 0; }
+.ex-map .worldmap { position: absolute; inset: 0; }
+.ex-bottom { grid-area: bottom; border-top: 1px solid var(--ink); padding: 10px 16px; max-height: 46vh; overflow-y: auto; background: var(--paper); }
+.ex-kind { margin: 0; font-size: 12.5px; letter-spacing: .1em; color: var(--accent-ink); font-weight: 700; }
+.ex-mission h2 { font-size: 21px; margin: 2px 0 6px; }
+.ex-mission p { margin: 0; font-size: 14.5px; line-height: 1.7; }
+.ex-evidence, .ex-log { border-top: 1px solid var(--rule); margin-top: 12px; padding-top: 8px; }
+.ex-evidence h3, .ex-log h3 { font-size: 14px; margin: 0 0 4px; }
+.ex-evidence ul { padding-left: 16px; margin: 0; font-size: 13px; }
+.ex-evidence small, .ex-log span { color: var(--muted); }
+.ex-log ol { padding-left: 18px; margin: 0; font-size: 12.5px; }
+.ex-log li { margin: 3px 0; }
+.ex-log li.o-success b { color: var(--right); }
+.ex-log li.o-fail b { color: var(--wrong); }
+.ex-log li.o-partial b { color: var(--late); }
+.fiction { display: inline-block; margin-left: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0; color: #6b4e8a; border: 1px solid #a993c2; padding: 0 5px; border-radius: 2px; }
+.ex-brief h3 { font-size: 18px; margin: 0 0 6px; display: flex; gap: 6px; align-items: center; }
+.ex-brief .facts { display: block; }
+.ex-brief .facts div { display: flex; justify-content: space-between; gap: 8px; border-bottom: 1px dotted var(--rule); padding: 3px 0; font-size: 13.5px; }
+.ex-brief .facts dt, .ex-brief .facts dd { border: 0; padding: 0; }
+.ex-brief .facts .hl { background: #f6e6c8; }
+.pz p { margin: 4px 0; }
+.pz-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 8px !important; }
+.clues { margin: 0; padding-left: 20px; font-size: 15px; }
+.clues li { margin: 3px 0; }
+.choice-row { display: flex; flex-wrap: wrap; gap: 4px; }
+.route-chips { font-size: 15px; }
+.pz-compare tr.picked { background: #f0dfc8; }
+.pz-compare tbody tr { cursor: pointer; }
+.rank-list { list-style: none; padding: 0; margin: 4px 0; max-width: 420px; }
+.rank-list li { display: grid; grid-template-columns: 2em 1fr auto auto; gap: 6px; align-items: center; padding: 4px 0; border-bottom: 1px dotted var(--rule); }
+.decide-list, .report-list { list-style: none; padding: 0; margin: 4px 0; }
+.decide-list li { display: grid; grid-template-columns: 1fr auto auto; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px dotted var(--rule); }
+.decide-list li.locked { opacity: .6; }
+.decide-list p { margin: 2px 0 0; color: var(--ink-2); }
+.lock { color: var(--wrong); }
+.report-list li { padding: 4px 0; border-bottom: 1px dotted var(--rule); font-size: 14px; }
+.report-list small { color: var(--muted); }
+.ex-hint { background: var(--paper-2); border-left: 3px solid var(--late); padding: 4px 10px; font-size: 13.5px; }
+.ex-result h3 { font-size: 18px; margin: 2px 0; }
+.ex-result.o-success { border-left: 4px solid var(--right); padding-left: 12px; }
+.ex-result.o-partial { border-left: 4px solid var(--late); padding-left: 12px; }
+.ex-result.o-fail { border-left: 4px solid var(--wrong); padding-left: 12px; }
+.ex-got { color: var(--right); font-weight: 600; font-size: 14px; }
+.land.route-on, .marker.route-on .mk { fill: #e9a66f; }
+.land.route-goal, .marker.route-goal .mk { fill: #5d8a92; }
+.land.opt-country { fill: #e8c98d; stroke: var(--accent-ink); stroke-width: 1.5; }
+.land.here { stroke: var(--ink); stroke-width: 2; }
+.mobile-only { display: none; }
+@media (max-width: 1000px) {
+  .explorer { grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; grid-template-areas: 'top' 'left' 'bottom'; }
+  .ex-tabs { display: flex; }
+  .ex-right { display: none; }
+  .explorer--map { grid-template-areas: 'top' 'map' 'bottom'; }
+  .explorer--map .ex-left { display: none; }
+  .explorer--mission .ex-map { display: none; }
+  .ex-left { border-right: 0; max-height: 34vh; }
+  .explorer--map .ex-bottom { max-height: 36vh; }
+  .mobile-only { display: inline-block; }
+  .ex-top { gap: 4px 12px; padding: 6px 10px; font-size: 13.5px; }
+}

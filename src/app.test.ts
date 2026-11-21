@@ -219,6 +219,21 @@ describe('탐험일지', () => {
     expect(journal.recordGame('battle', 40)).toBe(false);
     expect(journal.get().games.battle).toMatchObject({ best: 60, plays: 2 });
   });
+  it('마이그레이션: 탐험가 기록이 없는 옛 저장값도 기존 기록을 모두 지킨 채 열린다', () => {
+    const old = JSON.stringify({ version: 1, visited: { KOR: '2026-11-01' }, recent: ['KOR'], learned: { JPN: { at: '2026-11-02', via: 'capital' } },
+      lessons: { landlocked: '2026-11-03' }, stories: {}, games: { battle: { best: 70, plays: 2, lastPlayed: '2026-11-04' } }, topics: { area: 3 } });
+    const j = parseJournal(old);
+    expect(j.visited.KOR).toBe('2026-11-01');
+    expect(j.learned.JPN.via).toBe('capital');
+    expect(j.games.battle.best).toBe(70);
+    expect(j.topics.area).toBe(3);
+    expect(j.explorer).toEqual({ save: null, campaigns: {}, discovered: [], evidence: [] });
+    journal._load(old);
+    journal.explorerFinish({ campaign: 'europe-economy', ending: 'eu-best', score: 95, missions: ['eu-find'], path: ['deu'], discovered: ['AUT'], evidence: ['AUT:gdp_pc_ppp'] });
+    expect(journal.get().visited.KOR).toBe('2026-11-01');
+    expect(journal.get().learned.AUT).toBeUndefined();
+    expect(journal.get().explorer.campaigns['europe-economy'].endings).toEqual(['eu-best']);
+  });
   it('깨진 저장값은 빈 일지로 시작한다', () => {
     expect(parseJournal('{bad json').visited).toEqual({});
     expect(parseJournal(JSON.stringify({ version: 9 })).visited).toEqual({});

@@ -21,12 +21,29 @@ export interface JournalState {
   stories: Record<string, string>;        // 읽은 이야기 id → 날짜
   games: Record<string, GameRecord>;      // 'map:beginner' 등
   topics: Record<string, number>;         // 배틀에서 맞힌 지표별 횟수
+  explorer: ExplorerRecord;               // 세계 탐험가 (PHASE 3에 추가, 옛 저장값에는 없을 수 있음)
+}
+
+export interface ExplorerCampaignRecord {
+  plays: number;
+  best: number;
+  endings: string[];              // 본 엔딩
+  missionsDone: string[];         // 한 번이라도 끝낸 임무
+  lastPath: string[];             // 마지막 판의 선택 경로
+  lastPlayed: string;
+}
+export interface ExplorerRecord {
+  save: unknown | null;           // 진행 중인 판 (GameState)
+  campaigns: Record<string, ExplorerCampaignRecord>;
+  discovered: string[];           // 게임에서 찾아낸 나라 (방문·학습 기록과 따로 둔다)
+  evidence: string[];             // 확보한 조사 자료 id
 }
 
 const KEY = 'sahoegwabudo.journal.v1';
 
 export const emptyJournal = (): JournalState => ({
   version: 1, visited: {}, recent: [], learned: {}, lessons: {}, stories: {}, games: {}, topics: {},
+  explorer: { save: null, campaigns: {}, discovered: [], evidence: [] },
 });
 
 interface Storage { getItem(k: string): string | null; setItem(k: string, v: string): void; removeItem(k: string): void }
@@ -44,7 +61,9 @@ export function parseJournal(raw: string | null): JournalState {
   try {
     const j = JSON.parse(raw);
     if (j?.version !== 1) return emptyJournal();
-    return { ...emptyJournal(), ...j };
+    // 마이그레이션: PHASE 3 이전 저장값에는 explorer 가 없다. 다른 기록은 그대로 두고 빈 탐험 기록만 더한다.
+    const base = emptyJournal();
+    return { ...base, ...j, explorer: { ...base.explorer, ...(j.explorer ?? {}) } };
   } catch {
     return emptyJournal();
   }
@@ -101,6 +120,27 @@ export const journal = {
   },
   practiceTopic(iid: string) {
     commit({ ...state, topics: { ...state.topics, [iid]: (state.topics[iid] ?? 0) + 1 } });
+  },
+  explorerSave(save: unknown | null) {
+    commit({ ...state, explorer: { ...state.explorer, save } });
+  },
+  explorerFinish(o: { campaign: string; ending: string; score: number; missions: string[]; path: string[]; discovered: string[]; evidence: string[] }): boolean {
+    const prev = state.explorer.campaigns[o.campaign];
+    const rec: ExplorerCampaignRecord = {
+      plays: (prev?.plays ?? 0) + 1,
+      best: Math.max(prev?.best ?? 0, Math.round(o.score)),
+      endings: [...new Set([...(prev?.endings ?? []), o.ending])],
+      missionsDone: [...new Set([...(prev?.missionsDone ?? []), ...o.missions])],
+      lastPath: o.path,
+      lastPlayed: today(),
+    };
+    commit({ ...state, explorer: {
+      save: null,
+      campaigns: { ...state.explorer.campaigns, [o.campaign]: rec },
+      discovered: [...new Set([...state.explorer.discovered, ...o.discovered])],
+      evidence: [...new Set([...state.explorer.evidence, ...o.evidence])],
+    } });
+    return !prev || Math.round(o.score) > prev.best;
   },
   /** 게임 결과 기록. 최고 기록이 갱신되면 true */
   recordGame(key: string, score: number): boolean {
