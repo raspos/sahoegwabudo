@@ -1868,6 +1868,697 @@
   }
  },
  {
+  "id": "mli-empire",
+  "country": "MLI",
+  "title": "14세기 서아프리카에서 가장 부유한 제국은?",
+  "category": "history",
+  "panels": [
+   "지금의 말리라는 이름은 13~16세기 이 지역을 다스린 말리 제국에서 왔습니다.",
+   "14세기 전성기의 말리 제국은 서아프리카에서 가장 크고 부유한 제국이었고, 지금 프랑스의 두 배쯤 되는 땅을 다스렸습니다.",
+   "제국은 주로 무역으로 번영했고, 사헬의 금광과 교역로에서 부를 얻었습니다.",
+   "지금의 말리는 1960년 9월 22일 프랑스에서 독립했습니다. 공용어는 밤바라어입니다."
+  ],
+  "related": [
+   "GIN",
+   "SEN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mali: Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/ml.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GIN",
+   "why": "말리 제국이 13세기에 다스린 서쪽 땅"
+  }
+ },
+ {
+  "id": "mli-zones",
+  "country": "MLI",
+  "title": "말리의 땅은 어떤 세 지대로 나뉠까?",
+  "category": "geo",
+  "panels": [
+   "말리는 바다가 없는 나라이고, 남쪽의 농사짓는 수단 지대, 가운데 반건조 사헬 지대, 북쪽의 메마른 사하라 지대로 나뉩니다.",
+   "사하라 사막이 국토의 {{lf:MLI:Sahara}}에 걸쳐 있습니다.",
+   "사람들은 대부분 남쪽 절반, 특히 부르키나파소 국경 쪽에 삽니다.",
+   "니제르강과 세네갈강이 모두 기니에서 시작해 말리를 지나 흐릅니다. FAO 통계로 말리는 {{ag:MLI:Karite nuts (sheanuts)}}입니다."
+  ],
+  "related": [
+   "NER",
+   "MRT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mali: Geography – note, Geography – Terrain, Geography – Major rivers, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/ml.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NER",
+   "why": "니제르강이 흘러가는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "moz-languages",
+  "country": "MOZ",
+  "title": "모잠비크 사람 가운데 포르투갈어를 쓰는 사람은 얼마나 될까?",
+  "category": "culture",
+  "panels": [
+   "모잠비크의 공용어는 포르투갈어이지만, 2017년 조사로 포르투갈어를 쓰는 사람은 16.6%입니다.",
+   "가장 많이 쓰는 말은 마쿠아어(26.1%)이고, 총가어·냐냐어·세나어가 뒤를 잇습니다.",
+   "북쪽 항구 도시들은 2천 년대 전반 소말리아·에티오피아·이집트·아라비아·페르시아·인도 상인들이 드나들던 곳이었습니다.",
+   "1500년 뒤 포르투갈이 해안 무역을 차지했고, 모잠비크는 1975년 6월 25일 독립했습니다."
+  ],
+  "related": [
+   "PRT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mozambique: People – Languages, Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PRT",
+   "why": "모잠비크를 1975년까지 다스린 나라"
+  }
+ },
+ {
+  "id": "moz-zambezi",
+  "country": "MOZ",
+  "title": "모잠비크에서 가장 기름진 땅은 어디일까?",
+  "category": "geo",
+  "panels": [
+   "잠베지강이 모잠비크의 가운데 북쪽, 가장 기름진 지역을 지나 흐릅니다.",
+   "잠베지강은 잠비아에서 시작해 앙골라·나미비아·보츠와나·짐바브웨를 거쳐 모잠비크에서 인도양으로 나갑니다.",
+   "땅은 대부분 해안 저지대이고, 가운데는 고지, 북서쪽은 높은 고원, 서쪽은 산입니다.",
+   "가운데와 남쪽 지방은 심한 가뭄과 큰 사이클론, 홍수에 자주 시달립니다."
+  ],
+  "related": [
+   "ZMB",
+   "ZWE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mozambique: Geography – note, Geography – Terrain, Geography – Natural hazards, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ZMB",
+   "why": "잠베지강이 시작되는 나라"
+  }
+ },
+ {
+  "id": "mrt-fish",
+  "country": "MRT",
+  "title": "모리타니는 무엇을 팔아 살까?",
+  "category": "economy",
+  "panels": [
+   "모리타니의 산업 목록은 생선 가공, 석유 생산, 광업(철광석·금·구리)입니다.",
+   "상품 수출 1위는 {{ex:MRT}}입니다. 가장 큰 손님은 {{p1:MRT}}입니다.",
+   "Factbook은 외국 어선의 남획을 모리타니 경제의 문제로 꼽습니다.",
+   "낙타도 많습니다. FAO 통계로 모리타니는 {{ag:MRT:Meat of camels, fresh or chilled}}입니다."
+  ],
+  "related": [
+   "CAN",
+   "ESP"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mauritania: Economy – Industries, Geography – Natural resources, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CAN",
+   "why": "모리타니 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "mrt-two-regions",
+  "country": "MRT",
+  "title": "북아프리카이면서 서아프리카인 나라는?",
+  "category": "geo",
+  "panels": [
+   "모리타니는 북아프리카의 마그레브와 서아프리카의 사헬, 두 지역에 모두 속한다고 여겨집니다.",
+   "땅은 대부분 사하라의 메마르고 평평한 평야이고, 사하라가 국토 전체에 걸쳐 있습니다.",
+   "기후는 언제나 덥고 메마르고 먼지가 많습니다. 3~4월에는 모래 섞인 시로코 바람이 붑니다.",
+   "사람들은 누악쇼트와 누아디부 두 도시, 그리고 남쪽 세네갈강을 따라 모여 삽니다."
+  ],
+  "related": [
+   "SEN",
+   "MLI"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mauritania: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mr.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SEN",
+   "why": "세네갈강 건너 남쪽 이웃"
+  }
+ },
+ {
+  "id": "mus-dodo",
+  "country": "MUS",
+  "title": "도도새는 어디에서 사라졌을까?",
+  "category": "history",
+  "panels": [
+   "모리셔스섬은 적어도 1500년대 초부터 아랍·유럽 선원들에게 알려졌지만, 1638년 네덜란드가 정착지를 세울 때까지 사람이 살지 않았습니다.",
+   "섬 이름은 네덜란드의 마우리츠 판 나사우 왕자를 기려 붙였습니다.",
+   "네덜란드 사람들이 오면서, 비둘기와 친척인 날지 못하는 큰 새 도도가 빠르게 사라졌습니다. 도도는 근대 멸종의 가장 유명한 예가 되었습니다.",
+   "수도 포트루이스는 1736년 당시 프랑스 왕 루이 15세의 이름을 땄습니다."
+  ],
+  "related": [
+   "FRA",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mauritius: Introduction – Background, Geography – note, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "1722년 모리셔스에 식민지를 세운 나라"
+  }
+ },
+ {
+  "id": "mus-island",
+  "country": "MUS",
+  "title": "모리셔스 본섬은 어떻게 생겨났을까?",
+  "category": "geo",
+  "panels": [
+   "나라 이름이 된 본섬은 화산에서 생겨났고, 거의 온 둘레가 산호초에 둘러싸여 있습니다.",
+   "작은 해안 평야가 솟아올라, 가운데 고원을 둘러싼 산들로 이어집니다.",
+   "남동 무역풍이 부는 열대 기후로, 11~4월에는 사이클론이 옵니다.",
+   "Factbook은 모리셔스를 인구밀도가 세계에서 가장 높은 나라 가운데 하나로 꼽습니다. 인구밀도는 {{vr:MUS:density}}입니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "MDG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Mauritius: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MDG",
+   "why": "인도양 서쪽의 큰 섬나라"
+  }
+ },
+ {
+  "id": "mwi-flames",
+  "country": "MWI",
+  "title": "'불꽃'이라는 이름의 나라는 무엇을 수출할까?",
+  "category": "economy",
+  "panels": [
+   "말라위라는 이름은 체와어로 '불꽃'을 뜻하는 말과 같고, 체와어가 생겨난 마라비족과 이어집니다.",
+   "상품 수출 1위는 {{ex:MWI}}입니다. 산업 목록 첫머리도 담배와 차입니다.",
+   "FAO 통계로 말라위는 {{ag:MWI:Pigeon peas, dry}}, {{ag:MWI:Sweet potatoes}}입니다.",
+   "농림어업은 경제의 {{vr:MWI:agri_va}}를 차지합니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "BEL",
+   "ZMB"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Malawi: Introduction – Background, Economy – Agricultural products, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mi.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BEL",
+   "why": "말라위 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "mwi-lake",
+  "country": "MWI",
+  "title": "물고기 종류가 가장 많은 호수는?",
+  "category": "geo",
+  "panels": [
+   "말라위에서 가장 눈에 띄는 것은 길이 약 580km의 냐사 호수입니다.",
+   "Factbook은 이 호수에 지구의 어떤 호수보다 많은 종류의 물고기가 산다고 적습니다.",
+   "말라위는 바다가 없고, 좁고 긴 고원에 완만한 평야와 둥근 언덕, 산이 있습니다. 동아프리카 지구대가 국토의 {{lf:MWI:Great Rift Valley}}에 걸쳐 있습니다.",
+   "사람들은 냐사 호수 남쪽에 가장 빽빽이 삽니다."
+  ],
+  "related": [
+   "TZA",
+   "MOZ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Malawi: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/mi.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TZA",
+   "why": "냐사 호수 건너편의 이웃"
+  }
+ },
+ {
+  "id": "nam-history",
+  "country": "NAM",
+  "title": "나미비아는 언제 독립했을까?",
+  "category": "history",
+  "panels": [
+   "1884년 독일이 이 땅 대부분에 식민지를 세웠습니다.",
+   "1915년 제1차 세계대전 중 남아프리카가 '독일령 남서아프리카'를 점령해 위임통치했고, 제2차 세계대전 뒤에는 합병했습니다.",
+   "1966년 독립 전쟁이 시작되었고, 나미비아는 1990년 3월 21일 독립했습니다.",
+   "수도 빈트후크는 아프리칸스어로 '바람 부는 모퉁이'라는 뜻입니다. 오시밤보어를 쓰는 사람이 49.7%로 가장 많습니다."
+  ],
+  "related": [
+   "ZAF",
+   "DEU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Namibia: Introduction – Background, Government – Independence, Government – Capital, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/wa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ZAF",
+   "why": "1915년부터 나미비아를 다스린 이웃"
+  }
+ },
+ {
+  "id": "nam-oldest-desert",
+  "country": "NAM",
+  "title": "세계에서 가장 오래된 사막은?",
+  "category": "geo",
+  "panels": [
+   "나라 이름이 된 나미브 사막은 세계에서 가장 오래된 사막으로 여겨집니다. 나미브 사막은 국토의 {{lf:NAM:Namib Desert}}를 차지합니다.",
+   "나라 땅의 약 14%가 보호 구역이고, 나미브 사막 해안 띠는 거의 전부 보호됩니다.",
+   "대부분 높은 고원이고, 해안에는 나미브 사막, 동쪽에는 칼라하리 사막이 있습니다.",
+   "인구밀도는 아주 낮아 {{vr:NAM:density}}입니다. 가장 큰 무리는 북쪽 가운데, 앙골라 국경을 따라 삽니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "AGO",
+   "BWA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Namibia: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/wa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BWA",
+   "why": "칼라하리 사막을 함께 나눈 동쪽 이웃"
+  }
+ },
+ {
+  "id": "ner-hottest",
+  "country": "NER",
+  "title": "세계에서 가장 더운 나라 가운데 하나는?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 니제르를 '세계에서 가장 더운 나라 가운데 하나'로 꼽습니다.",
+   "북쪽 5분의 4는 사막이고, 남쪽 5분의 1은 가축을 기르고 조금 농사지을 수 있는 사바나입니다. 테네레 사막이 국토의 {{lf:NER:Ténéré}}를 차지합니다.",
+   "사람들은 대부분 남쪽 끝, 나이지리아·베냉 국경을 따라 삽니다.",
+   "국토 면적은 {{vr:NER:area}}입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "TCD",
+   "NGA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Niger: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/ng.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NGA",
+   "why": "니제르 사람 대부분이 사는 남쪽 국경 너머"
+  }
+ },
+ {
+  "id": "ner-millet",
+  "country": "NER",
+  "title": "니제르 들판은 어떤 곡물과 콩을 기를까?",
+  "category": "economy",
+  "panels": [
+   "니제르의 주요 농산물 목록은 기장, 동부콩, 수수로 시작합니다.",
+   "FAO 통계로 니제르는 {{ag:NER:Millet}}, {{ag:NER:Cow peas, dry}}입니다.",
+   "천연자원 목록 첫머리는 우라늄이고, 산업 목록 첫머리도 우라늄 광업입니다.",
+   "농림어업은 경제의 {{vr:NER:agri_va}}를 차지합니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "NGA",
+   "BFA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Niger: Economy – Agricultural products, Geography – Natural resources, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/ng.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BFA",
+   "why": "같은 사헬의 서쪽 이웃"
+  }
+ },
+ {
+  "id": "nga-abuja",
+  "country": "NGA",
+  "title": "나이지리아의 수도는 왜 라고스에서 아부자로 옮겼을까?",
+  "category": "history",
+  "panels": [
+   "식민지 이전 나이지리아 땅에는 북쪽의 보르노·카노·소코토 칼리프국, 서쪽의 베냉·오요 제국 같은 큰 나라들이 있었습니다.",
+   "1914년 영국이 따로 다스리던 북부와 남부를 합쳐 나이지리아 식민지를 만들었고, 나이지리아는 1960년 10월 1일 독립했습니다.",
+   "1991년 새로 지은 도시 아부자가 라고스를 대신해 수도가 되었습니다.",
+   "Factbook은 나이지리아를 '아프리카에서 인구가 가장 많은 나라'로 적습니다. 인구는 {{vr:NGA:population}}입니다."
+  ],
+  "indicators": [
+   "population"
+  ],
+  "related": [
+   "BEN",
+   "CMR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Nigeria: Government – Capital, Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/ni.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BEN",
+   "why": "요루바 사람들이 국경 양쪽에 사는 서쪽 이웃"
+  }
+ },
+ {
+  "id": "nga-yams",
+  "country": "NGA",
+  "title": "나이지리아 들판은 몇 가지 작물로 세계 1위를 할까?",
+  "category": "economy",
+  "panels": [
+   "FAO 통계로 나이지리아는 {{ag:NGA:Yams}}, {{ag:NGA:Taro}}입니다.",
+   "콜라너트는 {{ag:NGA:Kola nuts}}, 시어너트는 {{ag:NGA:Karite nuts (sheanuts)}}입니다.",
+   "하지만 상품 수출 1위는 {{ex:NGA}}입니다. 가장 큰 손님은 {{p1:NGA}}입니다.",
+   "나이지리아에는 하우사어·요루바어·이그보어 말고도 500개가 넘는 토착어가 있습니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "GHA",
+   "ESP"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Nigeria: Economy – Agricultural products, Economy – Economic overview, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/ni.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ESP",
+   "why": "나이지리아 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "rwa-hills",
+  "country": "RWA",
+  "title": "'천 개의 언덕'처럼 언덕이 많은 나라는?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 르완다를 '험한 언덕과 기름진 화산 흙이 지배하는 작고 중앙집권적인 나라'로 소개합니다.",
+   "땅은 대부분 풀 덮인 고지와 언덕이고, 서쪽에서 동쪽으로 갈수록 낮아집니다.",
+   "나라 대부분이 집약적으로 경작되고, 사람들은 대부분 시골에 삽니다. 아프리카에서 인구가 가장 빽빽한 나라 가운데 하나로, 인구밀도는 {{vr:RWA:density}}입니다.",
+   "나일강은 르완다에서 시작해 탄자니아·우간다·남수단·수단을 거쳐 이집트에서 지중해로 나갑니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "BDI",
+   "UGA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Rwanda: Introduction – Background, Geography – Terrain, Geography – note, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/rw.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BDI",
+   "why": "같은 고원의 남쪽 이웃"
+  }
+ },
+ {
+  "id": "rwa-languages",
+  "country": "RWA",
+  "title": "르완다에는 공용어가 몇 개일까?",
+  "category": "culture",
+  "panels": [
+   "르완다의 공용어는 키냐르완다어, 프랑스어, 영어, 스와힐리어 네 가지입니다.",
+   "그러나 실제로 쓰는 말은 키냐르완다어가 93.2%이고, 나머지 공용어는 각각 0.1%가 되지 않습니다.",
+   "수도 키갈리는 근처 키갈리산에서 이름을 땄습니다.",
+   "북서쪽 콩고민주공화국 국경에는 화산이 늘어선 비룽가산맥이 있습니다. 비소케산(3,711m)이 역사 속에서 활동한 유일한 화산입니다."
+  ],
+  "related": [
+   "COD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Rwanda: People – Languages, Government – Capital, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/rw.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "COD",
+   "why": "비룽가산맥과 키부 호수를 함께 나눈 서쪽 이웃"
+  }
+ },
+ {
+  "id": "sdn-khartoum",
+  "country": "SDN",
+  "title": "백나일과 청나일은 어디에서 만날까?",
+  "category": "geo",
+  "panels": [
+   "나일강은 수단의 가장 중요한 물줄기입니다.",
+   "큰 두 지류인 백나일과 청나일이 수도 하르툼에서 만나 나일강이 되고, 북쪽 이집트를 지나 지중해로 흐릅니다.",
+   "하르툼이라는 이름은 아랍어 '라스(머리·끝)'와 '알후르툼(코끼리 코)'에서 왔습니다. 두 강이 만나는 모양을 가리킨 이름입니다.",
+   "북쪽 수단은 나일강 기슭을 따라 띠처럼 늘어선 마을을 빼면 사람이 드뭅니다."
+  ],
+  "related": [
+   "ETH",
+   "SSD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Sudan: Geography – note, Government – Capital, Geography – Major rivers, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/su.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ETH",
+   "why": "청나일이 시작되는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "sdn-kush",
+  "country": "SDN",
+  "title": "고대 누비아에는 어떤 왕국이 있었을까?",
+  "category": "history",
+  "panels": [
+   "오랫동안 누비아라 불린 지금의 수단 땅에는 케르마 왕국(기원전 2500~1500년 무렵)이 있었고, 뒤에 이집트 신왕국에 흡수되었습니다.",
+   "기원전 11세기 무렵 쿠시 왕국이 이집트에서 독립해 4세기 중반까지 이어졌습니다.",
+   "수단은 1956년 1월 1일 이집트와 영국에서 독립했습니다. 500개가 넘는 민족이 삽니다.",
+   "FAO 통계로 수단은 {{ag:SDN:Meat of camels, fresh or chilled}}, {{ag:SDN:Sesame seed}}입니다."
+  ],
+  "related": [
+   "EGY"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Sudan: Introduction – Background, Government – Independence, People – Ethnic groups, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/su.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "EGY",
+   "why": "고대 쿠시 왕국과 다투고 섞인 북쪽 이웃"
+  }
+ },
+ {
+  "id": "sen-goree",
+  "country": "SEN",
+  "title": "세네갈의 고레섬에는 어떤 역사가 있을까?",
+  "category": "history",
+  "panels": [
+   "Factbook은 세네갈을 구석기 시대부터 지금까지 사람이 끊임없이 살아온 흔적이 있는, 세계에서 몇 안 되는 나라로 꼽습니다.",
+   "14~16세기에는 졸로프 제국이 세네갈 대부분을 다스렸습니다.",
+   "아프리카 서쪽 끝이라는 자리 때문에 유럽의 노예 무역 거점이 되었고, 유럽 나라들은 고레섬을 기지로 삼았습니다.",
+   "1960년 프랑스에서 독립했고, 같은 해 8월 말리와의 연방이 해체되며 완전히 독립했습니다. 무슬림이 97.2%이고 대부분 수피 교단에 속합니다."
+  ],
+  "related": [
+   "MLI",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Senegal: Introduction – Background, Government – Independence, People – Religions",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/sg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MLI",
+   "why": "1960년 잠시 세네갈과 연방을 이뤘던 이웃"
+  }
+ },
+ {
+  "id": "sen-westernmost",
+  "country": "SEN",
+  "title": "아프리카 대륙에서 가장 서쪽에 있는 나라는?",
+  "category": "geo",
+  "panels": [
+   "세네갈은 아프리카 대륙에서 가장 서쪽에 있는 나라입니다. 감비아는 거의 세네갈 안에 들어가 있습니다.",
+   "땅은 대체로 낮고 완만한 평야이고, 남동쪽으로 가면 산기슭이 나옵니다.",
+   "5~11월은 비가 오고, 12~4월은 덥고 메마른 하르마탄이 부는 건기입니다.",
+   "수도 다카르는 월로프어 '은다카르(타마린드 나무)'에서 온 이름입니다."
+  ],
+  "related": [
+   "GMB",
+   "MRT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Senegal: Geography – note, Geography – Terrain, Geography – Climate, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/sg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GMB",
+   "why": "세네갈 안에 거의 들어간 작은 이웃"
+  }
+ },
+ {
+  "id": "sle-freetown",
+  "country": "SLE",
+  "title": "'자유의 도시' 프리타운은 누구의 피난처였을까?",
+  "category": "history",
+  "panels": [
+   "시에라리온 땅은 적어도 2,500년 동안 사람이 살아왔고, 빽빽한 정글 덕분에 서아프리카 제국들의 침입을 비교적 덜 받았습니다.",
+   "수도 프리타운은 1781년 해방된 노예들의 피난처로 세워진 정착지를 가리키던 이름입니다.",
+   "시에라리온은 1961년 4월 27일 영국에서 독립했습니다.",
+   "공용어는 영어이지만, 남쪽은 멘데어, 북쪽은 템네어가 주로 쓰이고, 영어 바탕의 크리오어도 쓰입니다."
+  ],
+  "related": [
+   "LBR",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Sierra Leone: Government – Capital, Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/sl.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "LBR",
+   "why": "해방된 노예들이 세운 또 하나의 이웃 나라"
+  }
+ },
+ {
+  "id": "sle-rain",
+  "country": "SLE",
+  "title": "서아프리카 해안에서 가장 비가 많이 오는 곳 가운데 하나는?",
+  "category": "geo",
+  "panels": [
+   "시에라리온 해안에는 한 해에 비가 495cm까지 내립니다. 서아프리카 해안에서 가장 비가 많은 곳 가운데 하나입니다.",
+   "해안은 맹그로브 늪이고, 안쪽은 숲 덮인 구릉, 고원, 동쪽의 산으로 이어집니다.",
+   "5~12월은 우기, 12~4월은 건기입니다.",
+   "천연자원 목록 첫머리는 다이아몬드이고, 티타늄 광석, 보크사이트, 철광석이 뒤를 잇습니다."
+  ],
+  "related": [
+   "GIN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Sierra Leone: Geography – note, Geography – Terrain, Geography – Climate, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/africa/sl.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GIN",
+   "why": "시에라리온 북쪽과 동쪽의 이웃"
+  }
+ },
+ {
   "id": "zaf-capitals",
   "country": "ZAF",
   "title": "수도가 세 개인 나라는 어디일까?",
