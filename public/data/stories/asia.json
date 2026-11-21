@@ -539,7 +539,7 @@
   "title": "조지아의 수도 트빌리시는 왜 '따뜻한' 도시일까?",
   "category": "culture",
   "panels": [
-   "트빌리시라는 이름은 조지아어 '트빌리(따뜻한)'에서 왔습니다. 이 일대에 솟는 온천을 가리킨 말입니다.",
+   "트빌리시라는 이름은 조지아어 '트빌리(따뜻한)'에서 왔습니다. 이 일대의 뜨거운 유황 온천을 가리킨 말입니다.",
    "조지아 땅에는 고대 콜키스 왕국과 카르틀리-이베리아 왕국이 있었고, 330년대에 기독교가 국교가 되었습니다.",
    "11~13세기 황금기를 누렸지만 1236년 몽골의 침입으로 끝났습니다.",
    "산업 목록에는 와인도 올라 있습니다. 상품 수출 1위는 {{ex:GEO}}입니다."
@@ -1806,6 +1806,183 @@
   }
  },
  {
+  "id": "omn-exclaves",
+  "country": "OMN",
+  "title": "오만의 땅은 왜 세 조각일까?",
+  "category": "geo",
+  "panels": [
+   "오만은 본토와 북쪽의 떨어진 땅 두 곳, 무산담과 알마다로 이루어져 있습니다.",
+   "무산담은 호르무즈 해협 바로 옆에 있는 반도입니다.",
+   "가운데는 사막 평원이고, 북쪽과 남쪽에 험한 산이 있습니다. 남쪽 끝에는 5~9월에 강한 남서 계절풍이 붑니다.",
+   "사람들은 대부분 북쪽 하자르산맥 주변에 살고, 남쪽 끝 살랄라 둘레에 작은 무리가 있습니다."
+  ],
+  "related": [
+   "ARE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Oman: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/mu.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ARE",
+   "why": "오만의 두 조각 땅 사이에 낀 이웃"
+  }
+ },
+ {
+  "id": "omn-trade",
+  "country": "OMN",
+  "title": "오만 사람들은 오래전부터 무엇으로 살았을까?",
+  "category": "history",
+  "panels": [
+   "지금의 오만 땅에 살던 사람들은 오래전부터 인도양 무역으로 번영했습니다.",
+   "Factbook은 오만의 중요한 날로 1650년 포르투갈 세력을 몰아낸 해를 꼽습니다. 오만은 영국의 식민지가 된 적이 없습니다.",
+   "그래서인지 아랍어 말고도 영어, 발루치어, 스와힐리어, 우르두어가 쓰입니다.",
+   "지금 상품 수출 1위는 {{ex:OMN}}입니다. 천연자원에서 얻는 몫은 GDP의 {{v:OMN:resource_rents}}입니다."
+  ],
+  "indicators": [
+   "resource_rents"
+  ],
+  "related": [
+   "TZA",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Oman: Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/mu.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TZA",
+   "why": "스와힐리어가 오가는 인도양 건너편"
+  }
+ },
+ {
+  "id": "pak-indus",
+  "country": "PAK",
+  "title": "파키스탄 땅에서 꽃핀 옛 문명은 무엇일까?",
+  "category": "history",
+  "panels": [
+   "적어도 5,000년 전부터 이어진 인더스 문명이 지금의 파키스탄 대부분에 퍼져 있었습니다.",
+   "1947년 영국령 인도가 무슬림 국가 파키스탄과 대부분 힌두교도인 인도로 나뉘었고, 파키스탄은 8월 14일 독립했습니다.",
+   "지금도 사람들은 인더스강과 그 지류를 따라 모여 살고, 펀자브주가 가장 빽빽합니다. 펀자브어를 쓰는 사람이 38.8%로 가장 많습니다.",
+   "FAO 통계로 파키스탄은 {{ag:PAK:Raw milk of buffalo}}입니다. 인구는 {{vr:PAK:population}}입니다."
+  ],
+  "indicators": [
+   "population"
+  ],
+  "related": [
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Pakistan: Introduction – Background, Government – Independence, People – Languages, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/pk.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "1947년 같은 날 영국령 인도에서 갈라진 이웃"
+  }
+ },
+ {
+  "id": "pak-passes",
+  "country": "PAK",
+  "title": "중앙아시아에서 인도로 가는 옛 침략로는 어느 나라에 있을까?",
+  "category": "geo",
+  "panels": [
+   "파키스탄은 중앙아시아와 인도를 잇던 전통적인 침략로, 카이버 고개와 볼란 고개를 쥐고 있습니다.",
+   "땅은 북쪽 고지대, 가운데와 동쪽의 인더스강 평야, 남쪽과 서쪽의 발루치스탄 고원으로 나뉩니다.",
+   "북쪽에는 낭가파르바트(8,125m) 같은 높은 산이 솟아 있습니다.",
+   "7~8월 큰비가 내리면 인더스강을 따라 홍수가 나고, 북쪽과 서쪽에는 때때로 큰 지진이 일어납니다."
+  ],
+  "related": [
+   "AFG",
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Pakistan: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/pk.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AFG",
+   "why": "카이버 고개 너머 서쪽 이웃"
+  }
+ },
+ {
+  "id": "phl-abaca",
+  "country": "PHL",
+  "title": "'마닐라삼'은 어떤 작물일까?",
+  "category": "economy",
+  "panels": [
+   "FAO 통계로 필리핀은 {{ag:PHL:Abaca, manila hemp, raw}}입니다. 아바카는 '마닐라삼'으로도 불리는 튼튼한 섬유입니다.",
+   "파인애플은 {{ag:PHL:Pineapples}}, 코코넛은 {{ag:PHL:Coconuts, in shell}}입니다.",
+   "하지만 상품 수출 1위는 {{ex:PHL}}입니다. Factbook 산업 목록 첫머리도 반도체·전자 조립입니다.",
+   "수도 마닐라라는 이름은 타갈로그어 '마이(있다)'와 '닐라(쪽 무리에 속하는 떨기나무의 현지 이름)'에서 왔습니다."
+  ],
+  "indicators": [
+   "manufacturing"
+  ],
+  "related": [
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Philippines: Economy – Agricultural products, Economy – Industries, Economy – Economic overview, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/rp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "필리핀 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "phl-islands",
+  "country": "PHL",
+  "title": "필리핀의 섬은 왜 7,107개에서 7,641개로 늘었을까?",
+  "category": "geo",
+  "panels": [
+   "필리핀의 섬은 수십 년 동안 7,107개로 알려져 있었습니다.",
+   "2016년 국가 지도 기관이 수백 개의 새 섬을 찾아냈다고 발표하며 섬의 수를 7,641개로 늘렸습니다. 다만 새 섬이 모두 확인된 것은 아닙니다.",
+   "필리핀은 태풍이 지나는 길목에 있어 해마다 여러 번 열대 폭풍을 맞습니다.",
+   "탈산(311m)은 국제 학회가 꼽은 '10년 화산'입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "IDN",
+   "JPN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Philippines: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/rp.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IDN",
+   "why": "남쪽의 또 다른 섬나라"
+  }
+ },
+ {
   "id": "prk-clock",
   "country": "PRK",
   "title": "평양과 서울의 시계는 언제 다시 같은 시각을 가리키게 되었을까?",
@@ -1918,6 +2095,134 @@
   "next": {
    "country": "KOR",
    "why": "같은 반도 남쪽의 화산섬 제주"
+  }
+ },
+ {
+  "id": "pse-olive",
+  "country": "PSE",
+  "title": "팔레스타인의 들판과 공방에서는 무엇을 만들까?",
+  "category": "culture",
+  "panels": [
+   "서안 지구의 주요 농산물은 토마토, 오이, 올리브, 닭, 우유입니다.",
+   "산업 목록에는 작은 공장과 채석장, 섬유, 비누와 함께 올리브나무 조각과 자개 기념품이 올라 있습니다.",
+   "상품 수출 1위는 {{ex:PSE}}이고, 가장 큰 손님은 {{p1:PSE}}입니다.",
+   "아랍어가 쓰이고, 영어도 널리 통합니다."
+  ],
+  "related": [
+   "ISR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Palestine: Economy – Agricultural products, Economy – Industries, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/gz.json",
+    "accessed": "2026-11-21"
+   },
+   {
+    "label": "CIA World Factbook — Palestine: Economy – Agricultural products, Economy – Industries, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/we.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ISR",
+   "why": "팔레스타인 상품을 가장 많이 사 가는 이웃"
+  }
+ },
+ {
+  "id": "pse-two-areas",
+  "country": "PSE",
+  "title": "팔레스타인의 두 지역은 어떻게 다를까?",
+  "category": "geo",
+  "panels": [
+   "팔레스타인 지역은 요르단강 서쪽의 서안 지구와 지중해에 닿은 가자 지구, 두 곳으로 나뉘어 있습니다.",
+   "더 넓은 서안 지구는 바다에 닿지 않은 내륙입니다. 서쪽은 골짜기가 많은 험한 고지대이고, 동쪽으로 갈수록 요르단강 골짜기를 향해 평평하게 내려갑니다.",
+   "가자 지구는 모래와 언덕으로 덮인 평평한 해안 평야입니다. 예전에는 중동과 북아프리카를 잇는 무역로의 요지였습니다.",
+   "두 곳 모두 가뭄이 재해 목록에 올라 있습니다."
+  ],
+  "related": [
+   "JOR",
+   "EGY"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Palestine: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/gz.json",
+    "accessed": "2026-11-21"
+   },
+   {
+    "label": "CIA World Factbook — Palestine: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/we.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JOR",
+   "why": "요르단강 동쪽의 이웃"
+  }
+ },
+ {
+  "id": "qat-pearls",
+  "country": "QAT",
+  "title": "진주를 캐던 가난한 보호령은 어떻게 세계 최고 소득의 나라가 되었을까?",
+  "category": "history",
+  "panels": [
+   "카타르는 19세기 중반부터 알사니 가문이 다스려 왔습니다.",
+   "지난 60년 동안 카타르는 주로 진주잡이로 알려진 가난한 영국 보호령에서, 석유·가스 수입이 큰 독립국으로 바뀌었습니다. 1971년 9월 3일 독립했습니다.",
+   "Factbook은 2007년 무렵 카타르가 세계에서 1인당 소득이 가장 높은 나라가 되었다고 적습니다. 지금 1인당 GDP는 {{vr:QAT:gdp_pc}}입니다.",
+   "수도 도하는 아랍어 '앗다우하', 곧 '큰 나무'에서 온 이름입니다."
+  ],
+  "indicators": [
+   "gdp_pc"
+  ],
+  "related": [
+   "BHR",
+   "SAU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Qatar: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/qa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SAU",
+   "why": "카타르와 유일하게 땅을 맞댄 이웃"
+  }
+ },
+ {
+  "id": "qat-people",
+  "country": "QAT",
+  "title": "카타르에 사는 사람 가운데 카타르 국민은 얼마나 될까?",
+  "category": "culture",
+  "panels": [
+   "2015년 추정으로 카타르 주민 가운데 카타르 국민은 11.6%이고, 나머지 88.4%는 외국인입니다.",
+   "무슬림이 65.2%이고, 힌두교인 15.9%, 기독교인 13.7%, 불교도 3.8%입니다.",
+   "사람들은 대부분 반도 동쪽의 수도 도하와 그 주변에 모여 삽니다.",
+   "인구는 {{vr:QAT:population}}입니다."
+  ],
+  "indicators": [
+   "population",
+   "urban"
+  ],
+  "related": [
+   "IND",
+   "NPL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Qatar: People – Ethnic groups, People – Religions, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/qa.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "카타르 이주 노동자가 많이 온 남아시아의 나라"
   }
  },
  {
@@ -2134,6 +2439,62 @@
   }
  },
  {
+  "id": "syr-damascus",
+  "country": "SYR",
+  "title": "가장 오래 사람이 살아온 도시 가운데 하나는 어디일까?",
+  "category": "history",
+  "panels": [
+   "수도 다마스쿠스는 바라다강이 적시는 오아시스에 자리합니다. Factbook은 이 도시를 세계에서 가장 오래 사람이 이어 살아온 도시 가운데 하나로 꼽습니다.",
+   "이름은 셈족 이전의 아주 오래된 말에서 왔다고 하지만, 뜻은 알려져 있지 않습니다.",
+   "제1차 세계대전 뒤 프랑스가 위임통치를 맡았고, 시리아는 1946년 4월 17일 독립했습니다.",
+   "1958년 이집트와 합쳐 '아랍 연합 공화국'을 세웠다가 1961년 다시 갈라졌습니다."
+  ],
+  "related": [
+   "LBN",
+   "EGY"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Syria: Geography – note, Government – Capital, Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/sy.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "EGY",
+   "why": "1958년 시리아와 한 나라를 이뤘던 나라"
+  }
+ },
+ {
+  "id": "syr-geo",
+  "country": "SYR",
+  "title": "시리아의 큰 강들은 어디에서 흘러올까?",
+  "category": "geo",
+  "panels": [
+   "시리아는 대부분 반건조 지역과 사막 고원이고, 서쪽에 좁은 해안 평야와 산이 있습니다.",
+   "유프라테스강과 티그리스강은 튀르키예에서 시작해 시리아를 지나 이라크로 흘러갑니다.",
+   "해안은 겨울에 비가 오고, 다마스쿠스에는 이따금 눈이나 진눈깨비가 내립니다.",
+   "사람들은 지중해 해안과 다마스쿠스, 가장 큰 도시 알레포, 홈스 같은 도시에 많이 삽니다."
+  ],
+  "related": [
+   "TUR",
+   "IRQ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Syria: Geography – Major rivers, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/sy.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TUR",
+   "why": "유프라테스강이 시작되는 북쪽 이웃"
+  }
+ },
+ {
   "id": "tha-bangkok-name",
   "country": "THA",
   "title": "방콕의 진짜 이름은 얼마나 길까?",
@@ -2245,6 +2606,292 @@
   "next": {
    "country": "MYS",
    "why": "고무와 전자제품을 함께 파는 남쪽 이웃"
+  }
+ },
+ {
+  "id": "tjk-monday",
+  "country": "TJK",
+  "title": "도시 이름이 '월요일'인 수도는?",
+  "category": "curious",
+  "panels": [
+   "수도 두샨베는 페르시아어로 '월요일'이라는 뜻입니다. 옛날 이 자리가 월요일마다 큰 시장이 서던 갈림길이었기 때문입니다.",
+   "타지키스탄은 1991년 9월 9일 소련에서 독립했습니다.",
+   "FAO 통계로 타지키스탄은 {{ag:TJK:Apricots}}입니다.",
+   "상품 수출 1위는 {{ex:TJK}}이고, 가장 큰 손님은 {{p1:TJK}}입니다."
+  ],
+  "related": [
+   "UZB"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Tajikistan: Government – Capital, Economy – Agricultural products, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/ti.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "UZB",
+   "why": "타지크인이 많이 사는 서쪽 이웃"
+  }
+ },
+ {
+  "id": "tjk-pamir",
+  "country": "TJK",
+  "title": "옛 소련에서 가장 높았던 산은 어디에 있을까?",
+  "category": "geo",
+  "panels": [
+   "타지키스탄에서 가장 높은 이스모일소모니봉(7,495m)은 옛 소련에서 가장 높은 산이었습니다. 예전 이름은 '공산주의봉'이었습니다.",
+   "북쪽은 알라이산맥, 남동쪽은 파미르고원입니다. 파미르가 국토의 {{lf:TJK:Pamirs}}를 차지합니다.",
+   "그래서 쾨펜 기후로 가장 넓은 것은 {{cl:TJK}}입니다.",
+   "사람들은 낮은 땅에 모여 살고, 많게는 90%가 골짜기에 삽니다."
+  ],
+  "related": [
+   "KGZ",
+   "AFG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Tajikistan: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/ti.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KGZ",
+   "why": "파미르 북쪽의 산악 이웃"
+  }
+ },
+ {
+  "id": "tkm-garagum",
+  "country": "TKM",
+  "title": "국토의 80% 이상이 사막인 나라는?",
+  "category": "geo",
+  "panels": [
+   "투르크메니스탄의 서쪽과 가운데 낮은 땅은 거대한 카라쿰 사막입니다. Factbook은 이 사막이 나라의 80% 넘게를 차지한다고 적습니다.",
+   "남쪽에는 산이 있고, 이란 국경을 따라 낮은 산맥이 이어집니다. 서쪽은 카스피해에 닿아 있습니다.",
+   "사람들은 남쪽·동쪽·북동쪽의 오아시스에 모여 삽니다.",
+   "인구의 약 절반이 수도 아시가바트와 그 주변에 삽니다."
+  ],
+  "related": [
+   "UZB",
+   "IRN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Turkmenistan: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/tx.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "UZB",
+   "why": "카라쿰 사막을 함께 나눈 이웃"
+  }
+ },
+ {
+  "id": "tkm-merv",
+  "country": "TKM",
+  "title": "실크로드의 큰 도시 메르브는 어디에 있었을까?",
+  "category": "history",
+  "panels": [
+   "투르크메니스탄은 오랫동안 여러 문명의 교차로였습니다. 페르시아 제국, 알렉산드로스 대왕, 이슬람 군대, 몽골, 튀르크 전사, 러시아가 차례로 이 땅을 정복했습니다.",
+   "중세의 메르브(지금의 마리주)는 이슬람 세계의 큰 도시이자 실크로드의 중요한 길목이었습니다.",
+   "수도 아시가바트는 투르크멘 말 '우시크(사랑)'와 '아바드(사람 사는 곳)'를 합친 이름입니다. 1881년 군사 기지로 세워졌습니다.",
+   "Factbook은 투르크메니스탄이 세계 4위의 천연가스 매장량을 가졌다고 적습니다."
+  ],
+  "related": [
+   "IRN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Turkmenistan: Introduction – Background, Government – Capital, Geography – Natural resources, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/tx.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IRN",
+   "why": "고대에 이 땅을 다스린 페르시아 제국의 나라"
+  }
+ },
+ {
+  "id": "tls-sandalwood",
+  "country": "TLS",
+  "title": "동티모르는 왜 두 번 독립했을까?",
+  "category": "history",
+  "panels": [
+   "티모르섬은 14세기에 이미 백단향, 꿀, 밀랍을 내다 팔았고, 백단향 무역이 16세기 초 포르투갈 사람들을 불러들였습니다.",
+   "1975년 11월 28일 동티모르는 포르투갈에서 독립을 선언했지만, 아흐레 뒤 인도네시아가 침공했습니다.",
+   "2002년 5월 20일 인도네시아에서 독립했습니다. 그래서 Factbook은 독립일을 두 개 적습니다.",
+   "지금 국민의 90.7%가 가톨릭 신자입니다."
+  ],
+  "related": [
+   "PRT",
+   "IDN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Timor-Leste: Introduction – Background, Government – Independence, People – Religions",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/tt.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PRT",
+   "why": "16세기부터 동티모르를 다스린 나라"
+  }
+ },
+ {
+  "id": "tls-south",
+  "country": "TLS",
+  "title": "남반구에 온전히 들어 있는 유일한 아시아 나라는?",
+  "category": "geo",
+  "panels": [
+   "동티모르는 남반구에 온전히 들어 있는 유일한 아시아 나라입니다.",
+   "티모르섬은 말레이 제도에 속하고, 소순다 열도에서 가장 크고 가장 동쪽에 있는 섬입니다.",
+   "서쪽의 오에쿠시 지역은 인도네시아 땅을 사이에 두고 본토와 떨어져 있습니다.",
+   "나라는 대부분 산이고, 홍수와 산사태가 흔합니다."
+  ],
+  "related": [
+   "IDN",
+   "AUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Timor-Leste: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/tt.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IDN",
+   "why": "티모르섬 서쪽과 오에쿠시를 둘러싼 이웃"
+  }
+ },
+ {
+  "id": "tur-hazelnut",
+  "country": "TUR",
+  "title": "튀르키예 들판은 몇 가지 작물로 세계 1위를 할까?",
+  "category": "economy",
+  "panels": [
+   "FAO 통계로 튀르키예는 {{ag:TUR:Hazelnuts, in shell}}입니다.",
+   "무화과는 {{ag:TUR:Figs}}, 살구는 {{ag:TUR:Apricots}}입니다.",
+   "마르멜로도 {{ag:TUR:Quinces}}입니다.",
+   "Factbook은 튀르키예를 '큰 농업 기반을 유지하며 산업화하는 경제'라고 소개합니다. 1923년 무스타파 케말(아타튀르크)이 오스만 제국의 뒤를 이어 공화국을 세웠습니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "AZE",
+   "ITA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Türkiye: Economy – Agricultural products, Economy – Economic overview, Introduction – Background",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/tu.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AZE",
+   "why": "헤이즐넛을 많이 기르는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "tur-straits",
+  "country": "TUR",
+  "title": "튀르키예 땅의 몇 %가 유럽에 있을까?",
+  "category": "geo",
+  "panels": [
+   "튀르키예는 흑해와 에게해를 잇는 보스포루스 해협·마르마라해·다르다넬스 해협을 쥐고 있습니다.",
+   "해협 북쪽, 국토의 3%는 유럽에 있고 '동트라키아'라 불립니다. 나머지 97%는 아시아의 아나톨리아입니다.",
+   "가장 빽빽한 곳은 북서쪽 보스포루스 주변으로, 인구의 20%가 이스탄불에 삽니다.",
+   "마르마라해에서 반 호수까지 북쪽을 따라 큰 지진이 잦습니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "GRC",
+   "BGR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Türkiye: Geography – note, People – Population distribution, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/tu.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GRC",
+   "why": "에게해를 사이에 둔 서쪽 이웃"
+  }
+ },
+ {
+  "id": "uzb-cotton",
+  "country": "UZB",
+  "title": "'흰 금'은 우즈베키스탄에 무엇을 남겼을까?",
+  "category": "economy",
+  "panels": [
+   "소련 시절 우즈베키스탄에서는 '흰 금'이라 불린 목화와 곡물을 대량으로 길렀습니다.",
+   "농약을 지나치게 쓰고 물을 많이 끌어다 써서 땅이 망가지고, 아랄해와 몇몇 강은 반쯤 말라 버렸습니다.",
+   "독립 뒤에는 농업을 다양하게 바꿔 왔습니다. FAO 통계로 우즈베키스탄은 {{ag:UZB:Apricots}}, {{ag:UZB:Carrots and turnips}}입니다.",
+   "누에고치도 {{ag:UZB:Silk-worm cocoons suitable for reeling}}입니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "KAZ",
+   "TKM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Uzbekistan: Introduction – Background, Economy – Economic overview, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/uz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KAZ",
+   "why": "아랄해를 함께 나눈 북쪽 이웃"
+  }
+ },
+ {
+  "id": "uzb-doubly",
+  "country": "UZB",
+  "title": "바다에 가려면 국경을 두 번 넘어야 하는 나라는?",
+  "category": "curious",
+  "panels": [
+   "우즈베키스탄은 이웃 나라도 모두 내륙국인 '이중 내륙국'입니다. 세계에 이런 나라는 리히텐슈타인과 우즈베키스탄 둘뿐입니다.",
+   "땅은 대부분 평평한 모래사막입니다. 키질쿰 사막이 국토의 {{lf:UZB:Qizilqum Desert}}를 차지합니다.",
+   "아무다리야강, 시르다리야강, 제라프샨강을 따라 물을 끌어대는 넓은 골짜기가 있습니다.",
+   "사람들은 대부분 동쪽 끝의 기름진 페르가나 분지에 모여 삽니다."
+  ],
+  "related": [
+   "LIE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Uzbekistan: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/uz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "LIE",
+   "why": "이중 내륙국인 다른 한 나라"
   }
  },
  {
@@ -2363,6 +3010,62 @@
   "next": {
    "country": "LAO",
    "why": "베트남의 좁은 허리 서쪽에 붙은 내륙국"
+  }
+ },
+ {
+  "id": "yem-babelmandeb",
+  "country": "YEM",
+  "title": "홍해의 입구를 지키는 해협은 어느 나라에 있을까?",
+  "category": "geo",
+  "panels": [
+   "예멘은 홍해와 아덴만을 잇는 바브엘만데브 해협에 자리합니다. 세계에서 가장 바쁜 바닷길 가운데 하나입니다.",
+   "좁은 해안 평야 뒤로 꼭대기가 평평한 언덕과 험한 산이 있고, 가운데 고원은 아라비아반도의 사막으로 이어집니다.",
+   "서쪽 해안은 덥고 습하며, 서쪽 산지는 계절풍 덕분에 온화합니다. 동쪽은 아주 뜨겁고 메마른 사막입니다.",
+   "사람들은 대부분 서쪽 끝 아시르산맥에 삽니다."
+  ],
+  "related": [
+   "DJI",
+   "ERI"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Yemen: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ym.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "DJI",
+   "why": "바브엘만데브 해협 건너편의 나라"
+  }
+ },
+ {
+  "id": "yem-unify",
+  "country": "YEM",
+  "title": "예멘은 언제 하나의 나라가 되었을까?",
+  "category": "history",
+  "panels": [
+   "북예멘이라 불린 예멘 왕국은 1918년 오스만 제국에서 독립했고, 1962년 예멘 아랍 공화국이 되었습니다.",
+   "남쪽 아덴 항구 둘레를 보호령으로 삼았던 영국은 1967년 물러났고, 그 자리에 남예멘이 섰습니다.",
+   "두 나라는 1990년 5월 22일 예멘 공화국으로 합쳐졌습니다.",
+   "수도 사나라는 이름은 옛 말로 '요새화된 곳'이라는 뜻이라고 전해집니다."
+  ],
+  "related": [
+   "SAU",
+   "OMN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Yemen: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ym.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "OMN",
+   "why": "예멘과 국경을 맞댄 동쪽 이웃"
   }
  }
 ]
