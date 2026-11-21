@@ -3,7 +3,15 @@ dist
 public/data.staging
 data/map_stage.geojson
 *.tmp
-# World Bank 원자료(약 27MB)는 저장소에 두지 않는다. 자료 갱신 워크플로가 매번 새로 받는다.
-data/raw/wb/
 __pycache__/
 *.tsbuildinfo
+# 원자료는 저장소에 두지 않는다 (fetch.py 로 다시 받는다. 출처·해시는 data/manifest.json)
+data/raw/
+data/update_summary.md
+*.log
+logs/
+.env
+.env.*
+*.local
+.vite/
+coverage/

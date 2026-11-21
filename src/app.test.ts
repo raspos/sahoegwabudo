@@ -32,6 +32,11 @@ describe('국가 목록', () => {
   it('코드 중복이 없다 (ISO3, ISO2, M49)', () => {
     for (const k of ['iso3', 'iso2', 'm49'] as const) expect(new Set(countries.map((c) => c[k])).size).toBe(195);
   });
+  it('땅 국경은 양쪽이 서로를 이웃으로 갖는다 (스리랑카-인도는 이웃 아님)', () => {
+    const by = new Map(countries.map((c) => [c.id, c]));
+    for (const c of countries) for (const b of c.borders) expect(by.get(b)!.borders, `${c.id}->${b}`).toContain(c.id);
+    expect(by.get('LKA')!.borders).toEqual([]);
+  });
   it('195개국 모두 지도 영역과 연결되고 도감 경로가 있다', () => {
     const missing = countries.filter((c) => !geo.byId.has(c.id));
     expect(missing.map((c) => c.id)).toEqual([]);

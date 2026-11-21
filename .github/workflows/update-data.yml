@@ -1,0 +1,43 @@
+name: 통계 자료 갱신 (월 1회)
+# 원자료 수집 → 정규화·검증 → 테스트 → 기존 자료와 비교 → 바뀐 점이 있으면 PR (자동 병합하지 않는다)
+# 원자료(data/raw)는 저장소에 두지 않고 매번 새로 받는다. 검증에 실패하면 public/data 는 그대로다.
+on:
+  schedule:
+    - cron: '0 3 5 * *'   # 매월 5일 03:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci   # mapshaper (지도 단순화)
+      - name: 원자료 수집
+        # Wikidata 가 실패하면 build.py 가 기존 한국어 명칭을 쓴다. 국가 목록·지도·통계가 실패하면 build.py 에서 멈춘다.
+        run: python -I pipeline/fetch.py || echo "::warning::일부 원자료 수집 실패"
+      - name: 정규화·검증 (실패 시 public/data 유지)
+        run: python -I pipeline/build.py
+      - run: npm test
+      - run: npm run build
+      - name: 변경 사항 PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain public/data)" ]; then echo "서비스 자료 변경 없음"; exit 0; fi
+          b="data/$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$b"
+          git add public/data data/manifest.json data/validation_report.json
+          git commit -m "data: 통계 자료 갱신 $(date +%Y-%m-%d)"
+          git push origin "$b"
+          gh pr create --base main --head "$b" --title "통계 자료 갱신 $(date +%Y-%m-%d)" --body-file data/update_summary.md

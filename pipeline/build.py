@@ -96,13 +96,23 @@ def build_countries():
     if len(obs) != 2:
         errors.append(f"옵서버 국가 수가 2가 아님: {len(obs)}")
 
-    wd = load(RAW / "wikidata_capital_lang_currency.json")["results"]["bindings"]
+    # Wikidata 원자료가 없거나 깨졌으면(요청 제한·장애) 기존 서비스 자료의 한국어 명칭을 그대로 쓴다
+    prev = {}
+    try:
+        wd = load(RAW / "wikidata_capital_lang_currency.json")["results"]["bindings"]
+        codes = load(RAW / "wikidata_codes_ko.json")["results"]["bindings"]
+    except Exception as e:  # noqa: BLE001
+        wd, codes = [], []
+        if (OUT / "countries.json").exists():
+            prev = {c["id"]: c for c in load(OUT / "countries.json")}
+            warnings.append(f"Wikidata 원자료 없음({type(e).__name__}): 기존 public/data 한국어 명칭 사용")
+        else:
+            errors.append("Wikidata 원자료와 기존 국가 자료가 모두 없음")
     wd_by = defaultdict(lambda: defaultdict(list))
     for b in wd:
         prop = b["prop"]["value"].rsplit("/", 1)[-1]
         wd_by[b["iso"]["value"]][prop].append((b.get("valLabelEn", {}).get("value"), b.get("valLabelKo", {}).get("value")))
 
-    codes = load(RAW / "wikidata_codes_ko.json")["results"]["bindings"]
     code_ko: dict[tuple[str, str], str] = {}
     for b in codes:
         key = (b["kind"]["value"], b["code"]["value"])
@@ -120,7 +130,7 @@ def build_countries():
             ko = next((k for e, k in wcaps if e == cp and k), None)
             if not ko and len(caps_en) == 1:
                 ko = CAPITAL_KO_MANUAL.get(iso3)
-            if not ko:
+            if not ko and wd:
                 warnings.append(f"{iso3} 수도 한국어명 없음: {cp} (영어 표기 사용)")
             caps_ko.append(ko or cp)
         caps_ko = [CAPITAL_KO_SHORT.get(c, c) for c in caps_ko]
@@ -129,8 +139,17 @@ def build_countries():
         cur = x.get("currencies", {}) or {}
         currencies = [{"code": code, "name_en": v.get("name"), "symbol": v.get("symbol"),
                        "name_ko": code_ko.get(("currency", code))} for code, v in cur.items()]
+        old = prev.get(iso3)
+        if old:  # Wikidata 대체: 원자료 영어 표기가 그대로일 때만 기존 한국어 명칭을 잇는다
+            if old.get("capital_en") == caps_en:
+                caps_ko = old["capital_ko"]
+            if old.get("languages_en") == sorted(langs.values()):
+                langs_ko = old["languages_ko"]
+            old_cur = {c["code"]: c.get("name_ko") for c in old.get("currencies", [])}
+            for cu in currencies:
+                cu["name_ko"] = cu["name_ko"] or old_cur.get(cu["code"])
         for cu in currencies:
-            if not cu["name_ko"]:
+            if not cu["name_ko"] and not prev:
                 warnings.append(f"{iso3} 통화 한국어명 없음: {cu['code']}")
         sub = x.get("subregion", "")
         if sub not in SUBREGION_KO:
@@ -172,10 +191,13 @@ def build_countries():
     for c in countries:
         c["borders_outside"] = [b for b in c["borders"] if b not in idset]
         c["borders"] = [b for b in c["borders"] if b in idset]
-        for b in c["borders"]:
-            other = next(o for o in countries if o["id"] == b)
-            if c["id"] not in other["borders"] and c["id"] not in other.get("borders_outside", []):
-                warnings.append(f"인접국 비대칭: {c['id']}→{b}")
+    # 땅 국경은 양쪽 나라가 서로를 이웃으로 적었을 때만 인정한다.
+    # (원자료에는 스리랑카→인도처럼 한쪽만 적힌 경우가 있고, 둘은 땅으로 맞닿지 않는다)
+    by_id = {c["id"]: c for c in countries}
+    asym = [(c["id"], b) for c in countries for b in c["borders"] if c["id"] not in by_id[b]["borders"]]
+    for a, b in asym:
+        by_id[a]["borders"].remove(b)
+        warnings.append(f"인접국 비대칭 제거: {a}→{b} (상대국 원자료에 없음)")
     names = Counter(c["name_ko"] for c in countries)
     if any(n > 1 for n in names.values()):
         errors.append(f"한국어 국가명 중복: {[k for k, n in names.items() if n > 1]}")
@@ -364,10 +386,75 @@ def main():
             print("ERROR", e)
         print("검증 실패: public/data 는 이전 상태로 유지됨")
         sys.exit(1)
+    summary = change_summary(countries, indicators, obs)
+    (ROOT / "data" / "update_summary.md").write_text(summary, encoding="utf-8")
     if OUT.exists():
         shutil.rmtree(OUT)
     STAGE.replace(OUT)
+    write_manifest(indicators, report)
     print("public/data 갱신 완료")
+
+
+def change_summary(countries, indicators, obs) -> str:
+    """기존 public/data 와 새 자료를 비교한 요약 (월간 갱신 PR 본문)"""
+    lines = ["## 통계 자료 갱신 요약", ""]
+    if not (OUT / "indicators.json").exists():
+        return "\n".join(lines + ["기존 자료 없음 (최초 생성)"])
+    old_ind = {i["indicator_id"]: i for i in load(OUT / "indicators.json")}
+    old_obs = load(OUT / "observations.json")
+    old_c = {c["id"] for c in load(OUT / "countries.json")}
+    new_c = {c["id"] for c in countries}
+    lines += [f"- 국가 수: {len(old_c)} → {len(new_c)}"
+              + (f" (추가 {sorted(new_c - old_c)}, 제외 {sorted(old_c - new_c)})" if old_c != new_c else "")]
+    lines += ["", "| 지표 | 기준연도 | 비교 국가 수 | 값이 바뀐 나라(기준연도) | 바뀐 관측값(전체 연도) |", "|---|---|---|---|---|"]
+    changed_countries = set()
+    for i in indicators:
+        iid = i["indicator_id"]
+        o = old_ind.get(iid, {})
+        oy, ny = o.get("ref_year"), i["ref_year"]
+        old_s = {c: dict(map(tuple, v)) for c, v in old_obs.get(iid, {}).items()}
+        new_s = {c: dict(map(tuple, v)) for c, v in obs.get(iid, {}).items()}
+        ref_changed = [c for c in new_s if new_s[c].get(ny) != old_s.get(c, {}).get(ny)]
+        all_changed = sum(1 for c in set(old_s) | set(new_s)
+                          for y in set(old_s.get(c, {})) | set(new_s.get(c, {}))
+                          if old_s.get(c, {}).get(y) != new_s.get(c, {}).get(y))
+        if all_changed:
+            changed_countries.update(c for c in set(old_s) | set(new_s) if old_s.get(c) != new_s.get(c))
+        yr = f"{oy} → {ny}" if oy != ny else f"{ny}"
+        lines.append(f"| {i['name_ko']} | {yr} | {o.get('ref_count')} → {i['ref_count']} | {len(ref_changed)} | {all_changed} |")
+    lines += ["", f"- 값이 하나라도 바뀐 나라: {len(changed_countries)}개국",
+              f"- 검증: 오류 {len(errors)}건, 경고 {len(warnings)}건 (data/validation_report.json)"]
+    return "\n".join(lines) + "\n"
+
+
+def write_manifest(indicators, report) -> None:
+    """원자료를 저장소에 두지 않으므로, 무엇을 언제 어디서 받아 만들었는지 기록한다"""
+    import hashlib
+    import time
+    files = []
+    for f in sorted(RAW.rglob("*.json")) + sorted(RAW.glob("*.geojson")):
+        data = f.read_bytes()
+        files.append({"path": f.relative_to(ROOT).as_posix(), "bytes": len(data),
+                      "sha256": hashlib.sha256(data).hexdigest(),
+                      "modified": time.strftime("%Y-%m-%d", time.localtime(f.stat().st_mtime))})
+    manifest = {
+        "built_at": time.strftime("%Y-%m-%d"),
+        "pipeline": "python -I pipeline/fetch.py && python -I pipeline/build.py",
+        "sources": {
+            "countries": "https://raw.githubusercontent.com/mledoze/countries/master/countries.json",
+            "map": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+            "korean_labels": "https://query.wikidata.org/sparql (P36 수도, P498 통화, P220 언어)",
+            "stats": "https://api.worldbank.org/v2/country/all/indicator/{code}?format=json&per_page=20000&date=1990:2025",
+        },
+        "indicators": [{"id": i["indicator_id"], "code": i["source_code"], "ref_year": i["ref_year"],
+                        "ref_count": i["ref_count"], "latest_year": i["latest_year"],
+                        "retrieved_at": i["retrieved_at"]} for i in indicators],
+        "validation": {"errors": len(report["errors"]), "warnings": len(report["warnings"]),
+                       "countries": report["countries"], "members": report["members"], "observers": report["observers"]},
+        "raw_files": files,
+        "raw_total_bytes": sum(x["bytes"] for x in files),
+    }
+    (ROOT / "data" / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
 
 
 if __name__ == "__main__":

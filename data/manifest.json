@@ -1,0 +1,214 @@
+{
+ "built_at": "2026-11-21",
+ "pipeline": "python -I pipeline/fetch.py && python -I pipeline/build.py",
+ "sources": {
+  "countries": "https://raw.githubusercontent.com/mledoze/countries/master/countries.json",
+  "map": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+  "korean_labels": "https://query.wikidata.org/sparql (P36 수도, P498 통화, P220 언어)",
+  "stats": "https://api.worldbank.org/v2/country/all/indicator/{code}?format=json&per_page=20000&date=1990:2025"
+ },
+ "indicators": [
+  {
+   "id": "population",
+   "code": "SP.POP.TOTL",
+   "ref_year": 2025,
+   "ref_count": 194,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "area",
+   "code": "AG.LND.TOTL.K2",
+   "ref_year": 2024,
+   "ref_count": 193,
+   "latest_year": 2024,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "density",
+   "code": "EN.POP.DNST",
+   "ref_year": 2024,
+   "ref_count": 193,
+   "latest_year": 2024,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "gdp",
+   "code": "NY.GDP.MKTP.CD",
+   "ref_year": 2025,
+   "ref_count": 181,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "gdp_pc",
+   "code": "NY.GDP.PCAP.CD",
+   "ref_year": 2025,
+   "ref_count": 181,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "gdp_growth",
+   "code": "NY.GDP.MKTP.KD.ZG",
+   "ref_year": 2025,
+   "ref_count": 181,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "inflation",
+   "code": "FP.CPI.TOTL.ZG",
+   "ref_year": 2025,
+   "ref_count": 166,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "fertility",
+   "code": "SP.DYN.TFRT.IN",
+   "ref_year": 2024,
+   "ref_count": 194,
+   "latest_year": 2024,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "life_exp",
+   "code": "SP.DYN.LE00.IN",
+   "ref_year": 2024,
+   "ref_count": 194,
+   "latest_year": 2024,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "urban",
+   "code": "SP.URB.TOTL.IN.ZS",
+   "ref_year": 2025,
+   "ref_count": 194,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "manufacturing",
+   "code": "NV.IND.MANF.ZS",
+   "ref_year": 2024,
+   "ref_count": 169,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "internet",
+   "code": "IT.NET.USER.ZS",
+   "ref_year": 2024,
+   "ref_count": 180,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  }
+ ],
+ "validation": {
+  "errors": 0,
+  "warnings": 29,
+  "countries": 195,
+  "members": 193,
+  "observers": 2
+ },
+ "raw_files": [
+  {
+   "path": "data/raw/countries.json",
+   "bytes": 1398218,
+   "sha256": "c48c0d479fc71799c8f5b1b1a6eee4a4a6a86f626c29b9db62b542bf1b8d8741",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/AG.LND.TOTL.K2.json",
+   "bytes": 2161451,
+   "sha256": "ecc0ec568c1711fd8cd4c76078438b92335431a2bd203057e6993542e7b7770f",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/EN.POP.DNST.json",
+   "bytes": 2533317,
+   "sha256": "c04b2fc007132f58e670604c21cb06216ac85ad7a976e1575d0f30d977e27648",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/FP.CPI.TOTL.ZG.json",
+   "bytes": 2419365,
+   "sha256": "56aa241e03590042cc5ab841e7ea8f1054d54b7428ab93c74e61d0a9228ad84b",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/IT.NET.USER.ZS.json",
+   "bytes": 2461810,
+   "sha256": "0a8adc0557543bfb15047318dd9f430d4f6cde426e2f60bc6da9a211c508d157",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NV.IND.MANF.ZS.json",
+   "bytes": 2415646,
+   "sha256": "536c45665d50aeb53796014c859daae411d7d125ba318e8c1e8f78051e038f79",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NY.GDP.MKTP.CD.json",
+   "bytes": 2237494,
+   "sha256": "10cedf6c57b2952aae78a64f79067ca29a9b38ecb3274a7356baeef686abb677",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NY.GDP.MKTP.KD.ZG.json",
+   "bytes": 2309484,
+   "sha256": "d1ecc59681d8391085ade5f10ef4198acdbc708fa10ca9ae27caa02d4357ef84",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NY.GDP.PCAP.CD.json",
+   "bytes": 2346868,
+   "sha256": "f85afab1a5a0c1ff14273a2c565154e8ef425960919fc988922af510fc8200d4",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/SP.DYN.LE00.IN.json",
+   "bytes": 2396475,
+   "sha256": "0ea6a72d7ca6b426fec9a53cfd5a977d31b6aa39d423ec1d9b79f7f75675ff5d",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/SP.DYN.TFRT.IN.json",
+   "bytes": 2378221,
+   "sha256": "5045d1db3de1803153b026989c63c6d3f7f2d4016055569eae74b01395010c83",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/SP.POP.TOTL.json",
+   "bytes": 2137365,
+   "sha256": "6db3a2c5e45a9c5f9ca61b38de824095307b70b81ff7ac8d6e1b079a2173d1ee",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/SP.URB.TOTL.IN.ZS.json",
+   "bytes": 2490171,
+   "sha256": "501ec1e39e288d0f77d24fe23969a98256551c3c1d81b85cc1ee9f95faad8cda",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wikidata_capital_lang_currency.json",
+   "bytes": 451852,
+   "sha256": "d6af7c54af8b708ec9f88dc1e59b8efa746b648b80ca46091e20f843c4d2b0a2",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wikidata_codes_ko.json",
+   "bytes": 49834,
+   "sha256": "374db2f42a621a6572f8128a6d72023e04195fc3adb0691215f30167aa8a82f5",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/ne_50m_admin_0_countries.geojson",
+   "bytes": 3083490,
+   "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+   "modified": "2026-11-21"
+  }
+ ],
+ "raw_total_bytes": 33271061
+}

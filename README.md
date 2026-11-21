@@ -36,7 +36,8 @@ python -I pipeline/build.py
 
 ```
 pipeline/            Python 수집(fetch.py)·검증·정규화(build.py), 지표 정의(indicators.py)
-data/raw/            원자료 (mledoze, Natural Earth, World Bank, Wikidata)
+data/raw/            원자료 (git 제외, fetch.py 로 다시 받음)
+data/manifest.json   원자료 출처·해시·기준연도 기록
 data/validation_report.json
 public/data/         프런트엔드용 정적 자료 (countries, indicators, observations, world.topo)
 src/data/            공통 데이터 엔진(engine.ts: 값·순위), 형식, 검색, 단계 구분 색
@@ -45,9 +46,16 @@ src/pages/           세계지도·도감·찾아보기·랭킹·도전하기·�
 src/games/           문제 생성(questions.ts), 세계지도 챌린지, 랭킹 배틀
 src/content/         나라 이야기(stories.ts), 탐구 노트(lessons.ts), 오늘의 발견
 src/store/journal.ts 탐험일지 (방문/학습 완료 분리)
-.github/workflows/   deploy.yml (테스트→빌드→Pages), data.yml (월 1회 자료 갱신 PR)
+.github/workflows/   deploy.yml (테스트→빌드→Pages), update-data.yml (월 1회 자료 갱신 PR)
+docs/screenshots/    실제 브라우저 화면 10장
 ```
 
 기술: React 18 · TypeScript · Vite 5 · d3-geo/zoom · topojson · flag-icons · Vitest · Python 3.12 · mapshaper.
 
 자료 출처와 순위 원칙은 [DATA_SOURCES.md](DATA_SOURCES.md).
+
+## 배포
+
+`main`에 push하면 GitHub Actions가 테스트 → 빌드 → GitHub Pages 배포를 한다(저장소 Settings → Pages → Source: GitHub Actions). 해시 라우팅(`#/country/KOR`)과 상대 경로 빌드(`base: './'`)라 하위 경로에서도 직접 링크·새로고침이 404 없이 열린다.
+
+![세계지도](docs/screenshots/01-world-map.jpg)
