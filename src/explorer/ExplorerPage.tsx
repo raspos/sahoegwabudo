@@ -13,6 +13,7 @@ import { answer, closeArrival, currentEvent, currentNode, enterMission, finalSco
 import { arrivalScene, type Scene } from './scenes';
 import type { Answer, Campaign, Ctx, GameState, Puzzle, Resolution } from './types';
 import type { IndicatorId } from '../data/types';
+import { ViewCount } from '../components/ViewCount';
 
 const KIND_KO: Record<string, string> = { discover: '국가 발견', economy: '경제 조사', route: '지리 탐험', compare: '국가 비교', rank: '순위 추리', decide: '탐험 결정', report: '보고서', event: '가상 사건' };
 
@@ -168,7 +169,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             <li key={i} className={l.outcome ? `o-${l.outcome}` : ''}><b>{l.title}</b>{l.fiction && <span className="fiction">가상</span>} <span>{l.text}</span></li>
           ))}</ol>
         </section>
-        <p className="credit">© 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트</p>
+        <p className="credit">© 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트<ViewCount /></p>
       </aside>
 
       <section className="ex-map" aria-label="탐험 지도">

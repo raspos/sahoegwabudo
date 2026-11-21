@@ -8,6 +8,7 @@ import { RankingsPage } from './pages/RankingsPage';
 import { PlayPage } from './pages/PlayPage';
 import { JournalPage } from './pages/JournalPage';
 import { LessonPage } from './pages/LessonPage';
+import { ViewCount } from './components/ViewCount';
 
 interface Ctx { ds: Dataset; geo: Geo }
 const DataCtx = createContext<Ctx | null>(null);
@@ -94,7 +95,7 @@ export function App() {
       </main>
       {head !== '' && head !== 'map' && !(head === 'play' && route[1] === 'explorer') && (
         <footer className="site-foot">
-          © 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트
+          © 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트<ViewCount />
         </footer>
       )}
     </div>

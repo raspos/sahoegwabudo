@@ -9,6 +9,7 @@ import { Dossier } from './Dossier';
 import { journal, useJournal } from '../store/journal';
 import { todaysDiscovery } from '../content/discovery';
 import { fmtValue, josa } from '../data/format';
+import { ViewCount } from '../components/ViewCount';
 
 type Theme = 'political' | 'density' | 'gdp_pc';
 const THEMES: { id: Theme; label: string }[] = [
@@ -115,7 +116,7 @@ export function MapPage({ countryId }: { countryId?: string }) {
             <h2>탐험 기록</h2>
             <p><b>{visitedCount}</b> / {ds.countries.length}개국 방문 <a href="#/journal">탐험일지</a></p>
           </div>
-          <p className="credit">© 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트</p>
+          <p className="credit">© 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트<ViewCount /></p>
         </aside>
         </div>
       </section>
