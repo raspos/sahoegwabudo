@@ -34,7 +34,8 @@ export function storiesForCountry(cid: string, docs: StoryDoc[], ds: Dataset, ex
     .filter((s) => !s.needsExtras || ex)
     .map((s) => ({
       id: s.id, title: s.question, category: LEGACY_CATEGORY[s.id], panels: s.panels(ds, ex).map((p) => p.text),
-      indicators: s.indicators, related: [], sources: [], notes: s.notes ?? [],
+      indicators: s.indicators, related: [], notes: s.notes ?? [],
+      sources: [{ label: 'World Bank, World Development Indicators', url: 'https://databank.worldbank.org/source/world-development-indicators' }],
     }));
   const json: ViewStory[] = docs.filter((d) => d.country === cid).map((d) => ({
     id: d.id, title: d.title, category: d.category, panels: d.panels.map((p) => renderStoryText(p, ds, ex)),
