@@ -4,6 +4,8 @@ import { Flag } from '../components/common';
 import { continentName, type Country, type IndicatorId } from '../data/types';
 import { fmtValue, josa } from '../data/format';
 import { storiesFor } from '../content/stories';
+import { useStoryDocs } from '../content/storyStore';
+import { StoriesSection, storiesForCountry } from './StoriesSection';
 import { lessonsFor } from '../content/lessons';
 import { journal, useJournal } from '../store/journal';
 import { shuffle, seeded } from '../games/questions';
@@ -11,7 +13,7 @@ import type { Dataset } from '../data/engine';
 import type { Geo } from '../map/geo';
 import { MAP_W } from '../map/geo';
 import { POLITICAL, UNLISTED } from '../data/scales';
-import { useExtras, type Extras } from '../data/extras';
+import { useExtras } from '../data/extras';
 import { EconomySection } from './EconomySection';
 import { NatureSection } from './NatureSection';
 
@@ -23,6 +25,7 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
   const c = ds.country(id);
   const j = useJournal();
   const ex = useExtras();
+  const docs = useStoryDocs();
   if (!c) return <p className="empty">이 나라를 찾을 수 없습니다.</p>;
   const stories = storiesFor(c.id);
   const learned = j.learned[c.id];
@@ -105,9 +108,7 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
 
         <section className="dz-sec dz-stories">
           <h2><span className="no">7</span>{c.name_ko}의 이야기</h2>
-          {stories.length ? stories.map((s) => <StoryBlock key={s.id} id={s.id} cid={c.id} open={!compact} ex={ex} />) : (
-            <p className="muted">이 나라의 이야기는 아직 준비 중입니다. 기본 정보와 통계로 먼저 만나 보세요.</p>
-          )}
+          <StoriesSection c={c} ds={ds} ex={ex} docs={docs} compact={compact} />
         </section>
 
         <section className="dz-sec">
@@ -119,7 +120,7 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
           <h2><span className="no">9</span>배우고 도전하기</h2>
           <CapitalCheck ds={ds} c={c} />
           <ul className="dz-links">
-            {[...new Set(stories.flatMap((s) => s.indicators))].flatMap(lessonsFor).filter((l, i, a) => a.indexOf(l) === i).slice(0, 3).map((l) => (
+            {[...new Set((docs ? storiesForCountry(c.id, docs, ds, ex) : []).flatMap((s) => s.indicators))].flatMap(lessonsFor).filter((l, i, a) => a.indexOf(l) === i).slice(0, 3).map((l) => (
               <li key={l.id}><a href={`#/lesson/${l.id}`}>{l.question}</a></li>
             ))}
             <li><a href="#/play/map">세계지도 챌린지로 {continentName(c.continent)} 나라 찾기</a></li>
@@ -164,28 +165,6 @@ function RankStrips({ ds, c, compact }: { ds: Dataset; c: Country; compact?: boo
         );
       })}
     </ol>
-  );
-}
-
-function StoryBlock({ id, cid, open, ex }: { id: string; cid: string; open: boolean; ex: Extras | null }) {
-  const { ds } = useData();
-  const s = storiesFor(cid).find((x) => x.id === id)!;
-  const panels = useMemo(() => (s.needsExtras && !ex ? [] : s.panels(ds, ex)), [s, ds, ex]);
-  const j = useJournal();
-  return (
-    <details className="story" open={open}>
-      <summary><span className="q">Q.</span>{s.question}{j.stories[id] && <span className="read-mark">읽음</span>}</summary>
-      <div className="panels">
-        {panels.map((p, i) => (
-          <div className="panel" key={i}>
-            <span className="panel-no">{i + 1}</span>
-            {p.art && <img src={p.art} alt={p.caption ?? ''} />}
-            <p>{p.text}</p>
-          </div>
-        ))}
-        {!j.stories[id] && <button type="button" className="tab story-done" onClick={() => journal.readStory(id)}>다 읽었어요</button>}
-      </div>
-    </details>
   );
 }
 
