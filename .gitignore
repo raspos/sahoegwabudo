@@ -1,0 +1,9 @@
+node_modules
+dist
+public/data.staging
+data/map_stage.geojson
+*.tmp
+# World Bank 원자료(약 27MB)는 저장소에 두지 않는다. 자료 갱신 워크플로가 매번 새로 받는다.
+data/raw/wb/
+__pycache__/
+*.tsbuildinfo

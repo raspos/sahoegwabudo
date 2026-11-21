@@ -1,0 +1,12 @@
+{
+ "built_from": {
+  "countries": "mledoze/countries (REST Countries 원자료), ODbL",
+  "korean_labels": "Wikidata (수도·공용어·통화 한국어 명칭), CC0",
+  "map": "Natural Earth 1:50m Admin 0 Countries, public domain",
+  "stats": "World Bank World Development Indicators API, CC BY 4.0"
+ },
+ "first_year": 2000,
+ "min_rank_coverage": 150,
+ "country_count": 195,
+ "indicator_count": 12
+}
