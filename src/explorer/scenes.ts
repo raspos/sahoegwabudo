@@ -18,7 +18,8 @@ export type SceneVisual =
   | { kind: 'heritage'; name: string; year: number; type: 'unesco-food' | 'unesco-craft' | 'gi'; detail?: string }
   | { kind: 'market'; item: string; rank: number; year?: number }
   | { kind: 'cargo'; product: string; share: number; partner?: { iso3?: string; name: string; share: number }; year: number }
-  | { kind: 'stats'; sectors?: { services: number; industry: number; agri: number; year: number }; ppp?: { text: string; year: number } };
+  | { kind: 'stats'; sectors?: { services: number; industry: number; agri: number; year: number }; ppp?: { text: string; year: number } }
+  | { kind: 'tale'; category: string; title: string; panels: string[]; cid: string };
 
 export interface SceneLine { text: string; source?: string; fiction?: boolean; visual?: SceneVisual }
 export interface Scene { title: string; lines: SceneLine[]; notes: Evidence[] }

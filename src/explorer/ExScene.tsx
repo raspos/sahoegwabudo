@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './scene.css';
 import { useData } from '../App';
 import { Flag } from '../components/common';
 import { koppenColor } from '../data/extras';
 import { MiniMap } from './ExGraphics';
 import type { Scene, SceneLine, SceneVisual } from './scenes';
+import { useStoryDocs, CATEGORY_KO } from '../content/storyStore';
+import { useExtras } from '../data/extras';
+import { storiesForCountry } from '../pages/StoriesSection';
 
 const reduced = () => typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 const pct = (v: number) => `${Math.round(v * 100)}%`;
@@ -12,13 +15,26 @@ const pct = (v: number) => `${Math.round(v * 100)}%`;
 /** 도착 장면을 그림 카드로 한 장씩 넘겨 보여 준다 (자동 넘김, 눌러서 멈춤·이동) */
 export function SceneStory({ scene, cid, onDone }: { scene: Scene; cid: string; onDone: (notes: Scene['notes']) => void }) {
   const { ds } = useData();
-  const cards = scene.lines;
+  const docs = useStoryDocs();
+  const ex = useExtras();
+  // 사회과부도 나라 이야기 가운데 두 편을 '현지에서 들은 이야기' 카드로 덧붙인다 (방문할 때마다 다른 편이 먼저)
+  const cards = useMemo<SceneLine[]>(() => {
+    if (!docs) return scene.lines;
+    const all = storiesForCountry(cid, docs, ds, ex);
+    const start = all.length ? (scene.title.length + cid.charCodeAt(0)) % all.length : 0;
+    const pick = [...all.slice(start), ...all.slice(0, start)].slice(0, 2);
+    return [...scene.lines, ...pick.map((st): SceneLine => ({
+      text: `현지에서 들은 이야기 — ${st.title}`,
+      source: st.sources[0]?.label.replace(/^CIA World Factbook — [^:]+: .*/, 'CIA World Factbook') ?? '사회과부도 자료',
+      visual: { kind: 'tale', category: CATEGORY_KO[st.category], title: st.title, panels: st.panels, cid },
+    }))];
+  }, [docs, ex, ds, cid, scene]);
   const last = cards.length; // 마지막 장 = 수첩
   const [i, setI] = useState(0);
   const [auto, setAuto] = useState(!reduced());
   const [picked, setPicked] = useState<string[]>([]);
   useEffect(() => {
-    if (!auto || i >= last) return;
+    if (!auto || i >= last || cards[i].visual?.kind === 'tale') return;
     const t = setTimeout(() => setI((x) => x + 1), cards[i].fiction ? 2600 : 4200);
     return () => clearTimeout(t);
   }, [auto, i, last, cards]);
@@ -44,7 +60,7 @@ export function SceneStory({ scene, cid, onDone }: { scene: Scene; cid: string; 
             {cards[i].text}
             {cards[i].fiction ? <span className="fiction">가상 장면</span> : cards[i].source && <small> ({cards[i].source})</small>}
           </p>
-          {auto && <i className="ss-timer" style={{ animationDuration: cards[i].fiction ? '2.6s' : '4.2s' }} />}
+          {auto && cards[i].visual?.kind !== 'tale' && <i className="ss-timer" style={{ animationDuration: cards[i].fiction ? '2.6s' : '4.2s' }} />}
         </div>
       ) : (
         <div className="ss-stage ss-notes" key="notes">
@@ -81,6 +97,7 @@ function Visual({ line }: { line: SceneLine }) {
     case 'market': return <Market v={v} />;
     case 'cargo': return <Cargo v={v} />;
     case 'stats': return <Stats v={v} />;
+    case 'tale': return <Tale v={v} />;
   }
 }
 
@@ -246,6 +263,22 @@ function Stats({ v }: { v: V<'stats'> }) {
         </div>
       )}
       {v.ppp && <div className="ppp"><small>구매력 기준 1인당 GDP</small><b>{v.ppp.text}</b><small>{v.ppp.year}년</small></div>}
+    </div>
+  );
+}
+
+/** 현지에서 들은 이야기: 책장이 펼쳐지고 장면이 한 줄씩 나타난다 */
+function Tale({ v }: { v: V<'tale'> }) {
+  return (
+    <div className="sv sv-tale">
+      <div className="tale-book">
+        <span className="tale-cat">{v.category}</span>
+        <b className="tale-title">{v.title}</b>
+        <ol className="tale-panels">
+          {v.panels.map((p, k) => <li key={k} style={{ animationDelay: `${0.5 + k * 0.9}s` }}>{p}</li>)}
+        </ol>
+        <a className="tale-more" href={`#/country/${v.cid}`} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()}>도감에서 다른 이야기 읽기 (새 탭)</a>
+      </div>
     </div>
   );
 }
