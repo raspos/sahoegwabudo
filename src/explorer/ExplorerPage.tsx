@@ -10,12 +10,13 @@ import { fmtValue } from '../data/format';
 import { journal, useJournal } from '../store/journal';
 import { CAMPAIGNS, campaignById } from './campaigns';
 import { answer, closeArrival, currentEvent, currentNode, enterMission, finalScore, newGame, puzzleFor, successes } from './engine';
-import { arrivalScene, type Scene } from './scenes';
+import { arrivalScene } from './scenes';
 import type { Answer, Campaign, Ctx, GameState, Puzzle, Resolution } from './types';
 import type { IndicatorId } from '../data/types';
 import { ViewCount } from '../components/ViewCount';
 import { Compass, ICON, Meter, MiniMap, campaignStations } from './ExGraphics';
 import { Confetti, Stamp, TravelAnim } from './ExAnim';
+import { SceneStory } from './ExScene';
 
 const CAMP_COLOR = ['#b8462f', '#2f6f8f', '#8a6d1f', '#3f7a4f', '#6b4e8a'];
 const campColor = (id: string) => CAMP_COLOR[Math.max(0, CAMPAIGNS.findIndex((c) => c.id === id)) % CAMP_COLOR.length];
@@ -257,7 +258,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             <button type="button" className="btn" autoFocus onClick={() => setResult(null)}>계속</button>
           </div>
         ) : typeof s.flags.arrival === 'string' && arrival ? (
-          <ArrivalView scene={arrival} cid={String(s.flags.arrival)} onDone={(notes) => setState(closeArrival(s, notes, arrival.title))} />
+          <SceneStory scene={arrival} cid={String(s.flags.arrival)} onDone={(notes) => setState(closeArrival(s, notes, arrival.title))} />
         ) : ending ? (
           <EndingView camp={camp} ctx={ctx} s={s} text={ending.text(s, ctx)} onAgain={() => setState(newGame(camp))} onHub={() => setState(null)} />
         ) : (
@@ -265,38 +266,6 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             goMap={() => setTab('map')} onFocus={(id) => { setFocus(id); mapRef.current?.zoomToCountry(id); }} />
         )}
       </section>
-    </div>
-  );
-}
-
-function ArrivalView({ scene, cid, onDone }: { scene: Scene; cid: string; onDone: (notes: Scene['notes']) => void }) {
-  const [picked, setPicked] = useState<string[]>([]);
-  const { ds, geo } = useData();
-  const c = ds.country(cid);
-  return (
-    <div className="ex-arrival">
-      {c ? (
-        <div className="arrival-card">
-          <Flag iso2={c.iso2} size="lg" />
-          <div className="arrival-head"><p className="ex-kind"><span className="kind-ico">{ICON.story}</span>현지 이야기 · 도착</p><h3>{scene.title}</h3>
-            <p className="small muted">{c.name_ko} · 수도 {c.capital_ko.join(', ')} · {c.region_ko}</p></div>
-          <MiniMap geo={geo} focus={[cid, ...c.borders.slice(0, 4)]} current={cid} marks={{ [cid]: 'mm-on' }} pad={14} ratio={1.4} className="arrival-map" label={`${c.name_ko} 위치`} />
-        </div>
-      ) : <><p className="ex-kind">현지 이야기</p><h3>{scene.title}</h3></>}
-      {scene.lines.map((l, i) => (
-        <p key={i} className={l.fiction ? 'scene-fiction' : 'scene-fact'}>
-          {l.text}{l.fiction ? <span className="fiction">가상 장면</span> : l.source ? <small> ({l.source})</small> : null}
-        </p>
-      ))}
-      {scene.notes.length > 0 && (
-        <div className="scene-notes">
-          <p className="small"><b>수첩에 적어 둘까요?</b> 적은 내용은 조사 자료가 되어 보고서에 쓸 수 있습니다. 질문과 관련 있는지는 직접 판단하세요.</p>
-          {scene.notes.map((n) => (
-            <label key={n.id} className="small"><input type="checkbox" checked={picked.includes(n.id)} onChange={() => setPicked(picked.includes(n.id) ? picked.filter((x) => x !== n.id) : [...picked, n.id])} /> {n.text} <small>({n.source})</small></label>
-          ))}
-        </div>
-      )}
-      <p className="pz-actions"><button type="button" className="btn" autoFocus onClick={() => onDone(scene.notes.filter((n) => picked.includes(n.id)))}>조사를 시작한다</button></p>
     </div>
   );
 }
