@@ -115,6 +115,7 @@ export function MapPage({ countryId }: { countryId?: string }) {
             <h2>탐험 기록</h2>
             <p><b>{visitedCount}</b> / {ds.countries.length}개국 방문 <a href="#/journal">탐험일지</a></p>
           </div>
+          <p className="credit">© 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트</p>
         </aside>
         </div>
       </section>

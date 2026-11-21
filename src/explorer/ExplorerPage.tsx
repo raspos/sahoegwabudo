@@ -168,6 +168,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             <li key={i} className={l.outcome ? `o-${l.outcome}` : ''}><b>{l.title}</b>{l.fiction && <span className="fiction">가상</span>} <span>{l.text}</span></li>
           ))}</ol>
         </section>
+        <p className="credit">© 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트</p>
       </aside>
 
       <section className="ex-map" aria-label="탐험 지도">

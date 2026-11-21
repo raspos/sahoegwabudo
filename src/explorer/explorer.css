@@ -80,3 +80,4 @@
 .ex-arrival .scene-fiction { color: var(--ink-2); font-style: italic; }
 .ex-arrival small { color: var(--muted); font-style: normal; }
 .scene-notes { border-top: 1px dotted var(--rule); margin-top: 8px; padding-top: 6px; display: grid; gap: 3px; }
+.ex-left .credit { margin: 14px 0 0; padding-top: 6px; border-top: 1px solid var(--rule); font-size: 11.5px; color: var(--muted); }

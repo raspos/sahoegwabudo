@@ -92,6 +92,11 @@ export function App() {
         {!ctx && !err && <p className="loading">지도를 펼치는 중…</p>}
         {ctx && <DataCtx.Provider value={ctx}>{page}</DataCtx.Provider>}
       </main>
+      {head !== '' && head !== 'map' && !(head === 'play' && route[1] === 'explorer') && (
+        <footer className="site-foot">
+          © 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트
+        </footer>
+      )}
     </div>
   );
 }
