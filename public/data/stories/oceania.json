@@ -1,1 +1,243 @@
-[]
+[
+ {
+  "id": "aus-coast",
+  "country": "AUS",
+  "title": "넓은 오스트레일리아에서 사람들은 어디에 살까?",
+  "category": "culture",
+  "panels": [
+   "오스트레일리아 사람들은 대부분 대륙의 가장자리, 특히 동쪽과 남동쪽에 삽니다. 서쪽에서는 퍼스 주변이 두 번째 중심입니다.",
+   "서해안 퍼스에는 '프리맨틀 닥터'라는 바닷바람이 세계에서 가장 꾸준한 바람 가운데 하나로 붑니다.",
+   "2021년 조사로 영어를 쓰는 사람이 72%이고, 중국어 표준어(2.7%), 아랍어(1.4%), 베트남어(1.3%)가 뒤를 잇습니다.",
+   "도시에 사는 사람의 비율은 {{vr:AUS:urban}}, 나라 전체 인구밀도는 {{vr:AUS:density}}입니다."
+  ],
+  "indicators": [
+   "urban",
+   "density"
+  ],
+  "related": [
+   "NZL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Australia: People – Population distribution, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/as.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NZL",
+   "why": "남쪽 바다 건너 이웃"
+  }
+ },
+ {
+  "id": "aus-continent",
+  "country": "AUS",
+  "title": "가장 작은 대륙이면서 여섯 번째로 넓은 나라는?",
+  "category": "geo",
+  "panels": [
+   "오스트레일리아는 가장 작은 대륙이지만, 나라로는 세계에서 여섯 번째로 넓습니다. 땅으로 맞닿은 이웃이 없는 나라 가운데 가장 큽니다.",
+   "Factbook은 오스트레일리아를 '빙하가 없는 유일한 대륙'이자 '사람이 사는 대륙 가운데 가장 메마른 곳'이라고 적습니다.",
+   "쾨펜 기후로는 {{cl:AUS}}가 가장 넓습니다.",
+   "동쪽의 그레이트디바이딩산맥은 동부의 모든 강이 동서남북으로 갈라져 흐르는 분수령입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "NZL",
+   "PNG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Australia: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/as.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PNG",
+   "why": "바다 건너 북쪽의 이웃 나라"
+  }
+ },
+ {
+  "id": "aus-history",
+  "country": "AUS",
+  "title": "오스트레일리아에 처음 온 사람들은 언제 도착했을까?",
+  "category": "history",
+  "panels": [
+   "원주민인 애버리지니는 적어도 6만 년 전에 이 대륙에 도착해 복잡한 수렵·채집 사회와 구전 역사를 이루었습니다.",
+   "1606년 네덜란드 항해자들이 처음 상륙해 서쪽과 북쪽 해안을 지도에 그렸고, 1770년 영국의 제임스 쿡이 동해안을 영국 땅이라고 선언했습니다.",
+   "영국은 1788년 뉴사우스웨일스를 죄수 식민지로 세웠고, 1868년까지 15만 명이 넘는 죄수를 보냈습니다.",
+   "1901년 1월 1일 식민지들이 연방을 이루며 오스트레일리아가 나라가 되었습니다."
+  ],
+  "related": [
+   "GBR",
+   "NLD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Australia: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/as.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NZL",
+   "why": "같은 바다를 건너온 이들이 세운 이웃"
+  }
+ },
+ {
+  "id": "aus-wool",
+  "country": "AUS",
+  "title": "오스트레일리아는 무엇을 캐고 무엇을 길러 팔까?",
+  "category": "economy",
+  "panels": [
+   "천연자원 목록은 알루미나, 석탄, 철광석, 구리, 리튬으로 시작합니다. 상품 수출 1위는 {{ex:AUS}}입니다.",
+   "가장 큰 손님은 {{p1:AUS}}입니다. Factbook도 오스트레일리아를 '동아시아에 원자재를 파는 나라'로 소개합니다.",
+   "들판과 목장도 세계 순위에 오릅니다. {{ag:AUS:Shorn wool, greasy, including fleece-washed shorn wool}}, {{ag:AUS:Barley}}입니다.",
+   "루핀이라는 콩과 작물은 {{ag:AUS:Lupins}}입니다."
+  ],
+  "indicators": [
+   "resource_rents",
+   "exports_gdp"
+  ],
+  "related": [
+   "CHN",
+   "NZL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Australia: Geography – Natural resources, Economy – Economic overview, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/as.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "오스트레일리아 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "nzl-aotearoa",
+  "country": "NZL",
+  "title": "뉴질랜드를 부르는 또 다른 이름 '아오테아로아'는 어디에서 왔을까?",
+  "category": "history",
+  "panels": [
+   "폴리네시아 사람들은 1200년대 말에서 1300년대 중반 사이 뉴질랜드에 정착했습니다.",
+   "그들은 이 땅을 '아오테아로아'라 불렀습니다. 전설에 따르면 처음 온 폴리네시아인 쿠페가 타고 온 카누의 이름입니다. 지금 이 이름은 뉴질랜드를 가리키는 마오리 이름으로 널리 쓰입니다.",
+   "1642년 네덜란드의 아벨 타스만이 처음 섬을 보았고, 1769년 영국의 제임스 쿡이 도착했습니다. 대부분의 마오리 족장은 와이탕이 조약에 서명했습니다.",
+   "마오리어는 법으로 정한 공용어이고, 뉴질랜드 수어도 공용어입니다."
+  ],
+  "related": [
+   "AUS",
+   "GBR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — New Zealand: Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AUS",
+   "why": "한때 뉴질랜드를 함께 묶어 다스렸던 식민지"
+  }
+ },
+ {
+  "id": "nzl-kiwi",
+  "country": "NZL",
+  "title": "뉴질랜드는 무엇을 가장 많이 수출할까?",
+  "category": "economy",
+  "panels": [
+   "뉴질랜드의 상품 수출 1위는 {{ex:NZL}}입니다.",
+   "가장 큰 손님은 {{p1:NZL}}입니다.",
+   "과일 가운데에서는 키위가 {{ag:NZL:Kiwi fruit}}입니다.",
+   "양모는 {{ag:NZL:Shorn wool, greasy, including fleece-washed shorn wool}}입니다. 상품·서비스 수출은 GDP의 {{vr:NZL:exports_gdp}}입니다."
+  ],
+  "indicators": [
+   "exports_gdp"
+  ],
+  "related": [
+   "CHN",
+   "AUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — New Zealand: Economy – Agricultural products, Economy – Economic overview, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "뉴질랜드 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "nzl-volcano",
+  "country": "NZL",
+  "title": "뉴질랜드의 두 큰 섬은 어떻게 다를까?",
+  "category": "geo",
+  "panels": [
+   "뉴질랜드는 두 개의 큰 섬과 여러 작은 섬으로 이루어져 있습니다.",
+   "더 큰 남섬은 세계에서 12번째로 큰 섬이고, 남알프스산맥이 섬을 길게 가릅니다. 남알프스가 국토의 {{lf:NZL:Southern Alps}}를 차지합니다.",
+   "북섬은 세계에서 14번째로 큰 섬이고, 산은 적지만 화산이 많습니다. 루아페후산(2,797m)은 지난 100년 동안 큰 분화를 겪었습니다.",
+   "지진은 흔하지만 대개 심하지 않습니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "JPN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — New Zealand: Geography – note, Geography – Natural hazards, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JPN",
+   "why": "같은 '불의 고리' 위의 북쪽 섬나라"
+  }
+ },
+ {
+  "id": "nzl-wellington",
+  "country": "NZL",
+  "title": "세계에서 가장 남쪽에 있는 수도는?",
+  "category": "curious",
+  "panels": [
+   "Factbook은 웰링턴을 '세계에서 가장 남쪽에 있는 나라의 수도'로 꼽습니다.",
+   "뉴질랜드 사람의 4분의 3이 넘게 북섬에 살고, 약 90%가 도시에 삽니다. 도시에 사는 사람의 비율은 {{vr:NZL:urban}}입니다.",
+   "뉴질랜드에는 시간대가 두 개 있습니다. 채텀 제도는 본토보다 45분 빠른 시각(UTC+12:45)을 씁니다. 웰링턴이라는 이름은 1840년 웰링턴 공작의 이름을 따서 붙였습니다.",
+   "뉴질랜드는 1907년 9월 26일 영국에서 독립했습니다."
+  ],
+  "indicators": [
+   "urban"
+  ],
+  "related": [
+   "AUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — New Zealand: Geography – note, People – Population distribution, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/australia-oceania/nz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AUS",
+   "why": "태즈먼해 건너 서쪽 이웃"
+  }
+ }
+]
