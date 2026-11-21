@@ -1,0 +1,47 @@
+/* ── 도감: 스포츠 ── */
+.sports h3 { font-size: 15px; margin: 14px 0 6px; }
+.nat-sports p { margin: 4px 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.nat-tag { font-size: 12px; color: var(--muted); border: 1px solid var(--rule-strong); padding: 0 6px; border-radius: 2px; }
+.nat-tag.official { color: #fffaf0; background: var(--accent-ink); border-color: var(--accent-ink); }
+.nat-chip { font-family: var(--serif); font-size: 17px; background: var(--paper-2); padding: 1px 9px; border-radius: 999px; border: 1px solid var(--rule); }
+.nat-chip small { font-family: var(--sans); font-weight: 400; color: var(--muted); font-size: 12px; }
+.nat-region { margin-right: 12px; }
+.fifa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.fifa-card { border: 1px solid var(--rule-strong); border-top: 3px solid #2f6f8f; padding: 8px 12px; background: var(--paper); }
+.fifa-none { border-top-color: var(--rule-strong); }
+.fifa-label { margin: 0; font-size: 12.5px; color: var(--muted); }
+.fifa-label b { color: var(--ink); }
+.fifa-rank { margin: 0; font-size: 14px; }
+.fifa-rank b { font-family: var(--serif); font-size: 34px; line-height: 1.1; }
+.fifa-rank small { color: var(--muted); }
+.fifa-move { font-size: 12.5px; font-weight: 700; margin-left: 4px; }
+.fifa-move.up { color: var(--right); }
+.fifa-move.down { color: var(--wrong); }
+.fifa-move.same { color: var(--muted); }
+.fifa-track { position: relative; height: 6px; margin: 6px 0 4px; background: linear-gradient(90deg, #2f6f8f, #a9cbd8 45%, var(--paper-2)); border-radius: 3px; }
+.fifa-track i { position: absolute; top: -4px; width: 4px; height: 14px; margin-left: -2px; background: var(--ink); border-radius: 1px; }
+.fifa-meta { margin: 0; font-size: 12px; color: var(--muted); }
+.olympics { display: grid; grid-template-columns: minmax(200px, 260px) 1fr; gap: 16px; align-items: start; }
+.ol-big { margin: 0; }
+.ol-big b { font-family: var(--serif); font-size: 36px; }
+.ol-big small { color: var(--muted); display: block; font-size: 12.5px; }
+.medals { display: inline-flex; gap: 6px; vertical-align: middle; }
+.medal { min-width: 34px; height: 30px; padding: 0 7px; border-radius: 15px; display: inline-grid; place-items: center; font-weight: 700; font-size: 13.5px; font-variant-numeric: tabular-nums; box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .15); }
+.medal.g { background: #e7c35a; color: #4a3500; }
+.medal.s { background: #c9ccd1; color: #2c2f33; }
+.medal.b { background: #c98b5a; color: #3a1c06; }
+.ol-total .medals { margin: 6px 0; }
+.ol-split { display: flex; height: 22px; margin-top: 6px; border: 1px solid var(--ink); font-size: 11.5px; overflow: hidden; }
+.ol-split span { display: flex; align-items: center; padding: 0 6px; white-space: nowrap; overflow: hidden; min-width: 0; }
+.ol-split .sum { background: #f2e2b8; }
+.ol-split .win { background: #cfe0ea; }
+.ol-table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.ol-table th, .ol-table td { border-bottom: 1px dotted var(--rule); padding: 5px 4px; text-align: left; }
+.ol-table thead th { font-size: 12px; color: var(--muted); font-weight: 400; }
+.ol-table .medal { min-width: 28px; height: 24px; font-size: 12.5px; }
+.dossier--compact .olympics { grid-template-columns: 1fr; }
+@media (max-width: 640px) {
+  .olympics { grid-template-columns: 1fr; }
+  .ol-table th[scope='row'] { font-weight: 400; font-size: 12.5px; }
+}
+.dossier--full .dz-sports { column-span: all; }

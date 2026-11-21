@@ -88,7 +88,7 @@ export function Legend({ scale, indicator, title }: { scale: Scale; indicator: I
         ))}
         <li className="legend-nodata"><i /><span>자료 없음</span></li>
       </ol>
-      <p className="legend-src">World Bank WDI</p>
+      <p className="legend-src">{srcName(indicator)}</p>
     </figure>
   );
 }
@@ -109,10 +109,16 @@ export function CountryTip({ ds, c }: { ds: Dataset; c: Country }) {
   );
 }
 
+/** 지표 출처 짧은 이름 */
+export function srcName(ind: Indicator): string {
+  if (ind.group !== 'sports') return 'World Bank WDI';
+  return ind.indicator_id.startsWith('fifa') ? `FIFA 세계 랭킹 (${ind.source.match(/\((.*)\)/)?.[1] ?? ''})` : '위키백과 올림픽 역대 메달 표 (IOC 결과)';
+}
+
 export function SourceLine({ ind, count }: { ind: Indicator; count?: number }) {
   return (
     <p className="source-line">
-      {ind.ref_year}년 · {ind.unit} · {count ?? ind.ref_count}개국 · <a href={ind.source_url} target="_blank" rel="noreferrer">World Bank WDI ({ind.source_code})</a>
+      {ind.ref_year}년 · {ind.unit} · {count ?? ind.ref_count}개국 · <a href={ind.source_url} target="_blank" rel="noreferrer">{ind.group === 'sports' ? srcName(ind) : `World Bank WDI (${ind.source_code})`}</a>
     </p>
   );
 }

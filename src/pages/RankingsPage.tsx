@@ -4,7 +4,7 @@ import { WorldMap, type WorldMapHandle } from '../map/WorldMap';
 import type { MapShape } from '../map/geo';
 import { CONTINENTS, type ContinentId, type IndicatorId } from '../data/types';
 import { colorFor, SCALES, UNLISTED } from '../data/scales';
-import { Flag, Legend } from '../components/common';
+import { Flag, Legend, srcName } from '../components/common';
 import { fmtValue } from '../data/format';
 import { lessonsFor } from '../content/lessons';
 import { CONCEPT } from '../games/questions';
@@ -31,6 +31,10 @@ export const BOARDS: Board[] = [
   { id: 'exports_gdp', desc: 'GDP 대비 수출이 가장 많은 나라', asc: 'GDP 대비 수출이 가장 적은 나라', defaultDir: 'desc' },
   { id: 'forest', desc: '산림 비율이 가장 높은 나라', asc: '산림 비율이 가장 낮은 나라', defaultDir: 'desc' },
   { id: 'arable', desc: '경작지 비율이 가장 높은 나라', asc: '경작지 비율이 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'fifa_men', desc: 'FIFA 남자 랭킹 포인트가 가장 높은 나라', asc: 'FIFA 남자 랭킹 포인트가 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'fifa_women', desc: 'FIFA 여자 랭킹 포인트가 가장 높은 나라', asc: 'FIFA 여자 랭킹 포인트가 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'olympic_medals', desc: '올림픽 메달을 가장 많이 딴 나라', asc: '올림픽 메달이 가장 적은 나라', defaultDir: 'desc' },
+  { id: 'olympic_gold', desc: '올림픽 금메달을 가장 많이 딴 나라', asc: '올림픽 금메달이 가장 적은 나라', defaultDir: 'desc' },
 ];
 
 export function RankingsPage({ indicatorId, focus }: { indicatorId?: string; focus?: string }) {
@@ -105,7 +109,7 @@ export function RankingsPage({ indicatorId, focus }: { indicatorId?: string; foc
             <h2>세계에서 {dir === 'desc' ? board.desc : board.asc}</h2>
             <p className="rk-meta">
               <span>{ind.name_ko}</span><span>{ranking.year}년</span><span>단위 {ind.unit}</span><span>{ranking.rows.length}개국 비교</span>
-              <a href={ind.source_url} target="_blank" rel="noreferrer">World Bank WDI</a>
+              <a href={ind.source_url} target="_blank" rel="noreferrer">{srcName(ind)}</a>
             </p>
           </div>
           <div className="rk-tools">

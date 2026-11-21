@@ -44,6 +44,10 @@ export const SCALES: Record<IndicatorId, Scale> = {
   tourism_exports: mk([2, 5, 10, 15, 25, 40, 60], CLAY, (n) => `${n}`),
   forest: mk([5, 10, 20, 30, 40, 55, 70], SAGE, (n) => `${n}`),
   arable: mk([2, 5, 10, 15, 20, 30, 45], CLAY, (n) => `${n}`),
+  fifa_men: mk([1000, 1100, 1200, 1300, 1400, 1550, 1700], SAGE, (n) => n.toLocaleString('ko-KR')),
+  fifa_women: mk([1100, 1250, 1400, 1550, 1700, 1850, 1950], SAGE, (n) => n.toLocaleString('ko-KR')),
+  olympic_medals: mk([1, 5, 20, 50, 150, 400, 800], WARM, (n) => n.toLocaleString('ko-KR')),
+  olympic_gold: mk([1, 3, 10, 30, 80, 200, 400], WARM, (n) => n.toLocaleString('ko-KR')),
 };
 
 export function colorFor(scale: Scale, v: number | undefined): string {

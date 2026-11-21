@@ -43,6 +43,12 @@ export function fmtValue(ind: Indicator, v: number | undefined, opts: { short?: 
       return `${nf(2).format(v)}명`;
     case 'life_exp':
       return `${nf(1).format(v)}세`;
+    case 'fifa_men':
+    case 'fifa_women':
+      return `${nf(opts.short ? 0 : 2).format(v)}점`;
+    case 'olympic_medals':
+    case 'olympic_gold':
+      return `${nf(0).format(v)}개`;
     default:
       return `${nf(ind.digits).format(v)}%`;
   }

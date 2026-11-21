@@ -117,8 +117,11 @@ export async function loadDataset(base: string): Promise<Dataset> {
     if (!r.ok) throw new Error(`${p}: ${r.status}`);
     return r.json();
   });
-  const [countries, indicators, obs] = await Promise.all([
+  const [countries, indicators, obs, sports] = await Promise.all([
     get('countries.json'), get('indicators.json'), get('observations.json'),
+    get('sports_indicators.json').catch(() => null),
   ]);
+  // 스포츠 지표(FIFA 랭킹·올림픽 메달)는 pipeline/sports.py 가 따로 만든다
+  if (sports) return new Dataset(countries, [...indicators, ...sports.indicators], { ...obs, ...sports.observations });
   return new Dataset(countries, indicators, obs);
 }

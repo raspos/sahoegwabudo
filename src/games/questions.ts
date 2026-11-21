@@ -92,6 +92,7 @@ export const MORE_PHRASE: Record<IndicatorId, string> = {
   agri_va: '농림어업 비중이 더 높은', industry_va: '산업 비중이 더 높은', services_va: '서비스업 비중이 더 높은',
   gdp_pc_ppp: '구매력 기준 1인당 GDP가 더 높은', exports_gdp: 'GDP 대비 수출이 더 많은', productivity: '취업자 1명당 GDP가 더 높은',
   resource_rents: '천연자원 지대가 더 큰', tourism_exports: '관광 수입 비중이 더 높은', forest: '산림 비율이 더 높은', arable: '경작지 비율이 더 높은',
+  fifa_men: 'FIFA 남자 랭킹 포인트가 더 높은', fifa_women: 'FIFA 여자 랭킹 포인트가 더 높은', olympic_medals: '올림픽 메달을 더 많이 딴', olympic_gold: '올림픽 금메달을 더 많이 딴',
 };
 
 export const BIGGER: Record<IndicatorId, string> = {
@@ -100,6 +101,7 @@ export const BIGGER: Record<IndicatorId, string> = {
   manufacturing: '높습니다', internet: '높습니다',
   agri_va: '높습니다', industry_va: '높습니다', services_va: '높습니다', gdp_pc_ppp: '높습니다', exports_gdp: '많습니다',
   productivity: '높습니다', resource_rents: '큽니다', tourism_exports: '높습니다', forest: '높습니다', arable: '높습니다',
+  fifa_men: '높습니다', fifa_women: '높습니다', olympic_medals: '많습니다', olympic_gold: '많습니다',
 };
 
 export const CONCEPT: Record<IndicatorId, string> = {
@@ -125,6 +127,10 @@ export const CONCEPT: Record<IndicatorId, string> = {
   tourism_exports: '관광 수입 비중은 외국인 관광객이 쓴 돈이 그 나라 전체 수출에서 차지하는 몫이에요.',
   forest: '산림 비율은 육지 면적 가운데 숲이 차지하는 비율이에요.',
   arable: '경작지 비율은 육지 면적 가운데 곡식이나 채소를 심는 밭과 논의 비율이에요.',
+  fifa_men: 'FIFA 랭킹 포인트는 남자 축구 국가대표팀이 국제 경기에서 거둔 결과로 쌓는 점수예요. 강한 상대를 이길수록, 중요한 대회일수록 점수가 많이 올라요. 영국은 잉글랜드·스코틀랜드·웨일스·북아일랜드가 따로 출전해 한 나라로 순위를 매기지 않아요.',
+  fifa_women: 'FIFA 여자 랭킹 포인트는 여자 축구 국가대표팀이 국제 경기 결과로 쌓는 점수예요. 영국은 네 팀이 따로 출전해요.',
+  olympic_medals: '올림픽 역대 메달은 하계·동계 올림픽에서 그 나라 올림픽위원회 이름으로 딴 메달을 모두 더한 수예요. 소련·동독처럼 지금은 없는 나라의 메달은 더하지 않아요.',
+  olympic_gold: '올림픽 역대 금메달은 하계·동계 올림픽에서 딴 금메달의 수예요. 올림픽 메달 순위는 보통 금메달 수부터 견줘요.',
 };
 
 export interface BattleQuestion {

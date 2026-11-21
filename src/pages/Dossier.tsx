@@ -16,6 +16,7 @@ import { POLITICAL, UNLISTED } from '../data/scales';
 import { useExtras } from '../data/extras';
 import { EconomySection } from './EconomySection';
 import { NatureSection } from './NatureSection';
+import { SportsSection } from './SportsSection';
 
 const HEADLINE: IndicatorId[] = ['population', 'area', 'gdp', 'gdp_pc'];
 const ALL: IndicatorId[] = ['population', 'area', 'density', 'gdp', 'gdp_pc', 'gdp_growth', 'inflation', 'fertility', 'life_exp', 'urban', 'manufacturing', 'internet'];
@@ -106,18 +107,23 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
           <EconomySection ds={ds} c={c} ex={ex} compact={compact} />
         </section>
 
+        <section className="dz-sec dz-sports">
+          <h2><span className="no">7</span>스포츠</h2>
+          <SportsSection c={c} compact={compact} />
+        </section>
+
         <section className="dz-sec dz-stories">
-          <h2><span className="no">7</span>{c.name_ko}의 이야기</h2>
+          <h2><span className="no">8</span>{c.name_ko}의 이야기</h2>
           <StoriesSection c={c} ds={ds} ex={ex} docs={docs} compact={compact} />
         </section>
 
         <section className="dz-sec">
-          <h2><span className="no">8</span>비슷한 나라와 비교하기</h2>
+          <h2><span className="no">9</span>비슷한 나라와 비교하기</h2>
           <Similar ds={ds} c={c} compact={compact} />
         </section>
 
         <section className="dz-sec dz-learn">
-          <h2><span className="no">9</span>배우고 도전하기</h2>
+          <h2><span className="no">10</span>배우고 도전하기</h2>
           <CapitalCheck ds={ds} c={c} />
           <ul className="dz-links">
             {[...new Set((docs ? storiesForCountry(c.id, docs, ds, ex) : []).flatMap((s) => s.indicators))].flatMap(lessonsFor).filter((l, i, a) => a.indexOf(l) === i).slice(0, 3).map((l) => (
