@@ -1,5 +1,479 @@
 [
  {
+  "id": "afg-1747",
+  "country": "AFG",
+  "title": "아프가니스탄은 언제, 누가 세웠을까?",
+  "category": "history",
+  "panels": [
+   "1747년 아흐마드 샤 두라니가 파슈툰 부족들을 하나로 묶어 아프가니스탄을 세웠습니다.",
+   "19세기에는 영국 제국과 러시아 제국 사이에서 완충지대 노릇을 했고, 1919년 8월 19일 영국의 외교 간섭에서 벗어나 독립했습니다.",
+   "1979년 소련이 침공해 오랜 전쟁이 시작됐고, 소련군은 1989년 물러났습니다. 이후 내전이 이어졌습니다.",
+   "공용어는 다리어(아프간 페르시아어)와 파슈토어입니다. 다리어를 쓰는 사람이 77%, 파슈토어는 48%로, 두 말을 함께 쓰는 사람이 많습니다."
+  ],
+  "related": [
+   "GBR",
+   "RUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Afghanistan: Introduction – Background, Government – Independence, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/af.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PAK",
+   "why": "파슈토어를 함께 쓰는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "afg-hindukush",
+  "country": "AFG",
+  "title": "아프가니스탄을 남북으로 가르는 산맥은 무엇일까?",
+  "category": "geo",
+  "panels": [
+   "아프가니스탄은 바다가 없는 내륙국이고, 땅 대부분이 험한 산입니다.",
+   "북동쪽에서 남서쪽으로 뻗은 힌두쿠시산맥이 북쪽 지방과 나머지 땅을 가릅니다. 힌두쿠시는 국토의 {{lf:AFG:Hindu Kush}}를 차지합니다.",
+   "가장 높은 봉우리들은 북동쪽 끝, 와칸 회랑에 있습니다.",
+   "사람들은 힌두쿠시의 산기슭과 가장자리, 그리고 산속 골짜기에 모여 삽니다. 힌두쿠시는 큰 지진이 자주 나는 곳이기도 합니다."
+  ],
+  "related": [
+   "TJK",
+   "PAK"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Afghanistan: Geography – note, Geography – Terrain, Geography – Natural hazards, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/af.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TJK",
+   "why": "힌두쿠시 북쪽, 높은 산의 이웃"
+  }
+ },
+ {
+  "id": "are-people",
+  "country": "ARE",
+  "title": "아랍에미리트에 사는 사람 가운데 에미리트 국민은 몇 명일까?",
+  "category": "culture",
+  "panels": [
+   "2015년 추정으로 아랍에미리트 주민 가운데 에미리트 국민은 11.6%에 불과합니다.",
+   "남아시아 출신이 59.4%로 가장 많고, 그 가운데 인도 출신이 38.2%, 방글라데시와 파키스탄 출신이 각각 9.5%, 9.4%입니다.",
+   "이집트 출신(10.2%)과 필리핀 출신(6.1%)도 많습니다. 그래서 아랍어 말고도 영어, 힌디어, 말라얄람어, 우르두어, 타갈로그어가 쓰입니다.",
+   "무슬림이 74.5%이고, 기독교인 12.9%, 힌두교인 6.2%입니다."
+  ],
+  "indicators": [
+   "urban"
+  ],
+  "related": [
+   "IND",
+   "BGD"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — United Arab Emirates: People – Ethnic groups, People – Religions, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ae.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "아랍에미리트 주민 가운데 가장 많은 사람들의 나라"
+  }
+ },
+ {
+  "id": "are-seven",
+  "country": "ARE",
+  "title": "아랍에미리트는 몇 개의 토후국이 모여 생겼을까?",
+  "category": "history",
+  "panels": [
+   "19세기 페르시아만 연안의 '휴전 토후국'들은 조약으로 국방과 외교를 영국에 맡겼습니다.",
+   "1971년 아부다비·아지만·푸자이라·샤르자·두바이·움알카이와인 여섯 토후국이 아랍에미리트를 세웠고, 1972년 라스알카이마가 합류해 일곱이 되었습니다.",
+   "아부다비와 두바이 두 곳이 나라 면적의 90% 이상, 인구의 3분의 2를 차지합니다.",
+   "아부다비라는 이름에서 '아부'는 아랍어로 '아버지'를 뜻합니다."
+  ],
+  "indicators": [
+   "population"
+  ],
+  "related": [
+   "QAT",
+   "OMN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — United Arab Emirates: Introduction – Background, Government – Independence, Government – Capital, Geography – note",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ae.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "OMN",
+   "why": "아랍에미리트와 국경을 맞댄 동쪽 이웃"
+  }
+ },
+ {
+  "id": "arm-christian",
+  "country": "ARM",
+  "title": "기독교를 가장 먼저 국교로 받아들인 나라는?",
+  "category": "history",
+  "panels": [
+   "아르메니아는 4세기 초 세계에서 처음으로 기독교를 국교로 받아들인 나라라는 것을 자랑으로 여깁니다.",
+   "지금도 아르메니아 사도 교회 신자가 95.2%입니다.",
+   "오랫동안 로마·비잔틴·아랍·페르시아·오스만·러시아 제국의 영향 아래 있었고, 제1차 세계대전 때 오스만 제국의 강제 이주로 적어도 100만 명이 목숨을 잃었습니다.",
+   "아르메니아 왕국은 기원전 321년 처음 세워졌고, 지금의 나라는 1991년 9월 21일 소련에서 독립했습니다."
+  ],
+  "related": [
+   "GEO",
+   "TUR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Armenia: Introduction – Background, Government – Independence, People – Religions",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/am.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "GEO",
+   "why": "4세기에 기독교를 국교로 삼은 북쪽 이웃"
+  }
+ },
+ {
+  "id": "arm-highland",
+  "country": "ARM",
+  "title": "아르메니아에서 가장 큰 호수는 어디일까?",
+  "category": "geo",
+  "panels": [
+   "아르메니아는 소캅카스산맥 속에 자리한 내륙국입니다. 소캅카스산맥이 국토의 {{lf:ARM:Lesser Caucasus}}를 차지합니다.",
+   "세반 호수는 이 산맥에서 가장 큰 호수입니다.",
+   "숲은 적고 물살 빠른 강이 많습니다. 남쪽 아라스강 골짜기에는 좋은 흙이 있습니다.",
+   "수도 예레반에는 두 번째 도시 귬리보다 다섯 배 넘는 사람이 삽니다."
+  ],
+  "related": [
+   "AZE",
+   "IRN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Armenia: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/am.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IRN",
+   "why": "아라스강 건너 남쪽 이웃"
+  }
+ },
+ {
+  "id": "aze-exclave",
+  "country": "AZE",
+  "title": "나라 땅이 두 조각으로 나뉜 내륙국은 어디일까?",
+  "category": "geo",
+  "panels": [
+   "아제르바이잔은 본토와 떨어진 땅 나흐치반을 가지고 있습니다. 두 조각 모두 바다에 닿지 않은 내륙입니다.",
+   "본토 가운데에는 쿠라-아라스 저지대가 넓게 펼쳐져 있는데, 상당 부분이 해수면보다 낮습니다.",
+   "북쪽은 대캅카스산맥, 서쪽은 카라바흐 고원입니다. 캅카스산맥이 국토의 {{lf:AZE:Caucasus Mts.}}를 차지합니다.",
+   "기후는 대체로 건조한 스텝 기후입니다. 쾨펜 기후로는 {{cl:AZE}}가 가장 넓습니다."
+  ],
+  "related": [
+   "ARM",
+   "IRN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Azerbaijan: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/aj.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ARM",
+   "why": "아제르바이잔 본토와 나흐치반 사이의 이웃"
+  }
+ },
+ {
+  "id": "aze-oil",
+  "country": "AZE",
+  "title": "아제르바이잔은 무엇을 팔아 살까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 아제르바이잔 경제를 '석유에 기대는 캅카스 경제'라고 소개합니다.",
+   "상품 수출 1위는 {{ex:AZE}}이고, 가장 큰 손님은 {{p1:AZE}}입니다.",
+   "들판에도 세계 순위가 있습니다. {{ag:AZE:Persimmons}}, {{ag:AZE:Hazelnuts, in shell}}입니다.",
+   "사람들은 동쪽 끝의 수도 바쿠와 그 주변에 가장 많이 삽니다."
+  ],
+  "indicators": [
+   "resource_rents"
+  ],
+  "related": [
+   "ITA",
+   "KAZ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Azerbaijan: Economy – Economic overview, Geography – Natural resources, Economy – Agricultural products, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/aj.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ITA",
+   "why": "아제르바이잔 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "bgd-delta",
+  "country": "BGD",
+  "title": "방글라데시 땅은 어떻게 만들어졌을까?",
+  "category": "geo",
+  "panels": [
+   "방글라데시 땅 대부분은 히말라야에서 흘러온 큰 강들이 만든 삼각주 위에 있습니다.",
+   "갠지스강이 브라마푸트라강의 본류인 자무나강과 합쳐지고, 다시 메그나강과 만나 벵골만으로 흘러듭니다. 갠지스 삼각주가 국토의 {{lf:BGD:Ganges Delta}}를 차지합니다.",
+   "땅이 낮고 평평해서 여름 계절풍 철이면 나라의 상당 부분이 물에 잠깁니다. 사이클론도 자주 찾아옵니다.",
+   "그 땅에 많은 사람이 삽니다. 인구밀도는 {{vr:BGD:density}}입니다."
+  ],
+  "indicators": [
+   "density"
+  ],
+  "related": [
+   "IND",
+   "MMR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bangladesh: Geography – note, Geography – Terrain, Geography – Natural hazards, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/bg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "갠지스강이 시작되는 서쪽 이웃"
+  }
+ },
+ {
+  "id": "bgd-jute",
+  "country": "BGD",
+  "title": "방글라데시는 어떤 섬유 작물로 세계 1위일까?",
+  "category": "economy",
+  "panels": [
+   "방글라데시는 FAO 통계로 {{ag:BGD:Jute, raw or retted}}입니다. 황마는 마대 자루와 밧줄을 만드는 섬유입니다.",
+   "쌀도 {{ag:BGD:Rice}}입니다.",
+   "Factbook은 방글라데시 수출을 '섬유 산업이 지배한다'고 적습니다. 산업 목록도 면, 섬유·의류, 황마로 시작합니다.",
+   "제조업은 경제의 {{vr:BGD:manufacturing}}를 차지합니다."
+  ],
+  "indicators": [
+   "manufacturing"
+  ],
+  "related": [
+   "IND",
+   "KHM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bangladesh: Economy – Agricultural products, Economy – Industries, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/bg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KHM",
+   "why": "옷을 많이 수출하는 동남아시아의 나라"
+  }
+ },
+ {
+  "id": "bhr-manama",
+  "country": "BHR",
+  "title": "'쉬는 곳'이라는 이름의 수도는 어디일까?",
+  "category": "curious",
+  "panels": [
+   "바레인의 수도 마나마는 아랍어 '알마나마', 곧 '쉬는 곳' 또는 '꿈꾸는 곳'에서 온 이름입니다.",
+   "바레인은 섬들로 이루어진 나라이고, 사람들은 가장 큰 섬의 북쪽 끝, 마나마 주변에 가장 많이 삽니다.",
+   "걸프 나라 가운데 인구가 가장 적지만, 도시에 사는 사람의 비율은 {{vr:BHR:urban}}입니다.",
+   "2020년 추정으로 바레인 국민이 47.4%, 아시아 출신이 43.4%입니다."
+  ],
+  "indicators": [
+   "urban"
+  ],
+  "related": [
+   "QAT"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bahrain: Government – Capital, People – Population distribution, People – Ethnic groups, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ba.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "QAT",
+   "why": "바다 건너 가까운 반도의 이웃"
+  }
+ },
+ {
+  "id": "bhr-pearls",
+  "country": "BHR",
+  "title": "석유가 줄어든 섬나라 바레인은 무엇을 새로 키웠을까?",
+  "category": "resources",
+  "panels": [
+   "바레인의 천연자원 목록에는 석유, 천연가스, 물고기와 함께 진주가 올라 있습니다.",
+   "1970년부터 석유 생산과 매장량이 꾸준히 줄자, 바레인은 석유 정제, 알루미늄 생산, 숙박·소매업을 키웠습니다.",
+   "지금 상품 수출 1위는 {{ex:BHR}}입니다.",
+   "지역의 은행 중심지, 특히 이슬람 금융의 중심지가 되려 노력해 왔습니다. 제조업은 경제의 {{vr:BHR:manufacturing}}입니다."
+  ],
+  "indicators": [
+   "manufacturing"
+  ],
+  "related": [
+   "SAU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bahrain: Introduction – Background, Geography – Natural resources, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ba.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SAU",
+   "why": "다리로 이어진 서쪽의 큰 이웃"
+  }
+ },
+ {
+  "id": "brn-sultan",
+  "country": "BRN",
+  "title": "6백 년 넘게 같은 가문이 다스린 나라는?",
+  "category": "history",
+  "panels": [
+   "브루나이 술탄국은 15~17세기에 가장 힘이 셌고, 보르네오 북서쪽 해안과 필리핀 남부까지 다스렸습니다.",
+   "1888년 영국의 보호령이 되었다가 1984년 1월 1일 독립했습니다.",
+   "같은 가문이 6백 년 넘게 나라를 다스려 왔고, 2017년에는 하사날 볼키아 술탄 즉위 50주년을 기념했습니다.",
+   "넓은 석유·가스전 덕분에 1인당 GDP는 {{vr:BRN:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc"
+  ],
+  "related": [
+   "MYS",
+   "PHL"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Brunei: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/bx.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "PHL",
+   "why": "브루나이의 영향력이 미쳤던 남쪽 섬들의 나라"
+  }
+ },
+ {
+  "id": "brn-two-parts",
+  "country": "BRN",
+  "title": "말레이시아 땅을 사이에 두고 둘로 나뉜 나라는?",
+  "category": "geo",
+  "panels": [
+   "브루나이는 보르네오섬 북서쪽에 있고, 말레이시아 땅을 사이에 두고 두 부분으로 나뉘어 있습니다.",
+   "동쪽의 템부롱 지역은 본토와 떨어진 땅이고, 거의 말레이시아에 둘러싸여 있습니다.",
+   "사람들은 대부분 서쪽 해안에 삽니다.",
+   "국토 면적은 {{vr:BRN:area}}입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "MYS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Brunei: Geography – note, People – Population distribution, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/bx.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "MYS",
+   "why": "브루나이를 둘러싼 이웃"
+  }
+ },
+ {
+  "id": "btn-happiness",
+  "country": "BTN",
+  "title": "부탄은 경제를 어떻게 키우고 있을까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 부탄 경제를 '국민총행복(GNH) 경제'라고 소개합니다.",
+   "경제 발전을 이끄는 것은 수력 발전 투자입니다. 천연자원 목록도 목재와 수력으로 시작합니다.",
+   "상품 수출 1위는 {{ex:BTN}}이고, 가장 큰 손님은 {{p1:BTN}}입니다.",
+   "인도와의 경제·전략 관계가 가장 중요합니다. 경제성장률은 {{vr:BTN:gdp_growth}}입니다."
+  ],
+  "indicators": [
+   "gdp_growth"
+  ],
+  "related": [
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bhutan: Economy – Economic overview, Geography – Natural resources, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/bt.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "부탄 상품을 가장 많이 사 가는 남쪽 이웃"
+  }
+ },
+ {
+  "id": "btn-thunder",
+  "country": "BTN",
+  "title": "'천둥 용의 땅'이라는 이름은 어디에서 왔을까?",
+  "category": "curious",
+  "panels": [
+   "부탄 사람들은 자기 나라를 '천둥 용의 땅'이라고 부릅니다.",
+   "Factbook은 그 이름이 히말라야에서 몰아치는 사나운 폭풍에서 왔다고 적습니다.",
+   "부탄은 대부분 산이고, 기름진 골짜기와 사바나가 조금 있습니다. 히말라야산맥이 국토의 {{lf:BTN:Himalayas}}에 걸쳐 있습니다.",
+   "남쪽 평야는 열대, 가운데 골짜기는 여름이 덥고, 히말라야 쪽은 겨울이 혹독합니다. 비가 오는 철에는 산사태가 잦습니다."
+  ],
+  "related": [
+   "NPL",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Bhutan: Geography – Natural hazards, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/bt.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "NPL",
+   "why": "같은 히말라야 남쪽의 산악 국가"
+  }
+ },
+ {
   "id": "chn-one-timezone",
   "country": "CHN",
   "title": "그렇게 넓은 중국은 왜 시간대가 하나뿐일까?",
@@ -29,6 +503,62 @@
   "next": {
    "country": "MNG",
    "why": "중국 북쪽 국경 너머, 사람 드문 초원의 나라"
+  }
+ },
+ {
+  "id": "geo-caves",
+  "country": "GEO",
+  "title": "세계에서 가장 깊은 동굴들은 어느 나라에 있을까?",
+  "category": "curious",
+  "panels": [
+   "세계에서 가장 깊은 동굴 네 곳이 모두 조지아에 있습니다.",
+   "그 가운데 크루베라 동굴(-2,197m)과 베룝키나 동굴은 깊이가 2,000m를 넘는, 지구에서 알려진 단 두 곳입니다.",
+   "조지아는 북쪽의 대캅카스산맥과 남쪽의 소캅카스산맥 사이에 있는 산악 국가입니다. 캅카스산맥이 국토의 {{lf:GEO:Caucasus Mts.}}를 차지합니다.",
+   "서쪽으로는 콜키다 저지대가 흑해를 향해 열려 있습니다."
+  ],
+  "related": [
+   "RUS",
+   "ARM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Georgia: Geography – note, Geography – Terrain",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/gg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "ARM",
+   "why": "같은 캅카스의 남쪽 이웃"
+  }
+ },
+ {
+  "id": "geo-wine",
+  "country": "GEO",
+  "title": "조지아의 수도 트빌리시는 왜 '따뜻한' 도시일까?",
+  "category": "culture",
+  "panels": [
+   "트빌리시라는 이름은 조지아어 '트빌리(따뜻한)'에서 왔습니다. 이 일대에 솟는 온천을 가리킨 말입니다.",
+   "조지아 땅에는 고대 콜키스 왕국과 카르틀리-이베리아 왕국이 있었고, 330년대에 기독교가 국교가 되었습니다.",
+   "11~13세기 황금기를 누렸지만 1236년 몽골의 침입으로 끝났습니다.",
+   "산업 목록에는 와인도 올라 있습니다. 상품 수출 1위는 {{ex:GEO}}입니다."
+  ],
+  "related": [
+   "TUR",
+   "AZE"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Georgia: Government – Capital, Introduction – Background, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/gg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TUR",
+   "why": "흑해 연안을 함께 나눈 남쪽 이웃"
   }
  },
  {
@@ -272,6 +802,183 @@
   "next": {
    "country": "NPL",
    "why": "인도로 흘러드는 강이 시작되는 히말라야의 나라"
+  }
+ },
+ {
+  "id": "irn-persia",
+  "country": "IRN",
+  "title": "이란은 언제까지 '페르시아'라고 불렸을까?",
+  "category": "history",
+  "panels": [
+   "이란은 1935년까지 '페르시아'로 알려졌습니다.",
+   "Factbook은 이란 역사의 중요한 날로 기원전 550년 무렵 아케메네스(페르시아) 제국의 성립, 1501년 사파비 왕조의 재통일을 꼽습니다.",
+   "1979년 군주제가 무너지고 이슬람 공화국이 되었습니다.",
+   "수도 테헤란이라는 이름은 아마 '평평한' 또는 '낮은'이라는 뜻으로, 산기슭 아래 자리한 위치를 가리킨다고 합니다."
+  ],
+  "related": [
+   "IRQ",
+   "AFG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Iran: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ir.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AFG",
+   "why": "다리어(페르시아어)를 쓰는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "irn-pistachio",
+  "country": "IRN",
+  "title": "이란 들판은 어떤 견과로 세계 순위에 오를까?",
+  "category": "economy",
+  "panels": [
+   "이란은 가장자리를 험한 산이 두르고, 가운데에 사막과 산이 섞인 높은 분지가 있는 나라입니다.",
+   "사람들은 자그로스산맥과 엘부르즈산맥을 따라 북쪽·북서쪽·서쪽에 모여 삽니다.",
+   "FAO 통계로 이란은 {{ag:IRN:Pistachios, in shell}}입니다. 호두는 {{ag:IRN:Walnuts, in shell}}, 대추야자는 {{ag:IRN:Dates}}입니다.",
+   "농림어업은 경제의 {{vr:IRN:agri_va}}를 차지합니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "USA",
+   "TUR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Iran: Economy – Agricultural products, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ir.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "피스타치오 생산 1위인 나라"
+  }
+ },
+ {
+  "id": "irq-oil",
+  "country": "IRQ",
+  "title": "수출의 거의 전부가 한 가지인 나라는?",
+  "category": "economy",
+  "panels": [
+   "이라크는 1932년 10월 3일 영국이 맡아 다스리던 국제연맹 위임통치에서 독립했습니다.",
+   "지금 상품 수출 1위는 {{ex:IRQ}}입니다. 다른 상품은 거의 없습니다.",
+   "Factbook은 이라크를 '석유에 크게 기대는 경제'로, 나라 살림이 유가에 따라 흔들린다고 적습니다.",
+   "천연자원에서 얻는 몫은 GDP의 {{v:IRQ:resource_rents}}입니다."
+  ],
+  "indicators": [
+   "resource_rents"
+  ],
+  "related": [
+   "KWT",
+   "SAU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Iraq: Economy – Economic overview, Geography – Natural resources, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/iz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "KWT",
+   "why": "페르시아만 머리에 붙은 남쪽 이웃"
+  }
+ },
+ {
+  "id": "irq-rivers",
+  "country": "IRQ",
+  "title": "이라크를 흐르는 두 강은 어디에서 시작할까?",
+  "category": "geo",
+  "panels": [
+   "이라크의 큰 도시들은 티그리스강과 유프라테스강을 따라 늘어서 있습니다.",
+   "두 강은 모두 튀르키예에서 시작해 시리아를 거쳐 이라크로 흘러듭니다.",
+   "남쪽 이란 국경 쪽에는 갈대 습지와 넓게 물에 잠기는 땅이 있고, 두 강의 물은 샤트알아랍 수로를 지나 페르시아만으로 나갑니다.",
+   "나라의 대부분은 사막입니다. 쾨펜 기후로는 {{cl:IRQ}}입니다."
+  ],
+  "related": [
+   "TUR",
+   "SYR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Iraq: Geography – Major rivers, Geography – Terrain, Geography – note, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/iz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TUR",
+   "why": "두 강이 시작되는 북쪽 이웃"
+  }
+ },
+ {
+  "id": "isr-deadsea",
+  "country": "ISR",
+  "title": "소금 동굴과 짠 호수가 있는 나라는?",
+  "category": "geo",
+  "panels": [
+   "사해는 세계에서 두 번째로 짠 물입니다. 가장 짠 곳은 지부티의 아살 호수입니다.",
+   "소돔산의 말함 동굴은 길이 10km로, 세계에서 가장 긴 소금 동굴입니다. 높이 약 220m인 소돔산은 80%가 소금입니다.",
+   "북쪽의 티베리아스 호수(갈릴리 바다)는 중요한 민물 공급원입니다.",
+   "남쪽은 네게브 사막이고, 서쪽은 낮은 해안 평야, 가운데는 산지, 동쪽은 요르단 지구대입니다."
+  ],
+  "related": [
+   "JOR",
+   "DJI"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Israel: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/is.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "JOR",
+   "why": "사해를 함께 마주한 동쪽 이웃"
+  }
+ },
+ {
+  "id": "isr-tech",
+  "country": "ISR",
+  "title": "이스라엘은 무엇을 가장 많이 수출할까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 이스라엘 경제를 '기술과 산업에 기반한 고소득 경제'라고 소개합니다.",
+   "산업 목록 첫머리는 항공, 통신, 컴퓨터 설계, 의료 전자기기, 광섬유 같은 첨단 기술 제품입니다.",
+   "상품 수출 1위는 {{ex:ISR}}이고, 가장 큰 손님은 {{p1:ISR}}입니다.",
+   "1인당 GDP는 {{vr:ISR:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc",
+   "productivity"
+  ],
+  "related": [
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Israel: Economy – Economic overview, Economy – Industries, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/is.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "이스라엘 상품을 가장 많이 사 가는 나라"
   }
  },
  {
