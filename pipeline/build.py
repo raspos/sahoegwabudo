@@ -209,6 +209,9 @@ SANITY = {  # 단위 오류를 잡기 위한 허용 범위 (벗어나면 오류)
     "population": (500, 2e9), "area": (0.1, 2e7), "density": (0.01, 3e4),
     "gdp": (1e6, 5e13), "gdp_pc": (10, 5e5), "gdp_growth": (-80, 200), "inflation": (-40, 1e6),
     "fertility": (0.5, 9), "life_exp": (10, 95), "urban": (0, 100), "manufacturing": (0, 70), "internet": (0, 100),
+    "agri_va": (0, 85), "industry_va": (0, 95), "services_va": (0, 100), "gdp_pc_ppp": (200, 400000),
+    "exports_gdp": (0, 500), "productivity": (300, 500000), "resource_rents": (0, 100), "tourism_exports": (0, 150),
+    "forest": (0, 100), "arable": (0, 100),
 }
 
 
@@ -388,9 +391,11 @@ def main():
         sys.exit(1)
     summary = change_summary(countries, indicators, obs)
     (ROOT / "data" / "update_summary.md").write_text(summary, encoding="utf-8")
-    if OUT.exists():
-        shutil.rmtree(OUT)
-    STAGE.replace(OUT)
+    # 이 단계가 만드는 파일만 바꾼다. trade/agri/nature.json 같은 다른 모듈의 파일은 건드리지 않는다.
+    OUT.mkdir(parents=True, exist_ok=True)
+    for f in STAGE.iterdir():
+        f.replace(OUT / f.name)
+    shutil.rmtree(STAGE, ignore_errors=True)
     write_manifest(indicators, report)
     print("public/data 갱신 완료")
 
@@ -432,7 +437,7 @@ def write_manifest(indicators, report) -> None:
     import hashlib
     import time
     files = []
-    for f in sorted(RAW.rglob("*.json")) + sorted(RAW.glob("*.geojson")):
+    for f in sorted(RAW.glob("*.json")) + sorted((RAW / "wb").glob("*.json")) + sorted(RAW.glob("*.geojson")):
         data = f.read_bytes()
         files.append({"path": f.relative_to(ROOT).as_posix(), "bytes": len(data),
                       "sha256": hashlib.sha256(data).hexdigest(),
@@ -452,6 +457,8 @@ def write_manifest(indicators, report) -> None:
         "validation": {"errors": len(report["errors"]), "warnings": len(report["warnings"]),
                        "countries": report["countries"], "members": report["members"], "observers": report["observers"]},
         "raw_files": files,
+        "modules": {name: (json.loads((OUT / f"{name}.json").read_text(encoding="utf-8")).get("meta", {}) | {"countries_meta": None} if (OUT / f"{name}.json").exists() else None)
+                    for name in ("trade", "agri", "nature")},
         "raw_total_bytes": sum(x["bytes"] for x in files),
     }
     (ROOT / "data" / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")

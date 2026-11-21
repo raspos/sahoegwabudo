@@ -26,6 +26,19 @@ jobs:
         run: python -I pipeline/fetch.py || echo "::warning::일부 원자료 수집 실패"
       - name: 정규화·검증 (실패 시 public/data 유지)
         run: python -I pipeline/build.py
+      # 아래 두 모듈은 각자 검증하고, 실패하면 자기 파일(trade.json / agri.json)만 이전 상태로 둔다.
+      - name: UN Comtrade 상품 수출 (실패해도 계속)
+        run: python -I pipeline/trade.py || echo "::warning::Comtrade 갱신 실패 - 기존 trade.json 유지"
+      - name: FAOSTAT 농축산물 생산 (실패해도 계속)
+        run: |
+          mkdir -p data/raw/fao
+          curl -sL -m 900 -o data/raw/fao/qcl.zip "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip"             && python -I pipeline/agri.py || echo "::warning::FAOSTAT 갱신 실패 - 기존 agri.json 유지"
+      # 기후·지형(nature.json)은 바뀌지 않는 자료라 여기서 다시 만들지 않는다 (pipeline/nature.py 를 손으로 실행)
+      - name: 추가 자료 요약을 PR 본문에 덧붙임
+        run: |
+          python -I -c "import json;t=json.load(open('public/data/trade.json',encoding='utf-8'))['meta'];a=json.load(open('public/data/agri.json',encoding='utf-8'))['meta'];print(f\"
+- UN Comtrade: {t['countries']}개국, 연도별 {t['by_year']}, 받은 날 {t['retrieved_at']}
+- FAOSTAT: {a['countries']}개국, 기준연도 {a['year']}\")" >> data/update_summary.md
       - run: npm test
       - run: npm run build
       - name: 변경 사항 PR

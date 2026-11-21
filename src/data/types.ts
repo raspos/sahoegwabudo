@@ -39,7 +39,11 @@ export interface Country {
 
 export type IndicatorId =
   | 'population' | 'area' | 'density' | 'gdp' | 'gdp_pc' | 'gdp_growth'
-  | 'inflation' | 'fertility' | 'life_exp' | 'urban' | 'manufacturing' | 'internet';
+  | 'inflation' | 'fertility' | 'life_exp' | 'urban' | 'manufacturing' | 'internet'
+  | 'agri_va' | 'industry_va' | 'services_va' | 'gdp_pc_ppp' | 'exports_gdp' | 'productivity'
+  | 'resource_rents' | 'tourism_exports' | 'forest' | 'arable';
+
+export const CORE_INDICATORS: IndicatorId[] = ['population', 'area', 'density', 'gdp', 'gdp_pc', 'gdp_growth', 'inflation', 'fertility', 'life_exp', 'urban', 'manufacturing', 'internet'];
 
 export interface Indicator {
   indicator_id: IndicatorId;
@@ -62,6 +66,8 @@ export interface Indicator {
   latest_year: number;
   coverage_by_year: Record<string, number>;
   missing_all_years: string[];
+  rank: boolean;
+  group: 'core' | 'economy' | 'nature';
 }
 
 /** observations[indicator][country] = [[year, value], ...] (오름차순, 결측 연도는 없음) */

@@ -1,5 +1,6 @@
 import type { Dataset } from '../data/engine';
 import type { IndicatorId } from '../data/types';
+import type { Extras } from '../data/extras';
 import { josa } from '../data/format';
 import { lowRankText, name, peak, rankText, val, valueIn } from './helpers';
 
@@ -19,7 +20,9 @@ export interface Story {
   id: string;
   country: string;
   question: string;
-  panels: (ds: Dataset) => StoryPanel[];
+  panels: (ds: Dataset, ex?: Extras | null) => StoryPanel[];
+  /** 수출·자연환경 자료가 있어야 문장을 만들 수 있는 이야기 */
+  needsExtras?: boolean;
   indicators: IndicatorId[];   // 이 이야기에서 쓰는 지표 (세계 랭킹 연결)
   notes?: string[];            // 데이터 외 사실의 출처
 }
@@ -207,5 +210,7 @@ export const STORIES: Story[] = [
   },
 ];
 
-export const storiesFor = (cid: string) => STORIES.filter((s) => s.country === cid);
-export const STORY_COUNTRIES = [...new Set(STORIES.map((s) => s.country))];
+import { ECON_STORIES } from './econStories';
+export const ALL_STORIES: Story[] = [...STORIES, ...ECON_STORIES];
+export const storiesFor = (cid: string) => ALL_STORIES.filter((s) => s.country === cid);
+export const STORY_COUNTRIES = [...new Set(ALL_STORIES.map((s) => s.country))];

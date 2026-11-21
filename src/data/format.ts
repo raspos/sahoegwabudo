@@ -32,6 +32,9 @@ export function fmtValue(ind: Indicator, v: number | undefined, opts: { short?: 
       return `${koreanUnits(v)} 달러`;
     case 'gdp_pc':
       return `${nf(0).format(v)} 달러`;
+    case 'gdp_pc_ppp':
+    case 'productivity':
+      return `${nf(0).format(v)} 국제달러`;
     case 'area':
       return v < 100 ? `${nf(2).format(v)}km²` : `${nf(0).format(v)}km²`;
     case 'density':

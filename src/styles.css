@@ -636,3 +636,63 @@ h1, h2, h3 { font-family: var(--serif); line-height: 1.3; margin: 0; font-weight
   .mainnav a { padding: 8px 4px; font-size: 13.5px; }
 }
 .story-done { margin: 4px 0 0 34px; justify-self: start; }
+
+/* ── PHASE 2: 자연환경·경제 도감 ───────────────────────────── */
+:root { --seg-agri: #9cb777; --seg-industry: #c9964e; --seg-manuf: #8a5a2e; --seg-services: #5d8a92; --seg-other: #d9d1bd; }
+.dossier--full .dz-econ { column-span: all; }
+.dz-sec h3 { font-family: var(--serif); font-size: 15.5px; margin: 16px 0 6px; color: var(--ink); }
+.dz-sec h3 small { font-family: var(--sans); font-weight: 400; color: var(--muted); font-size: 12.5px; margin-left: 6px; }
+.dz-sec h3:first-child { margin-top: 0; }
+.src { font-size: 12px; color: var(--muted); margin: 4px 0 0; }
+.econ-q { font-family: var(--serif); font-weight: 700; font-size: 17px; color: var(--accent-ink); margin: 0 0 6px; }
+.econ-glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 6px 22px; margin: 0; }
+.econ-glance div { border-left: 3px solid var(--rule-strong); padding: 2px 0 2px 10px; }
+.econ-glance dt { font-size: 13px; color: var(--muted); }
+.econ-glance dd { margin: 0; font-family: var(--serif); font-weight: 700; font-size: 17px; font-variant-numeric: tabular-nums; }
+.econ-glance dd small { font-family: var(--sans); font-weight: 400; font-size: 12px; color: var(--muted); }
+.econ-small dd { font-size: 15px; }
+.econ-note { font-size: 13.5px; color: var(--ink-2); background: var(--paper-2); padding: 6px 10px; border-left: 3px solid var(--accent); margin: 8px 0; }
+.term { text-decoration: underline dotted var(--accent); text-underline-offset: 3px; cursor: help; position: relative; }
+.term-tip { display: none; position: absolute; left: 0; top: calc(100% + 4px); z-index: 12; width: 230px; background: #fbf8ef; border: 1px solid var(--ink); padding: 6px 9px; font-size: 12.5px; line-height: 1.5; color: var(--ink); font-family: var(--sans); font-weight: 400; text-decoration: none; }
+.term:hover .term-tip, .term:focus .term-tip { display: block; }
+.sector { margin: 4px 0 6px; }
+.sector-bar { display: flex; height: 22px; border: 1px solid var(--ink); background: var(--paper); }
+.sector-bar .seg { position: relative; height: 100%; }
+.seg-agri { background: var(--seg-agri); } .seg-industry { background: var(--seg-industry); } .seg-services { background: var(--seg-services); }
+.seg-other { background: repeating-linear-gradient(45deg, var(--seg-other) 0 4px, #c9bea6 4px 6px); }
+.seg-manuf { position: absolute; left: 0; bottom: 0; height: 45%; background: var(--seg-manuf); }
+.sector-key { list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px; display: grid; gap: 2px; }
+.sector-key i { display: inline-block; width: 12px; height: 10px; margin-right: 6px; border: 1px solid rgba(0,0,0,.3); vertical-align: 0; }
+.sector-key i.seg-manuf-key { background: var(--seg-manuf); }
+.sector-key .sub { display: block; padding-left: 20px; color: var(--ink-2); }
+.sector-key b { font-variant-numeric: tabular-nums; }
+.econ-peers caption { text-align: left; font-size: 13px; color: var(--muted); padding: 6px 0 2px; }
+.exports, .partners { list-style: none; padding: 0; margin: 4px 0 0; counter-reset: ex; }
+.exports li, .partners li { counter-increment: ex; display: grid; grid-template-columns: 1.6em minmax(8em, 15em) 1fr auto; gap: 8px; align-items: center; padding: 5px 0; border-bottom: 1px dotted var(--rule); font-size: 14.5px; }
+.partners li { grid-template-columns: 1.6em 1fr auto; }
+.exports li::before, .partners li::before { content: counter(ex); font-family: var(--serif); font-weight: 700; color: var(--accent-ink); }
+.ex-name small { color: var(--muted); font-size: 11px; margin-left: 5px; }
+.ex-bar { height: 8px; } .ex-bar i { display: block; height: 100%; background: var(--seg-services); }
+.ex-val { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; font-size: 13.5px; }
+.ex-val b { font-family: var(--serif); margin-left: 6px; font-size: 14.5px; }
+.facts-list { padding-left: 18px; margin: 4px 0; font-size: 14.5px; }
+.facts-list li { margin: 4px 0; }
+.facts-list small { color: var(--muted); }
+.specialty { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 20px; }
+.specialty section { border-top: 2px solid var(--ink); padding-top: 6px; }
+.specialty h4 { margin: 0 0 4px; font-size: 14px; font-family: var(--serif); }
+.specialty ul { padding-left: 16px; margin: 0; font-size: 14px; }
+.specialty li small { color: var(--muted); }
+.spec-rank { font-size: 13px; color: var(--ink-2); margin: 6px 0 0; }
+.climate-bar { display: flex; height: 18px; border: 1px solid var(--ink); }
+.climate-bar span { height: 100%; }
+.climate-key { list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px; display: grid; gap: 2px; }
+.climate-key i { display: inline-block; width: 12px; height: 10px; margin-right: 6px; border: 1px solid rgba(0,0,0,.3); }
+.climate-key small { color: var(--muted); font-size: 11px; }
+.nature-facts { margin-top: 2px; }
+@media (max-width: 860px) {
+  .specialty { grid-template-columns: 1fr; gap: 10px; }
+  .exports li { grid-template-columns: 1.4em 1fr auto; }
+  .exports .ex-bar { display: none; }
+  .term-tip { width: 200px; }
+}

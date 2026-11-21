@@ -34,6 +34,16 @@ export const SCALES: Record<IndicatorId, Scale> = {
   urban: mk([20, 35, 50, 60, 70, 80, 90], CLAY, (n) => `${n}`),
   manufacturing: mk([5, 8, 11, 14, 17, 20, 25], WARM, (n) => `${n}`),
   internet: mk([20, 40, 55, 70, 80, 90, 95], SAGE, (n) => `${n}`),
+  agri_va: mk([2, 5, 10, 15, 20, 30, 40], SAGE, (n) => `${n}`),
+  industry_va: mk([15, 20, 25, 30, 35, 45, 55], WARM, (n) => `${n}`),
+  services_va: mk([40, 45, 50, 55, 60, 65, 70], CLAY, (n) => `${n}`),
+  gdp_pc_ppp: mk([2500, 5000, 10000, 20000, 35000, 55000, 80000], SAGE, (n) => n.toLocaleString('ko-KR')),
+  exports_gdp: mk([15, 25, 35, 50, 70, 100, 150], WARM, (n) => `${n}`),
+  productivity: mk([5000, 10000, 20000, 40000, 70000, 100000, 140000], SAGE, (n) => n.toLocaleString('ko-KR')),
+  resource_rents: mk([1, 2, 5, 10, 15, 25, 35], WARM, (n) => `${n}`),
+  tourism_exports: mk([2, 5, 10, 15, 25, 40, 60], CLAY, (n) => `${n}`),
+  forest: mk([5, 10, 20, 30, 40, 55, 70], SAGE, (n) => `${n}`),
+  arable: mk([2, 5, 10, 15, 20, 30, 45], CLAY, (n) => `${n}`),
 };
 
 export function colorFor(scale: Scale, v: number | undefined): string {

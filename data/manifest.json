@@ -103,6 +103,86 @@
    "ref_count": 180,
    "latest_year": 2025,
    "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "agri_va",
+   "code": "NV.AGR.TOTL.ZS",
+   "ref_year": 2025,
+   "ref_count": 156,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "industry_va",
+   "code": "NV.IND.TOTL.ZS",
+   "ref_year": 2025,
+   "ref_count": 156,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "services_va",
+   "code": "NV.SRV.TOTL.ZS",
+   "ref_year": 2025,
+   "ref_count": 156,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "gdp_pc_ppp",
+   "code": "NY.GDP.PCAP.PP.CD",
+   "ref_year": 2025,
+   "ref_count": 180,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "exports_gdp",
+   "code": "NE.EXP.GNFS.ZS",
+   "ref_year": 2024,
+   "ref_count": 163,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "productivity",
+   "code": "SL.GDP.PCAP.EM.KD",
+   "ref_year": 2025,
+   "ref_count": 165,
+   "latest_year": 2025,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "resource_rents",
+   "code": "NY.GDP.TOTL.RT.ZS",
+   "ref_year": 2021,
+   "ref_count": 183,
+   "latest_year": 2021,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "tourism_exports",
+   "code": "ST.INT.RCPT.XP.ZS",
+   "ref_year": 2018,
+   "ref_count": 152,
+   "latest_year": 2020,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "forest",
+   "code": "AG.LND.FRST.ZS",
+   "ref_year": 2024,
+   "ref_count": 191,
+   "latest_year": 2024,
+   "retrieved_at": "2026-11-21"
+  },
+  {
+   "id": "arable",
+   "code": "AG.LND.ARBL.ZS",
+   "ref_year": 2024,
+   "ref_count": 190,
+   "latest_year": 2024,
+   "retrieved_at": "2026-11-21"
   }
  ],
  "validation": {
@@ -117,6 +197,30 @@
    "path": "data/raw/countries.json",
    "bytes": 1398218,
    "sha256": "c48c0d479fc71799c8f5b1b1a6eee4a4a6a86f626c29b9db62b542bf1b8d8741",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wikidata_capital_lang_currency.json",
+   "bytes": 451852,
+   "sha256": "d6af7c54af8b708ec9f88dc1e59b8efa746b648b80ca46091e20f843c4d2b0a2",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wikidata_codes_ko.json",
+   "bytes": 49834,
+   "sha256": "374db2f42a621a6572f8128a6d72023e04195fc3adb0691215f30167aa8a82f5",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/AG.LND.ARBL.ZS.json",
+   "bytes": 2339746,
+   "sha256": "225314ac6b3688d68fd990e7aa020702c3b587c7c74d4943c13700cdec7e1e74",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/AG.LND.FRST.ZS.json",
+   "bytes": 2339730,
+   "sha256": "6f1c71d5e7f2b0cc98e70b7074db4d7cc0540a0bf8d1f5224c86efa35e40182c",
    "modified": "2026-11-21"
   },
   {
@@ -144,9 +248,33 @@
    "modified": "2026-11-21"
   },
   {
+   "path": "data/raw/wb/NE.EXP.GNFS.ZS.json",
+   "bytes": 2444639,
+   "sha256": "a3509624a7417d5841e9aae221b4eff157329c5d70171c33b6d66b021eaa3043",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NV.AGR.TOTL.ZS.json",
+   "bytes": 2624659,
+   "sha256": "40e92d7762f51c6da37fa2e90d42fdbbe886c6030412268b65d05a252c3cc83a",
+   "modified": "2026-11-21"
+  },
+  {
    "path": "data/raw/wb/NV.IND.MANF.ZS.json",
    "bytes": 2415646,
    "sha256": "536c45665d50aeb53796014c859daae411d7d125ba318e8c1e8f78051e038f79",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NV.IND.TOTL.ZS.json",
+   "bytes": 2613986,
+   "sha256": "a25695536eb72d641222d48741f8f77acea2195b42eaa4ef5883dff26d1170a2",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NV.SRV.TOTL.ZS.json",
+   "bytes": 2373063,
+   "sha256": "a9c9b756b0db74cb305d1d8bd4caf61da1cbc27ffb0d675c0fa12e9e07470d05",
    "modified": "2026-11-21"
   },
   {
@@ -165,6 +293,24 @@
    "path": "data/raw/wb/NY.GDP.PCAP.CD.json",
    "bytes": 2346868,
    "sha256": "f85afab1a5a0c1ff14273a2c565154e8ef425960919fc988922af510fc8200d4",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NY.GDP.PCAP.PP.CD.json",
+   "bytes": 2535355,
+   "sha256": "ae5c20304f7998bf7227574bb9048b68f35d64dd8e9add6f53a8054f2d335828",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/NY.GDP.TOTL.RT.ZS.json",
+   "bytes": 2471025,
+   "sha256": "3b8943a87ae87d683f529f7dabaf790305df323a8caf1a2c89782a093a1b7ad0",
+   "modified": "2026-11-21"
+  },
+  {
+   "path": "data/raw/wb/SL.GDP.PCAP.EM.KD.json",
+   "bytes": 2522838,
+   "sha256": "e1835a19b8ac729627a9a4d50e0ec4440ddd9a1f3ee016765b58afe77c701686",
    "modified": "2026-11-21"
   },
   {
@@ -192,15 +338,9 @@
    "modified": "2026-11-21"
   },
   {
-   "path": "data/raw/wikidata_capital_lang_currency.json",
-   "bytes": 451852,
-   "sha256": "d6af7c54af8b708ec9f88dc1e59b8efa746b648b80ca46091e20f843c4d2b0a2",
-   "modified": "2026-11-21"
-  },
-  {
-   "path": "data/raw/wikidata_codes_ko.json",
-   "bytes": 49834,
-   "sha256": "374db2f42a621a6572f8128a6d72023e04195fc3adb0691215f30167aa8a82f5",
+   "path": "data/raw/wb/ST.INT.RCPT.XP.ZS.json",
+   "bytes": 2553774,
+   "sha256": "22d37f69d4761ffe1dc6020bb904815de5bf6cc7575002fbf69d19c431dbf73a",
    "modified": "2026-11-21"
   },
   {
@@ -210,5 +350,190 @@
    "modified": "2026-11-21"
   }
  ],
- "raw_total_bytes": 33271061
+ "modules": {
+  "trade": {
+   "source": "UN Comtrade (public preview API), Source: UN Comtrade",
+   "flow": "X (수출, 재수출 포함)",
+   "classification": "HS (보고 당시 판)",
+   "retrieved_at": "2026-11-21",
+   "countries": 162,
+   "by_year": {
+    "2024": 142,
+    "2023": 18,
+    "2022": 2
+   },
+   "no_reporter_code": [
+    "LIE",
+    "MCO"
+   ],
+   "warnings": [],
+   "countries_meta": null
+  },
+  "agri": {
+   "source": "FAO. FAOSTAT: Crops and livestock products (QCL). Licence: CC-BY-4.0. https://www.fao.org/faostat/en/#data/QCL",
+   "year": 2024,
+   "countries": 187,
+   "accessed": "2026-11-21",
+   "note": "대표 생산품 = 세계 순위·세계 비중 순. 품목 한국어 이름은 편집 번역.",
+   "countries_meta": null
+  },
+  "nature": {
+   "koppen": "Beck et al. (2023) Köppen-Geiger 1991–2020, 0.1°, CC BY 4.0, doi:10.6084/m9.figshare.21789074",
+   "koppen_classes": {
+    "1": {
+     "code": "Af",
+     "name_en": "Tropical, rainforest"
+    },
+    "2": {
+     "code": "Am",
+     "name_en": "Tropical, monsoon"
+    },
+    "3": {
+     "code": "Aw",
+     "name_en": "Tropical, savannah"
+    },
+    "4": {
+     "code": "BWh",
+     "name_en": "Arid, desert, hot"
+    },
+    "5": {
+     "code": "BWk",
+     "name_en": "Arid, desert, cold"
+    },
+    "6": {
+     "code": "BSh",
+     "name_en": "Arid, steppe, hot"
+    },
+    "7": {
+     "code": "BSk",
+     "name_en": "Arid, steppe, cold"
+    },
+    "8": {
+     "code": "Csa",
+     "name_en": "Temperate, dry summer, hot summer"
+    },
+    "9": {
+     "code": "Csb",
+     "name_en": "Temperate, dry summer, warm summer"
+    },
+    "10": {
+     "code": "Csc",
+     "name_en": "Temperate, dry summer, cold summer"
+    },
+    "11": {
+     "code": "Cwa",
+     "name_en": "Temperate, dry winter, hot summer"
+    },
+    "12": {
+     "code": "Cwb",
+     "name_en": "Temperate, dry winter, warm summer"
+    },
+    "13": {
+     "code": "Cwc",
+     "name_en": "Temperate, dry winter, cold summer"
+    },
+    "14": {
+     "code": "Cfa",
+     "name_en": "Temperate, no dry season, hot summer"
+    },
+    "15": {
+     "code": "Cfb",
+     "name_en": "Temperate, no dry season, warm summer"
+    },
+    "16": {
+     "code": "Cfc",
+     "name_en": "Temperate, no dry season, cold summer"
+    },
+    "17": {
+     "code": "Dsa",
+     "name_en": "Cold, dry summer, hot summer"
+    },
+    "18": {
+     "code": "Dsb",
+     "name_en": "Cold, dry summer, warm summer"
+    },
+    "19": {
+     "code": "Dsc",
+     "name_en": "Cold, dry summer, cold summer"
+    },
+    "20": {
+     "code": "Dsd",
+     "name_en": "Cold, dry summer, very cold winter"
+    },
+    "21": {
+     "code": "Dwa",
+     "name_en": "Cold, dry winter, hot summer"
+    },
+    "22": {
+     "code": "Dwb",
+     "name_en": "Cold, dry winter, warm summer"
+    },
+    "23": {
+     "code": "Dwc",
+     "name_en": "Cold, dry winter, cold summer"
+    },
+    "24": {
+     "code": "Dwd",
+     "name_en": "Cold, dry winter, very cold winter"
+    },
+    "25": {
+     "code": "Dfa",
+     "name_en": "Cold, no dry season, hot summer"
+    },
+    "26": {
+     "code": "Dfb",
+     "name_en": "Cold, no dry season, warm summer"
+    },
+    "27": {
+     "code": "Dfc",
+     "name_en": "Cold, no dry season, cold summer"
+    },
+    "28": {
+     "code": "Dfd",
+     "name_en": "Cold, no dry season, very cold winter"
+    },
+    "29": {
+     "code": "ET",
+     "name_en": "Polar, tundra"
+    },
+    "30": {
+     "code": "EF",
+     "name_en": "Polar, frost"
+    }
+   },
+   "physical": "Natural Earth 50m geography regions, 10m rivers, 10m elevation points",
+   "approx_countries": [
+    "GRD",
+    "NRU",
+    "DMA",
+    "LUX",
+    "LIE",
+    "MHL",
+    "MCO",
+    "MUS",
+    "MDV",
+    "MLT",
+    "FSM",
+    "BHR",
+    "BRB",
+    "VAT",
+    "SMR",
+    "STP",
+    "SYC",
+    "LCA",
+    "VCT",
+    "KNA",
+    "SGP",
+    "AND",
+    "ATG",
+    "COM",
+    "TON",
+    "TUV",
+    "PLW"
+   ],
+   "no_climate": [],
+   "countries_meta": null
+  }
+ },
+ "raw_total_bytes": 58089876
 }

@@ -6,7 +6,7 @@ import type { MapShape } from '../map/geo';
 import { CONTINENTS } from '../data/types';
 import { Flag } from '../components/common';
 import { LESSONS } from '../content/lessons';
-import { STORIES } from '../content/stories';
+import { ALL_STORIES as STORIES } from '../content/stories';
 import { LEVELS } from '../games/questions';
 
 export function JournalPage() {

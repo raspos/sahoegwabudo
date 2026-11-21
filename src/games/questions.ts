@@ -89,12 +89,17 @@ export const MORE_PHRASE: Record<IndicatorId, string> = {
   gdp_pc: '1인당 GDP가 더 높은', gdp_growth: '경제성장률이 더 높은', inflation: '소비자물가 상승률이 더 높은',
   fertility: '합계출산율이 더 높은', life_exp: '기대수명이 더 긴', urban: '도시화율이 더 높은',
   manufacturing: '제조업 비중이 더 높은', internet: '인터넷 이용률이 더 높은',
+  agri_va: '농림어업 비중이 더 높은', industry_va: '산업 비중이 더 높은', services_va: '서비스업 비중이 더 높은',
+  gdp_pc_ppp: '구매력 기준 1인당 GDP가 더 높은', exports_gdp: 'GDP 대비 수출이 더 많은', productivity: '취업자 1명당 GDP가 더 높은',
+  resource_rents: '천연자원 지대가 더 큰', tourism_exports: '관광 수입 비중이 더 높은', forest: '산림 비율이 더 높은', arable: '경작지 비율이 더 높은',
 };
 
 export const BIGGER: Record<IndicatorId, string> = {
   population: '많습니다', area: '넓습니다', density: '높습니다', gdp: '큽니다', gdp_pc: '높습니다',
   gdp_growth: '높습니다', inflation: '높습니다', fertility: '높습니다', life_exp: '깁니다', urban: '높습니다',
   manufacturing: '높습니다', internet: '높습니다',
+  agri_va: '높습니다', industry_va: '높습니다', services_va: '높습니다', gdp_pc_ppp: '높습니다', exports_gdp: '많습니다',
+  productivity: '높습니다', resource_rents: '큽니다', tourism_exports: '높습니다', forest: '높습니다', arable: '높습니다',
 };
 
 export const CONCEPT: Record<IndicatorId, string> = {
@@ -110,6 +115,16 @@ export const CONCEPT: Record<IndicatorId, string> = {
   urban: '도시화율은 전체 인구 가운데 도시에 사는 사람의 비율이에요.',
   manufacturing: '제조업 비중은 GDP 가운데 공장에서 물건을 만드는 산업이 차지하는 몫이에요.',
   internet: '인터넷 이용률은 최근 석 달 안에 인터넷을 쓴 사람의 비율이에요.',
+  agri_va: '농림어업 비중은 한 해 동안 새로 만든 가치(부가가치) 가운데 농사·숲·고기잡이가 만든 몫이에요.',
+  industry_va: '산업 비중은 광업·제조업·건설업·전기가스수도업이 만든 부가가치의 몫이에요. 제조업은 이 안에 들어 있어요.',
+  services_va: '서비스업 비중은 상업·운송·금융·관광·교육·의료 같은 서비스가 만든 부가가치의 몫이에요.',
+  gdp_pc_ppp: '구매력 기준 1인당 GDP는 나라마다 다른 물가를 맞춰서, 같은 돈으로 실제로 얼마나 살 수 있는지를 비교한 값이에요.',
+  exports_gdp: '수출 비율은 상품과 서비스 수출액을 GDP와 견준 값이에요. 다른 나라에서 들여와 다시 내보내는 물건이 많으면 100%를 넘을 수도 있어요.',
+  productivity: '취업자 1명당 GDP는 일하는 사람 한 명이 1년 동안 평균적으로 만들어 내는 가치예요. 생산성을 보여 주는 대표 지표예요.',
+  resource_rents: '천연자원 지대는 석유·가스·광물·목재를 캐고 베어 팔아 생산비를 빼고 남는 몫이 GDP에서 얼마인지 보여 줘요.',
+  tourism_exports: '관광 수입 비중은 외국인 관광객이 쓴 돈이 그 나라 전체 수출에서 차지하는 몫이에요.',
+  forest: '산림 비율은 육지 면적 가운데 숲이 차지하는 비율이에요.',
+  arable: '경작지 비율은 육지 면적 가운데 곡식이나 채소를 심는 밭과 논의 비율이에요.',
 };
 
 export interface BattleQuestion {

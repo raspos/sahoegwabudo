@@ -281,6 +281,55 @@ export const LESSONS: Lesson[] = [
     },
     check: (ds, rng) => contrast(ds, 'internet', rng, top(ds, 'internet', 40).map((r) => r.country).filter((c) => big(ds).includes(c)), bottom(ds, 'internet', 40).map((r) => r.country).filter((c) => big(ds).includes(c))),
   },
+  {
+    id: 'nominal-vs-ppp', field: '경제', question: '1인당 GDP, 명목과 구매력 기준은 왜 다를까?',
+    indicators: ['gdp_pc', 'gdp_pc_ppp'], compare: ['gdp_pc', 'gdp_pc_ppp'],
+    body: (ds) => {
+      const y = ds.indicator('gdp_pc').ref_year;
+      const pairs = ds.countries
+        .map((c) => ({ c, n: ds.value(c.id, 'gdp_pc', y), p: ds.value(c.id, 'gdp_pc_ppp', y) }))
+        .filter((x): x is { c: Country; n: number; p: number } => x.n !== undefined && x.p !== undefined);
+      const ratio = pairs.map((x) => ({ ...x, r: x.p / x.n })).sort((a, b) => b.r - a.r);
+      const hi = ratio[0], lo = ratio[ratio.length - 1];
+      const above = ratio.filter((x) => x.r > 1).length;
+      return [
+        '명목 1인당 GDP는 그 나라 돈으로 잰 값을 시장 환율로 달러로 바꾼 것입니다. 구매력 기준(PPP)은 나라마다 다른 물가를 맞춰, 같은 돈으로 실제로 얼마나 살 수 있는지를 국제달러로 나타냅니다.',
+        `${y}년 두 값이 모두 있는 ${pairs.length}개국 가운데 ${above}개국은 구매력 기준 값이 명목 값보다 큽니다. 물가가 싼 나라일수록 구매력 기준 값이 명목 값보다 크게 나옵니다.`,
+        `두 값의 차이가 가장 큰 나라는 ${hi.c.name_ko}(구매력 기준이 명목의 약 ${hi.r.toFixed(1)}배), 거꾸로 구매력 기준이 명목보다 가장 작은 나라는 ${lo.c.name_ko}(약 ${lo.r.toFixed(2)}배)입니다.`,
+      ];
+    },
+    check: (ds, rng) => contrast(ds, 'gdp_pc_ppp', rng, top(ds, 'gdp_pc_ppp', 30).map((r) => r.country), big(ds).filter((c) => (ds.rankOf(c.id, 'gdp_pc_ppp')?.rank ?? 0) > 100)),
+  },
+  {
+    id: 'value-added-structure', field: '경제', question: '농업·산업·서비스업, 나라 경제는 어떻게 나뉠까?',
+    indicators: ['agri_va', 'industry_va', 'services_va'], compare: ['services_va', 'agri_va'],
+    body: (ds) => {
+      const y = ds.indicator('services_va').ref_year;
+      const s = ds.ranking('services_va'), a = ds.ranking('agri_va');
+      const sMed = [...s.rows].sort((x, z) => x.value - z.value)[Math.floor(s.rows.length / 2)].value;
+      const aMed = [...a.rows].sort((x, z) => x.value - z.value)[Math.floor(a.rows.length / 2)].value;
+      return [
+        '부가가치는 물건이나 서비스를 만들며 새로 보탠 가치입니다. 한 나라의 부가가치를 농림어업, 산업(광업·제조업·건설·전기가스), 서비스업으로 나누면 경제가 무엇으로 돌아가는지 볼 수 있습니다. 제조업은 산업 안에 들어 있는 한 부분입니다.',
+        `${y}년 자료가 있는 나라를 줄 세우면 서비스업 비중의 가운데 값은 ${sMed.toFixed(1)}%, 농림어업 비중의 가운데 값은 ${aMed.toFixed(1)}%입니다.`,
+        '세 비중을 더해도 100%가 되지 않습니다. 상품에 붙는 세금처럼 어느 산업에도 나누지 않는 몫이 GDP에 들어 있기 때문입니다.',
+      ];
+    },
+    check: (ds, rng) => contrast(ds, 'agri_va', rng, top(ds, 'agri_va', 40).map((r) => r.country).filter((c) => big(ds).includes(c)), bottom(ds, 'agri_va', 40).map((r) => r.country).filter((c) => big(ds).includes(c))),
+  },
+  {
+    id: 'exports-over-100', field: '경제', question: '수출이 GDP보다 많은 나라가 있다고?',
+    indicators: ['exports_gdp'],
+    body: (ds) => {
+      const r = ds.ranking('exports_gdp');
+      const over = r.rows.filter((x) => x.value >= 100);
+      return [
+        `${r.year}년 상품·서비스 수출이 GDP의 100%를 넘는 나라는 ${over.length}개국입니다: ${over.slice(0, 6).map((x) => x.country.name_ko).join(', ')}${over.length > 6 ? ' 등' : ''}.`,
+        'GDP는 그 나라에서 새로 보탠 가치(부가가치)만 세지만, 수출액은 물건값 전체를 셉니다. 다른 나라에서 부품을 들여와 조립하거나, 들여온 물건을 다시 내보내면 수출액이 GDP보다 커질 수 있습니다.',
+        '그래서 수출 비율이 높다고 그 나라가 모든 물건을 직접 만든다는 뜻은 아닙니다. 항구·물류가 발달한 작은 나라에서 이런 일이 자주 나타납니다.',
+      ];
+    },
+    check: (ds, rng) => contrast(ds, 'exports_gdp', rng, top(ds, 'exports_gdp', 25).map((r) => r.country), bottom(ds, 'exports_gdp', 60).map((r) => r.country).filter((c) => big(ds).includes(c))),
+  },
 ];
 
 export const lessonsFor = (iid: IndicatorId) => LESSONS.filter((l) => l.indicators.includes(iid));

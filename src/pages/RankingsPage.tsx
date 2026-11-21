@@ -23,6 +23,14 @@ export const BOARDS: Board[] = [
   { id: 'urban', desc: '도시화율이 가장 높은 나라', asc: '도시화율이 가장 낮은 나라', defaultDir: 'desc' },
   { id: 'manufacturing', desc: '제조업 비중이 가장 높은 나라', asc: '제조업 비중이 가장 낮은 나라', defaultDir: 'desc' },
   { id: 'internet', desc: '인터넷 이용률이 가장 높은 나라', asc: '인터넷 이용률이 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'gdp_pc_ppp', desc: '구매력 기준 1인당 GDP가 가장 높은 나라', asc: '구매력 기준 1인당 GDP가 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'productivity', desc: '취업자 1명당 GDP가 가장 높은 나라', asc: '취업자 1명당 GDP가 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'agri_va', desc: '농림어업 비중이 가장 높은 나라', asc: '농림어업 비중이 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'industry_va', desc: '산업(광공업·건설) 비중이 가장 높은 나라', asc: '산업 비중이 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'services_va', desc: '서비스업 비중이 가장 높은 나라', asc: '서비스업 비중이 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'exports_gdp', desc: 'GDP 대비 수출이 가장 많은 나라', asc: 'GDP 대비 수출이 가장 적은 나라', defaultDir: 'desc' },
+  { id: 'forest', desc: '산림 비율이 가장 높은 나라', asc: '산림 비율이 가장 낮은 나라', defaultDir: 'desc' },
+  { id: 'arable', desc: '경작지 비율이 가장 높은 나라', asc: '경작지 비율이 가장 낮은 나라', defaultDir: 'desc' },
 ];
 
 export function RankingsPage({ indicatorId, focus }: { indicatorId?: string; focus?: string }) {

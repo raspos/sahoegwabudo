@@ -11,6 +11,9 @@ import type { Dataset } from '../data/engine';
 import type { Geo } from '../map/geo';
 import { MAP_W } from '../map/geo';
 import { POLITICAL, UNLISTED } from '../data/scales';
+import { useExtras, type Extras } from '../data/extras';
+import { EconomySection } from './EconomySection';
+import { NatureSection } from './NatureSection';
 
 const HEADLINE: IndicatorId[] = ['population', 'area', 'gdp', 'gdp_pc'];
 const ALL: IndicatorId[] = ['population', 'area', 'density', 'gdp', 'gdp_pc', 'gdp_growth', 'inflation', 'fertility', 'life_exp', 'urban', 'manufacturing', 'internet'];
@@ -19,6 +22,7 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
   const { ds, geo } = useData();
   const c = ds.country(id);
   const j = useJournal();
+  const ex = useExtras();
   if (!c) return <p className="empty">이 나라를 찾을 수 없습니다.</p>;
   const stories = storiesFor(c.id);
   const learned = j.learned[c.id];
@@ -54,8 +58,13 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
           </p>
         </section>
 
+        <section className="dz-sec dz-nature">
+          <h2><span className="no">2</span>자연환경</h2>
+          <NatureSection ds={ds} c={c} ex={ex} />
+        </section>
+
         <section className="dz-sec">
-          <h2><span className="no">2</span>기본 정보</h2>
+          <h2><span className="no">3</span>기본 정보</h2>
           <dl className="facts">
             <dt>수도</dt><dd>{c.capital_ko.join(', ') || '—'}{c.capital_note && <small className="note"> {c.capital_note}</small>}</dd>
             <dt>대륙·지역</dt><dd>{continentName(c.continent)}{c.region_ko !== continentName(c.continent) && <> · {c.region_ko}</>}</dd>
@@ -68,7 +77,7 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
         </section>
 
         <section className="dz-sec">
-          <h2><span className="no">3</span>숫자로 보는 {c.name_ko}</h2>
+          <h2><span className="no">4</span>숫자로 보는 {c.name_ko}</h2>
           <div className="headline-nums">
             {HEADLINE.map((iid) => {
               const ind = ds.indicator(iid);
@@ -85,24 +94,29 @@ export function Dossier({ id, compact, onClose }: { id: string; compact?: boolea
         </section>
 
         <section className="dz-sec">
-          <h2><span className="no">4</span>세계에서 몇 위일까?</h2>
+          <h2><span className="no">5</span>세계에서 몇 위일까?</h2>
           <RankStrips ds={ds} c={c} compact={compact} />
         </section>
 
+        <section className="dz-sec dz-econ">
+          <h2><span className="no">6</span>이 나라는 뭘로 먹고살까?</h2>
+          <EconomySection ds={ds} c={c} ex={ex} compact={compact} />
+        </section>
+
         <section className="dz-sec dz-stories">
-          <h2><span className="no">5</span>{c.name_ko}의 이야기</h2>
-          {stories.length ? stories.map((s) => <StoryBlock key={s.id} id={s.id} cid={c.id} open={!compact} />) : (
+          <h2><span className="no">7</span>{c.name_ko}의 이야기</h2>
+          {stories.length ? stories.map((s) => <StoryBlock key={s.id} id={s.id} cid={c.id} open={!compact} ex={ex} />) : (
             <p className="muted">이 나라의 이야기는 아직 준비 중입니다. 기본 정보와 통계로 먼저 만나 보세요.</p>
           )}
         </section>
 
         <section className="dz-sec">
-          <h2><span className="no">6</span>비슷한 나라와 비교하기</h2>
+          <h2><span className="no">8</span>비슷한 나라와 비교하기</h2>
           <Similar ds={ds} c={c} compact={compact} />
         </section>
 
         <section className="dz-sec dz-learn">
-          <h2><span className="no">7</span>배우고 도전하기</h2>
+          <h2><span className="no">9</span>배우고 도전하기</h2>
           <CapitalCheck ds={ds} c={c} />
           <ul className="dz-links">
             {[...new Set(stories.flatMap((s) => s.indicators))].flatMap(lessonsFor).filter((l, i, a) => a.indexOf(l) === i).slice(0, 3).map((l) => (
@@ -153,10 +167,10 @@ function RankStrips({ ds, c, compact }: { ds: Dataset; c: Country; compact?: boo
   );
 }
 
-function StoryBlock({ id, cid, open }: { id: string; cid: string; open: boolean }) {
+function StoryBlock({ id, cid, open, ex }: { id: string; cid: string; open: boolean; ex: Extras | null }) {
   const { ds } = useData();
   const s = storiesFor(cid).find((x) => x.id === id)!;
-  const panels = useMemo(() => s.panels(ds), [s, ds]);
+  const panels = useMemo(() => (s.needsExtras && !ex ? [] : s.panels(ds, ex)), [s, ds, ex]);
   const j = useJournal();
   return (
     <details className="story" open={open}>

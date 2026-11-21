@@ -7,7 +7,10 @@ import type { Country, IndicatorId } from './data/types';
 import { searchCountries } from './data/search';
 import { battleQuestions, makeBattle, mapHint, mapQuestions, seeded, levelOf, BATTLE_INDICATORS } from './games/questions';
 import { journal, parseJournal } from './store/journal';
-import { STORIES } from './content/stories';
+import { STORIES, ALL_STORIES } from './content/stories';
+import { ECONOMY_PROFILES } from './content/economy';
+import { sectorSharesOf } from './content/sectors';
+import { ECON_STORIES } from './content/econStories';
 import { LESSONS } from './content/lessons';
 import { discoveryFacts } from './content/discovery';
 import { buildGeo, type MapProps } from './map/geo';
@@ -59,10 +62,18 @@ describe('국가 목록', () => {
 });
 
 describe('통계와 순위', () => {
-  it('12개 지표, 모든 지표에 기준연도·출처', () => {
-    expect(indicators).toHaveLength(12);
+  it('기존 12개 지표와 기준연도는 그대로이고, 신규 10개 지표가 더해졌다', () => {
+    const core = ['population', 'area', 'density', 'gdp', 'gdp_pc', 'gdp_growth', 'inflation', 'fertility', 'life_exp', 'urban', 'manufacturing', 'internet'];
+    const refYears: Record<string, number> = { population: 2025, area: 2024, density: 2024, gdp: 2025, gdp_pc: 2025, gdp_growth: 2025, inflation: 2025, fertility: 2024, life_exp: 2024, urban: 2025, manufacturing: 2024, internet: 2024 };
+    expect(indicators.slice(0, 12).map((i: { indicator_id: string }) => i.indicator_id)).toEqual(core);
+    for (const i of indicators.slice(0, 12)) expect(i.ref_year, i.indicator_id).toBe(refYears[i.indicator_id]);
+    expect(indicators).toHaveLength(22);
+    for (const code of ['NV.AGR.TOTL.ZS', 'NV.IND.TOTL.ZS', 'NV.SRV.TOTL.ZS', 'NY.GDP.PCAP.PP.CD', 'NE.EXP.GNFS.ZS'])
+      expect(indicators.map((i: { source_code: string }) => i.source_code)).toContain(code);
+  });
+  it('모든 지표에 기준연도·출처', () => {
     for (const i of indicators) {
-      expect(i.ref_year).toBeGreaterThanOrEqual(2020);
+      if (i.rank) expect(i.ref_year, i.indicator_id).toBeGreaterThanOrEqual(2020); // 순위에 쓰지 않는 지표(관광·자원 지대)는 오래된 해일 수 있다
       expect(i.source_url).toMatch(/^https:\/\/data\.worldbank\.org\/indicator\//);
       expect(i.ref_count).toBeGreaterThanOrEqual(150);
     }
@@ -211,6 +222,78 @@ describe('탐험일지', () => {
   it('깨진 저장값은 빈 일지로 시작한다', () => {
     expect(parseJournal('{bad json').visited).toEqual({});
     expect(parseJournal(JSON.stringify({ version: 9 })).visited).toEqual({});
+  });
+});
+
+describe('PHASE 2: 경제·자연환경 자료', () => {
+  const trade = load('trade.json');
+  const agri = load('agri.json');
+  const nature = load('nature.json');
+  const ex = { trade, agri, nature };
+  it('수출: 비중은 같은 해 TOTAL 대비, 큰 순서, 상대국에 World·지역 미상 없음, HS 합계 ≈ TOTAL', () => {
+    expect(Object.keys(trade.countries).length).toBeGreaterThanOrEqual(150);
+    for (const [cid, t] of Object.entries<any>(trade.countries)) {
+      expect(ds.country(cid), cid).toBeDefined();
+      expect(Math.abs(t.hs_sum_ratio - 1)).toBeLessThan(0.02);
+      for (let i = 1; i < t.products.length; i++) expect(t.products[i - 1].value).toBeGreaterThanOrEqual(t.products[i].value);
+      for (const p of t.products) { expect(p.share).toBeLessThanOrEqual(1); expect(p.name_ko).toBeTruthy(); expect(p.hs).toMatch(/^\d\d$/); }
+      for (const p of t.partners) { expect([0, 899, 837, 838, 839]).not.toContain(p.code); expect(p.iso3).not.toBe(cid); }
+    }
+    expect(trade.countries.AUT.partners[0].iso3).toBe('DEU');
+  });
+  it('농산물: 중국은 본토(M49 156) 기준, 순위·톤수 정합, 1차 생산물만', () => {
+    expect(agri.meta.year).toBeGreaterThanOrEqual(2022);
+    expect(agri.countries.CHN).toBeDefined();
+    for (const a of Object.values<any>(agri.countries)) {
+      for (const i of a.representative) { expect(i.rank).toBeLessThanOrEqual(15); expect(i.tonnes).toBeGreaterThanOrEqual(10000); }
+      for (let k = 1; k < a.by_tonnes.length; k++) expect(a.by_tonnes[k - 1].tonnes).toBeGreaterThanOrEqual(a.by_tonnes[k].tonnes);
+      for (const i of [...a.representative, ...a.by_tonnes]) { expect(i.name_ko).toBeTruthy(); expect(i.name_en.toLowerCase()).not.toMatch(/oil|cheese|butter|offal/); }
+    }
+    expect(agri.countries.SAU.representative[0].name_en).toBe('Dates');
+  });
+  it('기후: 195개국 모두 기후형이 있고, 비율 합은 1 이하, 오스트리아는 알프스가 국토 절반 이상', () => {
+    for (const c of countries) {
+      const n = nature.countries[c.id];
+      expect(n?.koppen.length, c.id).toBeGreaterThan(0);
+      const sum = n.koppen.reduce((s: number, k: any) => s + (k.share ?? 0), 0);
+      expect(sum).toBeLessThanOrEqual(1.0001);
+    }
+    const alps = nature.countries.AUT.landforms.find((l: any) => l.name_en === 'Alps');
+    expect(alps.share_of_country).toBeGreaterThan(0.5);
+    expect(nature.countries.SAU.koppen[0].code).toBe('BWh');
+    expect(nature.countries.VAT.approx).toBe(true);
+  });
+  it('산업 구조: 같은 해 값만 쓰고, 세 비중 합은 100% 이하로 두며 다시 맞추지 않는다', () => {
+    const s = sectorSharesOf(ds, 'AUT')!;
+    expect(ds.value('AUT', 'agri_va', s.year)).toBe(s.agri);
+    expect(ds.value('AUT', 'services_va', s.year)).toBe(s.services);
+    expect(s.agri + s.industry + s.services).toBeLessThanOrEqual(100.5);
+    if (s.manufacturing !== undefined) expect(s.manufacturing).toBeLessThanOrEqual(s.industry);
+  });
+  it('편집 사실은 모두 출처(발행처·주소·시점)가 있다 — 8개국 프로필', () => {
+    expect(ECONOMY_PROFILES.map((p) => p.country).sort()).toEqual(['AUT', 'BRA', 'KOR', 'MNG', 'NLD', 'NOR', 'SAU', 'SGP']);
+    for (const p of ECONOMY_PROFILES) for (const f of [...p.facts, ...p.specialties]) {
+      expect(f.source, f.text).toBeTruthy();
+      expect(f.url).toMatch(/^https:\/\//);
+      expect(f.period).toBeTruthy();
+    }
+  });
+  it('경제 이야기: 오스트리아 3편 이상(각 3~4장면), 8개국 모두 이야기, 빈 숫자 없음', () => {
+    expect(ECON_STORIES.filter((s) => s.country === 'AUT').length).toBeGreaterThanOrEqual(3);
+    for (const cid of ['AUT', 'KOR', 'NLD', 'NOR', 'SAU', 'MNG', 'SGP', 'BRA']) expect(ALL_STORIES.some((s) => s.country === cid && ECON_STORIES.includes(s))).toBe(true);
+    for (const s of ECON_STORIES) {
+      const panels = s.panels(ds, ex as never);
+      expect(panels.length, s.id).toBeGreaterThanOrEqual(3);
+      expect(panels.length).toBeLessThanOrEqual(4);
+      for (const p of panels) expect(p.text, s.id).not.toMatch(/undefined|NaN|null|\?%/);
+    }
+  });
+  it('오스트리아 수출 이야기의 상품군 순서가 원자료와 일치한다', () => {
+    const story = ECON_STORIES.find((s) => s.id === 'aut-exports')!;
+    const text = story.panels(ds, ex as never)[0].text;
+    const top = trade.countries.AUT.products.slice(0, 4).map((p: any) => p.name_ko.replace(/\(.*\)$/, ''));
+    let last = -1;
+    for (const n of top) { const i = text.indexOf(n); expect(i).toBeGreaterThan(last); last = i; }
   });
 });
 
