@@ -982,6 +982,62 @@
   }
  },
  {
+  "id": "jor-ammon",
+  "country": "JOR",
+  "title": "요르단의 수도 암만이라는 이름은 얼마나 오래되었을까?",
+  "category": "history",
+  "panels": [
+   "기원전 13세기, 암몬 사람들이 자신들의 중심 도시를 '랍바트 암몬'이라 불렀습니다. 지금의 수도 암만이라는 이름이 여기서 왔습니다.",
+   "1921년 영국이 팔레스타인에서 트랜스요르단을 떼어 내 하심 가문의 압둘라 1세를 첫 지도자로 인정했습니다.",
+   "1946년 5월 25일 독립했고, 하심 왕국 요르단이 되었습니다. 지금까지 왕은 네 명이었습니다.",
+   "2015년 추정으로 요르단 주민 가운데 시리아 출신이 13.3%, 팔레스타인과 이집트 출신이 각각 6.7%입니다."
+  ],
+  "related": [
+   "SYR",
+   "IRQ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Jordan: Government – Capital, Introduction – Background, Government – Independence, People – Ethnic groups",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/jo.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SYR",
+   "why": "요르단 북쪽의 이웃"
+  }
+ },
+ {
+  "id": "jor-rift",
+  "country": "JOR",
+  "title": "아시아에서 가장 낮은 곳은 어디일까?",
+  "category": "geo",
+  "panels": [
+   "요르단 서쪽 국경에 있는 사해는 아시아에서 가장 낮은 곳이고, 세계에서 두 번째로 짠 물입니다.",
+   "나라 서쪽에는 남북으로 길게 갈라진 지구대가 지나갑니다. 요르단강 골짜기가 이 지구대에 들어 있습니다.",
+   "나머지 땅은 대부분 메마른 사막 고원입니다. 쾨펜 기후로는 {{cl:JOR}}입니다.",
+   "남쪽 끝은 아카바만의 머리에 닿아 있어, 요르단이 바다로 나가는 유일한 길목입니다."
+  ],
+  "related": [
+   "ISR",
+   "SAU"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Jordan: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/jo.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SAU",
+   "why": "요르단 남쪽과 동쪽에 맞닿은 큰 이웃"
+  }
+ },
+ {
   "id": "jpn-edo-tokyo",
   "country": "JPN",
   "title": "도쿄는 왜 '동쪽의 수도'라는 이름을 갖게 되었을까?",
@@ -1039,6 +1095,180 @@
   "next": {
    "country": "NZL",
    "why": "남반구의 또 다른 산 많은 섬나라"
+  }
+ },
+ {
+  "id": "kaz-baikonur",
+  "country": "KAZ",
+  "title": "러시아가 빌려 쓰는 카자흐스탄 땅에는 무엇이 있을까?",
+  "category": "curious",
+  "panels": [
+   "러시아는 카자흐스탄 땅 약 6,000km²를 빌려 쓰고 있습니다. 그 안에 바이코누르 우주 기지가 있습니다.",
+   "카자흐스탄은 2024년 3월 1일부터 시간대를 두 개에서 하나로 합쳤습니다.",
+   "2021년 조사로 러시아어를 쓰는 사람(83.7%)이 공용어인 카자흐어를 쓰는 사람(80.1%)보다 조금 더 많습니다.",
+   "FAO 통계로 카자흐스탄은 {{ag:KAZ:Safflower seed}}, {{ag:KAZ:Horse meat, fresh or chilled}}입니다."
+  ],
+  "related": [
+   "RUS"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kazakhstan: Geography – note, Government – Capital, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/kz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "RUS",
+   "why": "바이코누르를 빌려 쓰는 북쪽 이웃"
+  }
+ },
+ {
+  "id": "kaz-landlocked",
+  "country": "KAZ",
+  "title": "바다가 없는 나라 가운데 가장 넓은 나라는?",
+  "category": "geo",
+  "panels": [
+   "카자흐스탄은 세계에서 가장 넓은 내륙국입니다. 국토 면적은 {{vr:KAZ:area}}입니다.",
+   "두 대륙에 걸친 내륙국은 단 둘뿐인데, 카자흐스탄과 아제르바이잔입니다.",
+   "서쪽 볼가강에서 동쪽 알타이산맥까지 평평한 스텝이 펼쳐집니다. 카자흐 스텝이 국토의 {{lf:KAZ:Kazakh Steppe}}를 차지합니다.",
+   "땅이 넓어 사람이 드뭅니다. 인구밀도는 {{vr:KAZ:density}}입니다."
+  ],
+  "indicators": [
+   "area",
+   "density"
+  ],
+  "related": [
+   "AZE",
+   "MNG"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kazakhstan: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/kz.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "AZE",
+   "why": "두 대륙에 걸친 또 하나의 내륙국"
+  }
+ },
+ {
+  "id": "kgz-mountains",
+  "country": "KGZ",
+  "title": "국토의 94%가 해발 1,000m 넘는 나라는?",
+  "category": "geo",
+  "panels": [
+   "키르기스스탄은 온 나라가 산입니다. 톈산산맥이 국토의 {{lf:KGZ:Tian Shan}}를 차지합니다.",
+   "국토의 94%가 해발 1,000m를 넘고, 평균 높이는 2,750m입니다. 높은 봉우리와 빙하, 높은 호수가 많습니다.",
+   "그래서 쾨펜 기후로 가장 넓은 것은 {{cl:KGZ}}입니다.",
+   "중앙아시아의 큰 강 시르다리야도 키르기스스탄에서 시작해 우즈베키스탄·타지키스탄을 거쳐 카자흐스탄에서 끝납니다."
+  ],
+  "related": [
+   "TJK",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kyrgyzstan: Geography – note, Geography – Terrain, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/kg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "TJK",
+   "why": "키르기스스탄보다 더 높은 산이 있는 남쪽 이웃"
+  }
+ },
+ {
+  "id": "kgz-nomads",
+  "country": "KGZ",
+  "title": "키르기스스탄 사람들은 대부분 어디에 살까?",
+  "category": "culture",
+  "panels": [
+   "Factbook은 키르기스스탄을 '놀라운 자연과 자랑스러운 유목 전통의 나라'라고 소개합니다.",
+   "대부분의 사람은 시골에 삽니다. 도시에 사는 사람의 비율은 {{vr:KGZ:urban}}입니다.",
+   "가장 빽빽한 곳은 북쪽 수도 비슈케크 주변이고, 그다음이 서쪽의 오시입니다.",
+   "국어인 키르기스어를 쓰는 사람이 71.4%, 우즈베크어 14.4%, 공용어인 러시아어 9%입니다."
+  ],
+  "indicators": [
+   "urban"
+  ],
+  "related": [
+   "KAZ",
+   "UZB"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kyrgyzstan: Introduction – Background, People – Population distribution, People – Languages",
+    "url": "https://github.com/factbook/factbook.json/blob/master/central-asia/kg.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "UZB",
+   "why": "우즈베크어를 쓰는 이웃"
+  }
+ },
+ {
+  "id": "khm-angkor",
+  "country": "KHM",
+  "title": "크메르 사람들은 어떤 제국의 후손일까?",
+  "category": "history",
+  "panels": [
+   "캄보디아 사람들 대부분은 자신을 크메르인, 곧 앙코르 제국의 후손으로 여깁니다. 앙코르 제국은 10~13세기에 동남아시아 넓은 지역을 다스렸습니다.",
+   "타이와 참족의 공격으로 제국은 오랫동안 쇠퇴했고, 1863년 프랑스의 보호를 받다가 1887년 프랑스령 인도차이나가 되었습니다.",
+   "1953년 11월 9일 프랑스에서 완전히 독립했습니다. 1975년부터 크메르 루주 정권 아래 적어도 150만 명이 목숨을 잃었습니다.",
+   "수도 프놈펜은 '풍요의 산'이라는 뜻입니다."
+  ],
+  "related": [
+   "THA",
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Cambodia: Introduction – Background, Government – Independence, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/cb.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "THA",
+   "why": "앙코르 제국을 약하게 만든 서쪽 이웃"
+  }
+ },
+ {
+  "id": "khm-tonlesap",
+  "country": "KHM",
+  "title": "동남아시아에서 가장 큰 민물 호수는 어디일까?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 캄보디아를 '메콩강과 톤레사프가 지배하는 논과 숲의 땅'이라고 적습니다. 톤레사프는 동남아시아에서 가장 큰 민물 호수입니다.",
+   "땅은 대부분 낮고 평평하고, 남서쪽과 북쪽에 산이 있습니다.",
+   "일 년 내내 기온은 비슷하지만, 5~11월은 비가 오고 12~4월은 마릅니다.",
+   "사람들은 수도 프놈펜 주변과, 톤레사프·메콩강을 따라 삽니다."
+  ],
+  "related": [
+   "LAO",
+   "VNM"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Cambodia: Geography – note, Geography – Terrain, Geography – Climate, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/cb.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "VNM",
+   "why": "메콩강이 바다로 나가는 동쪽 이웃"
   }
  },
  {
@@ -1103,6 +1333,476 @@
   "next": {
    "country": "CHN",
    "why": "한국과 같은 채소를 훨씬 더 많이 기르는 이웃"
+  }
+ },
+ {
+  "id": "kwt-desert",
+  "country": "KWT",
+  "title": "쿠웨이트 사막에는 언제 비가 쏟아질까?",
+  "category": "geo",
+  "panels": [
+   "쿠웨이트는 평평하거나 살짝 굽이치는 사막 평원입니다. 쾨펜 기후로는 {{cl:KWT}}입니다.",
+   "여름은 몹시 덥고, 겨울은 짧고 서늘합니다.",
+   "10월부터 4월 사이에는 갑작스러운 폭우가 자주 쏟아져 길과 집을 망가뜨립니다. 모래 폭풍은 일 년 내내, 특히 3~8월에 많습니다.",
+   "사람들은 페르시아만 연안, 특히 쿠웨이트시에 가장 많이 삽니다."
+  ],
+  "related": [
+   "BHR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kuwait: Geography – Natural hazards, Geography – Climate, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ku.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "BHR",
+   "why": "같은 페르시아만의 섬나라"
+  }
+ },
+ {
+  "id": "kwt-wealthfund",
+  "country": "KWT",
+  "title": "가장 오래된 국부펀드는 어느 나라 것일까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 쿠웨이트가 세계에서 가장 오래된 국부펀드를 운영한다고 적습니다.",
+   "18세기부터 사바 가문이 다스렸고, 1961년 6월 19일 영국에서 독립했습니다.",
+   "1990년 이라크에 점령당했다가, 1991년 미국이 이끈 유엔 연합군의 지상 작전 나흘 만에 해방되었습니다.",
+   "상품 수출 1위는 {{ex:KWT}}입니다. 1인당 GDP는 {{vr:KWT:gdp_pc}}입니다."
+  ],
+  "indicators": [
+   "gdp_pc",
+   "resource_rents"
+  ],
+  "related": [
+   "SAU",
+   "IRQ"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Kuwait: Economy – Economic overview, Introduction – Background, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/ku.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IRQ",
+   "why": "1990년 쿠웨이트를 침공했던 북쪽 이웃"
+  }
+ },
+ {
+  "id": "lao-lanxang",
+  "country": "LAO",
+  "title": "라오스의 뿌리가 된 옛 왕국의 이름은?",
+  "category": "history",
+  "panels": [
+   "지금의 라오스는 14세기 파응움 왕이 세운 란쌍 왕국에서 시작되었습니다. 란쌍은 300년 동안 지금의 캄보디아와 태국에까지 영향을 미쳤습니다.",
+   "18세기 말부터 시암(태국)의 지배를 받다가 19세기 말 프랑스령 인도차이나에 들어갔습니다. 1907년 프랑스-시암 조약이 지금의 태국 국경을 정했습니다.",
+   "1953년 완전히 독립했고, 1975년 공산당이 정권을 잡으며 6세기 넘은 군주제가 끝났습니다.",
+   "Factbook은 최근 라오스-중국 철도와 내륙항이 새로 생겼다고 적습니다."
+  ],
+  "related": [
+   "KHM",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Laos: Introduction – Background, Government – Independence",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/la.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "라오스를 지나는 새 철도가 이어진 북쪽 이웃"
+  }
+ },
+ {
+  "id": "lao-mekong",
+  "country": "LAO",
+  "title": "라오스와 태국 사이 국경은 무엇이 만들까?",
+  "category": "geo",
+  "panels": [
+   "라오스는 바다가 없는 나라이고, 땅 대부분이 산과 빽빽한 숲입니다. 숲은 국토의 {{vr:LAO:forest}}를 덮습니다.",
+   "메콩강이 태국과의 서쪽 국경의 상당 부분을 이룹니다.",
+   "가장 빽빽한 곳은 수도 비엔티안 주변이고, 큰 마을들도 남서쪽 메콩강을 따라 자리합니다.",
+   "비엔티안(위앙짠)은 라오스 말로 '백단향의 도시'라는 뜻입니다."
+  ],
+  "indicators": [
+   "forest"
+  ],
+  "related": [
+   "THA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Laos: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/la.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "THA",
+   "why": "메콩강 건너편의 서쪽 이웃"
+  }
+ },
+ {
+  "id": "lbn-crossroads",
+  "country": "LBN",
+  "title": "세 대륙의 갈림길에 있는 나라는 어떤 모습일까?",
+  "category": "culture",
+  "panels": [
+   "레바논은 세 대륙이 만나는 갈림길에 있어 문화와 종교가 다양합니다.",
+   "무슬림이 67.8%(수니파 31.9%, 시아파 31.2%)이고, 기독교인이 32.4%입니다. 기독교인 가운데에는 마론파 가톨릭이 가장 많습니다.",
+   "아랍어가 공용어이고 프랑스어, 영어, 아르메니아어도 쓰입니다. 1920년 프랑스가 레바논의 경계를 정했고, 1943년 독립했습니다.",
+   "사람들은 대부분 지중해 연안, 특히 수도 베이루트 주변에 삽니다."
+  ],
+  "indicators": [
+   "urban"
+  ],
+  "related": [
+   "FRA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Lebanon: Introduction – Background, People – Religions, People – Languages, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/le.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "FRA",
+   "why": "1920년 레바논의 경계를 그은 나라"
+  }
+ },
+ {
+  "id": "lbn-litani",
+  "country": "LBN",
+  "title": "아시아 대륙에서 가장 작은 나라는?",
+  "category": "geo",
+  "panels": [
+   "Factbook은 레바논을 '아시아 대륙에서 가장 작은 나라'라고 적습니다. 국토 면적은 {{vr:LBN:area}}입니다.",
+   "좁은 해안 평야 뒤로 레바논산맥과 안티레바논산맥이 나란히 서 있고, 그 사이를 베카 계곡이 가릅니다.",
+   "레바논산맥에는 겨울에 눈이 많이 내립니다. 그래서 레바논은 '물이 모자란 지역의 물이 넉넉한 나라'로 적힙니다.",
+   "리타니강은 근동의 큰 강 가운데 국경을 넘지 않는 유일한 강입니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "SYR",
+   "ISR"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Lebanon: Geography – note, Geography – Terrain, Geography – Climate, Geography – Natural resources",
+    "url": "https://github.com/factbook/factbook.json/blob/master/middle-east/le.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SYR",
+   "why": "레바논을 북쪽과 동쪽에서 감싼 이웃"
+  }
+ },
+ {
+  "id": "lka-adams-bridge",
+  "country": "LKA",
+  "title": "인도와 스리랑카는 한때 땅으로 이어져 있었을까?",
+  "category": "geo",
+  "panels": [
+   "인도 남동쪽 해안과 스리랑카 북서쪽 해안 사이에는 '애덤스 브리지'라는 석회암 모래톱이 사슬처럼 이어져 있습니다.",
+   "Factbook은 지질학 증거로 볼 때 이 50km의 다리가 한때 두 나라를 이었다고 적습니다.",
+   "스리랑카는 대부분 낮고 평평한 땅이고, 남쪽 가운데에 산지가 있습니다.",
+   "12~3월에는 북동 계절풍, 6~10월에는 남서 계절풍이 붑니다. 쾨펜 기후로는 {{cl:LKA}}가 가장 넓습니다."
+  ],
+  "related": [
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Sri Lanka: Geography – note, Geography – Terrain, Geography – Climate",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/ce.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "애덤스 브리지 건너편의 큰 이웃"
+  }
+ },
+ {
+  "id": "lka-tea",
+  "country": "LKA",
+  "title": "스리랑카는 무엇을 길러 무엇을 팔까?",
+  "category": "economy",
+  "panels": [
+   "스리랑카는 FAO 통계로 {{ag:LKA:Tea leaves}}, {{ag:LKA:Cinnamon and cinnamon-tree flowers, raw}}입니다.",
+   "야자 껍질 섬유인 코이어는 {{ag:LKA:Coir, raw}}입니다.",
+   "하지만 상품 수출 1위는 {{ex:LKA}}입니다. 가장 큰 손님은 {{p1:LKA}}입니다.",
+   "Factbook은 스리랑카 경제가 관광 수입과 해외 송금에 크게 기댄다고 적습니다. 관광 수입은 수출의 {{v:LKA:tourism_exports}}였습니다."
+  ],
+  "indicators": [
+   "tourism_exports"
+  ],
+  "related": [
+   "IND",
+   "USA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Sri Lanka: Economy – Agricultural products, Economy – Industries, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/ce.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "USA",
+   "why": "스리랑카 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "mdv-atolls",
+  "country": "MDV",
+  "title": "몰디브는 몇 개의 섬으로 이루어져 있을까?",
+  "category": "geo",
+  "panels": [
+   "몰디브는 아시아에서 가장 작은 나라입니다. 국토 면적은 {{vr:MDV:area}}입니다.",
+   "산호섬 1,190개가 26개의 환초로 무리 지어 있습니다. 사람이 사는 섬은 200개이고, 리조트가 있는 섬이 80개 더 있습니다.",
+   "섬들은 바닷속 화산 산맥인 차고스-라카디브 해령 위에 있습니다.",
+   "섬이 모두 낮아서, 해수면이 오르는 데 아주 취약합니다. 쓰나미도 재해 목록에 올라 있습니다."
+  ],
+  "indicators": [
+   "area"
+  ],
+  "related": [
+   "LKA",
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Maldives: Geography – note, Geography – Terrain, Geography – Natural hazards",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/mv.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "LKA",
+   "why": "몰디브와 말이 닮은 북동쪽 섬나라"
+  }
+ },
+ {
+  "id": "mdv-fish",
+  "country": "MDV",
+  "title": "천연자원이 물고기 하나뿐인 나라는 무엇을 팔까?",
+  "category": "economy",
+  "panels": [
+   "Factbook에 적힌 몰디브의 천연자원은 '물고기' 하나뿐입니다.",
+   "상품 수출 1위도 {{ex:MDV}}입니다. 가장 큰 손님은 {{p1:MDV}}입니다.",
+   "경제의 기둥은 관광, 어업, 해운입니다. 관광 수입은 수출의 {{v:MDV:tourism_exports}}였습니다.",
+   "수도 말레라는 이름은 산스크리트어 '말라(화환)'에서 왔을 수 있다고 합니다."
+  ],
+  "indicators": [
+   "tourism_exports"
+  ],
+  "related": [
+   "THA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Maldives: Geography – Natural resources, Economy – Economic overview, Economy – Industries, Government – Capital",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/mv.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "THA",
+   "why": "몰디브 상품을 가장 많이 사 가는 나라"
+  }
+ },
+ {
+  "id": "mmr-irrawaddy",
+  "country": "MMR",
+  "title": "미얀마에서 가장 중요한 물길은 어느 강일까?",
+  "category": "geo",
+  "panels": [
+   "미얀마는 가운데 낮은 땅을 가파르고 험한 고원이 둘러싼 모양입니다.",
+   "남북으로 흐르는 이라와디강이 나라에서 가장 크고 중요한 물길입니다. 이라와디 삼각주가 국토의 {{lf:MMR:Irrawaddy Delta}}를 차지합니다.",
+   "사람들은 해안과 이라와디강 가까이에 모여 살고, 북쪽 끝은 사람이 드뭅니다.",
+   "동쪽으로는 메콩강과 살윈강도 지나갑니다. 두 강 모두 중국에서 시작합니다."
+  ],
+  "related": [
+   "CHN",
+   "THA"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Myanmar: Geography – note, Geography – Terrain, People – Population distribution, Geography – Major rivers",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/bm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "THA",
+   "why": "살윈강을 함께 나눠 쓰는 동쪽 이웃"
+  }
+ },
+ {
+  "id": "mmr-sesame",
+  "country": "MMR",
+  "title": "미얀마 들판은 어떤 작물로 세계 순위에 오를까?",
+  "category": "economy",
+  "panels": [
+   "Factbook은 미얀마 경제에서 '농업이 가장 안정적인 분야'라고 적습니다. 농림어업은 경제의 {{vr:MMR:agri_va}}를 차지합니다.",
+   "FAO 통계로 미얀마는 {{ag:MMR:Sesame seed}}입니다.",
+   "콩 종류도 많이 거둡니다. {{ag:MMR:Beans, dry}}, {{ag:MMR:Pigeon peas, dry}}입니다.",
+   "상품 수출 1위는 {{ex:MMR}}이고, 가장 큰 손님은 {{p1:MMR}}입니다."
+  ],
+  "indicators": [
+   "agri_va"
+  ],
+  "related": [
+   "IND",
+   "CHN"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Myanmar: Economy – Agricultural products, Economy – Economic overview",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/bm.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "미얀마 상품을 가장 많이 사 가는 이웃"
+  }
+ },
+ {
+  "id": "mys-kl",
+  "country": "MYS",
+  "title": "'흙탕물이 만나는 곳'이라는 이름의 수도는?",
+  "category": "economy",
+  "panels": [
+   "쿠알라룸푸르는 '흙탕물 강이 만나는 곳'이라는 뜻입니다. 두 강이 합쳐지는 자리에 있기 때문입니다.",
+   "Factbook은 말레이시아를 전자제품·석유·화학제품을 많이 수출하는 나라로 소개합니다. 일자리의 40% 넘게가 무역과 관련됩니다.",
+   "상품 수출 1위는 {{ex:MYS}}이고, 가장 큰 손님은 {{p1:MYS}}입니다.",
+   "제조업은 경제의 {{vr:MYS:manufacturing}}를 차지합니다."
+  ],
+  "indicators": [
+   "manufacturing",
+   "exports_gdp"
+  ],
+  "related": [
+   "SGP"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Malaysia: Government – Capital, Economy – Economic overview, Economy – Industries",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/my.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "SGP",
+   "why": "말레이시아 상품을 가장 많이 사 가는 이웃"
+  }
+ },
+ {
+  "id": "mys-malacca",
+  "country": "MYS",
+  "title": "말라카 해협은 말레이시아에 무엇을 가져다주었을까?",
+  "category": "history",
+  "panels": [
+   "말레이반도와 섬들 사이의 말라카 해협으로 바닷길 무역이 흘렀고, 그와 함께 중국·인도·중동·동아프리카의 영향이 들어왔습니다.",
+   "7~13세기에는 스리위자야 제국이, 13~14세기에는 마자파힛 제국이 반도의 많은 부분을 다스렸습니다.",
+   "말레이시아는 1957년 8월 31일 영국에서 독립했습니다.",
+   "지금도 인구의 80% 이상이 말레이반도에 삽니다. 보르네오섬 쪽은 땅이 넓어도 사람이 적습니다."
+  ],
+  "related": [
+   "IDN",
+   "SGP"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Malaysia: Introduction – Background, Geography – note, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/east-n-southeast-asia/my.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IDN",
+   "why": "해협 건너편의 큰 섬나라"
+  }
+ },
+ {
+  "id": "npl-peaks",
+  "country": "NPL",
+  "title": "세계에서 가장 높은 산 10개 가운데 몇 개가 네팔에 있을까?",
+  "category": "geo",
+  "panels": [
+   "세계에서 가장 높은 산 10개 가운데 8개가 네팔에 있습니다. 가장 높은 에베레스트산과 세 번째로 높은 칸첸중가산도 국경에 걸쳐 있습니다.",
+   "남쪽은 갠지스강 유역의 평평한 타라이 평야, 가운데는 구릉 지대, 북쪽은 험한 히말라야입니다. 히말라야가 국토의 {{lf:NPL:Himalayas}}에 걸쳐 있습니다.",
+   "인구는 남쪽 타라이 평야와 가운데 구릉 지대에 거의 반반씩 나뉘어 삽니다.",
+   "천연자원 목록에는 '경치의 아름다움'도 올라 있습니다."
+  ],
+  "related": [
+   "CHN",
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Nepal: Geography – note, Geography – Terrain, People – Population distribution",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/np.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "CHN",
+   "why": "에베레스트를 함께 나눠 가진 북쪽 이웃"
+  }
+ },
+ {
+  "id": "npl-time",
+  "country": "NPL",
+  "title": "표준시가 45분 단위로 어긋나는 나라는?",
+  "category": "curious",
+  "panels": [
+   "네팔의 표준시는 UTC+5:45입니다. 세계 표준시에서 5시간 45분 앞섭니다.",
+   "수도 카트만두라는 이름은 네팔어 '카트(나무)'와 '만두(사원)'에서 왔습니다.",
+   "네팔은 1768년 프리트비 나라얀 샤가 하나로 묶었고, 1814~1816년 영국과의 전쟁 뒤에도 독립을 지켰습니다.",
+   "FAO 통계로 네팔은 {{ag:NPL:Mustard seed}}입니다. 생강은 {{ag:NPL:Ginger, raw}}입니다."
+  ],
+  "related": [
+   "IND"
+  ],
+  "sources": [
+   {
+    "label": "CIA World Factbook — Nepal: Government – Capital, Government – Independence, Economy – Agricultural products",
+    "url": "https://github.com/factbook/factbook.json/blob/master/south-asia/np.json",
+    "accessed": "2026-11-21"
+   }
+  ],
+  "reviewed": "2026-11-21",
+  "next": {
+   "country": "IND",
+   "why": "네팔보다 15분 늦은 시계를 쓰는 남쪽 이웃"
   }
  },
  {
