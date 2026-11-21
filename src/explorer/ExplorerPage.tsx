@@ -14,11 +14,14 @@ import { arrivalScene, type Scene } from './scenes';
 import type { Answer, Campaign, Ctx, GameState, Puzzle, Resolution } from './types';
 import type { IndicatorId } from '../data/types';
 import { ViewCount } from '../components/ViewCount';
+import { Compass, ICON, Meter, MiniMap, campaignStations } from './ExGraphics';
+
+const CAMP_COLOR = ['#b8462f', '#2f6f8f'];
 
 const KIND_KO: Record<string, string> = { discover: '국가 발견', economy: '경제 조사', route: '지리 탐험', compare: '국가 비교', rank: '순위 추리', decide: '탐험 결정', report: '보고서', event: '가상 사건' };
 
 export function ExplorerPage({ campaignId }: { campaignId?: string }) {
-  const { ds } = useData();
+  const { ds, geo } = useData();
   const ex = useExtras();
   const j = useJournal();
   const saved = j.explorer.save as GameState | null;
@@ -32,28 +35,63 @@ export function ExplorerPage({ campaignId }: { campaignId?: string }) {
   if (!state || !camp) {
     return (
       <div className="page explorer-hub">
-        <header className="page-head">
-          <p className="kicker">세계 탐험가</p>
-          <h1>탐험 본부</h1>
-          <p className="lede">조사원이 되어 세계지도를 누비며 나라 경제의 비밀을 밝혀 보세요. 탐험 자금과 일정은 한정되어 있고, 고른 길에 따라 만나는 임무와 결말이 달라집니다.</p>
+        <header className="hub-hero">
+          <div className="hub-hero-text">
+            <p className="kicker">세계 탐험가</p>
+            <h1>탐험 본부</h1>
+            <p className="lede">조사원이 되어 세계지도를 누비며 나라 경제의 비밀을 밝혀 보세요. 탐험 자금과 일정은 한정되어 있고, 고른 길에 따라 만나는 임무와 결말이 달라집니다.</p>
+            <ol className="hub-how">
+              <li><span>{ICON.discover}</span><b>나라를 찾는다</b><small>단서를 읽고 지도에서 고르기</small></li>
+              <li><span>{ICON.economy}</span><b>숫자로 조사한다</b><small>실제 통계로 비교·추리</small></li>
+              <li><span>{ICON.report}</span><b>보고서를 낸다</b><small>모은 자료로 결말이 갈린다</small></li>
+            </ol>
+          </div>
+          <div className="hub-hero-map">
+            <MiniMap geo={geo} focus={CAMPAIGNS.flatMap(campaignStations)} ratio={1.7} pad={26} label="두 캠페인의 조사 지역"
+              marks={Object.fromEntries(CAMPAIGNS.flatMap((c, i) => campaignStations(c).map((k) => [k, `mm-c${i}`])))}
+              tracks={CAMPAIGNS.map((c, i) => ({ ids: campaignStations(c), color: CAMP_COLOR[i % 2], line: false }))} />
+            <Compass />
+            <ul className="hub-legend">{CAMPAIGNS.map((c, i) => <li key={c.id}><i style={{ background: CAMP_COLOR[i % 2] }} />{c.region} · {c.title}</li>)}</ul>
+          </div>
         </header>
         {saved && campaignById(saved.campaign) && (
           <p className="explorer-continue">진행 중인 탐험: <b>{campaignById(saved.campaign)!.title}</b> (자금 {saved.funds}, 일정 {saved.days}일)
             <button type="button" className="btn" onClick={() => setState(saved)}>이어서 하기</button></p>
         )}
-        <div className="games">
-          {CAMPAIGNS.map((c) => {
+        <div className="camp-grid">
+          {CAMPAIGNS.map((c, ci) => {
             const rec = j.explorer.campaigns[c.id];
+            const st = campaignStations(c);
+            const color = CAMP_COLOR[ci % 2];
             return (
-              <div key={c.id} className="game-entry campaign-entry">
-                <span className="ge-no">{c.region}</span>
-                <h2>{c.title}</h2>
-                <p>{c.question}</p>
-                <p className="ge-best">{rec ? `${rec.plays}번 탐험 · 최고 ${rec.best}점 · 본 결말 ${rec.endings.length}/${c.endings.length}` : '아직 떠나지 않은 탐험'}</p>
-                <button type="button" className="btn" onClick={() => { const s = newGame(c); journal.explorerSave(s); setState(s); }}>
-                  {rec ? '새로 출발' : '출발'}
-                </button>
-              </div>
+              <article key={c.id} className="camp-card" style={{ ['--camp' as string]: color }}>
+                <div className="camp-map">
+                  <MiniMap geo={geo} focus={st} current={c.startLocation} marks={Object.fromEntries(st.map((k) => [k, 'mm-on']))}
+                    tracks={[{ ids: st, color, line: false }]} label={`${c.title} 조사 지역 지도`} />
+                  <span className="camp-region">{c.region}</span>
+                </div>
+                <div className="camp-body">
+                  <h2>{c.title}</h2>
+                  <p className="camp-q">“{c.question}”</p>
+                  <p className="camp-intro">{c.intro}</p>
+                  <p className="camp-flags" aria-label="거쳐 갈 수 있는 나라">{st.map((k) => { const cc = ds.country(k); return cc ? <span key={k}><Flag iso2={cc.iso2} size="sm" /> {cc.name_ko}</span> : null; })}</p>
+                  <ul className="camp-stats">
+                    <li>{ICON.pin}<span>출발</span><b>{ds.country(c.startLocation)?.name_ko}</b></li>
+                    <li>{ICON.funds}<span>자금</span><b>{c.startResources.funds}</b></li>
+                    <li>{ICON.days}<span>일정</span><b>{c.startResources.days}일</b></li>
+                    <li>{ICON.ending}<span>결말</span><b>{c.endings.length}개</b></li>
+                  </ul>
+                  <div className="camp-rec">
+                    <span className="camp-endings" aria-label={`본 결말 ${rec?.endings.length ?? 0}/${c.endings.length}`}>
+                      {c.endings.map((e) => <i key={e.id} className={rec?.endings.includes(e.id) ? 'on' : ''} title={rec?.endings.includes(e.id) ? e.title : '아직 못 본 결말'} />)}
+                    </span>
+                    <small>{rec ? `${rec.plays}번 탐험 · 최고 ${rec.best}점` : '아직 떠나지 않은 탐험'}</small>
+                  </div>
+                  <button type="button" className="btn camp-go" onClick={() => { const s = newGame(c); journal.explorerSave(s); setState(s); }}>
+                    {rec ? '새로 출발' : '탐험 출발'} →
+                  </button>
+                </div>
+              </article>
             );
           })}
         </div>
@@ -61,7 +99,7 @@ export function ExplorerPage({ campaignId }: { campaignId?: string }) {
       </div>
     );
   }
-  return <Game camp={camp} ctx={ctx} state={state} setState={(s) => { setState(s); journal.explorerSave(s && s.node !== 'ending' ? s : null); }} />;
+  return <Game camp={camp} ctx={ctx} state={state} setState={(s) => { setState(s); if (s) journal.explorerSave(s.node !== 'ending' ? s : null); }} />;
 }
 
 function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state: GameState; setState: (s: GameState | null) => void }) {
@@ -142,10 +180,10 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
     <div className={`explorer explorer--${tab}`}>
       <header className="ex-top">
         <strong className="ex-title">{camp.title}</strong>
-        <span className="ex-res" title="탐험 자금 (가상)">자금 <b>{s.funds}</b></span>
-        <span className="ex-res" title="남은 일정 (가상)">일정 <b>{s.days}</b>일</span>
-        <span className="ex-res">성공 임무 <b>{successes(s)}</b></span>
-        <span className="ex-res">현재 위치 <b>{ds.country(s.location)?.name_ko}</b></span>
+        <Meter icon={ICON.funds} label="자금" value={s.funds} max={camp.startResources.funds} />
+        <Meter icon={ICON.days} label="일정" value={s.days} max={camp.startResources.days} unit="일" />
+        <span className="ex-res ex-ok" title="성공한 임무">{ICON.ok} <b>{successes(s)}</b></span>
+        <span className="ex-res ex-here" title="현재 위치">{ICON.pin} {ds.country(s.location) && <Flag iso2={ds.country(s.location)!.iso2} size="sm" />} <b>{ds.country(s.location)?.name_ko}</b></span>
         <span className="ex-tabs" role="tablist">
           <button type="button" role="tab" aria-selected={tab === 'mission'} className={`tab ${tab === 'mission' ? 'on' : ''}`} onClick={() => setTab('mission')}>임무</button>
           <button type="button" role="tab" aria-selected={tab === 'map'} className={`tab ${tab === 'map' ? 'on' : ''}`} onClick={() => setTab('map')}>지도</button>
@@ -155,9 +193,15 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
 
       <aside className="ex-left" aria-label="현재 임무와 탐험일지">
         <section className="ex-mission">
-          <p className="ex-kind">{ending ? '탐험 종료' : KIND_KO[p.kind] ?? ''}{evnt && <span className="fiction">가상 사건</span>}</p>
+          <p className="ex-kind"><span className="kind-ico">{ICON[ending ? 'ending' : evnt ? 'event' : p.kind] ?? ICON.pin}</span>{ending ? '탐험 종료' : KIND_KO[p.kind] ?? ''}{evnt && <span className="fiction">가상 사건</span>}</p>
           <h2>{ending ? ending.title : evnt ? evnt.title : node?.title}</h2>
           {!ending && <p>{evnt ? evnt.text : node?.brief(s, ctx)}</p>}
+        </section>
+        <section className="ex-where" aria-label="지금까지의 탐험 경로">
+          <MiniMap geo={geo} focus={[s.location, ...s.visited.slice(-3)]} current={s.location} pad={30} ratio={1.9}
+            marks={Object.fromEntries(s.visited.map((k) => [k, 'mm-visited']))} tracks={s.visited.length > 1 ? [{ ids: s.visited, color: CAMP_COLOR[camp.id === CAMPAIGNS[0].id ? 0 : 1], dashed: true }] : []}
+            label={`지금 위치 ${ds.country(s.location)?.name_ko ?? ''}, 들른 나라 ${s.visited.length}곳`} />
+          <p className="small"><b>{s.visited.length}</b>개국 방문 · 갈림길 선택 {s.path.length}번</p>
         </section>
         <section className="ex-evidence">
           <h3>조사 자료 <small>{s.evidence.length}</small></h3>
@@ -199,7 +243,7 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
             <button type="button" className="btn" autoFocus onClick={() => setResult(null)}>계속</button>
           </div>
         ) : typeof s.flags.arrival === 'string' && arrival ? (
-          <ArrivalView scene={arrival} onDone={(notes) => setState(closeArrival(s, notes, arrival.title))} />
+          <ArrivalView scene={arrival} cid={String(s.flags.arrival)} onDone={(notes) => setState(closeArrival(s, notes, arrival.title))} />
         ) : ending ? (
           <EndingView camp={camp} ctx={ctx} s={s} text={ending.text(s, ctx)} onAgain={() => setState(newGame(camp))} onHub={() => setState(null)} />
         ) : (
@@ -211,12 +255,20 @@ function Game({ camp, ctx, state, setState }: { camp: Campaign; ctx: Ctx; state:
   );
 }
 
-function ArrivalView({ scene, onDone }: { scene: Scene; onDone: (notes: Scene['notes']) => void }) {
+function ArrivalView({ scene, cid, onDone }: { scene: Scene; cid: string; onDone: (notes: Scene['notes']) => void }) {
   const [picked, setPicked] = useState<string[]>([]);
+  const { ds, geo } = useData();
+  const c = ds.country(cid);
   return (
     <div className="ex-arrival">
-      <p className="ex-kind">현지 이야기</p>
-      <h3>{scene.title}</h3>
+      {c ? (
+        <div className="arrival-card">
+          <Flag iso2={c.iso2} size="lg" />
+          <div className="arrival-head"><p className="ex-kind"><span className="kind-ico">{ICON.story}</span>현지 이야기 · 도착</p><h3>{scene.title}</h3>
+            <p className="small muted">{c.name_ko} · 수도 {c.capital_ko.join(', ')} · {c.region_ko}</p></div>
+          <MiniMap geo={geo} focus={[cid, ...c.borders.slice(0, 4)]} current={cid} marks={{ [cid]: 'mm-on' }} pad={14} ratio={1.4} className="arrival-map" label={`${c.name_ko} 위치`} />
+        </div>
+      ) : <><p className="ex-kind">현지 이야기</p><h3>{scene.title}</h3></>}
       {scene.lines.map((l, i) => (
         <p key={i} className={l.fiction ? 'scene-fiction' : 'scene-fact'}>
           {l.text}{l.fiction ? <span className="fiction">가상 장면</span> : l.source ? <small> ({l.source})</small> : null}
@@ -397,9 +449,24 @@ function PuzzleView({ p, s, ctx, submit, guesses, clues, setClues, route, setRou
 function EndingView({ camp, ctx, s, text, onAgain, onHub }: { camp: Campaign; ctx: Ctx; s: GameState; text: string; onAgain: () => void; onHub: () => void }) {
   const picked = String(s.flags.reportEvidence ?? '').split(',').filter(Boolean);
   const rec = useJournal().explorer.campaigns[camp.id];
+  const { geo } = useData();
+  const score = Math.round(finalScore(s));
   return (
     <div className="ex-ending">
-      <p>{text}</p>
+      <div className="ending-top">
+        <div className="ending-map">
+          <MiniMap geo={geo} focus={s.visited} pad={24} ratio={1.8} marks={Object.fromEntries(s.visited.map((k) => [k, 'mm-visited']))}
+            tracks={[{ ids: s.visited, color: CAMP_COLOR[camp.id === CAMPAIGNS[0].id ? 0 : 1], numbered: true }]} label={`이번 탐험 경로: ${s.visited.map((v) => ctx.ds.country(v)?.name_ko).join(' → ')}`} />
+        </div>
+        <div className="ending-text">
+          <div className="score-ring" aria-label={`최종 점수 ${score}`}>
+            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" className="sr-bg" /><circle cx="60" cy="60" r="50" className="sr-fg" style={{ strokeDasharray: `${Math.max(0, Math.min(1, score / 100)) * 314} 314` }} /></svg>
+            <b>{score}</b><small>점</small>
+          </div>
+          <p>{text}</p>
+        </div>
+      </div>
+      <p className="passport" aria-label="방문 도장">{s.visited.map((v, i) => { const cc = ctx.ds.country(v); return cc ? <span key={v} className="stamp" style={{ transform: `rotate(${((i * 37) % 17) - 8}deg)` }}><em>{i + 1}</em><Flag iso2={cc.iso2} size="md" /><small>{cc.name_ko}</small></span> : null; })}</p>
       <dl className="econ-glance">
         <div><dt>최종 점수</dt><dd>{Math.round(finalScore(s))}{rec && <small> 최고 {rec.best}</small>}</dd></div>
         <div><dt>보고서 점수</dt><dd>{s.reportScore ?? 0}</dd></div>

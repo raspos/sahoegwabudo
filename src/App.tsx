@@ -9,6 +9,7 @@ import { PlayPage } from './pages/PlayPage';
 import { JournalPage } from './pages/JournalPage';
 import { LessonPage } from './pages/LessonPage';
 import { ViewCount } from './components/ViewCount';
+import { ExplorerPage } from './explorer/ExplorerPage';
 
 interface Ctx { ds: Dataset; geo: Geo }
 const DataCtx = createContext<Ctx | null>(null);
@@ -38,6 +39,7 @@ export const go = (path: string, replace = false) => {
 
 const NAV = [
   { path: '', match: ['', 'map'], label: '세계지도' },
+  { path: 'explorer', match: ['explorer'], label: '세계 탐험가', short: '탐험가' },
   { path: 'atlas', match: ['atlas', 'country'], label: '나라 도감' },
   { path: 'rankings', match: ['rankings'], label: '세계 랭킹' },
   { path: 'play', match: ['play', 'lesson'], label: '도전하기' },
@@ -64,6 +66,7 @@ export function App() {
   let page: JSX.Element | null = null;
   if (ctx) {
     if (head === '' || head === 'map') page = <MapPage countryId={route[1]} />;
+    else if (head === 'explorer') page = <ExplorerPage />;
     else if (head === 'atlas') page = <AtlasIndex />;
     else if (head === 'country' && route[1]) page = <CountryPage id={route[1]} />;
     else if (head === 'rankings') page = <RankingsPage indicatorId={route[1]} focus={route[2]} />;
@@ -93,7 +96,7 @@ export function App() {
         {!ctx && !err && <p className="loading">지도를 펼치는 중…</p>}
         {ctx && <DataCtx.Provider value={ctx}>{page}</DataCtx.Provider>}
       </main>
-      {head !== '' && head !== 'map' && !(head === 'play' && route[1] === 'explorer') && (
+      {head !== '' && head !== 'map' && head !== 'explorer' && !(head === 'play' && route[1] === 'explorer') && (
         <footer className="site-foot">
           © 2026 <a href="https://raspos.github.io/databrew/" target="_blank" rel="noopener noreferrer">databrew</a> · 독립 데이터저널리즘 프로젝트<ViewCount />
         </footer>

@@ -101,7 +101,7 @@ export function JournalPage() {
               <div><dt>게임에서 찾아낸 나라</dt><dd>{j.explorer.discovered.map((id) => ds.country(id)?.name_ko).join(', ') || '–'}</dd></div>
               <div><dt>확보한 조사 자료</dt><dd>{j.explorer.evidence.length}개</dd></div>
             </dl>
-          ) : <p className="muted">아직 탐험을 떠나지 않았습니다. <a href="#/play/explorer">세계 탐험가</a></p>}
+          ) : <p className="muted">아직 탐험을 떠나지 않았습니다. <a href="#/explorer">세계 탐험가</a></p>}
         </section>
 
         <section>
