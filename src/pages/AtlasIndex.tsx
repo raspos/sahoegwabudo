@@ -3,7 +3,6 @@ import { go, useData } from '../App';
 import { CountrySearch, Flag } from '../components/common';
 import { CONTINENTS, type ContinentId } from '../data/types';
 import { initials } from '../data/search';
-import { STORY_COUNTRIES } from '../content/stories';
 import { useJournal } from '../store/journal';
 
 /** 나라 도감 찾아보기: 대륙별·가나다순 색인 */
@@ -39,7 +38,7 @@ export function AtlasIndex() {
           </div>
         </div>
       </header>
-      <p className="index-count">{total}개국 · <span className="key-story">이야기</span> 표시는 나라 이야기가 있는 도감</p>
+      <p className="index-count">{total}개국</p>
       <div className="index-cols">
         {groups.map(([k, list]) => (
           <section key={k} className="index-group">
@@ -50,7 +49,6 @@ export function AtlasIndex() {
                   <a href={`#/country/${c.id}`}>
                     <Flag iso2={c.iso2} size="sm" />
                     <span className="ix-name">{c.name_ko}</span>
-                    {STORY_COUNTRIES.includes(c.id) && <span className="key-story">이야기</span>}
                     <span className="ix-en">{c.name_en}</span>
                   </a>
                 </li>
